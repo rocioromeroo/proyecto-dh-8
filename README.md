@@ -3,6 +3,7 @@
 Este proyecto se trata de un ecommerce orientado a personas interesadas en comprar lo nuevo en movilidad electrónica. Cuando comenzamos a planificar este proyecto nos propusimos lograr acercar lo nuevo en medios de transporte. En esta aplicacion los usuarios registros pueden comprar y asesorarse sobre lo último en movilidad. En el futuro queremos expandir este desarrollo y lograr conectar con productos de energía renovable.
 
 
+
 ## Participantes:
 
 ###### Leonel Nusfaumer
@@ -11,9 +12,12 @@ Padre de familia, 3 hijos, trabajo muy duro como un esclavo en la planta nuclear
 ###### Juan Fernández
 Vendedor de comics en Springfield. Quiero cerrar mi tienda porque estoy cansado de los burlones y vender solamente por internet, por eso decidi aprender a programar. Ademas quiero hacer mi propio comic y tener mi propia pagina web para publicarlos.
 
-###### Gaston Dominguez
+###### Gastón Dominguez
+Profesional en el aréa de Sistemas, Soltero, Trabajo en una empresa Petroquimica desde hace 5 años. Me inicie en la programacion mediante Digital House. Mis habilidades son netamente de infraestructura, no conozco la programacion mas que Turbo Pascal 8.0 .
 
 ###### Rocio Romero
+Vendedor de comics en Springfield. Quiero cerrar mi tienda porque estoy cansado de los burlones y vender solamente por internet, por eso decidi aprender a programar. Ademas quiero hacer mi propio comic y tener mi propia pagina web para publicarlos.
+
 
 
 ## Instalacion
@@ -33,10 +37,12 @@ Ingresar a ```http://localhost/proyecto/index.html```
 #### Herramientas
 
 - [Trello para la gestion de las tareas](https://trello.com)
-- Node 
-- JS
-- Workbench
-- XAMPP, servidor local de PHP y MySQL
+- [Donde los equipos diseñan Juntos](https://www.figma.com/)
+- [Motor de JavaScript V8 de Chrome](https://nodejs.org/es/)
+- [Infraestructura web rápida, minimalista y flexible para Node.js](https://expressjs.com/es/)
+- [Sistema de Control de Versiones](https://git-scm.com/)
+- [Construido para Colaboracion](https://github.com/)
+- [Servicio de Base de Datos](https://www.mysql.com/)
 
 
 
@@ -49,5 +55,5 @@ Ingresar a ```http://localhost/proyecto/index.html```
 
 ## Agradecimientos
 
-- [A mi Perro Poochie](https://vignette.wikia.nocookie.net/lossimpson/images/9/9c/Poochie.png/revision/latest?cb=20090819011823&path-prefix=es) por habernos dejado justo 3 dias antes de terminar
+- [A trello que organizo todo el trabajo](https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/308998dcb3ed5ab3d01217a4d24ffa03/hero-a.svg) por habernos dejado justo 3 dias antes de terminar
 - [Y como olvidarnos del Niño Rata...](https://miro.medium.com/max/2139/1*wVf0oHfP9iaU61YodjtAqQ.jpeg)
