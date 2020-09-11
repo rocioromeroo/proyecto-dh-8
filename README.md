@@ -1,26 +1,24 @@
-# proyecto-dh-8
-Proyecto Digital House Grupo 8
-# Grupo 1 - Nombre del Proyecto
+# Grupo 8 - Electro 8
 
-Este proyecto se trata de **[una red social | un ecommerce | un juego ]** orientado a personas interesadas ***completar cual seria el perfil de usuarios interesados en este sitio*** Cuando comenzamos a planificar este proyecto nos propusimos lograr que ***completar explicando cual era la idea inicial***. En esta aplicacion los usuarios registros pueden ***completar describiendo que servicios y/o productos ofrece la aplicacion que la distinguen del resto de sus competidores***. En el futuro queremos expandir este desarrollo y lograr ***completar con objetivos a futuro***.
+Este proyecto se trata de un ecommerce orientado a personas interesadas en comprar lo nuevo en movilidad electrónica. Cuando comenzamos a planificar este proyecto nos propusimos lograr acercar lo nuevo en medios de transporte. En esta aplicacion los usuarios registros pueden comprar y asesorarse sobre lo último en movilidad. En el futuro queremos expandir este desarrollo y lograr conectar con productos de energía renovable.
 
 
+## Participantes:
 
-## Participantes
-
-###### Homero Simpson
+###### Leonel Nusfaumer
 Padre de familia, 3 hijos, trabajo muy duro como un esclavo en la planta nuclear de Springfield. Hace 20 años funde Compumundo Hiper Mega Red, pero finalmente fuimos comprados por Microsoft. Mis habilidades son comer hasta 10 rosquillas a la vez.
 
-
-
-###### Jeff Albertson
+###### Juan Fernández
 Vendedor de comics en Springfield. Quiero cerrar mi tienda porque estoy cansado de los burlones y vender solamente por internet, por eso decidi aprender a programar. Ademas quiero hacer mi propio comic y tener mi propia pagina web para publicarlos.
 
+###### Gaston Dominguez
+
+###### Rocio Romero
 
 
 ## Instalacion
 
-```git clone https://github.com/alezvi/empty-project-example```
+```git clone https://github.com/rocioromeroo/proyecto-dh-8```
 
 
 
@@ -35,6 +33,8 @@ Ingresar a ```http://localhost/proyecto/index.html```
 #### Herramientas
 
 - [Trello para la gestion de las tareas](https://trello.com)
+- Node 
+- JS
 - Workbench
 - XAMPP, servidor local de PHP y MySQL
 
