@@ -7,7 +7,7 @@ Este proyecto se trata de un ecommerce orientado a personas interesadas en compr
 ## Participantes:
 
 ###### Leonel Nusfaumer
-Padre de familia, 3 hijos, trabajo muy duro como un esclavo en la planta nuclear de Springfield. Hace 20 años funde Compumundo Hiper Mega Red, pero finalmente fuimos comprados por Microsoft. Mis habilidades son comer hasta 10 rosquillas a la vez.
+Psicologo hincha de River, actualmente repartidor de comida. Viajero y algo musico. Estudiante de programacion fullstack en digital house y de a poco aprendiendo. Miembro del equipo 8. 
 
 ###### Juan Fernández
 Vendedor de comics en Springfield. Quiero cerrar mi tienda porque estoy cansado de los burlones y vender solamente por internet, por eso decidi aprender a programar. Ademas quiero hacer mi propio comic y tener mi propia pagina web para publicarlos.
