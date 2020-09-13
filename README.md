@@ -33,6 +33,20 @@ Ingresar a ```http://localhost/proyecto/index.html```
 
 ## Recursos
 
+#### Sitios similares, relacionados y de interes. (x Leo)
+
+1. https://www.tesla.com/
+2. https://www.apple.com/
+3. https://www.samsung.com
+
+Descripcion: Estos tres sitios tienen una misma forma en lo visual, una portada con el nuevo producto o lanzamiento y de ahi parten las demas ventas. Tienen fotos grandes, cuadros separados y pocos apartados. Me gusta porque va dirigido a un publico especifico,  creo como lo que vamos a buscar vender nosotros, o sea no tienen un millon de ofertas con precio para cada uno como otros vendedores, aunque en nuestra pagina podamos poner un apartado con ofertas. Tienen sus nuevos productos, y nada mas. Eso va creo con lo que vamos a buscar nosotros. Me gustan los tonos en blanco y gris. Su login es grande abarca toda la pantalla y es claro, en las tres paginas cuando te vas a loguear en la pagina solo queda el login, sin scroll, grande y claro.
+
+4. https://www.eridesolutions.com.au/
+5. https://www.rideelectric.com.au/
+
+Descripcion:
+Estas paginas son mas terrenales, y claro empresas mas chicas, vendiendo justo lo que nosotros vamos a veneder. No veo coneccion con lo ecologico pero eso lo podemos agregar nosotros.  Te presentas pocos productos de todas maneras.
+
 #### Herramientas
 
 - [Trello para la gestion de las tareas](https://trello.com)
