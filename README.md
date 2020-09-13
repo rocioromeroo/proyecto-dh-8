@@ -19,7 +19,6 @@ Profesional en el aréa de Sistemas, Soltero, Trabajo en una empresa Petroquimic
 Vendedor de comics en Springfield. Quiero cerrar mi tienda porque estoy cansado de los burlones y vender solamente por internet, por eso decidi aprender a programar. Ademas quiero hacer mi propio comic y tener mi propia pagina web para publicarlos.
 
 
-
 ## Instalacion
 
 ```git clone https://github.com/rocioromeroo/proyecto-dh-8```
