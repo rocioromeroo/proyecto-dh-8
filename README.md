@@ -16,7 +16,7 @@ Vendedor de comics en Springfield. Quiero cerrar mi tienda porque estoy cansado 
 Profesional en el aréa de Sistemas, Soltero, Trabajo en una empresa Petroquimica desde hace 5 años. Me inicie en la programacion mediante Digital House. Mis habilidades son netamente de infraestructura, no conozco la programacion mas que Turbo Pascal 8.0 .
 
 ###### Rocio Romero
-Vendedor de comics en Springfield. Quiero cerrar mi tienda porque estoy cansado de los burlones y vender solamente por internet, por eso decidi aprender a programar. Ademas quiero hacer mi propio comic y tener mi propia pagina web para publicarlos.
+Estuadiante de Ingeniería Industrial. Analista de compras en una droguería hace casi 5 años. Siempre me gusto la programación, antes de la carrera que estudio actualmente pasé por Ingeniería en Infórmatica pero por motivos laborales, decidí cambiar.
 
 
 ## Instalacion
