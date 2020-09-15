@@ -10,7 +10,8 @@ Este proyecto se trata de un ecommerce orientado a personas interesadas en compr
 Psicologo hincha de River, actualmente repartidor de comida. Viajero y algo musico. Estudiante de programacion fullstack en digital house y de a poco aprendiendo. Miembro del equipo 8. 
 
 ###### Juan Fernández
-Vendedor de comics en Springfield. Quiero cerrar mi tienda porque estoy cansado de los burlones y vender solamente por internet, por eso decidi aprender a programar. Ademas quiero hacer mi propio comic y tener mi propia pagina web para publicarlos.
+22 años, estudio en la UBA para contador público. Trabajo y en mis tiempos libres escucho o hago música. 
+Entre al curso por curiosidad y me está gustando. 
 
 ###### Gastón Dominguez
 Profesional en el aréa de Sistemas, Soltero, Trabajo en una empresa Petroquimica desde hace 5 años. Me inicie en la programacion mediante Digital House. Mis habilidades son netamente de infraestructura, no conozco la programacion mas que Turbo Pascal 8.0 .
