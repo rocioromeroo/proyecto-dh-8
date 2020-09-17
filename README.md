@@ -73,13 +73,13 @@ Esta pagina apunta mas a al detalle del producto como se lo muestra aqui esta ba
 
 #### Herramientas
 
-- [Trello para la gestion de las tareas](https://trello.com)
-- [Donde los equipos diseñan Juntos](https://www.figma.com/)
-- [Motor de JavaScript V8 de Chrome](https://nodejs.org/es/)
-- [Infraestructura web rápida, minimalista y flexible para Node.js](https://expressjs.com/es/)
-- [Sistema de Control de Versiones](https://git-scm.com/)
-- [Construido para Colaboracion](https://github.com/)
-- [Servicio de Base de Datos](https://www.mysql.com/)
+- [Trello - para la gestion de las tareas](https://trello.com)
+- [Figma - Donde los equipos diseñan Juntos](https://www.figma.com/)
+- [NodeJS - Motor de JavaScript V8 de Chrome](https://nodejs.org/es/)
+- [Experss - Infraestructura web rápida, minimalista y flexible para Node.js](https://expressjs.com/es/)
+- [Git - Sistema de Control de Versiones](https://git-scm.com/)
+- [GitHub - Construido para Colaboracion](https://github.com/)
+- [MySQL - Servicio de Base de Datos](https://www.mysql.com/)
 
 
 
@@ -92,5 +92,4 @@ Esta pagina apunta mas a al detalle del producto como se lo muestra aqui esta ba
 
 ## Agradecimientos
 
-- [A trello que organizo todo el trabajo](https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/308998dcb3ed5ab3d01217a4d24ffa03/hero-a.svg) por habernos dejado justo 3 dias antes de terminar
-- [Y como olvidarnos del Niño Rata...](https://miro.medium.com/max/2139/1*wVf0oHfP9iaU61YodjtAqQ.jpeg)
+- [A Digital House por brindarnos las herramientas para aprender](https://www.marthadebayle.com/wp-content/uploads/2016/12/gratitud.jpg) por enseñar dia y noche
