@@ -92,4 +92,4 @@ Esta pagina apunta mas a al detalle del producto como se lo muestra aqui esta ba
 
 ## Agradecimientos
 
-- [A Digital House por brindarnos las herramientas para aprender](https://www.marthadebayle.com/wp-content/uploads/2016/12/gratitud.jpg) por enseñar dia y noche
+- A [Digital House] por brindarnos las herramientas para aprender, por enseñar dia y noche. (https://www.marthadebayle.com/wp-content/uploads/2016/12/gratitud.jpg)
