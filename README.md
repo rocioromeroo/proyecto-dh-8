@@ -4,7 +4,7 @@ Este proyecto se trata de un ecommerce orientado a personas interesadas en compr
 
 
 
-# Tematika del Market Place
+# Tematica del Market Place
 
 Productos y servicios: E-Bicicletas, E-Monopatines, E-Monociclos...
 Publico: Personas interesadas en nuevas formas de movilidad de corta distancia que respete el medio ambiente y tengan una conciencia ecologica con gran demanda y que quieran proteger los daños que causan los productos que utilizan derivados del petroleo y que generan dia a dia mayor contaminacion.
