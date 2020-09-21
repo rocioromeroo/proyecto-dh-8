@@ -2,11 +2,15 @@
 
 Este proyecto se trata de un ecommerce orientado a personas interesadas en comprar lo nuevo en movilidad electrónica. Cuando comenzamos a planificar este proyecto nos propusimos lograr acercar lo nuevo en medios de transporte. En esta aplicacion los usuarios registros pueden comprar y asesorarse sobre lo último en movilidad. En el futuro queremos expandir este desarrollo y lograr conectar con productos de energía renovable.
 
+
+
 # Tematika del Market Place
 
 Productos y servicios: E-Bicicletas, E-Monopatines, E-Monociclos...
-Publico: Personas interesadas en nuevas formas de movilidad...
-Oferta: 
+Publico: Personas interesadas en nuevas formas de movilidad de corta distancia que respete el medio ambiente y tengan una conciencia ecologica con gran demanda y que quieran proteger los daños que causan los productos que utilizan derivados del petroleo y que generan dia a dia mayor contaminacion.
+Oferta: Productos eco-friendly, electricos y de corta distancia para personas que queiran crear una conciencia social por el deterioro del entorno natural como pueden ser calentamiento global, cambio climático, pérdida de biodiversidad.
+
+
 
 ## Participantes:
 
@@ -53,6 +57,8 @@ Estas paginas muestran las categorias que pretendemos vender dentro de nuestra p
 4. https://www.segway-ninebot.com.ar/
 5. https://swagtron.com/
 
+
+
 #### Herramientas
 
 - [Trello - para la gestion de las tareas](https://trello.com)
@@ -69,6 +75,8 @@ Estas paginas muestran las categorias que pretendemos vender dentro de nuestra p
 
 - [Buenas practicas de GIT](https://blog.usejournal.com/git-tips-for-everyday-use-48f10b4d4525)
 - [Como escribir Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links)
+- [Documentación, guías y temas de ayuda para programadores de software](https://docs.github.com/es/github)
+- [Software de base de Datos - MySql](https://dev.mysql.com/doc/refman/8.0/en/)
 
 
 
