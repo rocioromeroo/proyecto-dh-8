@@ -70,6 +70,11 @@ Estas paginas muestran las categorias que pretendemos vender dentro de nuestra p
 - [MySQL - Servicio de Base de Datos](https://www.mysql.com/)
 
 
+#### Links
+
+- Trello: https://trello.com/b/NgCoRuBC/sprint-2
+
+
 
 #### Guias
 

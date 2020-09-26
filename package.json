@@ -1,0 +1,23 @@
+{
+  "name": "proyecto-dh-8",
+  "version": "1.0.0",
+  "description": "Este proyecto se trata de un ecommerce orientado a personas interesadas en comprar lo nuevo en movilidad electrónica. Cuando comenzamos a planificar este proyecto nos propusimos lograr acercar lo nuevo en medios de transporte. En esta aplicacion los usuarios registros pueden comprar y asesorarse sobre lo último en movilidad. En el futuro queremos expandir este desarrollo y lograr conectar con productos de energía renovable.",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rocioromeroo/proyecto-dh-8.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rocioromeroo/proyecto-dh-8/issues"
+  },
+  "homepage": "https://github.com/rocioromeroo/proyecto-dh-8#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
