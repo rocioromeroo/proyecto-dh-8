@@ -1,9 +1,111 @@
 *{
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+}
+body{
       background-color: var(--body-background);
       font-family: 'Comfortaa', cursive, 'Arial';
 }
+a{
+      text-decoration: none;
+      color:black;
+}
+a:visited{
+      color:black;
+}
 :root{
-       --body-background:rgb(187, 187, 187);
+       --body-background:#f4f4f4;
+       --articles-bg:white;
+       --font-color:#219653;
+}
+header{
+      height: 100px;
+      background-color: black;
+}
+
+/* /////// MAIN HOME /////// */
+#banner-carousel img{
+      width: 100%;
+      height: 255px;
+}
+main{
+      margin: 5%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+}
+#tus-visitas{
+      width: 100%;
+      margin-bottom: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+}
+#futuros-lanzamientos{
+      width: 100%;
+      margin-bottom: 40px;
+}
+#accesorios{
+      width: 100%;
+      margin-bottom: 40px;
+}
+section article{
+      margin-bottom: 20px;
+      background-color: var(--articles-bg);
+      padding: 20px;
+}
+/* HOME PRODUCTO */
+.home-producto{
+      border-radius: 10px;
+}
+.home-producto img{
+      width: 100%;
+      max-width: 350px;
+      height: 300px;
+      padding: 10px;
+}
+.article-img{
+      text-align: center;
+}
+.article-base{
+      height: 200px;
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      flex-direction: column;
+}
+.ver-mas, .add-car{
+      width: 100%;
+      border:1px solid black;
+      text-transform: uppercase;
+      padding: 0.5rem 2rem;
+}
+#accesorios article{
+      width: 100%;
+      height: 15%;
+}
+
+
+/* ///////  TITULOS Y TEXTOS HOME  /////// */
+.titulo-link-contain{
+      text-align: center;
+      margin-bottom: 20px;
+}
+h2{
+      font-size: 36px;
+      color:var(--font-color);
+      font-weight: 500;
+      line-height: 1.2;
+      text-transform: uppercase;
+}
+.link-ver-mas{
+      font-size: 1em;
+      text-transform: uppercase;
+}
+h3{
+      font-size: 20px;
+      font-weight: 600;
+      text-transform: uppercase;
 }
