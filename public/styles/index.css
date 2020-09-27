@@ -1,0 +1,9 @@
+*{
+      margin: 0;
+      padding: 0;
+      background-color: var(--body-background);
+      font-family: 'Comfortaa', cursive, 'Arial';
+}
+:root{
+       --body-background:rgb(187, 187, 187);
+}
