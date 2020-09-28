@@ -1,0 +1,53 @@
+:root{
+    --color-verde:#219653;
+}
+#header p{
+    font-family: 'Comfortaa', cursive, 'Arial';
+    color: white;
+    text-align: right;
+    font-size: 15px;
+    width:100%;
+    padding: 15px;
+    border: solid 1px black;
+    margin: 5px;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+#header div{
+    font-family: 'Comfortaa', cursive, 'Arial';
+    color: var(--color-verde);
+    font-size: 20px;
+    text-align: right;
+    width:100%;
+    padding: 15px;
+    border: solid 1px #FFFFFF;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+footer{
+    width:100%;
+    padding: 60px;
+    border: solid 1px black;
+    margin: 5px;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+footer p{
+    font-family: 'Comfortaa', cursive, 'Arial';
+    color: white;
+    font-size: 10px;
+    text-align: left;
+}
+
+footer div{
+    font-family: 'Comfortaa', cursive, 'Arial';
+    color: white;
+    font-size: 15px;
+    text-align: right;
+}
+
+
+
