@@ -13,6 +13,11 @@ app.get ('/', function(req, res) {
     res.sendFile(file);
 });
 
+app.get ("/cart", function(req,res){
+    let file = path.resolve ("views/productCart.html")
+    res.sendFile(file)
+})
+
 app.get('/productDetail', function(req, res) {
     let file = path.resolve('views/productDetail.html');
     res.sendFile(file);
