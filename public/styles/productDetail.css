@@ -1,4 +1,49 @@
+:root{
+    --body-background:#f4f4f4;
+    --articles-bg:white;
+    --font-color:#219653;
+    --bg-font-green-hover:#18683b;
+    --bg-font-grey-hover:#5a6268;
+}
+
 body {
     margin: 0;
     padding: 0;
+    background-color: var(--body-background);
+    font-family: 'Comfortaa', cursive, 'Arial';
+}
+
+header{
+    height: 100px;
+    background-color: black;
+}
+
+#productos, #descripcion {
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.produc-div1, .produc-div2, .produc-div3 {
+    width: 100%;
+}
+
+.produc-div1 {
+    text-align: center;
+}
+
+.produc-div2 {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.produc-div3 img {
+    width: 100%;
+}
+
+footer{
+    height: 100px;
+    background-color: black;
 }
