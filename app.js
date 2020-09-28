@@ -1,9 +1,11 @@
 // http://localhost:3000/
 // http://mitienda.com/
 
-const express = require (`express`);
+const express = require ('express');
 const app = express ();
 const path = require("path");
+
+app.listen(3000, () => console.log('Server running on port 3000'));
 
 
 app.get ("/", function(req,res){
@@ -25,5 +27,3 @@ app.get("*", function (req,res){
     
     res.send("Not found")
 })
-
-app.listen(3000)
