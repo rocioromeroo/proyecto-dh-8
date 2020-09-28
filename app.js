@@ -11,13 +11,8 @@ app.get ("/", function(req,res){
     res.sendFile(file)
 })
 
-app.get("/registro", function(req,res){
-    let file = path.resolve ("views/register.html")
-    res.sendFile(file)
-})
-
-app.get("/login", function(req,res){
-    let file = path.resolve ("views/login.html")
+app.get("/productDetail", function(req,res){
+    let file = path.resolve ("views/productDetail.html")
     res.sendFile(file)
 })
 
