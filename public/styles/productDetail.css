@@ -59,12 +59,16 @@ header{
 
 }
 
-.art {
+.produc-div2-art {
     margin-top: 10px;
     padding: 0 15px;
     border: 1px solid #dcdee3;
     border-radius: 8px 8px 0 0;
     background-color: white;
+}
+
+.art:focus {
+
 }
 
 .descrip-div1, .descrip-div2 {
@@ -78,7 +82,16 @@ header{
 .descrip-div2 { 
     display: flex;
     justify-content: space-around;
-    font-size: 85%;
+    font-size: 80%;
+    background-color: var(--body-background);
+}
+
+.descrip-div2-art {
+    margin-bottom: 10px;
+    padding: 0 15px;
+    border: 1px solid #dcdee3;
+    border-radius: 0 0 8px 8px;
+    background-color: white;
 }
 
 .boton_agregar {
