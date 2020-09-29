@@ -1,0 +1,83 @@
+body{
+    background-color: #f4f4f4;
+    font-family: 'Comfortaa', cursive, 'Arial';
+}
+
+/*items del carrito*/
+.pag-cart{
+    margin: 80px auto;
+}
+
+.tabla-principal{
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px #18683b;
+
+}
+
+.precio{
+    font-weight: bold;
+}
+
+.info-cart{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th{
+    text-align: left;
+    padding: 5px;
+    color: white;
+    background: #219653;
+    font-weight: normal;
+}
+
+td{
+    padding: 10px 5px;
+}
+
+td input{
+    width: 50px;
+    height: 30px;
+    padding: 5px;
+    text-align: right;
+}
+
+td a{
+    color: #219653;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+td a:hover{
+    background-color: #18683b;
+    color: white;
+    border-radius: 7px;
+}
+
+td img{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+.precio-total{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.precio-total table{
+    border-top: solid 3px green;
+    width: 100%;
+    max-width: 400px;
+}
+
+td :last-child{
+    text-align: right;
+}
+
+th :last-child{
+    text-align: right;
+}

@@ -11,6 +11,7 @@ body {
     padding: 0;
     background-color: var(--body-background);
     font-family: 'Comfortaa', cursive, 'Arial';
+    text-transform: uppercase;
 }
 
 header{
@@ -22,7 +23,7 @@ header{
     margin: 40px 15px;
 }
 
-#productos, #descripcion {
+#productos, #descripcion, #relaciones {
     width: 100%;
     background-color: white;
     border: 1px solid black;
@@ -92,6 +93,24 @@ header{
     border: 1px solid #dcdee3;
     border-radius: 0 0 8px 8px;
     background-color: white;
+}
+
+#relaciones {
+    text-align: center;
+}
+
+.rela-div1 {
+    text-align: center;
+    border-bottom: 1px solid var(--font-color);
+    border-radius: 13px;
+}
+
+.rela-div2 {
+    border-radius: 13px;
+}
+
+.rela-div1-b img {
+    width: 100%;
 }
 
 .boton_agregar {
