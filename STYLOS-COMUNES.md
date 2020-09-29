@@ -1,9 +1,16 @@
 # HEADER (mobile hasta 460px)
 
-height: 20vh;
+height: 15vh;
 
 # BANNER-CAROUSEL (mobil hasta 460px)
 
 height: 50vh;
+
+# FONT-SIZE hasta 460
+
+body {
+       font-size: 14px;
+}
+luego le puse "em".
 
 
