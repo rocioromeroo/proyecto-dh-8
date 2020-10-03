@@ -41,7 +41,7 @@ header{
 
 }
 
-#productos, #coutas, #precios, #columnas, #relaciones {
+#productos, #cuotas, #precios, #columnas, #relaciones {
     width: 100%;
     background-color: white;
     border: 1px solid #dcdee3;
