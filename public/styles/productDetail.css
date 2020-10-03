@@ -17,6 +17,8 @@
 .f-size-30 {font-size: 30%;}
 .fd-colu {flex-direction: column;}
 .d-none {display: none;}
+.a-item-b {align-items: baseline;}
+
 
 
 
@@ -119,7 +121,7 @@ header{
 
 .cant {
     border: 1px solid #dcdee3;
-    margin: 10px 0;
+    margin: 10px;
     padding: 0 30px;
 }
 
@@ -161,19 +163,30 @@ header{
 
 }
 
+.colu-div4-a1 p {
+    padding: 10px 20px;
+    text-align: justify;
+    display: none;
+
+}
+
 .d-flex i {
     justify-content: flex-end;
 }
 
-.d-flex:hover .colu-div1-a1 p {
+.d-flex-c:hover .colu-div1-a1 p {
     display: block;
 }
 
-.d-flex:hover .colu-div2-a1 p {
+.d-flex-c:hover .colu-div2-a1 p {
     display: block;
 }
 
-.d-flex:hover .colu-div3-a1 p {
+.d-flex-c:hover .colu-div3-a1 p {
+    display: block;
+}
+
+.d-flex-c:hover .colu-div4-a1 p {
     display: block;
 }
 
