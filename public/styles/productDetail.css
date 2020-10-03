@@ -6,6 +6,17 @@
     --bg-font-grey-hover:#5a6268;
 }
 
+.d-flex {display: flex;}
+.m-right-10{ margin-right: 10px;}
+.f-size-7 {font-size: 70%;}
+.t-deco-lt {text-decoration: line-through;}
+.a-self-c {align-self: center;}
+.p-20 {padding: 0 20px;}
+.b-botto {border-bottom: 1px solid green;}
+.b-top {border-top: 1px solid green;}
+.f-size-30 {font-size: 30%;}
+.fd-colu {flex-direction: column;}
+.d-none {display: none;}
 
 
 
@@ -28,7 +39,7 @@ header{
 
 }
 
-#productos, #coutas, #precios, #columnas {
+#productos, #coutas, #precios, #columnas, #relaciones {
     width: 100%;
     background-color: white;
     border: 1px solid #dcdee3;
@@ -68,16 +79,6 @@ header{
     border-top: hidden;
     background-color: #219653;
 }
-
-.d-flex {display: flex;}
-.m-right-10{ margin-right: 10px;}
-.f-size-7 {font-size: 70%;}
-.t-deco-lt {text-decoration: line-through;}
-.a-self-c {align-self: center;}
-.p-20 {padding: 0 20px;}
-.b-botto {border-bottom: 1px solid green;}
-.b-top {border-top: 1px solid green;}
-.f-size-30 {font-size: 30%;}
 
 .i-credit {
     font-size: 200%;
@@ -175,6 +176,26 @@ header{
 .d-flex:hover .colu-div3-a1 p {
     display: block;
 }
+
+.rela-div1-b img {
+    width: 100%;
+    border-radius: 13px;
+}
+
+.rela-div1-a p {
+    text-align: center;
+    padding: 10px;
+}
+
+.ver {
+    background-color: white;
+    color: black;
+    text-align: center;
+    margin: 20px;
+    padding: 0.2em 0;
+    border: 1px solid black;
+}
+
 
 footer{
     height: 100px;
