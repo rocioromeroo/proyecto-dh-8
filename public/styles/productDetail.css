@@ -28,13 +28,14 @@ header{
 
 }
 
-#productos, #descripcion {
+#productos, #coutas, #precios, #columnas {
     width: 100%;
     background-color: white;
     border: 1px solid #dcdee3;
     border-radius: 13px;
     margin: 20px 0;
     box-sizing: border-box;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.15)
 }
 
 .prod-div1, .prod-div2 {
@@ -48,7 +49,7 @@ header{
 }
 
 .prod-div2 { 
-    display: flex;
+    display: none;
     justify-content: flex-start;
     font-size: 80%;
     background-color: var(--body-background);
@@ -68,34 +69,111 @@ header{
     background-color: #219653;
 }
 
-.desc-div1, .desc-div2 {
-    width: 100%;
-    border-radius: 13px 13px 0 0;
+.d-flex {display: flex;}
+.m-right-10{ margin-right: 10px;}
+.f-size-7 {font-size: 70%;}
+.t-deco-lt {text-decoration: line-through;}
+.a-self-c {align-self: center;}
+.p-20 {padding: 0 20px;}
+.b-botto {border-bottom: 1px solid green;}
+.b-top {border-top: 1px solid green;}
+.f-size-30 {font-size: 30%;}
+
+.i-credit {
+    font-size: 200%;
+    margin: 20px;
 }
 
-.desc-div1 { 
+.d-flex-r {
     display: flex;
-    justify-content: flex-start;
-    font-size: 80%;
-    background-color: var(--body-background);
-}
-
-.desc-div1 span {
-    margin-top: 10px;
-    margin-right: 2px;
-    padding: 0 15px;
-    border: 1px solid #dcdee3;
-    border-radius: 8px 8px 0 0;
-    background-color: white;
-}
-
-.desc-div2 p {
-    text-align: justify;
-}
-
-.desc-div2-a {
-    padding: 0 15px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     margin: 20px 0;
+    border-top: 1px solid green;
+    border-bottom: 1px solid green;
+}
+
+.descuento {
+    background-color: var(--font-color);
+    color: white;
+    padding: 1%;
+}
+
+.p-final {
+    font-size: 150%;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.d-flex-c {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.f-size-8 {
+    font-size: 80%;
+}
+
+.cant {
+    border: 1px solid #dcdee3;
+    margin: 10px 0;
+    padding: 0 30px;
+}
+
+.carr {
+    background-color: var(--font-color);
+    color: var(--body-background);
+    text-align: center;
+    margin: 20px;
+    padding: 0.2em 0;
+
+}
+
+
+.colu-desc {
+    border-top: 1px solid var(--font-color);
+    border-bottom: 1px solid var(--font-color);
+    padding: 10px 20px;
+
+}
+
+.colu-div1-a1 p {
+    padding: 10px 20px;
+    text-align: justify;
+    display: none;
+
+}
+
+.colu-div2-a1 p {
+    padding: 10px 20px;
+    text-align: justify;
+    display: none;
+
+}
+
+.colu-div3-a1 p {
+    padding: 10px 20px;
+    text-align: justify;
+    display: none;
+
+}
+
+.d-flex i {
+    justify-content: flex-end;
+}
+
+.d-flex:hover .colu-div1-a1 p {
+    display: block;
+}
+
+.d-flex:hover .colu-div2-a1 p {
+    display: block;
+}
+
+.d-flex:hover .colu-div3-a1 p {
+    display: block;
 }
 
 footer{
