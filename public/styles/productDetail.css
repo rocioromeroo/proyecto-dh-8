@@ -41,7 +41,7 @@ header{
 
 }
 
-#productos, #cuotas, #precios, #columnas, #relaciones {
+#productos, #cuotas, #precios, #descripcion {
     width: 100%;
     background-color: white;
     border: 1px solid #dcdee3;
@@ -49,6 +49,15 @@ header{
     margin: 20px 0;
     box-sizing: border-box;
     box-shadow: 0 1px 3px 0 rgba(0,0,0,.15)
+}
+
+#relaciones {
+    width: 100%;
+
+    border-radius: 13px;
+
+    box-sizing: border-box;
+
 }
 
 .prod-div1, .prod-div2 {
@@ -135,35 +144,35 @@ header{
 }
 
 
-.colu-desc {
+.des-desc {
     border-top: 1px solid var(--font-color);
     border-bottom: 1px solid var(--font-color);
     padding: 10px 20px;
 
 }
 
-.colu-div1-a1 p {
+.des-div1-a1 p {
     padding: 10px 20px;
     text-align: justify;
     display: none;
 
 }
 
-.colu-div2-a1 p {
+.des-div2-a1 p {
     padding: 10px 20px;
     text-align: justify;
     display: none;
 
 }
 
-.colu-div3-a1 p {
+.des-div3-a1 p {
     padding: 10px 20px;
     text-align: justify;
     display: none;
 
 }
 
-.colu-div4-a1 p {
+.des-div4-a1 p {
     padding: 10px 20px;
     text-align: justify;
     display: none;
@@ -174,19 +183,19 @@ header{
     justify-content: flex-end;
 }
 
-.d-flex-c:hover .colu-div1-a1 p {
+.d-flex-c:hover .des-div1-a1 p {
     display: block;
 }
 
-.d-flex-c:hover .colu-div2-a1 p {
+.d-flex-c:hover .des-div2-a1 p {
     display: block;
 }
 
-.d-flex-c:hover .colu-div3-a1 p {
+.d-flex-c:hover .des-div3-a1 p {
     display: block;
 }
 
-.d-flex-c:hover .colu-div4-a1 p {
+.d-flex-c:hover .des-div4-a1 p {
     display: block;
 }
 
@@ -209,9 +218,82 @@ header{
     border: 1px solid black;
 }
 
+.acces_style {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 0.2em 0;
+    border: 1px solid black;
+    border-radius: 13px;
+}
+
+.acces {
+    width: 100%;
+    background-color: white;
+    border: 1px solid #dcdee3;
+    border-radius: 13px;
+    margin: 20px 0;
+    box-sizing: border-box;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.15)
+}
+
+.sin_estilo {
+    background-color: white;
+    border: 1px solid #dcdee3;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.15);
+}
 
 footer{
     height: 100px;
     background-color: black;
+}
+
+@media (min-width:769px) {
+    #principal {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #productos {
+        order: 1;
+        width: 100%;
+        margin: 20px 5px;
+
+    }
+
+    #descripcion {
+        order: 2;
+        width: 48%;
+        height: 50%;
+        margin: 20px 5px;
+
+    }
+
+    #cuotas {
+        order: 3;
+        width: 50%;
+        height: 100%;
+    }
+
+    #precios {
+        order: 4; 
+        width: 50%;
+        height: 50%;
+    }
+
+    #accesorios {
+        order: 5;
+        width: 100%;
+    }
+
+    #relaciones {
+        order: 6;
+        display: flex;
+    }
+
+    #relaciones div {
+        margin: 20px 5px;
+    }
+
 }
 
