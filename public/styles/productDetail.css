@@ -30,7 +30,12 @@
 .ta-c {text-align: center;}
 .a-item-b {align-items: baseline;}
 .a-self-c {align-self: center;}
+.color-a {color: rgb(0, 106, 253);}
+.t-deco-n {text-decoration: none;}
 
+a:visited {
+    color: rgb(0, 106, 253);
+}
     
 body {
     margin: 0;
@@ -38,6 +43,7 @@ body {
     background-color: var(--body-background);
     font-family: 'Comfortaa', cursive, 'Arial';
     text-transform: uppercase;
+    
 }
 
 header{
@@ -67,7 +73,7 @@ header{
 }
 
 .i-credit {
-    font-size: 200%;
+    font-size: 160%;
     margin: 20px;
 }
 
