@@ -7,20 +7,29 @@
 }
 
 .d-flex {display: flex;}
+.fd-colu {flex-direction: column;}
 .m-right-10{ margin-right: 10px;}
-.f-size-7 {font-size: 70%;}
-.t-deco-lt {text-decoration: line-through;}
-.a-self-c {align-self: center;}
+.d-none {display: none;}
+.w-100 {width: 100%;}
+.b-radius-0-0-13-13 {border-radius: 0 0 13px 13px;}
+.b-radius-13-13-0-0 {border-radius: 13px 13px 0 0}
+.b-radius-13 {border-radius: 13px;}
 .p-20 {padding: 0 20px;}
 .b-botto {border-bottom: 1px solid green;}
 .b-top {border-top: 1px solid green;}
+.b-top1 {border-top: 1px solid var(--font-color);}
+.b-botto1 {border-bottom: 1px solid var(--font-color);}
+.p-10-20 {padding: 10px 20px;}
+.p-10 {padding: 10px;}
+
+.f-size-7 {font-size: 70%;}
+.f-size-8 {font-size: 80%;}
 .f-size-30 {font-size: 30%;}
-.fd-colu {flex-direction: column;}
-.d-none {display: none;}
+.t-deco-lt {text-decoration: line-through;}
+.ta-j {text-align: justify;}
+.ta-c {text-align: center;}
 .a-item-b {align-items: baseline;}
-
-
-
+.a-self-c {align-self: center;}
 
     
 body {
@@ -41,7 +50,7 @@ header{
 
 }
 
-#productos, #cuotas, #precios, #descripcion {
+#productos, #cuotas, #descripcion {
     width: 100%;
     background-color: white;
     border: 1px solid #dcdee3;
@@ -53,42 +62,8 @@ header{
 
 #relaciones {
     width: 100%;
-
     border-radius: 13px;
-
     box-sizing: border-box;
-
-}
-
-.prod-div1, .prod-div2 {
-    width: 100%;
-    border-radius: 0 0 13px 13px;
-}
-
-.prod-div1 img {
-    width: 100%;
-    border-radius: 13px;
-}
-
-.prod-div2 { 
-    display: none;
-    justify-content: flex-start;
-    font-size: 80%;
-    background-color: var(--body-background);
-}
-
-.prod-div2 span {
-    margin-bottom: 10px;
-    margin-right: 2px;
-    padding: 0 15px;
-    border: 1px solid #dcdee3;
-    border-radius: 0 0 8px 8px;
-    background-color: white;
-}
-
-.prod-div2 span:hover {
-    border-top: hidden;
-    background-color: #219653;
 }
 
 .i-credit {
@@ -124,10 +99,6 @@ header{
     
 }
 
-.f-size-8 {
-    font-size: 80%;
-}
-
 .cant {
     border: 1px solid #dcdee3;
     margin: 10px;
@@ -143,70 +114,23 @@ header{
 
 }
 
+.d-flex i {justify-content: flex-end;}
 
-.des-desc {
-    border-top: 1px solid var(--font-color);
-    border-bottom: 1px solid var(--font-color);
-    padding: 10px 20px;
+.d-flex-c:hover .div1-a p {display: block;}
 
-}
+.d-flex-c:hover .div2-a p {display: block;}
 
-.des-div1-a1 p {
-    padding: 10px 20px;
-    text-align: justify;
-    display: none;
+.d-flex-c:hover .div3-a p {display: block;}
 
-}
+.d-flex-c:hover .div4-a p {display: block;}
 
-.des-div2-a1 p {
-    padding: 10px 20px;
-    text-align: justify;
-    display: none;
-
-}
-
-.des-div3-a1 p {
-    padding: 10px 20px;
-    text-align: justify;
-    display: none;
-
-}
-
-.des-div4-a1 p {
-    padding: 10px 20px;
-    text-align: justify;
-    display: none;
-
-}
-
-.d-flex i {
-    justify-content: flex-end;
-}
-
-.d-flex-c:hover .des-div1-a1 p {
-    display: block;
-}
-
-.d-flex-c:hover .des-div2-a1 p {
-    display: block;
-}
-
-.d-flex-c:hover .des-div3-a1 p {
-    display: block;
-}
-
-.d-flex-c:hover .des-div4-a1 p {
-    display: block;
-}
-
-.rela-div1-b img {
-    width: 100%;
-    border-radius: 13px;
-}
-
-.rela-div1-a p {
+.acces_style {
+    background-color: black;
+    color: white;
     text-align: center;
-    padding: 10px;
+    padding: 0.2em 0;
+    border: 1px solid black;
+
 }
 
 .ver {
@@ -218,14 +142,7 @@ header{
     border: 1px solid black;
 }
 
-.acces_style {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 0.2em 0;
-    border: 1px solid black;
-    border-radius: 13px;
-}
+
 
 .acces {
     width: 100%;
