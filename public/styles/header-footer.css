@@ -1,6 +1,7 @@
 :root{
     --color-verde:#219653;
 }
+
 #header p{
     font-family: 'Comfortaa', cursive, 'Arial';
     color: white;
@@ -17,34 +18,82 @@
 #header div{
     font-family: 'Comfortaa', cursive, 'Arial';
     color: var(--color-verde);
-    font-size: 20px;
-    text-align: right;
-    width:100%;
+    font-size: 18px;
     padding: 15px;
     border: solid 1px #FFFFFF;
     margin: 5px;
     box-sizing: border-box;
 }
 
+
+.nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+
+.enlaces {
+    display: flex;
+    position: relative;
+    flex-grow: 1;
+    align-self: center;
+    justify-content: space-around;
+  }
+
+
+.iconos{
+    display: flex;
+    align-self: center;
+    justify-content:space-around;
+}
+
+
 footer{
     width:100%;
-    padding: 60px;
+    padding: 30px;
     border: solid 1px black;
     margin: 5px;
     box-sizing: border-box;
     background-color: black;
 }
 
-footer p{
-    font-family: 'Comfortaa', cursive, 'Arial';
-    color: white;
-    font-size: 10px;
-    text-align: left;
-}
-
-footer div{
+.foot{
+    display: flex;
+    flex-wrap: wrap;
     font-family: 'Comfortaa', cursive, 'Arial';
     color: white;
     font-size: 15px;
     text-align: right;
+}
+
+.links{
+    display: flex;
+    flex-grow: 1;
+    position: relative;
+    left: 200px;
+    bottom: 5px;
+    justify-content: space-around;
+    align-self: center;
+
+}
+
+.redes{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+    position: relative;
+    left: 300px;
+    top: 20px;
+}
+
+footer p{
+    display: flex;
+    align-self: flex-end;
+    position: relative;
+    top: 30px;
+    right: 1175px;
+    font-family: 'Comfortaa', cursive, 'Arial';
+    color: white;
+    font-size: 10px;
+    text-align: left;
 }
