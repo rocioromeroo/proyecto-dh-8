@@ -21,12 +21,61 @@ a:visited{
        --font-color:#219653;
        --bg-font-green-hover:#18683b;
        --bg-font-grey-hover:#5a6268;
+       --color-verde:#219653;
+       --border-color-grey: #dcdcdc;
 
 }
+.bg-white{  background-color: white; }
+.br-gray{ border: 1px solid var(--border-color-grey);}
+
 header{
       height: 15vh;
       background-color: black;
 }
+
+/* #header p{
+      font-family: 'Comfortaa', cursive, 'Arial';
+      color: white;
+      text-align: right;
+      font-size: 15px;
+      width:100%;
+      padding: 15px;
+      border: solid 1px black;
+      margin: 5px;
+      box-sizing: border-box;
+      background-color: black;
+  }
+  
+  #header div{
+      font-family: 'Comfortaa', cursive, 'Arial';
+      color: var(--color-verde);
+      font-size: 18px;
+      padding: 15px;
+      border: solid 1px #FFFFFF;
+      margin: 5px;
+      box-sizing: border-box;
+  }
+  
+  
+  .nav-bar {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+  .enlaces {
+      display: flex;
+      position: relative;
+      flex-grow: 1;
+      align-self: center;
+      justify-content: space-around;
+    }
+  
+  
+  .iconos{
+      display: flex;
+      align-self: center;
+      justify-content:space-around;
+  } */
 
 /* /////// MAIN HOME /////// */
 #banner-carousel {
@@ -39,27 +88,26 @@ header{
       height: 100%;
 }
 #home-main{
-      margin: 5%;
+      margin: 0px 5%;
 }
 #novedades{
       width: 100%;
-      margin-bottom: 40px;
+      margin: 40px 0px;
 }
 .novedades-contain{
-      height: 300px;
+      height: 500px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
-      background-color: white;
 }
 
 .novedades-caja1{
       width: 49%;
-      height: 98%;
-      margin-top: 1%;
+      height: 100%;
       align-self: stretch, center;
-      border: 1px solid var(--bg-font-grey-hover);
+      border: 1px solid var(--border-color-grey);
       border-radius: 13px;
+      padding: 6px;
 }
 .cajas-2-3{
       width: 49%;
@@ -67,19 +115,21 @@ header{
       flex-wrap: wrap;
       align-items: center;
 }
+.nov-img{
+      width: 100%;
+      height: 100%;
+}
 .novedades-caja2{
       width: 100%;
       height: 49%;
       border-radius: 13px;
-      border: 1px solid var(--bg-font-grey-hover);
 }
 .novedades-caja3{
       width: 100%;
       height: 49%;
       border-radius: 13px;
-      border: 1px solid var(--bg-font-grey-hover);
 }
-/* HOME PRODUCTOS  #tus-visitas*/
+/* HOME PRODUCTOS  #productos*/
 #lista-productos{
       width: 100%;
       margin-bottom: 40px;
@@ -92,13 +142,14 @@ article.home-producto{
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      max-width: 240px;
+      max-width: 330px;
       max-height: 500px;
       border-radius: 13px;
       box-shadow: 0 0 10px 5px #dedede80;
       margin-bottom: 20px;
       background-color: var(--articles-bg);
       padding: 0px 10px 10px ;
+      border:1px solid var(--border-color)
 }
 .home-producto:hover{
       box-shadow: 0 10px 20px 0 #acb5b966;
@@ -193,10 +244,47 @@ article.home-producto{
       align-items: center;
 }
 
-footer{
+/* footer{
       height: 100px;
       background-color: black;
-}
+} */
+footer{
+      width:100%;
+      padding: 30px;
+      border: solid 1px black;
+      margin: 5px;
+      box-sizing: border-box;
+      background-color: black;
+  }
+  
+  .foot{
+      display: flex;
+      flex-wrap: wrap;
+      font-family: 'Comfortaa', cursive, 'Arial';
+      color: white;
+      font-size: 15px;
+      text-align: right;
+  }
+  
+  .links{
+      display: flex;
+      flex-grow: 1;
+      position: relative;
+      left: 200px;
+      bottom: 5px;
+      justify-content: space-around;
+      align-self: center;
+  
+  }
+  
+  .redes{
+      display: flex;
+      flex-grow: 1;
+      justify-content: space-around;
+      position: relative;
+      left: 300px;
+      top: 20px;
+  }  
 
 
 /* ///////  TITULOS Y TEXTOS del HOME  /////// */
@@ -219,7 +307,8 @@ h2{
       font-style: italic;
 }
 .link-ver-mas:hover{
-      font-size: 1.1em;
+      font-size: 1em;
+      text-decoration: underline;
 }
 h3{
       font-size: 1.1em;
@@ -259,6 +348,10 @@ h3 a{
       body{
             font-size: 14px;
       }
+      .home-producto{
+            width: 48%;
+            max-width: 240px;
+      }
       #accesorios .ac-contain{
             width: 48%;
       }
@@ -273,7 +366,7 @@ h3 a{
             font-size: 16px;
       }
       article.home-producto{
-            max-width: 300px;
+             width: 24%;
       }
       #accesorios .ac-contain{
             width: 24%;
