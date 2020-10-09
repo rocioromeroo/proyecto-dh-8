@@ -230,7 +230,7 @@ footer{
 
     #productos {
         order: 1;
-        width: 48%;
+        width: 49%;
         margin: 20px 5px;
         display: flex;
         flex-direction: column;
@@ -248,7 +248,7 @@ footer{
 
     #agrupe {
         order: 2;
-        width: 48%;
+        width: 49%;
         flex-direction: column;
         justify-content: space-between;
         margin: 20px 5px;
