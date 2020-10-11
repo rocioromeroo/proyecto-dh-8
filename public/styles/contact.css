@@ -67,3 +67,15 @@ footer {
     height: 100px;
     background-color: black;
 }
+
+@media (min-width:1024px) {
+    #principal {
+        
+        display: flex;
+        justify-content: center;
+        margin: 5% 15%;       
+    }
+    .f-size-12 {font-size: 1.2em;}
+
+
+}
