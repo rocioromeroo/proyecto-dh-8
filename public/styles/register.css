@@ -1,0 +1,316 @@
+:root{
+    --body-background:#f4f4f4;
+    --articles-bg:white;
+    --font-color:#219653;
+    --bg-font-green-hover:#18683b;
+    --bg-font-grey-hover:#5a6268;
+}
+
+a{
+    text-decoration: none;  
+    color: black;
+}
+
+.olvidar a {
+    text-decoration: none;
+    color: #219653;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.nacimiento input{
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color:#5a6268;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent:0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: textfield;
+    background-color: white;   
+    -webkit-rtl-ordering: logical;
+    font-family: 'Comfortaa', cursive, 'Arial';
+    cursor: text;
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+    border-style: none;
+    border-image: none;
+}
+
+label{
+    font-family: 'Comfortaa', cursive, 'Arial';
+    font-size: 13px;
+    color: #5a6268;
+}
+
+
+
+
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color:#5a6268;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent:0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    font-family: 'Comfortaa', cursive, 'Arial';
+    cursor: text;
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+    border-style: none;
+    border-image: none;
+}
+
+.enviar{
+    appearance: button;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: #219653;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+    margin: 0em;
+    font-family: 'Comfortaa', cursive, 'Arial';
+    font-weight: bold;
+    padding: 9px;
+    border-width: 1px;
+    border-style: outset;
+    border-color: #f4f4f4;
+    border-image: none;
+    border-radius: 13px;
+    width: 100px;
+
+}
+
+.google{
+    appearance: button;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: #219653;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    cursor: default;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+    margin: 0em;
+    font-family: 'Comfortaa', cursive, 'Arial';
+    font-weight: bold;
+    padding: 10px;
+    border-width: 1px;
+    border-style: outset;
+    border-color: #f4f4f4;
+    border-image: none;
+    border-radius: 13px;
+    width: 200px;
+}
+
+hr {
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+
+p {
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+body{
+    background-color: #f4f4f4;
+}
+
+header{
+    font-family: 'Comfortaa', cursive, 'Arial';
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    width:100%;
+    padding-top: 5px;
+    padding-bottom: 5px ;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: solid 1px black;
+    box-sizing: border-box;
+    background-color: black;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,.15);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#icons {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    flex-grow: 1;
+    border: solid 1px white;
+    box-sizing: content-box;
+    background-color: white;
+    border-radius: 13px;
+    justify-content: space-around;
+    padding-bottom: 6px;
+    padding-top: 6px;
+}
+
+#icons .user{
+    display: flex;
+    padding:1%;
+}
+
+#icons .cart{
+    display: flex;
+    padding: 1%;
+}
+
+#icons .search{
+    display: flex;
+    padding: 1%;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+}
+
+header p{
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    font-size: 18px;
+    font-weight: bold;
+    align-self: center;
+    padding-left: 50%;
+    padding-right: 2%;
+}
+
+
+.register{
+    width: 350px;
+    height: 100%;
+    margin-top: 1%;
+    padding: 15px;
+    border: 1px solid var(--bg-font-grey-hover);
+    border-radius: 13px;
+    box-sizing: border-box;
+    background-color: white;
+    align-items: center;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,.15);   
+    margin: auto;
+}
+
+body h1{
+    font-family: 'Comfortaa', cursive, 'Arial';
+    color:var(--font-color);
+    text-align: center;
+    font-size: 28px;
+}
+
+.registro{
+    font-family: 'Comfortaa', cursive, 'Arial';
+    color: var(--bg-font-grey-hover);
+    text-align: left;
+    font-size: 30px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+
+.recordar{
+    font-family: 'Comfortaa', cursive, 'Arial';
+    color: var(--font-color);
+    font-size: 10px;
+    padding-left: 8%;
+}
+
+.olvidar{
+    font-family: 'Comfortaa', cursive, 'Arial';
+    color: var(--font-color);
+    text-align: left;
+    font-size: 10px;
+    padding-left: 8%;
+}
+
+.center{
+    padding-left: 33%;
+}
+
+.center1{
+    padding-left: 17%;
+}
+
+.foot{
+    font-family: 'Comfortaa', cursive, 'Arial';
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    width:100%;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    background-color:#f4f4f4;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.links{
+    font-family:'Comfortaa', cursive, 'Arial';
+    color: black;
+    flex-grow: 2;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    padding-left: 5%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.copyright{
+    display: flex;
+    align-self: flex-end;
+    align-self: left;
+    justify-content: left;
+    font-family: 'Comfortaa', cursive, 'Arial';
+    color: black;
+    font-size: 10px;
+    padding-right: 43%;
+}

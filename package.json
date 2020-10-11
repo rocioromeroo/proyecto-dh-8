@@ -19,5 +19,6 @@
   "homepage": "https://github.com/rocioromeroo/proyecto-dh-8#readme",
   "dependencies": {
     "express": "^4.17.1"
-  }
+  },
+  "keywords": []
 }

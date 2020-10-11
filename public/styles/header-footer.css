@@ -1,8 +1,24 @@
 :root{
-    --color-verde:#219653;
+    --body-background:#f4f4f4;
+    --articles-bg:white;
+    --font-color:#219653;
+    --bg-font-green-hover:#18683b;
+    --bg-font-grey-hover:#5a6268;
 }
 
-#header p{
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: var(--body-background);
+}
+
+
+#navegacion .cuenta{
     font-family: 'Comfortaa', cursive, 'Arial';
     color: white;
     text-align: right;
@@ -10,90 +26,149 @@
     width:100%;
     padding: 15px;
     border: solid 1px black;
-    margin: 5px;
     box-sizing: border-box;
     background-color: black;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,.15)
 }
 
-#header div{
+
+#navegacion .nav-bar{
     font-family: 'Comfortaa', cursive, 'Arial';
-    color: var(--color-verde);
+    color: var(--font-color);
+    width: 100%;
     font-size: 18px;
     padding: 15px;
     border: solid 1px #FFFFFF;
-    margin: 5px;
+    background-color: white;
     box-sizing: border-box;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,.15)
 }
+
+.logo{
+    margin-right: 30%;
+}
+
+.enlaces a{
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.enlaces {
+    display: flex;
+    position: relative;
+    flex-grow: 3;
+    align-self: center;
+    justify-content: space-around;
+  }
 
 
 .nav-bar {
     display: flex;
     flex-wrap: wrap;
   }
-  
 
-.enlaces {
-    display: flex;
-    position: relative;
-    flex-grow: 1;
-    align-self: center;
-    justify-content: space-around;
-  }
-
-
-.iconos{
-    display: flex;
-    align-self: center;
-    justify-content:space-around;
+  #icons a{
+    text-decoration: none;
+    color: var(--font-color);
 }
 
+#icons{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content:space-around;
+    flex-grow: 1;
+    border: solid 1px #219653;
+    background-color: white;
+    box-sizing: content-box;
+    color: #219653;
+    margin-top: 1px;
+    border-radius: 13px;
+}
+
+#icons .login{
+    display: flex;
+    padding:4%;
+}
+
+#icons .cart{
+    display: flex;
+    padding: 4%;
+}
+
+#icons .serch{
+    display: flex;
+    padding: 4%;
+}
 
 footer{
     width:100%;
-    padding: 30px;
     border: solid 1px black;
-    margin: 5px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    padding-left: 10px;
     box-sizing: border-box;
     background-color: black;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,.15)
 }
 
-.foot{
+#foot{
     display: flex;
     flex-wrap: wrap;
     font-family: 'Comfortaa', cursive, 'Arial';
     color: white;
-    font-size: 15px;
-    text-align: right;
+}
+
+.foot-logo{
+    margin-right: 10%;
+}
+
+.links li{
+    margin: auto;
+}
+
+.links ul{
+    margin: 0;
+}
+
+.links a{
+    text-decoration: none;
+    color: white;
+    padding-right: 20px;
+
 }
 
 .links{
+    color: white;
     display: flex;
     flex-grow: 1;
-    position: relative;
-    left: 200px;
-    bottom: 5px;
     justify-content: space-around;
     align-self: center;
+    padding-top: 15px;
+    padding-bottom: 15px;   
+    padding-left: 3%;
+}
 
+.redes a{
+    text-decoration: none;
+    color: white;
 }
 
 .redes{
     display: flex;
     flex-grow: 1;
     justify-content: space-around;
-    position: relative;
-    left: 300px;
-    top: 20px;
+    align-self: center;
+    padding-left: 2%;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
 
-footer p{
+.copyright{
     display: flex;
     align-self: flex-end;
-    position: relative;
-    top: 30px;
-    right: 1175px;
     font-family: 'Comfortaa', cursive, 'Arial';
     color: white;
     font-size: 10px;
-    text-align: left;
+    padding-right: 6%;
 }

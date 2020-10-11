@@ -37,6 +37,16 @@ app.get('/contact', function(req, res) {
     res.sendFile(file);
 });
 
+app.get('/login', function(req, res) {
+    let file = path.resolve('views/login.html');
+    res.sendFile(file);
+});
+
+app.get('/registro', function(req, res) {
+    let file = path.resolve('views/register.html');
+    res.sendFile(file);
+});
+
 app.get("*", function (req, res) {
     if (req.url.includes(".")){
         let file= path.resolve("public" + req.url);
