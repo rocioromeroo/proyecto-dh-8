@@ -9,7 +9,7 @@ body{
 }
 a{
       text-decoration: none;
-      color:black;
+      color: black;
 }
 a:visited{
       color:black;
@@ -28,7 +28,9 @@ a:visited{
 .bg-white{  background-color: white; }
 .br-gray{ border: 1px solid var(--border-color-grey);}
 .d-flex{ display: flex; flex-wrap: wrap;}
-.a-i-center{align-items: center;}
+.a-i-center{align-items: center; justify-content: center;}
+.width-70{width: 70%;}
+.order-1{order: 1;}
 
 header{
       height: 15vh;
@@ -70,19 +72,36 @@ header{
 }
 .width-50{
       width: 50%;
-      height: 100%;
 }
 .n-img-size{
-      width: 93%;
-      max-height: 100%;
+      width: 88%;
+      height: 70%;
 }
 .nov-caja{
       padding: 5px;
       background-color: white;
       border-radius: 13px;
       margin-top: 10px;
+      border: 1px solid var(--border-color-grey);
 }
-
+.nov-des-contain{
+      padding: 8px;
+      text-align: center;
+}
+a.h2-nov {
+      color: var(--font-color);
+      padding: 8px;
+      border: 1px solid var(--font-color);
+      font-size: 0.8em;
+      border-radius: 13px;
+      text-align: center;
+      font-weight: 700;
+}
+a.h2-nov:hover{
+      background-color: var(--font-color);
+      color: white;
+      transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out, border-color 0.35s ease-in-out, box-shadow 0.35s ease-in-out;
+}
 /* HOME PRODUCTOS  #productos*/
 #lista-productos{
       width: 100%;
@@ -97,7 +116,6 @@ article.home-producto{
       flex-wrap: wrap;
       align-items: center;
       max-width: 330px;
-      max-height: 500px;
       border-radius: 13px;
       box-shadow: 0 0 10px 5px #dedede80;
       margin-bottom: 20px;
@@ -133,6 +151,7 @@ article.home-producto{
 }
 .article-base p, .article-base h3{
       margin-bottom: 10px;
+      padding: 10px;
 }
 .ver-mas{
       width: 94%;
@@ -209,7 +228,7 @@ footer{
       margin-bottom: 40px;
 }
 h2{
-      font-size: 1.8em;
+      font-size: 1.5em;
       color:var(--font-color);
       font-weight: 600;
       line-height: 1.2;
@@ -225,6 +244,9 @@ h2{
       font-size: 1em;
       text-decoration: underline;
 }
+p{
+      font-size: 0.9em;
+}
 h3{
       font-size: 1.1em;
       font-weight: 600;
@@ -236,7 +258,7 @@ h3 a{
       font-size: 0.8em; 
       text-align: start;
    }
-.precio {
+p.precio {
       margin-bottom: 10px;
 }   
 /*  /////   Base-home-contain  CON ICONOS*/
@@ -256,7 +278,6 @@ h3 a{
       padding: 5px;
       text-align: center;
 }
-
 
 /* ARREGLOS PARA PANTALLAS MEDIAS*/
 @media (min-width: 460px){
@@ -294,6 +315,8 @@ h3 a{
       }
       .width-100{
             width: 100%;
+      }
+      .height-50{
             height: 50%;
       }
       article.home-producto{
@@ -304,8 +327,11 @@ h3 a{
       }
 
   } 
-  @media (min-width: 960px){
+  @media (min-width: 1024px){
         .max-height{
-              max-height: 280px;
+              max-height: 180px;
+        }
+        .nov-des-contain {
+            padding: 20px;
         }
   }
