@@ -226,7 +226,7 @@ th:last-child{
     color: white;
 }
 
-@media (max-width: 460px){
+@media (max-width: 519px){
     .cart-info p{
         display: none;
     }
