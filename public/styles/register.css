@@ -86,10 +86,15 @@ label{
     border-color: #219653;
 }
 
+label{
+    font-size: 15px;
+}
+
 input {
     -webkit-writing-mode: horizontal-tb !important;
     text-rendering: auto;
     color:#5a6268;
+    font-size: 15px;
     letter-spacing: normal;
     word-spacing: normal;
     text-transform: none;
@@ -240,7 +245,7 @@ body h1{
     font-family: 'Comfortaa', cursive, 'Arial';
     color:var(--font-color);
     text-align: center;
-    font-size: 30px;
+    font-size: 45px;
     padding: 4%;
 }
 
@@ -248,7 +253,7 @@ body h1{
     font-family: 'Comfortaa', cursive, 'Arial';
     color: var(--bg-font-grey-hover);
     text-align: left;
-    font-size: 30px;
+    font-size: 25px;
     padding-left: 15%;
     padding-right: 15%;
 }
@@ -308,5 +313,13 @@ body h1{
         align-items: center;
         box-shadow: 0 5px 5px 0 rgba(0,0,0,.15);   
         margin: auto;
-    }    
+    }
+
+    body h1{
+        font-family: 'Comfortaa', cursive, 'Arial';
+        color:var(--font-color);
+        text-align: center;
+        font-size: 30px;
+        padding: 4%;
+    }
 }
