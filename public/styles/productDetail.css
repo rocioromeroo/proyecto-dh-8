@@ -290,6 +290,16 @@ footer{
 
     #relaciones div {
         margin: 20px 5px;
+
+    }
+
+    #relaciones img {
+        width: 50%;
+    }
+
+    .img-c {
+        display: flex;
+        justify-content: center;
     }
 
 }
