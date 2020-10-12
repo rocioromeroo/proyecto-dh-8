@@ -52,8 +52,39 @@ label{
     color: #5a6268;
 }
 
+.crear{
+    appearance: button;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: #219653;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    cursor: default;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+    margin: 0em;
+    font-family: 'Comfortaa', cursive, 'Arial';
+    font-weight: bold;
+    padding: 10px;
+    border-width: 1px;
+    border-style: outset;
+    border-color: #f4f4f4;
+    border-image: none;
+    border-radius: 13px;
+    width: 200px;
+}
 
-
+.crear:hover{
+    background-color: #219653;
+    color: white;
+    border-color: #219653;
+}
 
 input {
     -webkit-writing-mode: horizontal-tb !important;
@@ -104,35 +135,6 @@ input {
     border-image: none;
     border-radius: 13px;
     width: 100px;
-
-}
-
-.google{
-    appearance: button;
-    -webkit-writing-mode: horizontal-tb !important;
-    text-rendering: auto;
-    color: #219653;
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: center;
-    align-items: center;
-    cursor: default;
-    background-color: #f4f4f4;
-    box-sizing: border-box;
-    margin: 0em;
-    font-family: 'Comfortaa', cursive, 'Arial';
-    font-weight: bold;
-    padding: 10px;
-    border-width: 1px;
-    border-style: outset;
-    border-color: #f4f4f4;
-    border-image: none;
-    border-radius: 13px;
-    width: 200px;
 }
 
 hr {
@@ -147,7 +149,7 @@ hr {
     border-width: 1px;
 }
 
-p {
+.register p {
     display: block;
     margin-block-start: 0;
     margin-block-end: 0;
@@ -222,12 +224,9 @@ header p{
     padding-right: 2%;
 }
 
-
 .register{
-    width: 350px;
+    width: 60%;
     height: 100%;
-    margin-top: 1%;
-    padding: 15px;
     border: 1px solid var(--bg-font-grey-hover);
     border-radius: 13px;
     box-sizing: border-box;
@@ -241,7 +240,8 @@ body h1{
     font-family: 'Comfortaa', cursive, 'Arial';
     color:var(--font-color);
     text-align: center;
-    font-size: 28px;
+    font-size: 30px;
+    padding: 4%;
 }
 
 .registro{
@@ -249,32 +249,14 @@ body h1{
     color: var(--bg-font-grey-hover);
     text-align: left;
     font-size: 30px;
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
-
-.recordar{
-    font-family: 'Comfortaa', cursive, 'Arial';
-    color: var(--font-color);
-    font-size: 10px;
-    padding-left: 8%;
-}
-
-.olvidar{
-    font-family: 'Comfortaa', cursive, 'Arial';
-    color: var(--font-color);
-    text-align: left;
-    font-size: 10px;
-    padding-left: 8%;
-}
-
-.center{
-    padding-left: 33%;
-}
 
 .center1{
-    padding-left: 17%;
+    text-align: center;
+    padding: 10%;
 }
 
 .foot{
@@ -313,4 +295,18 @@ body h1{
     color: black;
     font-size: 10px;
     padding-right: 43%;
+}
+
+@media (max-width:1024px){
+    .register{
+        width: 95%;
+        height: 100%;
+        border: 1px solid var(--bg-font-grey-hover);
+        border-radius: 13px;
+        box-sizing: border-box;
+        background-color: white;
+        align-items: center;
+        box-shadow: 0 5px 5px 0 rgba(0,0,0,.15);   
+        margin: auto;
+    }    
 }
