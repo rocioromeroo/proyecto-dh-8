@@ -58,6 +58,7 @@ label{
     text-rendering: auto;
     color: #219653;
     letter-spacing: normal;
+    outline: none;
     word-spacing: normal;
     text-transform: none;
     text-indent: 0px;
@@ -95,6 +96,7 @@ input {
     text-rendering: auto;
     color:#5a6268;
     font-size: 15px;
+    width: 100%;
     letter-spacing: normal;
     word-spacing: normal;
     text-transform: none;
@@ -112,6 +114,7 @@ input {
     border-width: 0;
     border-style: none;
     border-image: none;
+    outline: none;
 }
 
 .enviar{
@@ -140,6 +143,7 @@ input {
     border-image: none;
     border-radius: 13px;
     width: 100px;
+    outline: none;
 }
 
 hr {
@@ -170,7 +174,6 @@ header{
     font-family: 'Comfortaa', cursive, 'Arial';
     color: white;
     text-align: center;
-    font-size: 15px;
     width:100%;
     padding-top: 5px;
     padding-bottom: 5px ;
@@ -188,29 +191,15 @@ header{
     display: flex;
     flex-wrap: wrap;
     align-self: center;
-    flex-grow: 1;
+    font-size: 15px;
     border: solid 1px white;
     box-sizing: content-box;
     background-color: white;
     border-radius: 13px;
+    width: 15%;
     justify-content: space-around;
     padding-bottom: 6px;
     padding-top: 6px;
-}
-
-#icons .user{
-    display: flex;
-    padding:1%;
-}
-
-#icons .cart{
-    display: flex;
-    padding: 1%;
-}
-
-#icons .search{
-    display: flex;
-    padding: 1%;
 }
 
 header a{
@@ -230,7 +219,7 @@ header p{
 }
 
 .register{
-    width: 60%;
+    width: 50%;
     height: 100%;
     border: 1px solid var(--bg-font-grey-hover);
     border-radius: 13px;
@@ -269,9 +258,6 @@ body h1{
     color: white;
     text-align: center;
     font-size: 15px;
-    width:100%;
-    padding-right: 15px;
-    padding-bottom: 5px;
     box-sizing: border-box;
     background-color:#f4f4f4;
     display: flex;
@@ -281,14 +267,22 @@ body h1{
 .links{
     font-family:'Comfortaa', cursive, 'Arial';
     color: black;
-    flex-grow: 2;
     font-weight: bold;
     display: flex;
     justify-content: space-around;
     align-self: center;
-    padding-left: 5%;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    width:60%;
+    padding: 0%;
+}
+
+.logo-mobile{
+    display: none;
+}
+
+.logo{
+    display: flex;
+    align-self: flex-start;
+    width: 40%;
 }
 
 .copyright{
@@ -299,10 +293,11 @@ body h1{
     font-family: 'Comfortaa', cursive, 'Arial';
     color: black;
     font-size: 10px;
-    padding-right: 43%;
-}
+    width: 100%;
+}   
 
 @media (max-width:1024px){
+
     .register{
         width: 95%;
         height: 100%;
@@ -321,5 +316,44 @@ body h1{
         text-align: center;
         font-size: 30px;
         padding: 4%;
+    }
+
+    header p{
+        font-size: 15px;
+    }
+
+    #icons {
+        font-size: 12px;
+    }
+
+    .copyright{
+        display: flex;
+        justify-content: center;
+        font-family: 'Comfortaa', cursive, 'Arial';
+        color: black;
+        font-size: 8px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .logo{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+    }
+
+    .logo-mobile{
+        display: none;
+    }
+
+    .links{
+        font-family:'Comfortaa', cursive, 'Arial';
+        color: black;
+        font-weight: bold;
+        margin: auto;
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 }
