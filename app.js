@@ -42,7 +42,7 @@ app.get('/login', function(req, res) {
     res.sendFile(file);
 });
 
-app.get('/registro', function(req, res) {
+app.get('/register', function(req, res) {
     let file = path.resolve('views/register.html');
     res.sendFile(file);
 });
