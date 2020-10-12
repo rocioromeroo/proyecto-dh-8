@@ -154,12 +154,14 @@ article.home-producto{
       padding: 10px;
 }
 .ver-mas{
-      width: 94%;
+      width: 100%;
+      margin: 0px auto 10px;
       border:1px solid black;
+      border-radius: 13px;
       text-transform: uppercase;
       padding: 0.6em;
       font-size: 0.8em;
-      margin: 0px auto 10px;
+      
 }
 .ver-mas:hover{
       background-color: var(--bg-font-grey-hover);
@@ -168,13 +170,14 @@ article.home-producto{
 }
 .add-car{
       background-color: var(--font-color);
-      width: 94%;
+      width: 100%;
       margin: 0px auto;
       text-transform: uppercase;
       padding: 0.6em 0px;
       color: white;
       font-size: 0.8em;
       border:1px solid var(--font-color);
+      border-radius: 13px;
 }
 .add-car:visited{
       color: white;
@@ -333,5 +336,8 @@ p.precio {
         }
         .nov-des-contain {
             padding: 20px;
+        }
+        .n-img-size{
+              width: auto;
         }
   }

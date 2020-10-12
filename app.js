@@ -12,8 +12,8 @@ app.get ('/', function(req, res) {
     let file = path.resolve('views/index.html');
     res.sendFile(file);
 });
-app.get ('/productos', function(req, res) {
-    let file = path.resolve('views/productos.html');
+app.get ('/product', function(req, res) {
+    let file = path.resolve('views/product.html');
     res.sendFile(file);
 });
 
