@@ -19,8 +19,8 @@
 .p-1 {padding: 1%;}
 .p-1-10 {padding: 1% 10%;}
 
-.colo {color: white;}
-.bg-c {background-color: var(--font-color);}
+.colo {color: var(--font-color);}
+.bg-c {background-color: #f4f4f4;}
 .t-tran {text-transform: uppercase;}
 
 
@@ -51,16 +51,26 @@ header {
     box-shadow: 0 1px 3px 0 rgba(0,0,0,.15)
 }
 
+*:focus {
+    outline: none;
+}
+
 .input{
     display: flex;
     width: 100%;
     margin-bottom: 5%;
     padding: 1%;
+
 }
 
 .area {
     font-family: 'Comfortaa', cursive, 'Arial';
     font-size: 70%;
+}
+
+.bottom:hover {
+    background-color: var(--bg-font-green-hover);
+    color: white;
 }
 
 footer {
@@ -73,7 +83,7 @@ footer {
         
         display: flex;
         justify-content: center;
-        margin: 5% 15%;       
+        margin: 0 15%;       
     }
     .f-size-12 {font-size: 1.2em;}
 
