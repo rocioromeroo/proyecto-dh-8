@@ -49,6 +49,115 @@
 .f-weig-b {font-weight: bold;}
 .bg-c {background-color: rgb(250, 250, 250);}
 
+/* Inicio del Encabezado*/
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navegacion .cuenta{
+    font-family: 'Comfortaa', cursive, 'Arial';
+    color: white;
+    text-align: right;
+    font-size: 15px;
+    width:100%;
+    padding: 15px;
+    border: solid 1px black;
+    box-sizing: border-box;
+    background-color: black;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,.15)
+}
+
+.cuenta a{
+    text-decoration: none;
+    color: white;
+}
+
+#navegacion .nav-bar{
+    font-family: 'Comfortaa', cursive, 'Arial';
+    color: var(--font-color);
+    width: 100%;
+    font-size: 18px;
+    padding: 15px;
+    border: solid 1px #FFFFFF;
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,.15)
+}
+
+.enlaces a{
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: 15px;
+}
+
+.nav-bar-desktop{
+    display: none;
+}
+
+.nav-container{
+    display: none;
+}
+
+.hamburguesa{
+    display: block;
+    box-sizing: content-box;
+    text-align: left;
+    padding-left: 2%;
+    padding-top: 7%;
+    font-size: 30px;
+}
+
+.hamburguesa:hover .nav-container{
+    display: block;
+    text-align: left;
+}
+
+.enlaces {
+    display: block;
+    text-align: left;
+  }
+
+
+.nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.logo{
+    display: flex;
+    justify-content: flex-end;
+    margin: auto;
+}
+
+
+.enlaces li{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#icons a{
+    color: #219653;
+}
+
+#icons{
+    display: block;
+    border: solid 1px #219653;
+    border-radius: 13px;
+    background-color: white;
+    box-sizing: content-box;
+    color: #219653;
+    text-align: center;
+    color: var(--font-color);
+    font-size: 15px;
+    padding: 2%;
+}
+
+/* Fin del Encabezado */
+
+/* Inicio del Cuerpo Principal */
 a {
     text-decoration: none;
 }
@@ -68,11 +177,6 @@ body {
     font-family: 'Comfortaa', cursive, 'Arial';
     
     
-}
-
-header{
-    height: 100px;
-    background-color: black;
 }
 
 #principal {
@@ -148,7 +252,7 @@ header{
     color: var(--body-background);
     text-align: center;
     margin: 20px;
-    padding: 20px 0;
+    padding: 0.6em 0;
     border-radius: 30px;
 
 }
@@ -186,7 +290,7 @@ header{
     color: black;
     text-align: center;
     margin: 20px;
-    padding: 20px 0;
+    padding: 0.6em 0;
     border: 1px solid black;
     border-radius: 30px;
 }
@@ -219,12 +323,155 @@ header{
     box-shadow: 0 1px 3px 0 rgba(0,0,0,.15);
 }
 
+/* Fin del Cuerpo Principal */
+
+/* Inicio de Pie de Pagina */
+
 footer{
-    height: 100px;
+    width:100%;
+    border: solid 1px black;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    box-sizing: border-box;
     background-color: black;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,.15)
 }
 
+#foot{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Comfortaa', cursive, 'Arial';
+    color: white;
+}
+
+.foot-logo-desktop{
+    display: none;
+}
+
+.foot-logo{
+    margin: auto;
+    padding-bottom: 2%;
+}
+
+.links-desktop{
+    display: none;
+}
+
+.links a{
+    text-decoration: none;
+    color: white;
+}
+
+.links{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    width: 100%;
+    font-size: 14px;
+    padding-bottom: 4%;
+}
+
+.redes-desktop{
+    display: none;
+}
+
+.redes a{
+    display: none;
+}
+
+.redes{
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    width: 40%;
+    margin: auto;
+    font-size: 20px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.copyright-desktop{
+    display: none;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    font-family: 'Comfortaa', cursive, 'Arial';
+    color: white;
+    width: 100%;
+    font-size: 8px;
+}
+
+/* Fin de Pie de Pagina */
+
+/*Media Width 1024 px*/
+
 @media (min-width:1024px) {
+
+    /* Inicio del Encabezado */
+
+    .nav-bar{
+        display: none;
+    }
+
+    #navegacion .nav-bar-desktop{
+        font-family: 'Comfortaa', cursive, 'Arial';
+        color: var(--font-color);
+        width: 100%;
+        font-size: 18px;
+        padding: 15px;
+        border: solid 1px #FFFFFF;
+        background-color: white;
+        box-sizing: border-box;
+        box-shadow: 0 5px 5px 0 rgba(0,0,0,.15)
+    }
+    
+    .logo-desktop{
+        margin-right: 30%;
+    }
+    
+    .enlaces-desktop a{
+        text-decoration: none;
+        color: var(--font-color);
+    }
+    
+    .enlaces-desktop {
+        display: flex;
+        flex-grow: 1;
+        align-self: center;
+        justify-content: space-between;
+        padding-right: 15px;
+      }
+    
+    .nav-bar-desktop {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #icons-desktop a{
+        text-decoration: none;
+        color: var(--font-color);
+    }
+    
+    #icons-desktop{
+        display: flex;
+        align-self: center;
+        justify-content:space-between;
+        border: solid 1px #219653;
+        background-color: white;
+        box-sizing: content-box;
+        color: #219653;
+        border-radius: 13px;
+        width: 7%;
+        padding: 0.5%;
+    }
+    /* Fin del Encabezado */
+
+    /* Inicio de Cuerpo Principal */
+
     #principal {
         flex-direction: row;
         flex-wrap: wrap;
@@ -295,6 +542,16 @@ footer{
 
     }
 
+    #relaciones .carr {
+        margin: 2% 20%;
+
+    }
+
+    #relaciones .ver {
+        margin: 2% 20%;
+
+    }
+
     #relaciones img {
         width: 50%;
     }
@@ -303,6 +560,83 @@ footer{
         display: flex;
         justify-content: center;
     }
+
+    .carr {margin: 2% 20%;}
+    .ver {margin: 2% 20%;}
+
+    /* Fin del Cuerpo Principla */
+
+    /* Inicio del Pie de Pagina */
+
+    .foot-logo{
+        display: none;
+    }
+
+    .foot-logo-desktop{
+        display: flex;
+        margin-right: 10%;
+    }
+    
+    .redes-desktop a{
+        display: flex;
+        text-decoration: none;
+        color: white;
+    }
+
+    .redes{
+        display: none;
+    }
+    
+    .redes-desktop{
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-around;
+        align-self: center;
+        padding-left: 2%;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+
+    .links{
+        display: none;
+    }
+
+    .links-desktop li{
+        margin: auto;
+    }
+    
+    .links-desktop a{
+        text-decoration: none;
+        color: white;
+        padding-right: 20px;
+    
+    }
+    
+    .links-desktop{
+        color: white;
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-around;
+        align-self: center;
+        padding-top: 15px;
+        padding-bottom: 15px;   
+        padding-left: 3%;
+    }
+
+    .copyright{
+        display: none;
+    }
+
+    .copyright-desktop{
+        display: flex;
+        align-self: flex-end;
+        font-family: 'Comfortaa', cursive, 'Arial';
+        color: white;
+        width: 100%;
+        font-size: 10px;
+    }
+
+    /* Fin del Pie de Pagina */
 
 }
 
