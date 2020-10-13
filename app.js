@@ -18,7 +18,7 @@ app.get ('/product', function(req, res) {
     res.sendFile(file);
 });
 
-app.get ("/cart", function(req,res){
+app.get ("/productCart", function(req,res){
     let file = path.resolve ("views/productCart.html")
     res.sendFile(file)
 })
