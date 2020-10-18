@@ -1,46 +1,41 @@
-// http://localhost:3000/
-// http://electr8.com/
+var createError = require('http-errors');
+var express = require('express');
+var path = require('path');
+var cookieParser = require('cookie-parser');
+var logger = require('morgan');
 
-const express = require ('express');
-const app = express ();
-const path = require("path");
+var indexRouter = require('./routes/index');
+var usersRouter = require('./routes/users');
 
-app.listen(3000, () => console.log('Server running on port 3000'));
+var app = express();
 
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
 
-app.get ('/', function(req, res) {
-    let file = path.resolve('views/index.html');
-    res.sendFile(file);
-});
-app.get ('/productos', function(req, res) {
-    let file = path.resolve('views/productos.html');
-    res.sendFile(file);
-});
+app.use(logger('dev'));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(cookieParser());
+app.use(express.static(path.join(__dirname, 'public')));
 
-app.get ("/cart", function(req,res){
-    let file = path.resolve ("views/productCart.html")
-    res.sendFile(file)
-})
+app.use('/', indexRouter);
+app.use('/users', usersRouter);
 
-app.get ('/header', function(req, res) {
-    let file = path.resolve('views/header-footer.html');
-    res.sendFile(file);
-});
-
-app.get('/productDetail', function(req, res) {
-    let file = path.resolve('views/productDetail.html');
-    res.sendFile(file);
+// catch 404 and forward to error handler
+app.use(function(req, res, next) {
+  next(createError(404));
 });
 
-app.get('/contact', function(req, res) {
-    let file = path.resolve('views/contact.html');
-    res.sendFile(file);
+// error handler
+app.use(function(err, req, res, next) {
+  // set locals, only providing error in development
+  res.locals.message = err.message;
+  res.locals.error = req.app.get('env') === 'development' ? err : {};
+
+  // render the error page
+  res.status(err.status || 500);
+  res.render('error');
 });
 
-app.get("*", function (req, res) {
-    if (req.url.includes(".")){
-        let file= path.resolve("public" + req.url);
-        return res.sendFile(file);
-    }    
-    res.send("Not found");
-});
+module.exports = app;
