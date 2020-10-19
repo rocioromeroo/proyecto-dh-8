@@ -1,0 +1,156 @@
+[
+ {
+  "id": 1,
+  "name": "CANASTO SEGWAY NINEBOT S PLUS",
+  "price": 900,
+  "discount": 50,
+  "category": "accesorios",
+  "description": "Made of water-resistant nylon with polyester lining, the 15.6 inch Segway Ninebot Backpack comes with built-in USB port and anti-theft compartment for security.",
+  "image": "acc-100-Loading-basket.jpg"
+ },
+ {
+  "id": 2,
+  "name": "MOCHILA Ninebot Segway PJ16BB",
+  "price": 1500,
+  "discount": 3,
+  "category": "accesorios",
+  "description": " Made of water-resistant nylon with polyester lining, the 15.6 inch Segway Ninebot Backpack comes with built-in USB port.",
+  "image": "acc-101-backpack-pj.jpeg"
+ },
+ {
+  "id": 3,
+  "name": "Bateria externa Segway Ninebot Kickscooter",
+  "price": 2299,
+  "discount": 25,
+  "category": "accesorios",
+  "description": "The Extended Battery is compatible with the Ninebot KickScooter by Segway ES1 & ES2. It is easy to install and nearly doubles the range of both models from 15.5 miles to 28 miles. It also increases the speed of the ES1 and ES2 to 15.5 mph and 18.6 mph respectively.",
+  "image": "acc-102-External-BATERIA.png"
+ },
+ {
+  "id": 4,
+  "name": "CASCO de seguridad Blanco",
+  "description": "Unica fábrica de cascos de Argentina con doble certificación IRAM – AITA 3621/2002 e INTI (CHAS), esto significa que ha obtenido la Certificación de Homologación de Autopartes y Elementos de Seguridad.",
+  "price": 1200,
+  "discount": 10,
+  "image": "acc-103-CASCO-w01.jpg",
+  "category": "accesorios"
+ },
+ {
+  "id": 5,
+  "name": "SOPORTE de celular",
+  "description": "Funda a prueba de agua. Para manubrios hasta 24mm. de diámetro.Compatible con celulares de hasta 14x7 centimetros.",
+  "price": 1000,
+  "discount": 20,
+  "image": "acc-105-Soporte-celular.jpg",
+  "category": "accesorios"
+ },
+ {
+  "id": 6,
+  "name": "BOLSO DE MANUBRIO Ninebot",
+  "description": "Impermeable. Dos bosillos red en los laterales.Medidas 17 cm x 24 cm x 14 cm (alto, ancho, profundidad).En la tapa superior puede entrar un celular, el espacio es de 20 x 13 cm",
+  "price": 20999,
+  "discount": 12,
+  "image": "acc-104-BOLSO002.jpg",
+  "category": "accesorios"
+ },
+ {
+  "id": 7,
+  "name": "Bicicleta Electrica Azul NINE BOT",
+  "description": "Una bicicleta con suspensión full, con la potencia y tracción necesarias para hacer que cualquier recorrido sea posible, y cualquier situación, emocionante.",
+  "price": 96700,
+  "discount": 5,
+  "image": "bic-200-blue-electric-bike-794411_00.jpg",
+  "category": "bicicletas"
+ },
+ {
+  "id": 8,
+  "name": "Bicicleta Electrica Mountagne Blanca",
+  "description": "Se destaca en cualquier terreno, especialmente en subidas y bajadas empinadas. Desde subidas a curvas pronunciadas, las cubiertas de 27,5 de ancho ofrecen una tracción sobresaliente.",
+  "price": 104800,
+  "discount": 2,
+  "image": "bic-201-black-.jpg",
+  "category": "bicicletas"
+ },
+ {
+      "id": 9,
+      "name": "Bicicleta Electrica pegable Blanca",
+      "description": "Se destaca en cualquier terreno, especialmente en subidas y bajadas empinadas. Desde subidas a curvas pronunciadas, las cubiertas de 27,5 de ancho ofrecen una tracción sobresaliente.",
+      "price": 84800,
+      "discount": 2,
+      "image": "bic-202-pegable-blanca.jpg",
+      "category": "bicicletas"
+     },
+ {
+  "id": 10,
+  "name": "Monociclo SEGWAY S2",
+  "description": "",
+  "price": 11399,
+  "discount": 0,
+  "image": "mc-400-SEGWAY-ONE-S2.jpeg",
+  "category": "monociclos"
+ },
+ {
+  "id": 11,
+  "name": "SEGWAY-NINEBOT-ONE-Z10",
+  "description": "Uso más cómodo para la mano derecha gracias a la forma contorneada con recubrimiento de goma blanda. Duración de las pilas hasta 18 meses, gracias al diseño para ahorrar energía.El M280 entra automáticamente en estado de suspensión cuando no se está usando.",
+  "price": 22000,
+  "discount": 10,
+  "image": "mc-401-SEGWAY-NINEBOT-ONE-Z10.jpeg",
+  "category": "monociclos"
+ },
+ {
+  "id": 12,
+  "name": "Monociclo Segway-PRO-WHITE",
+  "description": "Parlante Inalámbrico Bose Soundtouch 10. SoundTouch®.La manera más sencilla de reproducir música en todo su hogar de forma inalámbrica. Características. » Marca: Bose. » Modelo: SoundTouch. » Color: Negro",
+  "price": 29990,
+  "discount": 12,
+  "image": "mc-402-segway-PRO-WHITE.jpg",
+  "category": "monociclos"
+ },
+ {
+  "id": 13,
+  "name": "Karting Electrico",
+  "description": "El sonido Surround de 5.1 canales y 1000 W proporciona un audio de verdadero impacto en los efectos especiales de películas y efectos de sonido de música y deportes. Con la tecnología Near Field Communication(NFC) podés disfrutar de Sonido One- Touch para reproducir música de forma instantánea",
+  "price": 62990,
+  "discount": 0,
+  "image": "mc-403-go-KART.jpg",
+  "category": "monociclos"
+ },
+ {
+  "id": 14,
+  "name": "Monopatin electrico Ninebot-Max",
+  "description": "Con el Smart TV Samsung UN50MU6100, viví una nueva experiencia visual con la resolución 4K, que te presentará imágenes con gran detalle y de alta calidad. Ahora todo lo que veas cobrará vida con brillo y colores más reales. Gracias a su tamaño de 50\", podrás transformar tu espacio en una sala de cine y transportarte a donde quieras.",
+  "price": 34990,
+  "discount": 0,
+  "image": "mp-300-Ninebot-KICKSCOOTER-Max.png",
+  "category": "monopatines"
+ },
+ {
+  "id": 15,
+  "name": "Monopatin Electrico Ninebot-ES2",
+  "description": "Disfruta de tus películas favoritas con hasta cuatro veces más detalles que Full HD, gracias a la conversión de señales 4K. Cuando se conecta a un televisor compatible,un procesador de video avanzado convierte el video estándar en una señal cercana a la resolución 4K (3840 x 2160). Con ocho millones de píxeles, obtendrás imágenes más nítidas y detalladas, y la mayor calidad de la image te permite sentarte más cerca de la pantalla para que te sientas como en el cine.",
+  "price": 20999,
+  "discount": 5,
+  "image": "mp-301-Segway-Ninebot-Kickscooter-ES2.png",
+  "category": "monopatines"
+ },
+ {
+  "id": 16,
+  "name": "Monopatin Electrico Segway",
+  "description": "Bicicleta Mountain Bike Fierce Rodado 29 21 velocidades. Tipo: Mountain Bike. Rodado: 29. Material Cuadro: Aluminio. Talle: 18. Suspensión: Delantera. Velocidades: 21 - Shimano. Sistema de Freno: Disco Mecánico. Llantas: Doble pared.",
+  "price": 15979,
+  "discount": 12,
+  "image": "mp-302-Ninebot-Segway-KickScooter.jpg",
+  "category": "monopatines"
+ },
+
+ {
+  "id": 17,
+  "name": "Monopatin Electrico Ninebot-air-t15",
+  "price": 23699,
+  "discount": 5,
+  "description": "Deja que la música dance cobre vida con EXTRA BASS™ Anima el ambiente con EXTRA BASS™1. Un radiador pasivo trabaja con el parlante monoaural para potenciar los tonos bajos y mejorar los graves, a pesar del tamaño compacto. ",
+  "image": "mp-303-ninebot-air-t15.png",
+  "category": "monopatines"
+ }
+]
