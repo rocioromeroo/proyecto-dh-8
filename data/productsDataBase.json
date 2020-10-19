@@ -19,11 +19,11 @@
  },
  {
   "id": 3,
-  "name": "Bateria externa Segway Ninebot Kickscooter",
+  "name": "Bateria externa de monopatin ",
   "price": 2299,
   "discount": 25,
   "category": "accesorios",
-  "description": "The Extended Battery is compatible with the Ninebot KickScooter by Segway ES1 & ES2. It is easy to install and nearly doubles the range of both models from 15.5 miles to 28 miles. It also increases the speed of the ES1 and ES2 to 15.5 mph and 18.6 mph respectively.",
+  "description": "The Extended Battery is compatible with the Ninebot KickScooter by Segway ES1 & ES2. It is easy to install and nearly doubles the range of both models from 15.5 miles to 28 miles.",
   "image": "acc-102-External-BATERIA.png"
  },
  {

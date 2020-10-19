@@ -3,21 +3,24 @@
 .p-5{padding: 5%;}
 
 .justify-btw {justify-content: space-between;}
+.just-cont-cent{justify-content: center;}
+.aligne-btw{align-content: space-around;}
 .f-d-column{flex-direction: column;}
-.w-24{width: 24%;}
+
 .h-460{height: 460;}
-.h-70{height: 70%;}
+.h-50{height: 50%;}
+.p-style{text-transform: initial;}
+.h-style{text-transform: uppercase;}
 
 
 .u-items{
       width: 24%;
-      height: 460px;
+      height: 500px;
       flex-direction: column;
       padding: 5px;
       background-color: white;
       border: 1px solid var(--border-color-grey);
       margin-bottom: 10px;
 }
-.img-size{
-     height: 100%;
-}
+.img-size{height: 100%;}
+
