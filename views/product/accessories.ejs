@@ -2,7 +2,26 @@
 <%- include('../partial/head') %> 
 <body>
       <%- include("../partial/header") %> 
-      <main></main>
+      <main>
+            <section class="d-a-flex d-a-wrap justify-btw p-5" >
+                  <% let productos = productsList.map(function(items) { 
+                        %>
+                  <article class="u-items d-a-flex justify-btw" > 
+                        <div class="h-70">
+                              <img class="img-size" src="<%= items.image  %>" alt="">
+                        </div>
+
+                        <div class="article-base" >
+                              <h3><%= items.name   %></h3>
+                              <p><%= items.description   %></p>
+                              <a class="ver-mas" href="/productDetail">Ver mas</a>
+                              <a class="add-car" href="/productCart">Agregar al carrito</a>
+                        </div>
+                        
+                  </article>
+                  <% }) %>
+            </section>   
+      </main>
       <%- include("../partial/footer") %> 
 </body>
 </html>

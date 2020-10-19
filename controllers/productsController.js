@@ -1,3 +1,5 @@
+const productsList = require('../data/productsDataBase')
+
 const productsController= {
 
       products: function(req, res){
@@ -5,7 +7,7 @@ const productsController= {
       },
 
       accessories: function(req, res){
-        res.render('./product/accessories')
+        res.render('./product/accessories', {productsList: productsList})
     },
     
 

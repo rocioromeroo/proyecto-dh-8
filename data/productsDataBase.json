@@ -15,7 +15,7 @@
   "discount": 3,
   "category": "accesorios",
   "description": " Made of water-resistant nylon with polyester lining, the 15.6 inch Segway Ninebot Backpack comes with built-in USB port.",
-  "image": "acc-101-backpack-pj.jpeg"
+  "image": "https://au.segway.com/web/image/product.template/12717/image?unique=8f09405"
  },
  {
   "id": 3,
@@ -83,7 +83,7 @@
  {
   "id": 10,
   "name": "Monociclo SEGWAY S2",
-  "description": "",
+  "description": "Potencia y Estabilidad con un Diseño Innovador. El corazón de nuestro Smart Balance late con fuerza gracias a su batería li-ion, que le confiere una autonomía de hasta 20 kilómetros, gracias a una capacidad de carga de 4400mAh.",
   "price": 11399,
   "discount": 0,
   "image": "mc-400-SEGWAY-ONE-S2.jpeg",
@@ -92,7 +92,7 @@
  {
   "id": 11,
   "name": "SEGWAY-NINEBOT-ONE-Z10",
-  "description": "Uso más cómodo para la mano derecha gracias a la forma contorneada con recubrimiento de goma blanda. Duración de las pilas hasta 18 meses, gracias al diseño para ahorrar energía.El M280 entra automáticamente en estado de suspensión cuando no se está usando.",
+  "description": "Potencia y Estabilidad con un Diseño Innovador. El corazón de nuestro Smart Balance late con fuerza gracias a su batería li-ion, que le confiere una autonomía de hasta 20 kilómetros, gracias a una capacidad de carga de 4400mAh.",
   "price": 22000,
   "discount": 10,
   "image": "mc-401-SEGWAY-NINEBOT-ONE-Z10.jpeg",
@@ -101,7 +101,7 @@
  {
   "id": 12,
   "name": "Monociclo Segway-PRO-WHITE",
-  "description": "Parlante Inalámbrico Bose Soundtouch 10. SoundTouch®.La manera más sencilla de reproducir música en todo su hogar de forma inalámbrica. Características. » Marca: Bose. » Modelo: SoundTouch. » Color: Negro",
+  "description": "Potencia y Estabilidad con un Diseño Innovador. El corazón de nuestro Smart Balance late con fuerza gracias a su batería li-ion, que le confiere una autonomía de hasta 20 kilómetros, gracias a una capacidad de carga de 4400mAh.",
   "price": 29990,
   "discount": 12,
   "image": "mc-402-segway-PRO-WHITE.jpg",
@@ -110,7 +110,7 @@
  {
   "id": 13,
   "name": "Karting Electrico",
-  "description": "El sonido Surround de 5.1 canales y 1000 W proporciona un audio de verdadero impacto en los efectos especiales de películas y efectos de sonido de música y deportes. Con la tecnología Near Field Communication(NFC) podés disfrutar de Sonido One- Touch para reproducir música de forma instantánea",
+  "description": "Con el karting eléctrico vas a poder moverte de forma LIMPIA y ECOLÓGICA por toda la ciudad.Con su gran autonomía, suave aceleración y una velocidad máxima de 20 km/h, es ideal para recorrer la ciudad o trabajar sin gastar en combustible.",
   "price": 62990,
   "discount": 0,
   "image": "mc-403-go-KART.jpg",
@@ -119,7 +119,7 @@
  {
   "id": 14,
   "name": "Monopatin electrico Ninebot-Max",
-  "description": "Con el Smart TV Samsung UN50MU6100, viví una nueva experiencia visual con la resolución 4K, que te presentará imágenes con gran detalle y de alta calidad. Ahora todo lo que veas cobrará vida con brillo y colores más reales. Gracias a su tamaño de 50\", podrás transformar tu espacio en una sala de cine y transportarte a donde quieras.",
+  "description": "Práctico, rápido y económico.Con todas las ventajas de la micromovilidad, ideal para recorrer distancias cortas en entornos urbanos.De aluminio, plegable y ultraliviano.",
   "price": 34990,
   "discount": 0,
   "image": "mp-300-Ninebot-KICKSCOOTER-Max.png",
@@ -128,7 +128,7 @@
  {
   "id": 15,
   "name": "Monopatin Electrico Ninebot-ES2",
-  "description": "Disfruta de tus películas favoritas con hasta cuatro veces más detalles que Full HD, gracias a la conversión de señales 4K. Cuando se conecta a un televisor compatible,un procesador de video avanzado convierte el video estándar en una señal cercana a la resolución 4K (3840 x 2160). Con ocho millones de píxeles, obtendrás imágenes más nítidas y detalladas, y la mayor calidad de la image te permite sentarte más cerca de la pantalla para que te sientas como en el cine.",
+  "description": "Práctico, rápido y económico. Con todas las ventajas de la micromovilidad, ideal para recorrer distancias cortas en entornos urbanos.De aluminio, plegable y ultraliviano.",
   "price": 20999,
   "discount": 5,
   "image": "mp-301-Segway-Ninebot-Kickscooter-ES2.png",
@@ -137,7 +137,7 @@
  {
   "id": 16,
   "name": "Monopatin Electrico Segway",
-  "description": "Bicicleta Mountain Bike Fierce Rodado 29 21 velocidades. Tipo: Mountain Bike. Rodado: 29. Material Cuadro: Aluminio. Talle: 18. Suspensión: Delantera. Velocidades: 21 - Shimano. Sistema de Freno: Disco Mecánico. Llantas: Doble pared.",
+  "description": "Práctico, rápido y económico. Con todas las ventajas de la micromovilidad, ideal para recorrer distancias cortas en entornos urbanos.De aluminio, plegable y ultraliviano.",
   "price": 15979,
   "discount": 12,
   "image": "mp-302-Ninebot-Segway-KickScooter.jpg",
@@ -149,7 +149,7 @@
   "name": "Monopatin Electrico Ninebot-air-t15",
   "price": 23699,
   "discount": 5,
-  "description": "Deja que la música dance cobre vida con EXTRA BASS™ Anima el ambiente con EXTRA BASS™1. Un radiador pasivo trabaja con el parlante monoaural para potenciar los tonos bajos y mejorar los graves, a pesar del tamaño compacto. ",
+  "description": "Práctico, rápido y económico. Con todas las ventajas de la micromovilidad, ideal para recorrer distancias cortas en entornos urbanos.De aluminio, plegable y ultraliviano.",
   "image": "mp-303-ninebot-air-t15.png",
   "category": "monopatines"
  }

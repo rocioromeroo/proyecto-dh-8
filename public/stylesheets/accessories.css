@@ -1,0 +1,23 @@
+.d-a-flex{display: flex;}
+.d-a-wrap{flex-wrap: wrap;}
+.p-5{padding: 5%;}
+
+.justify-btw {justify-content: space-between;}
+.f-d-column{flex-direction: column;}
+.w-24{width: 24%;}
+.h-460{height: 460;}
+.h-70{height: 70%;}
+
+
+.u-items{
+      width: 24%;
+      height: 460px;
+      flex-direction: column;
+      padding: 5px;
+      background-color: white;
+      border: 1px solid var(--border-color-grey);
+      margin-bottom: 10px;
+}
+.img-size{
+     height: 100%;
+}

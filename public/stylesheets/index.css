@@ -243,13 +243,13 @@ article.home-producto{
 p{
       font-size: 0.9em;
 }
-h3{
+#home-main h3{
       font-size: 1.1em;
       font-weight: 600;
       text-transform: uppercase;
       margin-bottom: 10px;
 }
-h3 a{
+#home-main h3 a{
       width: 100%;
       font-size: 0.8em; 
       text-align: start;
