@@ -11,15 +11,17 @@
 .h-50{height: 50%;}
 .p-style{text-transform: initial;}
 .h-style{text-transform: uppercase;}
+.w-100{width: 100%;}
 
 
 .u-items{
-      width: 24%;
+      width: 30%;
       height: 500px;
       flex-direction: column;
       padding: 5px;
       background-color: white;
       border: 1px solid var(--border-color-grey);
+      border-radius: 13px;
       margin-bottom: 10px;
 }
 .img-size{height: 100%;}

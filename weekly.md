@@ -11,9 +11,9 @@ Se encontro algun impedimento:
 Que se hace hoy:
 
 Nusfaumer Leonel
-Que se hizo ayer: 
-Se encontro algun impedimento:
-Que se hace hoy:
+Que se hizo ayer: Armado ruta y view accesorio con funcion.
+Se encontro algun impedimento: No se podian cargar las fotos (solucionado). Faltan algunos stylos al ejs de accesorios.
+Que se hace hoy: Probar funciones y logica para agregar y editar archivos.
 
 Dominguez Gaston
 Que se hizo ayer: Se charlo sobre el sprint-3, se repaso las tareas y se armo el tablero de control
