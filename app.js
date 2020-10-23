@@ -12,6 +12,7 @@ const loginRouter= require('./routes/login')
 const registerRouter= require('./routes/register')
 const contactRouter= require('./routes/contact')
 const productFormRouter= require('./routes/productForm')
+const productCartRouter = require('./routes/productCart');
 
 var app = express();
 
@@ -33,6 +34,7 @@ app.use('/login', loginRouter);
 app.use('/register', registerRouter);
 app.use('/contact', contactRouter);
 app.use('/productForm', productFormRouter);
+app.use('/productCart', productCartRouter);
 
 
 
