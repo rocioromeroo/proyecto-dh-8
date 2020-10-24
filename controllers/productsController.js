@@ -7,8 +7,18 @@ const productsController= {
       },
 
       accessories: function(req, res){
-        res.render('./product/accessories', {productsList: productsList})
+        let items = productsList.filter(function(valor){
+          if (valor.category == "accesorios"){
+            return valor
+          }
+        })
+        
+        res.render('./product/accessories', {items: items})
     },
+     
+
+
+    
     
 
   }

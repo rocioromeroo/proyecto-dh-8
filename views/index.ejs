@@ -54,20 +54,22 @@
                         <h2>Productos</h2>
                         <a class="link-ver-mas" href="/products">Ver mas productos</a>
                   </div>
+                  <% for (let dato of items) {%>
                   <article class="home-producto">
                         <div class="article-img">
-                              <img src="/images/monopatines/mp-301-Segway-Ninebot-Kickscooter-ES2.png" alt="">
+                              <img src="/images/monociclos/<%= dato.image %>" alt="">
                         </div>
                         <div class="article-base">
-                              <h3>Nombre del producto</h3>
-                              <h2>$100</h2>
+                              <h3><%= dato.name   %></h3>
+                              <h2>$<%= dato.price   %></h2>
                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, cupiditate.</p>
                               <a class="ver-mas" href="/productDetail">Ver mas</a>
                               <a class="add-car" href="/productCart">Agregar al carrito</a>
-                        </div>
-                        
+                        </div>      
                   </article>
-                  <article class="home-producto">
+                  <%}%>
+
+                  <!-- <article class="home-producto">
                         <div class="article-img">
                               <img src="/images/monopatines/mp-301-Segway-Ninebot-Kickscooter-ES2.png" alt="">
                         </div>
@@ -102,7 +104,7 @@
                               <a class="ver-mas" href="/productDetail">Ver mas</a>
                               <a class="add-car" href="/productCart">Agregar al carrito</a>
                         </div>
-                  </article>
+                  </article> -->
             </section>
             
             <section id="accesorios" class="pad-section">
