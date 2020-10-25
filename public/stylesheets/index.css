@@ -27,7 +27,8 @@ a:visited{
 }
 .bg-white{  background-color: white; }
 .br-gray{ border: 1px solid var(--border-color-grey);}
-.d-flex{ display: flex; flex-wrap: wrap;}
+.d-flex{ display: flex}
+.flex-wrap{flex-wrap: wrap;}
 .a-i-center{align-items: center; justify-content: center;}
 .width-70{width: 70%;}
 .order-1{order: 1;}
@@ -112,6 +113,7 @@ article.home-producto{
       flex-wrap: wrap;
       align-items: center;
       max-width: 330px;
+      height: 80vh;
       border-radius: 13px;
       box-shadow: 0 0 10px 5px #dedede80;
       margin-bottom: 20px;

@@ -152,5 +152,41 @@
   "description": "Práctico, rápido y económico. Con todas las ventajas de la micromovilidad, ideal para recorrer distancias cortas en entornos urbanos.De aluminio, plegable y ultraliviano.",
   "image": "mp-303-ninebot-air-t15.png",
   "category": "monopatines"
- }
+ },
+ {  
+ "id": 18,
+ "name": "Bicicleta Electrica Mountagne Blanca",
+ "description": "Se destaca en cualquier terreno, especialmente en subidas y bajadas empinadas. Desde subidas a curvas pronunciadas, las cubiertas de 27,5 de ancho ofrecen una tracción sobresaliente.",
+ "price": 104800,
+ "discount": 2,
+ "image": "bic-201-black-.jpg",
+ "category": "visitados"
+},
+{  
+"id": 19,
+"name": "Monociclo SEGWAY S2",
+"description": "Potencia y Estabilidad con un Diseño Innovador. El corazón de nuestro Smart Balance late con fuerza gracias a su batería li-ion, que le confiere una autonomía de hasta 20 kilómetros, gracias a una capacidad de carga de 4400mAh.",
+"price": 11399,
+"discount": 0,
+"image": "mc-406-MONOCICLO-CICLO.png",
+"category": "visitados"
+},
+{
+    "id": 20,
+    "name": "Monopatin Electrico Ninebot-ES2",
+    "description": "Práctico, rápido y económico. Con todas las ventajas de la micromovilidad, ideal para recorrer distancias cortas en entornos urbanos.De aluminio, plegable y ultraliviano.",
+    "price": 20999,
+    "discount": 5,
+    "image": "mp-301-Segway-Ninebot-Kickscooter-ES2.png",
+    "category": "visitados"
+   },
+   {
+    "id": 21,
+    "name": "Monopatin Electrico Segway",
+    "description": "Práctico, rápido y económico. Con todas las ventajas de la micromovilidad, ideal para recorrer distancias cortas en entornos urbanos.De aluminio, plegable y ultraliviano.",
+    "price": 15979,
+    "discount": 12,
+    "image": "mp-302-Ninebot-Segway-KickScooter.jpg",
+    "category": "visitados"
+   }
 ]
