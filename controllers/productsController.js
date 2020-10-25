@@ -25,11 +25,18 @@ const productsController= {
 
       res.render("./product/productDetail", {detalle: detalle})
   },
+    
+  cart: function(req, res){
+    let carrito = productsList.filter(function(valor){
+      if (valor.id == req.params.id){
+        return valor
+      }
+    })
+      res.render('./product/productCart', {carrito: carrito})
+    }
+}
 
     
-    
-
-  }
   
   
   module.exports= productsController;
