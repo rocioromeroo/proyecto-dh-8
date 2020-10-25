@@ -5,4 +5,5 @@ Retroespectiva - Sprint-1
 
 Retroespectiva - Sprint-2
 
-    A traves de la generacion de codigo HTLM y CSS pudimos comenzar a conocer como diseñar esteticamente una pagina, cada uno avocado a una pagina en particular y escuchando las mejoras de los demas participantes mediantes las charlas por zoom que fuimos realizando. Fuimos ajustando letras, estructuras de flexbox, porcentajes de images y demas para poder unificar criterios y estilizar la pagina para una mejor interfaz de usuario, pudimos tambien agregar paginas adicionales al diseño original.
+    A traves de la generacion de codigo HTLM y CSS pudimos comenzar a conocer como diseñar esteticamente una pagina, cada uno avocado a una pagina en particular y escuchando las mejoras de los demas participantes mediantes las charlas por zoom que fuimos realizando. Fuimos ajustando letras, estructuras de flexbox, porcentajes de images y demas para poder unificar criterios y estilizar la pagina para una mejor interfaz de usuario, pudimos tambien agregar paginas adicionales al diseño original. 
+    Nos encontramos comodos con una forma de trabajar, en donde cada uno se avoca individualmente y luego hacemos una puesta en comun en las reuniones semanales. 
