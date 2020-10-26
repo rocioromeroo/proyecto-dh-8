@@ -10,7 +10,11 @@ module.exports = {
         
       create: function(req, res){
             res.render("user/create")
-      }   
+      },
+      
+      contact:function(req, res){
+            res.render("user/contact")
+        }
 
   }
   
