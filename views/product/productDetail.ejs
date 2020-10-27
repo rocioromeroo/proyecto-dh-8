@@ -15,7 +15,7 @@
         <section id="productos">
             <% for(let valor of detalle) { %>
             <div class="b-radius-0-0-13-13 centrado">
-                <img src="/images/visitados/<%= valor.image %>" alt="" class="w-100 b-radius-13-13-0-0">
+                <img src="/images/<%= valor.category %>/<%= valor.image %>" alt="" class="w-100 b-radius-13-13-0-0">
             </div>
             <div class="prod-dv3 p-20">
                 <div class="t-tran-u f-weig-b">
@@ -195,7 +195,7 @@
                     <h2 class="ta-c p-10">Casco</h2>
                 </div>
                 <div class="img-c">
-                    <img src="/images/accesorios/<%= valor.image %>" alt="" class="w-100 b-radius-13">
+                    <img src="/images/<%= valor.category %>/<%= valor.image %>" alt="" class="w-100 b-radius-13">
                 </div>
                 <div>
                     <div class="carr f-size-10 t-tran-u tran-035">

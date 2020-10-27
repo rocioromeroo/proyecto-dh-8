@@ -26,3 +26,13 @@
 }
 .img-size{height: 100%;}
 
+@media (max-width: 1024px){
+      .u-items{width: 49%;}
+}
+
+@media (max-width: 570px){
+      .u-items{width: 100%;}
+}
+
+
+
