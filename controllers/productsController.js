@@ -17,7 +17,7 @@ const productsController= {
     },
      
     detail: function(req, res){
-      let detalle = productsList.find(function(valor){
+      let detalle = productsList.filter(function(valor){
         if (valor.id == req.params.id){
           return valor
         }

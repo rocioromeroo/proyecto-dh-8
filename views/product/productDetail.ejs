@@ -13,22 +13,24 @@
     <%- include("../partial/header") %>
     <main id="principal" class="d-flex fd-colu">
         <section id="productos">
+            <% for(let valor of detalle) { %>
             <div class="b-radius-0-0-13-13 centrado">
-                <img src="/images/monopatines/mp-301-Segway-Ninebot-Kickscooter-ES2.png" alt="" class="w-100 b-radius-13-13-0-0">
+                <img src="/images/visitados/<%= valor.image %>" alt="" class="w-100 b-radius-13-13-0-0">
             </div>
             <div class="prod-dv3 p-20">
                 <div class="t-tran-u f-weig-b">
                     <h2>Fiat</h2>
-                    <h3>Monopatin 500 F-80</h3>
+                    <h3><%= valor.name %></h3>
                 </div>
                 <div class="d-flex">
-                    <p class="m-right-10 f-size-10 t-deco-lt a-self-c">$ 35.000</p>
-                    <p class="descuento f-size-10">20% OFF</p>
+                    <p class="m-right-10 f-size-10 t-deco-lt a-self-c">$ <%= valor.price %></p>
+                    <p class="descuento f-size-10"><%= valor.discount %> % OFF</p>
                 </div>  
                 <div >
-                    <p class="p-final">$ 30.000</p>
+                    <p class="p-final">$ <%= valor.price %></p>
                 </div>
             </div>
+            <% } %>
             <div class="d-flex-r f-size-10">
                 <div class="t-tran-u">
                     <p>Cantidad</p>
@@ -48,7 +50,7 @@
                 </div>
             </div>
             <div class="carr f-size-10 t-tran-u tran-035">
-                <a href="/productCart">Agregar al Carrito</a>
+                <a href="/products/productCart">Agregar al Carrito</a>
             </div>
         </section>
         <div id="agrupe" class="d-flex">
@@ -187,23 +189,25 @@
             </div>
         </section>        
         <section id="relaciones">
+            <% for(let valor of detalle) { %>
             <div class="acces">
                 <div >
                     <h2 class="ta-c p-10">Casco</h2>
                 </div>
                 <div class="img-c">
-                    <img src="images/accesorios/acc-103-CASCO-w01.jpg" alt="" class="w-100 b-radius-13">
+                    <img src="/images/accesorios/<%= valor.image %>" alt="" class="w-100 b-radius-13">
                 </div>
                 <div>
                     <div class="carr f-size-10 t-tran-u tran-035">
-                        <a href="/productCart">Agregar al Carrito</a>
+                        <a href="/products/productCart">Agregar al Carrito</a>
                     </div>
                     <div class="ver f-size-10 t-tran-u tran-035">
                         <a href="/">Ver Mas</a>
                     </div>
                 </div>
             </div>
-            <div class="acces">
+            <% } %>
+            <!-- <div class="acces">
                 <div >
                     <h2 class="ta-c p-10">Bateria Externa</h2>
                 </div>
@@ -212,7 +216,7 @@
                 </div>
                 <div>
                     <div class="carr f-size-10 t-tran-u tran-035">
-                        <a href="/productCart">Agregar al Carrito</a>
+                        <a href="/products/productCart">Agregar al Carrito</a>
                     </div>
                     <div class="ver f-size-10 t-tran-u tran-035">
                         <a href="/">Ver Mas</a>
@@ -228,13 +232,13 @@
                 </div>
                 <div>
                     <div class="carr f-size-10 t-tran-u tran-035">
-                        <a href="/productCart">Agregar al Carrito</a>
+                        <a href="/products/productCart">Agregar al Carrito</a>
                     </div>
                     <div class="ver f-size-10 t-tran-u tran-035">
                         <a href="/">Ver Mas</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section>
     </main>
     <%- include("../partial/footer") %>

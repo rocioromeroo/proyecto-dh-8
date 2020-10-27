@@ -6,6 +6,7 @@ let productsController= require("../controllers/productsController");
 router.get('/', productsController.products)
 
 router.get('/:id/productDetail', productsController.detail)
+
 router.get('/productCart', productsController.cart)
 
 

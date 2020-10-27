@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
 router.get('/register', usersController.register)
 router.get('/login', usersController.login)
 router.get('/create', usersController.create)
-
+router.get('/contact', usersController.contact)
 
 
 

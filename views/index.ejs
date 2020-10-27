@@ -17,7 +17,7 @@
                         <article class="nov-caja nov-caja1 n-size d-flex flex-wrap">
                               <div class="nov-img-contain width-50 width-100 height-50 d-flex-wrap a-i-center a-i-start order-1">
                                     <img class="n-img-size d-flex flex-wrap" src="/images/monociclos/mc-403-go-KART.jpg"alt="imagen-mc">
-                                    <a href="/products/13/productDetail" class="h2-nov width-70">VER MAS</a>
+                                    <a href="/products/productDetail" class="h2-nov width-70">VER MAS</a>
                               </div>
                               <div class="nov-des-contain width-50 width-100 height-50 d-flex flex-wrap a-i-center" >
                                     <h3>Nombre del producto</h3>
@@ -28,7 +28,7 @@
                               <article class="nov-caja nov-caja2 n-size d-flex flex-wrap">
                                     <div class="nov-img-contain width-50 d-flex-wrap a-i-center">
                                           <img class="n-img-size d-flex flex-wrap max-height" src="/images/monociclos/mc-402-segway-PRO-WHITE.jpg"  alt="Kart">
-                                          <a href="/products/12/productDetail" class="h2-nov width-70">VER MAS</a>
+                                          <a href="/products/productDetail" class="h2-nov width-70">VER MAS</a>
                                     </div>   
                                     <div class="nov-des-contain width-50 d-flex flex-wrap a-i-center">
                                           <h3>Nombre del producto</h3>
@@ -38,7 +38,7 @@
                               <article class="nov-caja nov-caja3 n-size d-flex flex-wrap">
                                     <div class="nov-img-contain  width-50 d-flex flex-wrap a-i-center order-1">
                                           <img class="n-img-size d-flex flex-wrap max-height" src="/images/bicicletas/bic-200-blue-electric-bike-794411_00.jpg" alt="" height="100%">
-                                          <a href="/products/7/productDetail" class="h2-nov width-70">VER MAS</a>
+                                          <a href="/products/productDetail" class="h2-nov width-70">VER MAS</a>
                                     </div>   
                                     <div class="nov-des-contain width-50 d-flex flex-wrap a-i-center">
                                           <h3>Nombre del producto</h3>
@@ -54,7 +54,7 @@
                         <h2>Productos</h2>
                         <a class="link-ver-mas" href="/products">Ver mas productos</a>
                   </div>
-                  <% for (let dato of items) {%>
+                  <% for (let dato of items) { %>
                   <article class="home-producto">
                         <div class="article-img">
                               <img src="/images/visitados/<%= dato.image %>" alt="">
@@ -63,11 +63,11 @@
                               <h3><%= dato.name   %></h3>
                               <h2>$<%= dato.price   %></h2>
                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, cupiditate.</p>
-                              <a class="ver-mas" href="/products/<%= dato.id   %>/productDetail">Ver mas</a>
+                              <a class="ver-mas" href="/products/<%= dato.id %>/productDetail">Ver mas</a>
                               <a class="add-car" href="/products/productCart">Agregar al carrito</a>
                         </div>      
                   </article>
-                  <%}%>
+                  <% } %>
 
                  
             </section>
@@ -85,8 +85,8 @@
                         <div class="acc-base-contain">
                               <h3><a href="#"><%= i.name%></a></h3>
                               <p class="precio">$<%= i.price%></p>
-                              <a class="ver-mas" href="/products/<%= i.id   %>/productDetail">Ver mas</a>
-                              <a class="add-car" href="/productCart">Agregar al carrito</a>
+                              <a class="ver-mas" href="/products/<%= i.id %>/productDetail">Ver mas</a>
+                              <a class="add-car" href="/products/productCart">Agregar al carrito</a>
                         </div>      
                   </article>
                   <%}%>
