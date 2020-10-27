@@ -1,7 +1,8 @@
 [
  {
   "id": 1,
-  "name": "CANASTO SEGWAY NINEBOT S PLUS",
+  "name": "CANASTO NINEBOT S PLUS",
+  "brand": "Segway",
   "price": 900,
   "discount": 50,
   "category": "accesorios",
