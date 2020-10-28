@@ -6,11 +6,12 @@ module.exports = {
 
       login:function(req, res){
             res.render("user/login")
-        },        
+      },        
 
       contact:function(req, res){
             res.render("user/contact")
       }
 
+      
   }
   
