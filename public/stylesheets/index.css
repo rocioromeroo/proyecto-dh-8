@@ -21,7 +21,7 @@ a:visited{
        --font-color:#219653;
        --bg-font-green-hover:#18683b;
        --bg-font-grey-hover:#5a6268;
-       --color-verde:#219653;
+       --color-verde:rgb(33, 150, 83);
        --border-color-grey: #dcdcdc;
 
 }
@@ -38,11 +38,13 @@ a:visited{
       width: 100%;
       height: 40vh;
       margin-top: 15px;
-      background-color:var(--bg-font-green-hover) ;
+      background: linear-gradient( var(--font-color),rgba(37, 117, 64, 0.7));
+      z-index: 99;
 }
 #banner-carousel img{
-      width: 100%;
+      width: 80%;
       height: 100%;
+      clip-path: polygon(0 0, 69% 0, 100% 100%, 0% 100%);
 }
 /* #home-main{
       margin: 0px 5%;

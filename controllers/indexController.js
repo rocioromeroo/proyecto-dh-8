@@ -12,7 +12,7 @@ const indexController= {
             if(esteDato.category == "accesorios"){
             return esteDato}
           })
-        res.render("index", {items: items, esteAccesorio: esteDato })
+        res.render("index", {items: items, esteAccesorio: esteDato})
     }
 }
 
