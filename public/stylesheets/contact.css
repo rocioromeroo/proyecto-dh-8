@@ -25,7 +25,7 @@
 
 /* Inicio del Encabezado */
 
-ul{
+/* ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -127,7 +127,7 @@ ul{
     color: var(--font-color);
     font-size: 15px;
     padding: 2%;
-}
+} */
 
 /* Fin del Encabezado */
 
@@ -181,7 +181,7 @@ body {
 
 /* Inicio del Pie de Pagina */
 
-footer{
+/* footer{
     width:100%;
     border: solid 1px black;
     padding-right: 10px;
@@ -257,7 +257,7 @@ footer{
     color: white;
     width: 100%;
     font-size: 8px;
-}
+} */
 
 /* Fin del Pie de Pagina */
 
@@ -265,7 +265,7 @@ footer{
 
     /* Inicio del Encabezado */
 
-    .nav-bar{
+    /* .nav-bar{
         display: none;
     }
 
@@ -319,7 +319,7 @@ footer{
         border-radius: 13px;
         width: 7%;
         padding: 0.5%;
-    }
+    } */
 
     /* Fin del Encabezado */
 
@@ -337,7 +337,7 @@ footer{
 
     /* Inicio del Pie de Pagina */
 
-    .foot-logo{
+    /* .foot-logo{
         display: none;
     }
 
@@ -403,7 +403,7 @@ footer{
         color: white;
         width: 100%;
         font-size: 10px;
-    }
+    } */
 
     /* Fin del Pie de Pagina */
 
