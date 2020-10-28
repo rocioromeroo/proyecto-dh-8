@@ -12,10 +12,6 @@
     padding: 0;
 }
 
-body{
-    background-color: var(--body-background);
-}
-
 #navegacion .cuenta{
     font-family: 'Comfortaa', cursive, 'Arial';
     color: white;
@@ -114,8 +110,7 @@ body{
     padding: 2%;
 }
 
-
-.foot1 footer{
+.foot1{
     width:100%;
     border: solid 1px black;
     padding-right: 10px;
