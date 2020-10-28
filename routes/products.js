@@ -15,7 +15,7 @@ let productsController= require("../controllers/productsController");
 
 /* GET Products page. */
 router.get('/', productsController.products)
-
+router.get('/:id/productDetail', productsController.detail)
 router.get('/productCart', productsController.cart)
 
 router.get('/createProduct', productsController.create)
@@ -26,7 +26,6 @@ router.get('/modifyProduct', productsController.create)
 /* GET Products/acc page. */
 router.get('/acc', productsController.accessories)
 
-router.get('/:id/productDetail', productsController.detail)
 
 
 
