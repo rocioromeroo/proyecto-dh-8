@@ -67,6 +67,10 @@ store: function (req, res, next) {
     res.send('Producto creado')
   },
 
+  modify:function(req, res, next){
+    res.render("product/modifyProduct")
+  },
+
   cart: function(req, res){
     let carrito = productsList.filter(function(valor){
       if (valor.id == req.params.id){

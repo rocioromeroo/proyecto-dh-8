@@ -6,7 +6,7 @@
     --bg-font-grey-hover:#5a6268;
 }
 
-ul{
+.enlaces ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -115,7 +115,7 @@ body{
 }
 
 
-footer{
+.foot1 footer{
     width:100%;
     border: solid 1px black;
     padding-right: 10px;

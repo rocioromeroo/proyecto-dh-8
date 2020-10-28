@@ -6,7 +6,7 @@
         --bg-font-grey-hover:#5a6268;
     }
 
-    a{
+    .product-form a{
         text-decoration: none;  
         color: black;
     }
@@ -16,20 +16,13 @@
         color: #219653;
     }
 
-    ul{
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        
-    }
-
-    label{
+    .product-form label{
         font-family: 'Comfortaa', cursive, 'Arial';
-        font-size: 13px;
+        font-size: 15px;
         color: #5a6268;
     }
 
-    textarea{
+    .product-form textarea{
         width: 100%;
         font-family: 'Comfortaa', cursive, 'Arial';
     }
@@ -70,13 +63,11 @@
         border-color: #219653;
     }
 
-    label{
+    .product-form label{
         font-size: 15px;
     }
-     
-    
 
-    input {
+    .product-form input {
         -webkit-writing-mode: horizontal-tb !important;
         text-rendering: auto;
         color:#5a6268;
@@ -102,7 +93,7 @@
         outline: none;
     }
 
-    hr {
+    .product-form hr {
         display: block;
         unicode-bidi: isolate;
         margin-block-start: 0;
@@ -114,56 +105,8 @@
         border-width: 1px;
     }
 
-    body{
+    .body-productForm{
         background-color: #f4f4f4;
-    }
-
-    header{
-        font-family: 'Comfortaa', cursive, 'Arial';
-        color: white;
-        text-align: center;
-        width:100%;
-        padding-top: 5px;
-        padding-bottom: 5px ;
-        padding-left: 10px;
-        padding-right: 10px;
-        border: solid 1px black;
-        box-sizing: border-box;
-        background-color: black;
-        box-shadow: 0 5px 5px 0 rgba(0,0,0,.15);
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    #icons {
-        display: flex;
-        flex-wrap: wrap;
-        align-self: center;
-        font-size: 15px;
-        border: solid 1px white;
-        box-sizing: content-box;
-        background-color: white;
-        border-radius: 13px;
-        width: 15%;
-        justify-content: space-around;
-        padding-bottom: 6px;
-        padding-top: 6px;
-    }
-
-    header a{
-        text-decoration: none;
-        color: black;
-    }
-
-    header p{
-        display: flex;
-        justify-content: flex-end;
-        flex-grow: 1;
-        font-size: 18px;
-        font-weight: bold;
-        align-self: center;
-        padding-left: 50%;
-        padding-right: 2%;
     }
 
     .product-form{
@@ -178,7 +121,7 @@
         margin: auto;
     }
 
-    body h1{
+    .product-form  h1{
         font-family: 'Comfortaa', cursive, 'Arial';
         color:var(--font-color);
         text-align: center;
@@ -195,54 +138,10 @@
         padding-right: 15%;
     }
 
-
     .center1{
         text-align: center;
         padding: 10%;
     }
-
-    .foot{
-        font-family: 'Comfortaa', cursive, 'Arial';
-        color: white;
-        text-align: center;
-        font-size: 15px;
-        box-sizing: border-box;
-        background-color:#f4f4f4;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .links{
-        font-family:'Comfortaa', cursive, 'Arial';
-        color: black;
-        font-weight: bold;
-        display: flex;
-        justify-content: space-around;
-        align-self: center;
-        width:60%;
-        padding: 0%;
-    }
-
-    .logo-mobile{
-        display: none;
-    }
-
-    .logo{
-        display: flex;
-        align-self: flex-start;
-        width: 40%;
-    }
-
-    .copyright{
-        display: flex;
-        align-self: flex-end;
-        align-self: left;
-        justify-content: left;
-        font-family: 'Comfortaa', cursive, 'Arial';
-        color: black;
-        font-size: 10px;
-        width: 100%;
-    }   
 
     @media (max-width:1024px){
 
@@ -258,50 +157,11 @@
             margin: auto;
         }
 
-        body h1{
+        .product-form h1{
             font-family: 'Comfortaa', cursive, 'Arial';
             color:var(--font-color);
             text-align: center;
             font-size: 30px;
             padding: 4%;
-        }
-
-        header p{
-            font-size: 15px;
-        }
-
-        #icons {
-            font-size: 12px;
-        }
-
-        .copyright{
-            display: flex;
-            justify-content: center;
-            font-family: 'Comfortaa', cursive, 'Arial';
-            color: black;
-            font-size: 8px;
-            width: 100%;
-            margin: auto;
-        }
-
-        .logo{
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            margin: auto;
-        }
-
-        .logo-mobile{
-            display: none;
-        }
-
-        .links{
-            font-family:'Comfortaa', cursive, 'Arial';
-            color: black;
-            font-weight: bold;
-            margin: auto;
-            width: 100%;
-            padding-top: 15px;
-            padding-bottom: 15px;
         }
     }
