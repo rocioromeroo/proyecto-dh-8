@@ -6,7 +6,7 @@
     --bg-font-grey-hover:#5a6268;
 }
 
-.links a{
+.footer1-links a{
     text-decoration: none;
     color: black;
 }
@@ -28,7 +28,7 @@
     flex-wrap: wrap;
 }
 
-#icons {
+#header1-icons {
     display: flex;
     flex-wrap: wrap;
     align-self: center;
@@ -59,7 +59,7 @@
     padding-right: 2%;
 }
 
-.foot{
+.footer1-foot{
     font-family: 'Comfortaa', cursive, 'Arial';
     color: white;
     text-align: center;
@@ -70,7 +70,7 @@
     flex-wrap: wrap;
 }
 
-.links{
+.footer1-links{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -84,17 +84,17 @@
     padding: 0%;
 }
 
-.logo-mobile{
+.footer1-logo-mobile{
     display: none;
 }
 
-.logo{
+.footer1-logo{
     display: flex;
     align-self: flex-start;
     width: 40%;
 }
 
-.copyright{
+.footer1-copyright{
     display: flex;
     align-self: flex-end;
     align-self: left;
@@ -111,10 +111,11 @@
         font-size: 15px;
     }
 
-    #icons {
+    #header1-icons{
         font-size: 12px;
     }
-    .copyright{
+
+    .footer1-copyright{
         display: flex;
         justify-content: center;
         font-family: 'Comfortaa', cursive, 'Arial';
@@ -124,18 +125,18 @@
         margin: auto;
     }
 
-    .logo{
+    .footer1-logo{
         display: flex;
         justify-content: center;
         width: 100%;
         margin: auto;
     }
 
-    .logo-mobile{
+    .footer1-logo-mobile{
         display: none;
     }
 
-    .links{
+    .footer1-links{
         font-family:'Comfortaa', cursive, 'Arial';
         color: black;
         font-weight: bold;
