@@ -1,0 +1,147 @@
+:root{
+    --body-background:#f4f4f4;
+    --articles-bg:white;
+    --font-color:#219653;
+    --bg-font-green-hover:#18683b;
+    --bg-font-grey-hover:#5a6268;
+}
+
+.links a{
+    text-decoration: none;
+    color: black;
+}
+
+.header1{
+    font-family: 'Comfortaa', cursive, 'Arial';
+    color: white;
+    text-align: center;
+    width:100%;
+    padding-top: 5px;
+    padding-bottom: 5px ;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: solid 1px black;
+    box-sizing: border-box;
+    background-color: black;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,.15);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#icons {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    font-size: 15px;
+    border: solid 1px white;
+    box-sizing: content-box;
+    background-color: white;
+    border-radius: 13px;
+    width: 15%;
+    justify-content: space-around;
+    padding-bottom: 6px;
+    padding-top: 6px;
+}
+
+.header1 a{
+    text-decoration: none;
+    color: black;
+}
+
+.header1 p{
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    font-size: 18px;
+    font-weight: bold;
+    align-self: center;
+    padding-left: 50%;
+    padding-right: 2%;
+}
+
+.foot{
+    font-family: 'Comfortaa', cursive, 'Arial';
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    box-sizing: border-box;
+    background-color:#f4f4f4;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.links{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family:'Comfortaa', cursive, 'Arial';
+    color: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    width:60%;
+    padding: 0%;
+}
+
+.logo-mobile{
+    display: none;
+}
+
+.logo{
+    display: flex;
+    align-self: flex-start;
+    width: 40%;
+}
+
+.copyright{
+    display: flex;
+    align-self: flex-end;
+    align-self: left;
+    justify-content: left;
+    font-family: 'Comfortaa', cursive, 'Arial';
+    color: black;
+    font-size: 10px;
+    width: 100%;
+}
+
+@media (max-width:1024px){
+
+    .header1 p{
+        font-size: 15px;
+    }
+
+    #icons {
+        font-size: 12px;
+    }
+    .copyright{
+        display: flex;
+        justify-content: center;
+        font-family: 'Comfortaa', cursive, 'Arial';
+        color: black;
+        font-size: 8px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .logo{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+    }
+
+    .logo-mobile{
+        display: none;
+    }
+
+    .links{
+        font-family:'Comfortaa', cursive, 'Arial';
+        color: black;
+        font-weight: bold;
+        margin: auto;
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
