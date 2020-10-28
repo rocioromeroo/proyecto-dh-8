@@ -12,14 +12,14 @@
 <body>
     <%- include("../partial/header") %>
     <main id="principal" class="d-flex fd-colu">
+        <% for(let valor of detalle) { %>
         <section id="productos">
-            <% for(let valor of detalle) { %>
             <div class="b-radius-0-0-13-13 centrado">
                 <img src="/images/<%= valor.category %>/<%= valor.image %>" alt="" class="w-100 b-radius-13-13-0-0">
             </div>
             <div class="prod-dv3 p-20">
                 <div class="t-tran-u f-weig-b">
-                    <h2>Fiat</h2>
+                    <h2><%= valor.brand %></h2>
                     <h3><%= valor.name %></h3>
                 </div>
                 <div class="d-flex">
@@ -30,7 +30,6 @@
                     <p class="p-final">$ <%= valor.price %></p>
                 </div>
             </div>
-            <% } %>
             <div class="d-flex-r f-size-10">
                 <div class="t-tran-u">
                     <p>Cantidad</p>
@@ -59,11 +58,7 @@
                     <div class="d-flex-c">
                         <h3 class="b-top1 b-botto1 p-10-20">Informacion del Producto</h3>
                         <div class="div1-a">
-                            <p class="p-10-20 d-none ta-j">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Minus sed consequuntur voluptatibus a impedit laudantium 
-                                eum corporis reiciendis nulla, fugit error, itaque 
-                                exercitationem? Iste, maiores. Architecto ea dolorem 
-                                laboriosam ab!</p>
+                            <p class="p-10-20 d-none ta-j"><%= valor.description %></p>
                         </div>
                     </div> 
                 </div>
@@ -183,6 +178,7 @@
                 </div>
             </section>
         </div>
+        <% } %>
         <section id="accesorios">
             <div class="acces_style f-size-10">
                 <h2 class="t-tran-u">Accesorios</h2>
@@ -190,9 +186,11 @@
         </section>        
         <section id="relaciones">
             <% for(let valor of detalle) { %>
+                <% for(let i=0; i<3; i++) { %>
+                
             <div class="acces">
                 <div >
-                    <h2 class="ta-c p-10">Casco</h2>
+                    <h2 class="ta-c p-10"><%= valor.name %></h2>
                 </div>
                 <div class="img-c">
                     <img src="/images/<%= valor.category %>/<%= valor.image %>" alt="" class="w-100 b-radius-13">
@@ -206,6 +204,7 @@
                     </div>
                 </div>
             </div>
+                <% } %>
             <% } %>
             <!-- <div class="acces">
                 <div >
