@@ -25,7 +25,14 @@ const productsController= {
         }
       })
 
-      res.render("./product/productDetail", {detalle: detalle})
+      let verificar = productsList.filter(function(dato){
+        if (dato.category == "accesorios"){
+          return dato
+        }
+      })
+      let detalleAccesorio = verificar.slice(0, 3);
+
+      res.render("./product/productDetail", {detalle: detalle, detalleAccesorio: detalleAccesorio})
   },
     
   create: function(req, res, next){

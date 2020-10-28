@@ -180,17 +180,18 @@
         </div>
         <% } %>
         <section id="accesorios">
-            <div class="acces_style f-size-10">
+            <div class="acces_style f-size-70">
                 <h2 class="t-tran-u">Accesorios</h2>
             </div>
         </section>        
         <section id="relaciones">
-            <% for(let valor of detalle) { %>
-                <% for(let i=0; i<3; i++) { %>
+            
+            
+            <% for(let valor of detalleAccesorio) { %>    
                 
             <div class="acces">
                 <div >
-                    <h2 class="ta-c p-10"><%= valor.name %></h2>
+                    <h2 class="ta-c t-tran-c p-10"><%= valor.name %></h2>
                 </div>
                 <div class="img-c">
                     <img src="/images/<%= valor.category %>/<%= valor.image %>" alt="" class="w-100 b-radius-13">
@@ -204,7 +205,7 @@
                     </div>
                 </div>
             </div>
-                <% } %>
+                
             <% } %>
             <!-- <div class="acces">
                 <div >
