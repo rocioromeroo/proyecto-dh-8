@@ -9,10 +9,15 @@
     <link rel="stylesheet" href="/stylesheets/productDetail.css">
     <title>Productos</title>
 </head>
+
 <body>
+
     <%- include("../partial/header") %>
+
     <main id="principal" class="d-flex fd-colu">
+
         <% for(let valor of detalle) { %>
+
         <section id="productos">
             <div class="b-radius-0-0-13-13 centrado">
                 <img src="/images/<%= valor.category %>/<%= valor.image %>" alt="" class="w-100 b-radius-13-13-0-0">
@@ -27,7 +32,7 @@
                     <p class="descuento f-size-10"><%= valor.discount %> % OFF</p>
                 </div>  
                 <div >
-                    <p class="p-final">$ <%= valor.price %></p>
+                    <p class="p-final">$ <%= (valor.price) - ((valor.discount * valor.price)/100) %></p>
                 </div>
             </div>
             <div class="d-flex-r f-size-10">
@@ -52,6 +57,7 @@
                 <a href="/products/productCart">Agregar al Carrito</a>
             </div>
         </section>
+
         <div id="agrupe" class="d-flex">
             <section id="descripcion">
                 <div>
@@ -178,12 +184,15 @@
                 </div>
             </section>
         </div>
+
         <% } %>
+
         <section id="accesorios">
             <div class="acces_style f-size-70">
                 <h2 class="t-tran-u">Accesorios</h2>
             </div>
-        </section>        
+        </section> 
+
         <section id="relaciones">
             
             
@@ -201,7 +210,7 @@
                         <a href="/products/productCart">Agregar al Carrito</a>
                     </div>
                     <div class="ver f-size-10 t-tran-u tran-035">
-                        <a href="/">Ver Mas</a>
+                        <a href="/products/<%= valor.id %>/productDetail">Ver Mas</a>
                     </div>
                 </div>
             </div>
@@ -240,7 +249,11 @@
                 </div>
             </div> -->
         </section>
+
     </main>
+
     <%- include("../partial/footer") %>
+
 </body>
+
 </html>

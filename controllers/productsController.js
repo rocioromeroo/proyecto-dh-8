@@ -1,6 +1,7 @@
 var path = require('path');
 var fs = require('fs');
-const productsList = require('../data/productsDataBase')
+const productsList = require('../data/productsDataBase');
+const { PreconditionFailed } = require('http-errors');
 
 const productsController= {
 
@@ -30,7 +31,10 @@ const productsController= {
           return dato
         }
       })
-      let detalleAccesorio = verificar.slice(0, 3);
+
+      let detalleAccesorio = verificar.slice(3, 6);
+
+      
 
       res.render("./product/productDetail", {detalle: detalle, detalleAccesorio: detalleAccesorio})
   },
