@@ -160,11 +160,11 @@ ul{
 /* Fin del Encabezado */
 
 /* Inicio del Cuerpo Principal */
-a {
+.link {
     text-decoration: none;
 }
 
-a:visited {
+.link:visited {
     text-decoration: none;
 }
 
@@ -172,7 +172,7 @@ td {
     padding: 1%;
 }
     
-body {
+.body-01 {
     margin: 0;
     padding: 0;
     background-color: var(--body-background);
@@ -181,7 +181,7 @@ body {
     
 }
 
-#principal {
+#principal1 {
     margin: 40px 15px;
 
 }
@@ -209,10 +209,6 @@ body {
 .i-credit {
     font-size: 160%;
     margin: 20px;
-}
-
-.coute a:visited {
-    
 }
 
 .d-flex-r {
@@ -474,7 +470,7 @@ footer{
 
     /* Inicio de Cuerpo Principal */
 
-    #principal {
+    #principal1 {
         flex-direction: row;
         flex-wrap: wrap;
     }
