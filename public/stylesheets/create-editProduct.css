@@ -126,7 +126,8 @@
         color:var(--font-color);
         text-align: center;
         font-size: 45px;
-        padding: 4%;
+        padding-top: 7%;
+        padding-bottom: 5%;
     }
 
     .new-product{

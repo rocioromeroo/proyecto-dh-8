@@ -161,6 +161,7 @@
 }
 
 .body-login h1{
+    padding-top: 10%;
     font-family: 'Comfortaa', cursive, 'Arial';
     color:var(--font-color);
     text-align: center;

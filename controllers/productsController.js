@@ -67,8 +67,8 @@ store: function (req, res, next) {
     res.send('Producto creado')
   },
 
-  modify:function(req, res, next){
-    res.render("product/modifyProduct")
+    edit:function(req, res, next){
+      res.render("./product/editProduct")
   },
 
   cart: function(req, res){

@@ -1,25 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link type="image/x-icon" rel="shortcut icon" href="/images/favicon.png">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-        <link href="/stylesheets/login.css" rel="stylesheet">
-        <link href="/stylesheets/header1-footer1.css" rel="stylesheet">
+    <%- include("../partial/head")  %> 
         <title>Eletr8 | Login</title>
-    </head>
     <body class="body-login">
-        <header class="header1">
-            <a href="/"><img src="/images/electr8-logo.png" width ="200" height="75" alt="Electr8"></a>
-            <p class="cuentas">Ingresá</p>
-            <div id="header1-icons">
-                <a class="user" href="/users/login"><i class="far fa-user"></i></a>
-                <a class="cart" href="/productCart"><i class="fas fa-shopping-cart" ></i></a>
-                <a class="search" href="/"><i class="fas fa-search" ></i></a>
-            </div>
-        </header>
+        <%- include("../partial/header1") %>
         <br>
         <div class="login">
             <h1>Ingresá a tu cuenta de Electr8</h1>
@@ -61,23 +45,5 @@
     <br>
     <br>
     <hr>
-    <footer>
-        <div class="footer1-foot">
-            <div class="footer1-logo-mobile">
-                <a href=""><img src="/images/electr8-logo.png" aling="left" width ="200" height="70" alt="Electr8"></a>
-            </div>
-            <div class="footer1-logo">
-                <a href=""><img src="/images/electr8-logo.png" aling="left" width ="200" height="70" alt="Electr8"></a>
-            </div>
-            <ul class="footer1-links">
-                <li><a href="/product">Productos</li></a> 
-                <li><a href="/">Acerca de Nosotros</li></a> 
-                <li><a href="/">Redes Sociales</li></a> 
-            </ul> 
-            <div class="footer1-copyright">
-                <br>
-                <p>Copyright © 2020. Electr8 todos los derechos reservados</p>
-            </div>
-        </div>
-    </footer>
+    <%- include("../partial/footer1") %>
 </body>

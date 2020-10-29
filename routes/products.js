@@ -20,7 +20,7 @@ router.get('/productCart', productsController.cart)
 
 router.get('/createProduct', productsController.create)
 router.post('/', upload.any(), productsController.store)
-router.get('/modifyProduct', productsController.create)
+router.get('/editProduct', productsController.edit)
 
 
 /* GET Products/acc page. */

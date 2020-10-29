@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-        <%- include("../partial/head")  %> 
-        <title>Eletr8 | Modifica Producto</title>
+    <%- include("../partial/head")  %> 
+        <title>Eletr8 | Edita Producto</title>
 <body class="body-productForm">
     <%- include("../partial/header1") %>
     <br>
       <main class="product-form">
-            <h1>Pública un nuevo producto</h1>
+            <h1>Edita producto</h1>
             <section>   
                 <form class="new-product" action="/products" method="POST" enctype="multipart/form-data">
                     <input type="text" name="name" id="name" placeholder="Nombre Producto">
                     <hr>
                     <br>    
-                    <textarea name="description" id="description" cols="30" rows="5" placeholder="Descripción del producto" class="input border area f-size-10"></textarea>   
+                    <textarea name="description" id="description" cols="30" rows="5" placeholder="Descripción del producto" class="input border area f-size-10"></textarea>
                     <input type="text" name="price" id="price" placeholder="$ Precio">
                     <hr>
                     <br>
@@ -20,7 +20,7 @@
                     <hr>
                     <br>
                     <label class="titulo">Agregá una imágen</label>
-                    <input type="file" name="image" >
+                    <input id="file" type="file" name="file" id="file" >
                     <div class="center1">
                         <button  class="crear" type="submit">Públicar</button>
                     </div>
@@ -30,5 +30,5 @@
       <br>
       <br>
       <hr>
-        <%- include("../partial/footer1") %>
+      <%- include("../partial/footer1") %>
 </body>

@@ -172,7 +172,8 @@
     color:var(--font-color);
     text-align: center;
     font-size: 45px;
-    padding: 4%;
+    padding-top: 10%;
+    padding-bottom: 4%;
 }
 
 .registro{
