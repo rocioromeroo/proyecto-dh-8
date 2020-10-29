@@ -111,7 +111,7 @@
     },
     {
     "id": 12,
-    "name": "Monociclo Por Blanco",
+    "name": "Monociclo Pro Blanco",
     "description": "Potencia y Estabilidad con un Diseño Innovador. El corazón de nuestro Smart Balance late con fuerza gracias a su batería li-ion, que le confiere una autonomía de hasta 20 kilómetros, gracias a una capacidad de carga de 4400mAh.",
     "brand": "Segway",
     "price": 29990,
@@ -209,5 +209,25 @@
     "discount": 12,
     "image": "mp-302-Ninebot-Segway-KickScooter.jpg",
     "category": "visitados"
-    }
+    },
+    {
+    "id": 22,
+    "name": "Karting Electrico",
+    "description": "Con el karting eléctrico vas a poder moverte de forma LIMPIA y ECOLÓGICA por toda la ciudad.Con su gran autonomía, suave aceleración y una velocidad máxima de 20 km/h, es ideal para recorrer la ciudad o trabajar sin gastar en combustible.",
+    "brand": "Segway",
+    "price": 62990,
+    "discount": 40,
+    "image": "mc-403-go-KART.jpg",
+    "category": "novedades"
+    },
+    {
+        "id": 23,
+        "name": "Bicicleta Electrica Azul",
+        "description": "Una bicicleta con suspensión full, con la potencia y tracción necesarias para hacer que cualquier recorrido sea posible, y cualquier situación, emocionante.",
+        "brand": "Mountagne",
+        "price": 100000,
+        "discount": 15,
+        "image": "bic-200-blue-electric-bike-794411_00.jpg",
+        "category": "novedades"
+        }
 ]
