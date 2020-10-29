@@ -48,7 +48,7 @@ create: function(req, res, next){
 },
 
 store: function (req, res, next) {
-
+  
     let pathFile = path.join('data','prueba.json')
 
     let nuevoProduct = fs.readFileSync(pathFile, { encoding: 'utf-8' })
@@ -67,8 +67,8 @@ store: function (req, res, next) {
     res.send('Producto creado')
   },
 
-  modify:function(req, res, next){
-    res.render("product/modifyProduct")
+    edit:function(req, res, next){
+      res.render("./product/editProduct")
   },
 
   cart: function(req, res){

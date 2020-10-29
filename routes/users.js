@@ -9,9 +9,9 @@ router.get('/', function(req, res, next) {
 });
 router.get('/register', usersController.register)
 router.get('/login', usersController.login)
+
 router.get('/contact', usersController.contact)
-
-
+router.post('/contact', usersController.comment)
 
 
 module.exports = router; 
