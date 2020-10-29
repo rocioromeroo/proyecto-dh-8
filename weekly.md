@@ -1,9 +1,9 @@
 Participantes - Proyecto - Electr8
 
 Romero Rocio
-Que se hizo ayer: 
-Se encontro algun impedimento:
-Que se hace hoy:
+Que se hizo ayer: Armado de rutas, partials, formulario create y edit.
+Se encontro algun impedimento: El post para la imagen del create (solucionado).
+Que se hace hoy: Probar los partial y css para que no haya estilos pisandose.
 
 Fernandez Juan
 Que se hizo ayer: 
