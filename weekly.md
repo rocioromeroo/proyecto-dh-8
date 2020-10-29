@@ -6,9 +6,9 @@ Se encontro algun impedimento:
 Que se hace hoy:
 
 Fernandez Juan
-Que se hizo ayer: 
-Se encontro algun impedimento:
-Que se hace hoy:
+Que se hizo ayer: Modificar detalles del carrito.
+Se encontro algun impedimento: Logica del boton ver más.
+Que se hace hoy: Probar la página y entregar sprint-3.
 
 Nusfaumer Leonel
 Que se hizo ayer: Armado ruta y view accesorio con funcion.
