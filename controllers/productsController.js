@@ -48,7 +48,7 @@ create: function(req, res, next){
 },
 
 store: function (req, res, next) {
-
+  
     let pathFile = path.join('data','prueba.json')
 
     let nuevoProduct = fs.readFileSync(pathFile, { encoding: 'utf-8' })
