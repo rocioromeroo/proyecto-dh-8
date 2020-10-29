@@ -1,8 +1,8 @@
-/* * {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} */
+} 
 
 /*HEADER*/
 
@@ -142,7 +142,7 @@ p {
   margin-top: 70px;
 }
 .small-container {
-  max-width: 900px;
+  max-width: 1024px;
   margin: auto;
   padding-left: 25px;
   padding-right: 25px;
@@ -678,6 +678,11 @@ p.precio {
   background-color: var(--articles-bg);
   padding: 5px;
 }
+
+.titulo-acc{
+  color: #219653;
+}
+
 .p-ac-img {
   width: 50%;
 }
