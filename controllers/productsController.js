@@ -58,6 +58,7 @@ store: function (req, res, next) {
     nuevoProduct.push({
       ...req.body,
       id: nuevoProduct[nuevoProduct.length - 1].id + 1,
+      image: req.files[0].filename 
     })
 
     nuevoProduct = JSON.stringify(nuevoProduct)
