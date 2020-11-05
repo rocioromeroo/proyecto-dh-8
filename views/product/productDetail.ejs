@@ -119,24 +119,30 @@
                 <div>
                     <div class="d-flex-c">
                         <h3 class="b-top1 b-botto1 p-10-20 m-20-0">Garantias</h3>
+                        
+                        <%for (dato of warranty) { %>
+
                         <div class="div4-a d-none m-0-20">
                             <table class="w-100 m-botto-20">
-                                <th>
+                                <th class="th-1">
                                     <tr class="bg-c">
-                                        <td>Duración</td>
-                                        <td >1 año</td>
+                                        <td>Duracion</td>
+                                        <td> <%= dato.duration %> año</td>
                                     </tr>
                                     <tr>
                                         <td>Origen</td>
-                                        <td>Hungria</td>
+                                        <td><%= dato.origin %></td>
                                     </tr>
                                     <tr class="bg-c">
                                         <td>Cobertura</td>
-                                        <td>Oficial</td>
+                                        <td><%= dato.coverage %></td>
                                     </tr>                                   
                                 </th>
                             </table>
                         </div>
+
+                        <% }%>
+
                     </div> 
                 </div>
             </section>

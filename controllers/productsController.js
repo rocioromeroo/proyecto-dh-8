@@ -1,6 +1,7 @@
 var path = require('path');
 var fs = require('fs');
 const productsList = require('../data/productsDataBase');
+const guaranteeList = require('../data/guaranteeDataBase');
 const { PreconditionFailed } = require('http-errors');
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
@@ -36,10 +37,14 @@ const productsController= {
 
     let detalleAccesorio = verificar.slice(3, 6);
 
-
+    let warranty = guaranteeList.filter(function(valor){
+      if (valor.id == req.params.id){
+        return valor
+      }
+    })
     
  
-    res.render("./product/productDetail", {detalle: detalle, detalleAccesorio: detalleAccesorio, convertir: toThousand})
+    res.render("./product/productDetail", {detalle: detalle, detalleAccesorio: detalleAccesorio, warranty: warranty, convertir: toThousand})
   },
     
 create: function(req, res, next){
