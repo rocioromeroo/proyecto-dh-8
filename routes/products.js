@@ -20,8 +20,7 @@ router.get('/', productsController.products)
 router.get('/createProduct', productsController.create)
 router.post('/', upload.any(), productsController.store)
 
-/*** GET ONE PRODUCT ***/ 
-router.get('/:id/', productsController.detail)
+
 
 /*** EDIT ONE PRODUCT ***/ 
 router.get('/editProduct', productsController.edit)
@@ -34,5 +33,8 @@ router.get('/acc', productsController.accessories)
 
 /*** GO TO CART ***/ 
 router.get('/productCart', productsController.cart)
+
+/*** GET ONE PRODUCT ***/ 
+router.get('/:id/', productsController.detail)
 
 module.exports = router;
