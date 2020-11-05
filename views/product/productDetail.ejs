@@ -64,20 +64,23 @@
                 <div>
                     <div class="d-flex-c">
                             <h3 class="b-top1 b-botto1 p-10-20 m-20-0">Caracteristicas</h3>
+
+                            <%for (spec of caracteristicas) { %>
+
                             <div class="div2-a d-none m-0-20">
                                 <table class="w-100">
                                     <th class="th-1">
                                         <tr class="bg-c">
                                             <td>Velocidad</td>
-                                            <td >25 km/h</td>
+                                            <td> <%= spec.Velocity %> km/h</td>
                                         </tr>
                                         <tr>
                                             <td>Duración de batería</td>
-                                            <td>20 km</td>
+                                            <td> <%= spec.Battery %> km</td>
                                         </tr>
                                         <tr class="bg-c">
                                             <td>Ruedas</td>
-                                            <td>8”</td>
+                                            <td> <%= spec.Wheels %> ”</td>
                                         </tr>
                                         <tr>
                                             <td>Luz</td>
@@ -102,6 +105,9 @@
                                     </th>
                                 </table>
                             </div>
+
+                            <% } %>
+
                     </div>       
                 </div>
                 <div>
