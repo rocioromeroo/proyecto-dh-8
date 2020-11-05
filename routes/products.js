@@ -13,23 +13,26 @@ var storage = multer.diskStorage({
 var upload = multer();
 let productsController= require("../controllers/productsController");
 
-/* GET Products/acc page. */
-router.get('/acc', productsController.accessories)
-
-/* GET Products page. */
+/*** GET ALL PRODUCTS ***/ 
 router.get('/', productsController.products)
-router.get('/:id/productDetail', productsController.detail)
-router.get('/productCart', productsController.cart)
 
+/*** CREATE ONE PRODUCT ***/ 
 router.get('/createProduct', productsController.create)
 router.post('/', upload.any(), productsController.store)
 
+/*** GET ONE PRODUCT ***/ 
+router.get('/:id/', productsController.detail)
+
+/*** EDIT ONE PRODUCT ***/ 
 router.get('/editProduct', productsController.edit)
 
+/*** DELETE ONE PRODUCT ***/ 
 
 
+/*** GET ALL ACCESORIES ***/ 
+router.get('/acc', productsController.accessories)
 
-
-
+/*** GO TO CART ***/ 
+router.get('/productCart', productsController.cart)
 
 module.exports = router;
