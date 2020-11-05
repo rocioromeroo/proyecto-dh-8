@@ -1,13 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link type="image/x-icon" rel="shortcut icon" href="/images/favicon.png">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-        <link href="/stylesheets/productDetail.css" rel="stylesheet">
-    </head>
+
+    <%- include("../partial/head") %>
 
 <body class="body-01">
 
@@ -19,19 +13,19 @@
 
         <section id="productos">
             <div class="b-radius-0-0-13-13 centrado">
-                <img src="/images/<%= valor.category %>/<%= valor.image %>" alt="" class="w-100 b-radius-13-13-0-0">
+                <img src="/images/<%= valor.category %>/<%= valor.image %>" alt="" class="w-100 b-radius-13-13-0-0 m-20-0">
             </div>
             <div class="prod-dv3 p-20">
                 <div class="t-tran-u f-weig-b">
-                    <h2><%= valor.brand %></h2>
-                    <h3><%= valor.name %></h3>
+                    <h2 class="m-20-0"><%= valor.brand %></h2>
+                    <h3 class="m-20-0"><%= valor.name %></h3>
                 </div>
-                <div class="d-flex">
+                <div class="d-flex m-20-0">
                     <p class="m-right-10 f-size-10 t-deco-lt a-self-c">$ <%= valor.price %></p>
                     <p class="descuento f-size-10"><%= valor.discount %> % OFF</p>
                 </div>  
                 <div >
-                    <p class="p-final">$ <%= (valor.price) - ((valor.discount * valor.price)/100) %></p>
+                    <p class="p-final m-20-0">$ <%= (valor.price) - ((valor.discount * valor.price)/100) %></p>
                 </div>
             </div>
             <div class="d-flex-r f-size-10">
@@ -53,7 +47,7 @@
                 </div>
             </div>
             <div class="carr f-size-10 t-tran-u tran-035">
-                <a class="link" href="/products/productCart">Agregar al Carrito</a>
+                <a class="link-d" href="/products/productCart">Agregar al Carrito</a>
             </div>
         </section>
 
@@ -61,7 +55,7 @@
             <section id="descripcion">
                 <div>
                     <div class="d-flex-c">
-                        <h3 class="b-top1 b-botto1 p-10-20">Informacion del Producto</h3>
+                        <h3 class="b-top1 b-botto1 p-10-20 m-20-0">Informacion del Producto</h3>
                         <div class="div1-a">
                             <p class="p-10-20 d-none ta-j"><%= valor.description %></p>
                         </div>
@@ -69,10 +63,10 @@
                 </div>
                 <div>
                     <div class="d-flex-c">
-                            <h3 class="b-top1 b-botto1 p-10-20">Caracteristicas</h3>
+                            <h3 class="b-top1 b-botto1 p-10-20 m-20-0">Caracteristicas</h3>
                             <div class="div2-a d-none m-0-20">
                                 <table class="w-100">
-                                    <th>
+                                    <th class="th-1">
                                         <tr class="bg-c">
                                             <td>Velocidad</td>
                                             <td >25 km/h</td>
@@ -112,7 +106,7 @@
                 </div>
                 <div>
                     <div class="d-flex-c">
-                        <h3 class="b-top1 b-botto1 p-10-20">Servicio Post-Venta</h3>
+                        <h3 class="b-top1 b-botto1 p-10-20 m-20-0">Servicio Post-Venta</h3>
                         <div class="div3-a">
                             <p class="p-10-20 d-none ta-j">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                                 Minus sed consequuntur voluptatibus a impedit laudantium 
@@ -124,7 +118,7 @@
                 </div>
                 <div>
                     <div class="d-flex-c">
-                        <h3 class="b-top1 b-botto1 p-10-20">Garantias</h3>
+                        <h3 class="b-top1 b-botto1 p-10-20 m-20-0">Garantias</h3>
                         <div class="div4-a d-none m-0-20">
                             <table class="w-100 m-botto-20">
                                 <th>
@@ -149,7 +143,7 @@
             <section id="cuotas">
                 <div>
                     <div class="p-20 b-botto f-size-9 t-tran-u">
-                        <h2>Cuotas y Medios de Pago</h2>
+                        <h2 class="m-10-0">Cuotas y Medios de Pago</h2>
                     </div>
                     <div class="i-credit">
                         <i class="fab fa-cc-visa"></i>
@@ -158,7 +152,7 @@
                         <p class="f-size-60">Hasta 36 cuotas fijas con tarjetas selecionadas</p>
                     </div>
                     <div class="p-20 b-botto b-top">
-                        <p class="f-size-9">Ver todos los medios de pago</p>
+                        <p class="f-size-9 m-10-0">Ver todos los medios de pago</p>
                     </div>
                 </div>
                 <div class="m-20-0">
@@ -168,7 +162,7 @@
                         </div>
                         <div>
                             <p>Envios a Domicilio</p>
-                            <a class="link"href="*" class="t-deco-n color-a f-size-9">Calcular Costo de Envio</a>
+                            <a class="link-d"href="*" class="t-deco-n color-a f-size-9">Calcular Costo de Envio</a>
                         </div>
                     </div>
                     <div class="d-flex p-20 f-size-10">
@@ -187,8 +181,8 @@
         <% } %>
 
         <section id="accesorios">
-            <div class="acces_style f-size-70">
-                <h2 class="t-tran-u">Accesorios</h2>
+            <div class="acces_style f-size-70 w-100">
+                <h2 class="t-tran-u m-20-0">Accesorios</h2>
             </div>
         </section> 
 
@@ -206,10 +200,10 @@
                 </div>
                 <div>
                     <div class="carr f-size-10 t-tran-u tran-035">
-                        <a class="link"href="/products/productCart">Agregar al Carrito</a>
+                        <a class="link-d"href="/products/productCart">Agregar al Carrito</a>
                     </div>
                     <div class="ver f-size-10 t-tran-u tran-035">
-                        <a class="link"href="/products/<%= valor.id %>/productDetail">Ver Mas</a>
+                        <a class="link-d"href="/products/<%= valor.id %>/productDetail">Ver Mas</a>
                     </div>
                 </div>
             </div>
