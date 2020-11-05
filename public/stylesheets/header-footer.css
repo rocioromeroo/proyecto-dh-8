@@ -6,6 +6,8 @@
     --bg-font-grey-hover:#5a6268;
 }
 
+ul {list-style-type: none;}
+
 .enlaces ul{
     list-style-type: none;
     margin: 0;
