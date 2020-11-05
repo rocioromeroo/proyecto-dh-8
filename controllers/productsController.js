@@ -39,7 +39,7 @@ const productsController= {
 
     
  
-    res.render("./product/productDetail", {detalle: detalle, detalleAccesorio: detalleAccesorio})
+    res.render("./product/productDetail", {detalle: detalle, detalleAccesorio: detalleAccesorio, convertir: toThousand})
   },
     
 create: function(req, res, next){

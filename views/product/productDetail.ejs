@@ -21,11 +21,11 @@
                     <h3 class="m-20-0"><%= valor.name %></h3>
                 </div>
                 <div class="d-flex m-20-0">
-                    <p class="m-right-10 f-size-10 t-deco-lt a-self-c">$ <%= valor.price %></p>
+                    <p class="m-right-10 f-size-10 t-deco-lt a-self-c">$ <%= convertir(valor.price) %></p>
                     <p class="descuento f-size-10"><%= valor.discount %> % OFF</p>
                 </div>  
                 <div >
-                    <p class="p-final m-20-0">$ <%= (valor.price) - ((valor.discount * valor.price)/100) %></p>
+                    <p class="p-final m-20-0">$ <%= convertir((valor.price) - ((valor.discount * valor.price)/100)) %></p>
                 </div>
             </div>
             <div class="d-flex-r f-size-10">
@@ -188,7 +188,6 @@
 
         <section id="relaciones">
             
-            
             <% for(let valor of detalleAccesorio) { %>    
                 
             <div class="acces">
@@ -207,40 +206,9 @@
                     </div>
                 </div>
             </div>
-                
+
             <% } %>
-            <!-- <div class="acces">
-                <div >
-                    <h2 class="ta-c p-10">Bateria Externa</h2>
-                </div>
-                <div class="img-c">
-                    <img src="images/accesorios/acc-102-External-BATERIA.png" alt="" class="w-100 b-radius-13">
-                </div>
-                <div>
-                    <div class="carr f-size-10 t-tran-u tran-035">
-                        <a class="link"href="/products/productCart">Agregar al Carrito</a>
-                    </div>
-                    <div class="ver f-size-10 t-tran-u tran-035">
-                        <a class="link"href="/">Ver Mas</a>
-                    </div>
-                </div>
-            </div>
-            <div class="acces">
-                <div >
-                    <h2 class="ta-c p-10">Bolso</h2>
-                </div>
-                <div class="img-c">
-                    <img src="images/accesorios/acc-104-BOLSO002.jpg" alt="" class="w-100 b-radius-13">
-                </div>
-                <div>
-                    <div class="carr f-size-10 t-tran-u tran-035">
-                        <a class="link"href="/products/productCart">Agregar al Carrito</a>
-                    </div>
-                    <div class="ver f-size-10 t-tran-u tran-035">
-                        <a class="link"href="/">Ver Mas</a>
-                    </div>
-                </div>
-            </div> -->
+
         </section>
 
     </main>
