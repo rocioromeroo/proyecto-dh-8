@@ -156,6 +156,7 @@
 }
 
 .register{
+    margin: 5% auto;
     width: 50%;
     height: 100%;
     border: 1px solid var(--bg-font-grey-hover);
@@ -164,7 +165,6 @@
     background-color: white;
     align-items: center;
     box-shadow: 0 5px 5px 0 rgba(0,0,0,.15);   
-    margin: auto;
 }
 
 .body-register h1{

@@ -3,8 +3,7 @@
     <%- include("../partial/head")  %> 
         <title>Eletr8 | Login</title>
     <body class="body-login">
-        <%- include("../partial/header1") %>
-        <br>
+        <%- include("../partial/header") %>
         <div class="login">
             <h1>Ingresá a tu cuenta de Electr8</h1>
             <br>
@@ -18,32 +17,23 @@
                         <input type="password" name="password" id="password" placeholder="Contraseña">
                     </p>
                     <hr>
-                    <br>
                 </form>
                 <p class="recordar">
                     <input type="radio" name="usuario" id="usuario" value="yes">
                     <label for="usuario">Recordar Cuenta</label>
                 </p>
-                <br>
             </section>
                 <div class="center">
                     <button  class="enviar" type="submit" >Ingresar</button>
                 </div>
-            <br>
             <ul class="olvidar">
                 <li><a href="/">Olvidé mi contraseña</a></li>
                 <li><a href="/users/register">Registrarme</a></li>
             </ul>
-            <br>
                 <div class="center1">
                     <button  class="google" type="submit" >Seguir con Google</button>
                 </div>
             </form>
-            <br>
-            <br>
         </div>    
-    <br>
-    <br>
-    <hr>
-    <%- include("../partial/footer1") %>
+    <%- include("../partial/footer") %>
 </body>

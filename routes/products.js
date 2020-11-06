@@ -25,9 +25,10 @@ router.post('/', upload.any(), productsController.store)
 
 /*** EDIT ONE PRODUCT ***/ 
 router.get('/editProduct', productsController.edit)
+router.put('/editProduct', productsController.update)
 
 /*** DELETE ONE PRODUCT ***/ 
-
+router.delete('/editProduct', productsController.destroy)
 
 /*** GET ALL ACCESORIES ***/ 
 router.get('/acc', productsController.accessories)

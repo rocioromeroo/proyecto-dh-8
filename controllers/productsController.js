@@ -6,6 +6,7 @@ const featuresList = require('../data/featuresDataBase');
 const { PreconditionFailed } = require('http-errors');
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
+
 const productsController= {
 
   products: function(req, res){
@@ -59,16 +60,20 @@ const productsController= {
         return valor
       }
     })
- 
+
     res.render("./product/productDetail", {detalle: detalle, 
       detalleAccesorio: detalleAccesorio, warranty: warranty, 
       caracteristicas: caracteristicas, convertir: toThousand})
   },
     
+
+
 create: function(req, res, next){
 
   res.render("product/createProduct")
 },
+
+
 
 store: function (req, res, next) {
   
@@ -91,9 +96,59 @@ store: function (req, res, next) {
     res.send('Producto creado')
   },
 
+
+
+  update: (req, res) => {
+    let pathFile = path.join('data','prueba.json')
+    let actualProduct = fs.readFileSync(pathFile, { encoding: 'utf-8' })
+    actualProduct = JSON.parse(actualProduct)
+    
+    
+    actualProduct = actualProduct.map(function(buscar) {
+        if(buscar.id == req.params.id) {
+            buscar.name = req.body.name,
+            buscar.price = req.body.price,
+            buscar.discount = req.body.discount,
+            buscar.category = req.body.category,
+            buscar.description = req.body.description
+            return buscar
+        }
+    })
+    
+    
+    actualProduct = JSON.stringify(actualProduct)
+
+    fs.writeFileSync(pathFile, actualProduct)
+    
+    res.send('Producto Actualizado!!')
+},
+
+
+
+  destroy : (req, res) => {
+    let pathFile = path.join('data','prueba.json')
+    let actualProduct = fs.readFileSync(pathFile, { encoding: 'utf-8' })
+    actualProduct = JSON.parse(actualProduct)
+    
+    
+    actualProduct = actualProduct.filter(function(buscar) {
+        if(buscar.id != req.params.id) {
+            return buscar
+        }
+    })
+
+    actualProduct = JSON.stringify(actualProduct)
+
+    fs.writeFileSync(pathFile, actualProduct)
+    res.send('Producto Borrado!!')
+},
+
+
     edit:function(req, res, next){
       res.render("./product/editProduct")
   },
+
+
 
   cart: function(req, res){
     let carrito = productsList.filter(function(valor){

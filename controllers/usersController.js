@@ -33,6 +33,26 @@ module.exports = {
             fs.writeFileSync(pathFile, nuevoMessage)
             
             res.send('Mensaje Recibido!!')
+      },
+
+      userStore: function(req, res){
+            let pathFile = path.join('data','prueba.json')
+
+            let nuevoProduct = fs.readFileSync(pathFile, { encoding: 'utf-8' })
+
+            nuevoProduct = JSON.parse(nuevoProduct)
+
+            nuevoProduct.push({
+            ...req.body,
+            id: nuevoProduct[nuevoProduct.length - 1].id + 1,
+            image: req.files[0].filename 
+      })
+
+    nuevoProduct = JSON.stringify(nuevoProduct)
+
+    fs.writeFileSync(pathFile, nuevoProduct)
+
+    res.send('Producto creado')
       }
 
       

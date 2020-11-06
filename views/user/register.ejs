@@ -3,42 +3,35 @@
         <%- include("../partial/head")  %> 
         <title>Eletr8 | Registro</title>
 <body class="body-register">
-    <%- include("../partial/header1") %>
-    <br>
+    <%- include("../partial/header") %>
     <div class="register">
         <h1>Creá tu cuenta Electr8</h1>
         <section>   
-            <form class="registro" action="datos.html" method="POST">
+            <form class="registro" action="/" method="POST">
                 <p>
                     <input type="text" name="name" id="name" placeholder="Nombre">    
                 </p>
                 <hr>
-                <br>
                     <input type="text" name="surname" id="surname" placeholder="Apellido">      
                 <hr>
-                <br>
                 <p>
                     <input type="number" name="dni" id="dni" placeholder="DNI">
                 </p>
                 <hr>
-                <br>
                 <p class="nacimiento">
                     <label class="nacimiento" for="nacimiento">Fecha de nacimiento:
                         <input type="date" name="nacimiento" id="nacimiento">      
                     </label>
                 </p>
                 <hr>
-                <br>
                 <p>
                     <input type="number" name="phone" id="phone" placeholder="Teléfono">  
                 </p>   
                 <hr>
-                <br>
                 <p>
                     <input type="password" name="password" id="password" placeholder="Contraseña">
                 </p>
                 <hr>
-                <br>
                 <p>
                     <input type="password" name="repeat" id="repeat" placeholder="Confirmar Contraseña">
                 </p>
@@ -48,8 +41,5 @@
             <button  class="crear" type="submit">Crear Cuenta</button>
         </div>
     </div>    
-    <br>
-    <br>
-    <hr>
-    <%- include("../partial/footer1") %>
+    <%- include("../partial/footer") %>
 </body>
