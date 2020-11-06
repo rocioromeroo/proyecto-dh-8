@@ -7,11 +7,10 @@ body{
       background-color: var(--body-background);
       font-family: 'Comfortaa', cursive, 'Arial';
 }
-a{
+#home-main a{
       text-decoration: none;
-      color: black;
 }
-a:visited{
+#home-main a:visited{
       color:none;
 }
 :root{

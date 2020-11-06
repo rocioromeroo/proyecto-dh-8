@@ -13,6 +13,16 @@ const productsController= {
       res.render("./product/product")
   },
 
+  category:  function(req, res){
+
+    let items = productsList.filter(function(valor){
+      if (valor.category == req.params.category){
+        return valor
+      }
+    })
+    res.render("./product/category",{items: items} )
+  },
+
   accessories: function(req, res){
     let items = productsList.filter(function(valor){
       if (valor.category == "accesorios"){

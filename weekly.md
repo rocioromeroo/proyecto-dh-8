@@ -40,9 +40,9 @@ Se encontro algun impedimento:
 Que se hace hoy:
 
 Nusfaumer Leonel
-Que se hizo ayer: 
-Se encontro algun impedimento: 
-Que se hace hoy:
+Que se hizo ayer: Creamos el Sprint-4. Recibimos el feedback del sprint-3. Revisamos rutas.
+Se encontro algun impedimento: Las nuevas rutas requieren un orden especifico y nuevas funciones.
+Que se hace hoy: Se revisan links y stylos css en el index.
 
 Dominguez Gaston
 Que se hizo ayer: Se actualizo el CSS de productDetiials, se aplica la funcion para convertir los precios en miles y decimales.

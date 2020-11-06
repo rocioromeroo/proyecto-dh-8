@@ -15,6 +15,7 @@ let productsController= require("../controllers/productsController");
 
 /*** GET ALL PRODUCTS ***/ 
 router.get('/', productsController.products)
+router.get('/list/:category', productsController.category)
 
 /*** CREATE ONE PRODUCT ***/ 
 router.get('/createProduct', productsController.create)
