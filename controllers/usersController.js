@@ -4,15 +4,15 @@ var fs = require('fs');
 module.exports = {
 
       register: function(req, res){
-        res.render('user/register')
+        res.render('user/register',{styleOn: "register"})
       },
 
       login:function(req, res){
-            res.render("user/login")
+            res.render("user/login",{styleOn: "login"} )
       },        
 
       contact:function(req, res){
-            res.render("user/contact")
+            res.render("user/contact", {styleOn: "contact"})
       },
 
       comment:function(req, res){

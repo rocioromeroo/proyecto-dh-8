@@ -11,7 +11,7 @@ const productsController= {
 
   products: function(req, res){
 
-      res.render("./product/product")
+      res.render("./product/product", {styleOn: "product"})
   },
 
   category:  function(req, res){
@@ -21,7 +21,7 @@ const productsController= {
         return valor
       }
     })
-    res.render("./product/category",{items: items} )
+    res.render("./product/category",{items: items, styleOn:"accessories"} )
   },
 
   accessories: function(req, res){
@@ -31,7 +31,7 @@ const productsController= {
       }
     })
     
-    res.render('./product/accessories', {items: items})
+    res.render('./product/accessories', {items: items, styleOn: "accessories"})
   },
      
   detail: function(req, res){
@@ -63,17 +63,15 @@ const productsController= {
 
     res.render("./product/productDetail", {detalle: detalle, 
       detalleAccesorio: detalleAccesorio, warranty: warranty, 
-      caracteristicas: caracteristicas, convertir: toThousand})
+      caracteristicas: caracteristicas, convertir: toThousand,styleOn:"productDetail"})
   },
     
 
 
 create: function(req, res, next){
 
-  res.render("product/createProduct")
+  res.render("product/createProduct", {styleOn:"create-editProduct"})
 },
-
-
 
 store: function (req, res, next) {
   
@@ -96,8 +94,6 @@ store: function (req, res, next) {
     res.send('Producto creado')
   },
 
-
-
   update: (req, res) => {
     let pathFile = path.join('data','prueba.json')
     let actualProduct = fs.readFileSync(pathFile, { encoding: 'utf-8' })
@@ -115,7 +111,6 @@ store: function (req, res, next) {
         }
     })
     
-    
     actualProduct = JSON.stringify(actualProduct)
 
     fs.writeFileSync(pathFile, actualProduct)
@@ -123,13 +118,10 @@ store: function (req, res, next) {
     res.send('Producto Actualizado!!')
 },
 
-
-
   destroy : (req, res) => {
     let pathFile = path.join('data','prueba.json')
     let actualProduct = fs.readFileSync(pathFile, { encoding: 'utf-8' })
     actualProduct = JSON.parse(actualProduct)
-    
     
     actualProduct = actualProduct.filter(function(buscar) {
         if(buscar.id != req.params.id) {
@@ -145,10 +137,8 @@ store: function (req, res, next) {
 
 
     edit:function(req, res, next){
-      res.render("./product/editProduct")
+      res.render("./product/editProduct", {styleOn: "create-editProduct"})
   },
-
-
 
   cart: function(req, res){
     let carrito = productsList.filter(function(valor){
@@ -156,7 +146,7 @@ store: function (req, res, next) {
         return valor
       }
     })
-      res.render('./product/productCart', {carrito: carrito})
+      res.render('./product/productCart', {carrito: carrito, styleOn:"productCart"})
     }
 }
 

@@ -14,7 +14,7 @@ const indexController = {
       }
     })
 
-    res.render("index", { items: items, esteAccesorio: esteDato,})
+    res.render("index", { items: items, esteAccesorio: esteDato, styleOn:{}})
   }
 }
 
