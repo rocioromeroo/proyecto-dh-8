@@ -1,29 +1,40 @@
         <header id="navegacion">
-            <div class="cuenta">
-                <a href="/products/createProduct">NUEVO PRODUCTO TEMP.</a>
-                <a href="/users/login">MI CUENTA</a>
+            <div id="top-header" class="cuenta">
+                <div class="search-input">
+                    <%- include("./search") %> 
+                </div>
+                <div class="d-flex a-icenter">
+                    <a href="/products/createProduct">NUEVO PRODUCTO TEMP.</a>
+                    <a href="/myAccount">MI CUENTA</a>
+                </div>
             </div>
-            <br>
             <div class="nav-bar">
+                <div class="logo">
+                    <a href="/"><img src="/images/electr8-logo.png" width ="200" height="75" alt="Electr8"></a>
+                </div>
                 <div class="hamburguesa">
+                    <div class="h-container">
                         <i class="fas fa-bars"></i>
+                    </div>
+                        
                     <div class="nav-container">
                         <div id="icons"></ul>
                             <a href="/users/login"><i class="far fa-user"></i></a>
                             <a href="/products/productCart"><i class="fas fa-shopping-cart" ></i></a>
-                            <a href="/"><i class="fas fa-search" ></i></a>
+                            <%- include("./search") %> 
                         </div>
-                        <ul class="enlaces">   
-                            <li><a href="/">INICIO</a></li>
-                            <li><a href="/products">PRODUCTOS</a></li>  
-                            <li><a href="/products/acc">ACCESORIOS</a></li>
-                            <li><a href="/users/contact">CONTACTO</a></li>   
-                        </ul>
+                        <div class="enlaces">
+                            <ul>   
+                                <li><a href="/">INICIO</a></li>
+                                <li><a href="/products">PRODUCTOS</a></li>  
+                                <li><a href="/products/acc">ACCESORIOS</a></li>
+                                <li><a href="/users/contact">CONTACTO</a></li>   
+                            </ul>
+                        </div>
+                        
                     </div>
                 </div>
-                <div class="logo">
-                    <a href="/"><img src="/images/electr8-logo.png" width ="200" height="75" alt="Electr8"></a>
-                </div>
+                
             </div>
             <div class="nav-bar-desktop">
                 <div class="logo-desktop">
@@ -34,11 +45,11 @@
                         <li><a href="/products">PRODUCTOS</a></li>    
                         <li><a href="/products/acc">ACCESORIOS</a></li>   
                         <li><a href="/users/contact">CONTACTO</a></li>    
-                    </ul> 
-                <div id="icons-desktop"></ul>
+                    </ul>
+
+                <div id="icons-desktop">
                     <a href="/users/login"><i class="far fa-user"></i></a>
                     <a href="/products/productCart"><i class="fas fa-shopping-cart"></i></a>
-                    <a href="/"><i class="fas fa-search"  ></i></a>
                 </div>
             </div> 
         </header>

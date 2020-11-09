@@ -14,8 +14,13 @@ const indexController = {
       }
     })
 
-    res.render("index", { items: items, esteAccesorio: esteDato, styleOn:{}})
-  }
+    res.render("index", { items: items, esteAccesorio: esteDato, styleOn: {} })
+  },
+
+  myAccount: function (req, res) {
+    res.render("user/myAccount", { styleOn: "style" })
+  },
+
 }
 
 

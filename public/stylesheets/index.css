@@ -7,9 +7,7 @@ body{
       background-color: var(--body-background);
       font-family: 'Comfortaa', cursive, 'Arial';
 }
-a{
-      text-decoration: none;
-}
+
 
 a#home-main:visited{
       color: none; 
@@ -34,6 +32,8 @@ a#home-main:visited{
 .width-70{width: 70%;}
 .order-1{order: 1;}
 .d-flex-wrap{display: flex; flex-wrap: wrap;}
+.pdd-5x{padding: 5px;}
+.underline{text-decoration: underline;}
 
 /* /////// MAIN HOME /////// */
 #banner-carousel {
@@ -66,12 +66,9 @@ a#home-main:visited{
       flex-wrap: wrap;
       justify-content: space-around;
 }
-.n-size{
-      width: 100%;
+.n-size{ width: 100%;
 }
-.width-50{
-      width: 50%;
-}
+.width-50{ width: 50%;}
 .n-img-size{
       width: 88%;
       height: 70%;
@@ -95,6 +92,7 @@ a.h2-nov {
       border-radius: 13px;
       text-align: center;
       font-weight: 700;
+      text-decoration: none;
 }
 a.h2-nov:hover{
       background-color: var(--font-color);
@@ -162,6 +160,7 @@ article.home-producto{
       padding: 0.6em;
       font-size: 0.8em;
       color: black;
+      text-decoration: none;
       
 }
 .ver-mas:hover{
@@ -180,6 +179,7 @@ article.home-producto{
       font-size: 0.8em;
       border:1px solid var(--font-color);
       border-radius: 13px;
+      text-decoration: none;
 }
 a.add-car:visited{
       color: white !important;
@@ -241,6 +241,7 @@ a.add-car:visited{
       font-size: 1em;
       text-transform: uppercase;
       font-style: italic;
+      text-decoration: none;
 }
 .link-ver-mas:visited{
       color: black;
@@ -263,6 +264,7 @@ a.add-car:visited{
       font-size: 0.8em; 
       text-align: start;
       color: black;
+      text-decoration: none;
    }
 p.precio {
       margin-bottom: 10px;
@@ -297,6 +299,7 @@ p.precio {
       }
       .base-home-contain a{
             width: 24%;
+            text-decoration: none;
       }
 }      
      
