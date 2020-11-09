@@ -140,7 +140,14 @@ store: function (req, res, next) {
 
 
     edit:function(req, res, next){
-      res.render("./product/editProduct", {styleOn: "create-editProduct"})
+
+      let editar = productsList.find(function(buscar) {
+        if(buscar.id == req.params.id) {
+          return buscar
+        }
+      })
+      
+      res.render("./product/editProduct", {editar: editar, styleOn: "create-editProduct"})
   },
 
   cart: function(req, res){

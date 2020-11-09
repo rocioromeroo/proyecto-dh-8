@@ -7,24 +7,29 @@
     <br>
       <main class="product-form">
             <h1>Edita producto</h1>
-            <section>   
+            <section>
+                
+               
+                
                 <form class="new-product" action="/products" method="POST" enctype="multipart/form-data">
-                    <input type="text" name="name" id="name" placeholder="Nombre Producto">
+                    <input type="text" name="name" id="name" value="<%= editar.name %>">
                     <hr>
                     <br>    
-                    <textarea name="description" id="description" cols="30" rows="5" placeholder="Descripción del producto" class="input border area f-size-10"></textarea>
-                    <input type="text" name="price" id="price" placeholder="$ Precio">
+                    <textarea name="description" id="description" cols="30" rows="5" class="input border area f-size-10"><%= editar.description %></textarea>
+                    <input type="text" name="price" id="price" value="<%= editar.price %>">
                     <hr>
                     <br>
-                    <input type="number" name="stock" id="stock" placeholder="Stock">
                     <hr>
                     <br>
                     <label class="titulo">Agregá una imágen</label>
-                    <input id="file" type="file" name="file" id="file" >
+                    <input id="file" type="file" name="file" id="file" value="<%= editar.image %>">
                     <div class="center1">
                         <button  class="crear" type="submit">Públicar</button>
                     </div>
                 </form>
+
+                
+
             </section>          
       </main>
       <br>
