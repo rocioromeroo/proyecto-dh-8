@@ -1,18 +1,1 @@
-[
-  {
-    "id": 1,
-    "name": "CANASTO SEGWAY NINEBOT S PLUS",
-    "price": 900,
-    "discount": 50,
-    "category": "accesorios",
-    "description": "Made of water-resistant nylon with polyester lining, the 15.6 inch Segway Ninebot Backpack comes with built-in USB port and anti-theft compartment for security.",
-    "image": "acc-100-Loading-basket.jpg"
-  },
-  {
-    "name": "bicicleta",
-    "description": "alguno",
-    "price": "3300",
-    "stock": "12",
-    "id": 2
-  }
-]
+[{"id":1,"name":"CANASTO SEGWAY NINEBOT S PLUS","price":900,"discount":50,"category":"accesorios","description":"Made of water-resistant nylon with polyester lining, the 15.6 inch Segway Ninebot Backpack comes with built-in USB port and anti-theft compartment for security.","image":"acc-100-Loading-basket.jpg"},{"name":"bicicleta","description":"alguno","price":"3300","stock":"12","id":2},{"name":"test","description":"hola","price":"100","stock":"1","id":3},{"name":"test","description":"hola","price":"100","stock":"1","id":4},{"name":"test","description":"hola","price":"100","stock":"1","id":5},{"name":"test","description":"hola","price":"100","stock":"1","id":6},{"name":"test","description":"hola","price":"100","stock":"1","id":7,"image":"image-1604955916088.jpg"},{"name":"test","description":"hola","price":"100","stock":"1","id":8,"image":"image-1604956023666.jpg"}]

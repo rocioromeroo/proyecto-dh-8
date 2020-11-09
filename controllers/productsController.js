@@ -87,10 +87,13 @@ store: function (req, res, next) {
       image: req.files[0].filename 
     })
 
+    console.log(req.files);
+    console.log(nuevoProduct);
+    
     nuevoProduct = JSON.stringify(nuevoProduct)
-
+    
     fs.writeFileSync(pathFile, nuevoProduct)
-
+    
     res.send('Producto creado')
   },
 
