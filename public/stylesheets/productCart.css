@@ -1,9 +1,8 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} 
-
+}
 
 :root {
   --body-background: #f4f4f4;
@@ -137,6 +136,11 @@ th {
 
 td {
   padding: 10px 5px;
+  border-bottom: 2px solid #bababa;
+}
+
+.ult-td {
+  border-bottom-style: none;
 }
 
 td input {
@@ -161,10 +165,23 @@ td img {
   justify-content: flex-end;
 }
 
+.tb-total {
+  background-color: #dedede;
+}
+
+.btn-finalizar {
+  border-style: none;
+}
+
+.btn-finalizar-2 {
+  border-bottom-style: none;
+}
+
 .total-price table {
   border-top: 3px solid var(--font-color);
   width: 100%;
   max-width: 400px;
+  padding-top: 20px;
 }
 
 td:last-child {
@@ -205,6 +222,7 @@ th:last-child {
   font-size: 0.8em;
   border: 1px solid var(--font-color);
   border-radius: 30px;
+  margin-top: 20px;
 }
 
 .finalizar-compra:hover {
@@ -232,6 +250,13 @@ th:last-child {
 
 .ver:hover a {
   color: white;
+}
+
+.table-cart {
+  background-color: #dedede;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 .ver a {
@@ -266,8 +291,6 @@ th:last-child {
     display: none;
   }
 }
-
-
 
 /*Accesorios**/
 
@@ -331,6 +354,15 @@ th:last-child {
 p.precio {
   margin-bottom: 10px;
 }
+
+.tr-table {
+  border-top-left-radius: 15px;
+}
+
+.tr-table-2 {
+  border-top-right-radius: 15px;
+}
+
 .add-car {
   background-color: var(--font-color);
   width: 100%;
@@ -368,7 +400,7 @@ p.precio {
   padding: 5px;
 }
 
-.titulo-acc{
+.titulo-acc {
   color: #219653;
 }
 

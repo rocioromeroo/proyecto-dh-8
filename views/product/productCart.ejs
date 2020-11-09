@@ -5,11 +5,11 @@
 <main>
             <div class="small-container cart-page">
 
-                <table>
+                <table class="table-cart">
                     <tr>
-                        <th>Producto</th>
+                        <th class="tr-table">Producto</th>
                         <th>Cantidad</th>
-                        <th>Subtotal</th>
+                        <th class="tr-table-2">Subtotal</th>
                     </tr>
                     <tr>
                     <td>
@@ -46,7 +46,7 @@
                     <td>$20.000</td>
                 </tr>
                 <tr>
-                    <td class="td-div">
+                    <td class="td-div ult-td">
     
                         <div class="cart-info">
                             <img src="/images/monociclos/mc-406-MONOCICLO-CICLO.png">
@@ -59,33 +59,33 @@
                         </div>
     
                     </td>
-                    <td><input type="number" value="1"></td>
-                    <td>$25.000</td>
+                    <td class="ult-td"><input type="number" value="1"></td>
+                    <td class="ult-td">$25.000</td>
                 </tr>
                 </table>
     
                 <div class="total-price">
     
                     <table>
-                        <tr>
+                        <tr class="tb-total">
                             <td>Subtotal</td>
                             <td>$65.000</td>
                         </tr>
-                        <tr>
+                        <tr class="tb-total">
                             <td>Envío</td>
                             <td>$3.000</td>
                         </tr>
-                        <tr>
+                        <tr class="tb-total">
                             <td>Descuento</td>
                             <td>$2.500</td>
                         </tr>
                         <tr>
-                            <td>Total</td>
-                            <td>$65.500</td>
+                            <td  class="btn-finalizar">Total</td>
+                            <td  class="btn-finalizar-2">$65.500</td>
                         </tr>
-                        <tr>
+                        <tr class="tb-total-2">
 
-                            <td><a class="finalizar-compra" href="/">FINALIZAR COMPRA</a></td>
+                            <td class="btn-finalizar"><a class="finalizar-compra" href="/">FINALIZAR COMPRA</a></td>
 
                         </tr>
                     </table>
@@ -168,91 +168,6 @@
             </article>
             
       </section>
-
-            <!-- <div class="small-container">
-                <h2 class="title">ACCESORIOS</h2>
-                <div class="row">
-                    <div class="col-4">
-                        <img src="/images/accesorios/acc-100-Loading-basket.jpg" alt="">
-                        <h4>CANASTA DE CARGA</h4>
-                        <div class="rating"></div>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <p>$2.000</p>
-                
-                        <div>
-                        <div class="carr f-size-10 t-tran-u tran-035">
-                            <a href="/productCart">Agregar al Carrito</a>
-                        </div>
-                        <div class="ver f-size-10 t-tran-u tran-035">
-                            <a href="/productDetail">Ver Mas</a>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <img src="/images/accesorios/acc-101-backpack-pj.jpeg" alt="">
-                        <h4>MOCHILA BLACK</h4>
-                        <div class="rating"></div>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <p>$3.000</p>
-                        <div>
-                            <div class="carr f-size-10 t-tran-u tran-035">
-                                <a href="/productCart">Agregar al Carrito</a>
-                            </div>
-                            <div class="ver f-size-10 t-tran-u tran-035">
-                                <a href="/productDetail">Ver Mas</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <img src="/images/accesorios/acc-102-External-BATERIA.png" alt="">
-                        <h4>BATERIA EXTERNA </h4>
-                        <div class="rating"></div>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <p>$5.000</p>
-                        <div>
-                            <div class="carr f-size-10 t-tran-u tran-035">
-                                <a href="/productCart">Agregar al Carrito</a>
-                            </div>
-                            <div class="ver f-size-10 t-tran-u tran-035">
-                                <a href="/productDetail">Ver Mas</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <img src="/images/accesorios/acc-103-CASCO-w01.jpg" alt="">
-                        <h4>CASCO CLÁSICO</h4>
-                        <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <p>$2.500</p>
-                        <div>
-                            <div class="carr f-size-10 t-tran-u tran-035">
-                                <a href="/productCart">Agregar al Carrito</a>
-                            </div>
-                            <div class="ver f-size-10 t-tran-u tran-035">
-                                <a href="/productDetail">Ver Mas</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-                
-            </div> -->
-            <%- include("../partial/footer") %>
+    <%- include("../partial/footer") %>
 </body>
 </html>
