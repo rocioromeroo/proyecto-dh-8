@@ -17,6 +17,18 @@ const indexController = {
     res.render("index", { items: items, esteAccesorio: esteDato, styleOn: {} })
   },
 
+  search: function (req, res) {
+    let data = productsList.map(function(buscar) {
+      if(buscar.name.includes(req.query.keywords)) {
+        return buscar
+      }
+
+    })
+
+    res.render("index'", { data: data })
+
+  },
+
   myAccount: function (req, res) {
     res.render("user/myAccount", { styleOn: "style" })
   },
