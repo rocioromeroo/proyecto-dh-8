@@ -7,11 +7,13 @@ body{
       background-color: var(--body-background);
       font-family: 'Comfortaa', cursive, 'Arial';
 }
-#home-main a{
+a{
       text-decoration: none;
 }
-#home-main a:visited{
-      color:none;
+
+a#home-main:visited{
+      color: none; 
+      text-decoration: underline;
 }
 :root{
        --body-background:#f4f4f4;
@@ -31,6 +33,7 @@ body{
 .a-i-center{align-items: center; justify-content: center;}
 .width-70{width: 70%;}
 .order-1{order: 1;}
+.d-flex-wrap{display: flex; flex-wrap: wrap;}
 
 /* /////// MAIN HOME /////// */
 #banner-carousel {
@@ -45,9 +48,7 @@ body{
       height: 100%;
       clip-path: polygon(0 0, 69% 0, 100% 100%, 0% 100%);
 }
-/* #home-main{
-      margin: 0px 5%;
-} */
+
 .pad-section{
       padding: 5%;
 }
@@ -160,6 +161,7 @@ article.home-producto{
       text-transform: uppercase;
       padding: 0.6em;
       font-size: 0.8em;
+      color: black;
       
 }
 .ver-mas:hover{
@@ -167,6 +169,7 @@ article.home-producto{
       color: white;
       border-color: white;
 }
+
 .add-car{
       background-color: var(--font-color);
       width: 100%;
@@ -178,8 +181,8 @@ article.home-producto{
       border:1px solid var(--font-color);
       border-radius: 13px;
 }
-.add-car:visited{
-      color: white;
+a.add-car:visited{
+      color: white !important;
 }
 .add-car:hover{
       background-color: var(--bg-font-green-hover);
@@ -239,11 +242,14 @@ article.home-producto{
       text-transform: uppercase;
       font-style: italic;
 }
+.link-ver-mas:visited{
+      color: black;
+}
 .link-ver-mas:hover{
       font-size: 1em;
       text-decoration: underline;
 }
-p{
+#home-main p{
       font-size: 0.9em;
 }
 #home-main h3{
@@ -256,6 +262,7 @@ p{
       width: 100%;
       font-size: 0.8em; 
       text-align: start;
+      color: black;
    }
 p.precio {
       margin-bottom: 10px;
@@ -276,6 +283,7 @@ p.precio {
       width: 47%;
       padding: 5px;
       text-align: center;
+      color: black;
 }
 
 /* ARREGLOS PARA PANTALLAS MEDIAS*/
@@ -336,129 +344,5 @@ p.precio {
         .n-img-size{
               width: auto;
         }
-
-        /* ////// HEADER ESCRITORIO */
-            /* .nav-bar{
-              display: none;
-            }
-            
-            #navegacion .nav-bar-desktop{
-              font-family: 'Comfortaa', cursive, 'Arial';
-              color: var(--font-color);
-              width: 100%;
-              font-size: 18px;
-              padding: 15px;
-              border: solid 1px #FFFFFF;
-              background-color: white;
-              box-sizing: border-box;
-              box-shadow: 0 5px 5px 0 rgba(0,0,0,.15)
-            }
-            
-            .logo-desktop{
-              margin-right: 30%;
-            }
-            
-            .enlaces-desktop a{
-              text-decoration: none;
-              color: var(--font-color);
-            }
-            
-            .enlaces-desktop {
-              display: flex;
-              flex-grow: 1;
-              align-self: center;
-              justify-content: space-between;
-              padding-right: 15px;
-            }
-            
-            .nav-bar-desktop {
-              display: flex;
-              flex-wrap: wrap;
-            }
-            
-            #icons-desktop a{
-              text-decoration: none;
-              color: var(--font-color);
-            }
-            
-            #icons-desktop{
-              display: flex;
-              align-self: center;
-              justify-content:space-between;
-              border: solid 1px #219653;
-              background-color: white;
-              box-sizing: content-box;
-              color: #219653;
-              border-radius: 13px;
-              width: 7%;
-              padding: 0.5%;
-            }
-            .foot-logo{
-              display: none;
-            }
-            
-            .foot-logo-desktop{
-              display: flex;
-              margin-right: 10%;
-            }
-            
-            .redes-desktop a{
-              display: flex;
-              text-decoration: none;
-              color: white;
-            }
-            
-            .redes{
-              display: none;
-            }
-            
-            .redes-desktop{
-              display: flex;
-              flex-grow: 1;
-              justify-content: space-around;
-              align-self: center;
-              padding-left: 2%;
-              padding-bottom: 15px;
-              padding-top: 15px;
-            }
-            
-            .links{
-              display: none;
-            }
-            
-            .links-desktop li{
-              margin: auto;
-            }
-            
-            .links-desktop a{
-              text-decoration: none;
-              color: white;
-              padding-right: 20px;
-            
-            }
-            
-            .links-desktop{
-              color: white;
-              display: flex;
-              flex-grow: 1;
-              justify-content: space-around;
-              align-self: center;
-              padding-top: 15px;
-              padding-bottom: 15px;   
-              padding-left: 3%;
-            }
-            
-            .copyright{
-              display: none;
-            }
-            
-            .copyright-desktop{
-              display: flex;
-              align-self: flex-end;
-              font-family: 'Comfortaa', cursive, 'Arial';
-              color: white;
-              font-size: 10px;
-              padding-right: 6%;
-            } */
       }
 
