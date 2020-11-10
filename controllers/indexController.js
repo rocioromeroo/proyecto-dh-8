@@ -19,13 +19,14 @@ const indexController = {
 
   search: function (req, res) {
 
-    let data = productsList.map(function(buscar) {
+    let data = productsList.filter(function(buscar) {
       if(buscar.name.includes((req.query.keywords).toLowerCase()) || buscar.category.includes((req.query.keywords).toLowerCase())) {
         return buscar
       }
 
     })
     
+    console.log(data);
 
     res.send({data: data})
 
