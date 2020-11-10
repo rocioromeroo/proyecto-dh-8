@@ -1,13 +1,13 @@
 <html lang="en">
-<%- include('../partial/head') %> 
+<%- include('./partial/head') %> 
 <body>
-      <%- include("../partial/header") %> 
+      <%- include("./partial/header") %> 
       <main>
             <section class="d-flex d-a-wrap justify-btw  p-5" >
-            <% for (let dato of items){%>
+            <% for (let dato of data){%>
                   <article class="u-items d-flex just-cont-cent" > 
                         <div class="d-flex h-40 just-cont-cent">
-                              <img class="img-size" src="/images/accesorios/<%= dato.image  %>" alt="">
+                              <img class="img-size" src="/images/<%= dato.category  %>/<%= dato.image  %>" alt="">
                         </div>
 
                         <div class="article-base-ac" >
@@ -24,6 +24,6 @@
                   <%}%>
             </section>   
       </main>
-      <%- include("../partial/footer") %> 
+      <%- include("./partial/footer") %> 
 </body>
 </html>
