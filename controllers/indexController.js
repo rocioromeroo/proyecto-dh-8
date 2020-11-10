@@ -18,14 +18,16 @@ const indexController = {
   },
 
   search: function (req, res) {
+
     let data = productsList.map(function(buscar) {
-      if(buscar.name.includes(req.query.keywords)) {
+      if(buscar.name.includes((req.query.keywords).toLowerCase()) || buscar.category.includes((req.query.keywords).toLowerCase())) {
         return buscar
       }
 
     })
+    
 
-    res.render("index'", { data: data })
+    res.send({data: data})
 
   },
 
