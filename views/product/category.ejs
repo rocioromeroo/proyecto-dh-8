@@ -3,17 +3,18 @@
 <body>
       <%- include("../partial/header") %> 
       <main>
-            <section class="d-a-flex d-a-wrap justify-btw  p-5" >
+            <section class="d-flex d-a-wrap justify-btw  p-5" >
             <% for (let dato of items){%>
-                  <article class="u-items d-a-flex" > 
-                        <div class="d-a-flex h-50 just-cont-cent">
+                  <article class="u-items d-flex just-cont-cent" > 
+                        <div class="d-flex h-40 just-cont-cent">
                               <img class="img-size" src="/images/<%= dato.category  %>/<%= dato.image  %>" alt="">
                         </div>
 
-                        <div class="d-a-flex d-a-wrap h-50 aligne-btw just-cont-cent" >
-                              <h3 class="h-style"><%= dato.name   %></h3>
-                              <p class="p-style"><%= dato.description   %></p>
-                              <div class="w-80 f-d-column justify-btw d-a-flex just-cont-cent ">
+                        <div class="article-base-ac" >
+                              <h3 class="text-center"><%= dato.name   %></h3>
+                              <h3 class="text-center">$ <%= dato.price   %></h3>
+                              <p class="p-style d-flex text-center"><%= dato.description   %></p>
+                              <div class="d-flex text-center w-100 f-d-column d-flex just-cont-cent p-10x">
                                     <a class="ver-mas text-center" href="/products/<%= dato.id %>">Ver mas</a>
                                     <a class="add-car text-center" href="/productCart">Agregar al carrito</a>
                               </div>        
