@@ -7,8 +7,13 @@ const usersController = require('../controllers/usersController')
 router.get('/', function(req, res, next) {
   res.send('respond with a resource');
 });
+
+/*        GET/POST       Register   */
 router.get('/register', usersController.register)
 router.post('/register', usersController.userStore)
+
+
+
 router.get('/login', usersController.login)
 
 

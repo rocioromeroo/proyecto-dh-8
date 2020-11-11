@@ -18,17 +18,15 @@ const indexController = {
   },
 
   search: function (req, res) {
-
-    let data = productsList.filter(function(buscar) {
-      if(buscar.name.includes((req.query.keywords).toLowerCase()) || buscar.category.includes((req.query.keywords).toLowerCase())) {
-        return buscar
-      }
+     
+    let data = productsList.filter(function (buscar) {
+      return (buscar.name.toLowerCase().includes(req.query.keywords.toLowerCase()) || buscar.category.toLowerCase().includes(req.query.keywords.toLowerCase())) 
 
     })
-    
+
     console.log(data);
 
-    res.send({data: data})
+    res.render("viewsSearch",{ data: data, styleOn: "accessories" })
 
   },
 

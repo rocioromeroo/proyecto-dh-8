@@ -2,27 +2,26 @@
     <%- include("../partial/head")  %> 
 <body>
       <%- include("../partial/header") %> 
-
-              <section  class="margin-bt-20x">
+      <% for (let dato of items){%>
+              <section  class="products-category">
                   <article class="container">
-                        <div class="d-flex-wrap bg-white jus-con-center b-radius-13">
-                              <div class="img-contain d-flex-wrap size-50 pdd-0x-15x">
-                                    <img src="/images/bicicletas/bic-201-black-.jpg" alt="bicicleta" width="100%">
-                              </div>
-                              <div class="pdd-15x size-50 d-flex-wrap align-content-center">
-                                    <h2 class="margin-b">Prague Electric Mountain Bike, E-Bike, E-MTB, 250W, 36V 13Ah 468Wh Battery
-                                    </h2>
-                                    <p class="font-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam magni laboriosam non, nisi dolore error possimus doloribus excepturi commodi. Libero eaque minima dolore blanditiis ipsam fugiat, expedita eveniet quas culpa?
-                                    </p>
-                                    <div class="ver-a-h2">
-                                          <a class="pdd-10x" href="/products/list/bicicletas">Ver e-bicicletas</a>
-                                    </div>   
-                              </div>
+                        
+                        <div class="img-contain">
+                              <img src="/images/<%= dato.category  %>/<%= dato.image  %>" alt="" width="100%">
+                        </div>
+                        <div class="contain-titles">
+                              <h2><%= dato.name   %></h2>
+                              <p><%= dato.description   %></p>
+                              <div>
+                                    <a class="a-h2-nov" href="/products/category/<%= dato.category  %>">Ver e-<%= dato.category  %></a>
+                              </div>   
                         </div>
                   </article>
               </section>
 
-              <section  class="margin-bt-20x se-bg">
+              <%}%> 
+
+              <!-- <section  class="margin-bt-20x se-bg">
                   <article class="container">
                         <div class="d-flex-wrap bg-white jus-con-center b-radius-13">
                               <div class="img-contain size-50 pdd-0x-15x">
@@ -34,7 +33,7 @@
                                     <p class="font-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam magni laboriosam non, nisi dolore error possimus doloribus excepturi commodi. Libero eaque minima dolore blanditiis ipsam fugiat, expedita eveniet quas culpa?
                                     </p>
                                     <div class="ver-a-h2">
-                                          <a class="pdd-10x" href="/products/list/dualciclos">Ver e-dualciclos</a>
+                                          <a class="pdd-10x" href="/products/category/dualciclos">Ver e-dualciclos</a>
                                     </div>   
                               </div>
                         </div>
@@ -53,7 +52,7 @@
                                     <p class="font-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam magni laboriosam non, nisi dolore error possimus doloribus excepturi commodi. Libero eaque minima dolore blanditiis ipsam fugiat, expedita eveniet quas culpa?
                                     </p>
                                     <div class="ver-a-h2">
-                                          <a class="pdd-10x" href="/products/list/monociclos">Ver e-monociclos</a>
+                                          <a class="pdd-10x" href="/products/category/monociclos">Ver e-monociclos</a>
                                     </div>   
                               </div>
                         </div>
@@ -72,7 +71,7 @@
                                     <p class="font-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam magni laboriosam non, nisi dolore error possimus doloribus excepturi commodi. Libero eaque minima dolore blanditiis ipsam fugiat, expedita eveniet quas culpa?
                                     </p>
                                     <div class="ver-a-h2">
-                                          <a class="pdd-10x" href="/products/list/monociclos">Ver mas e-kart</a>
+                                          <a class="pdd-10x" href="/products/category/monociclos">Ver mas e-kart</a>
                                     </div>   
                               </div>
                         </div>
@@ -91,12 +90,12 @@
                                     <p class="font-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam magni laboriosam non, nisi dolore error possimus doloribus excepturi commodi. Libero eaque minima dolore blanditiis ipsam fugiat, expedita eveniet quas culpa?
                                     </p>
                                     <div class="ver-a-h2">
-                                          <a class="pdd-10x" href="/products/list/monopatines">Ver e-monopatines</a>
+                                          <a class="pdd-10x" href="/products/category/monopatines">Ver e-monopatines</a>
                                     </div>   
                               </div>
                         </div>
                   </article>
-              </section>
+              </section> -->
                 
         </main>
         <%- include("../partial/footer") %> 
