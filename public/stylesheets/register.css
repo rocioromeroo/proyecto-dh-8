@@ -153,6 +153,7 @@
     margin-block-end: 0;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    padding-top: 15px;
 }
 
 .register{
@@ -173,7 +174,7 @@
     text-align: center;
     font-size: 45px;
     padding-top: 10%;
-    padding-bottom: 4%;
+    padding-bottom: 5%;
 }
 
 .registro{
@@ -203,7 +204,7 @@
         background-color: white;
         align-items: center;
         box-shadow: 0 5px 5px 0 rgba(0,0,0,.15);   
-        margin: auto;
+        margin: 5% auto;
     }
 
     .body-register h1{
@@ -211,7 +212,8 @@
         color:var(--font-color);
         text-align: center;
         font-size: 30px;
-        padding: 4%;
+        padding-top: 10%;
+        padding-bottom: 5%;
     }
 
 }

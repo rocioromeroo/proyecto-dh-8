@@ -176,18 +176,23 @@
     padding-right: 8%;
 }
 
+.password {
+    padding-top: 15px ;
+}
+
 .recordar{
     font-family: 'Comfortaa', cursive, 'Arial';
     color: var(--font-color);
     font-size: 12px;
     padding-left: 8%;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .recordar input{
     display: inline-block;
-    color: #219653;
     width: 8px;
-}
+}   
 
 .olvidar{
     font-family: 'Comfortaa', cursive, 'Arial';
@@ -195,6 +200,8 @@
     text-align: left;
     font-size: 12px;
     padding-left: 8%;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .center{
@@ -210,7 +217,7 @@
     .login{
         width: 95%;
         height: 100%;
-        margin-top: 1%;
+        margin: 5% auto;
         padding: 15px;
         border: 1px solid var(--bg-font-grey-hover);
         border-radius: 13px;
@@ -218,7 +225,6 @@
         background-color: white;
         align-items: center;
         box-shadow: 0 5px 5px 0 rgba(0,0,0,.15);   
-        margin: auto;
     }
 
 }

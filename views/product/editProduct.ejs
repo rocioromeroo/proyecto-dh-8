@@ -3,13 +3,10 @@
     <%- include("../partial/head")  %> 
         <title>Eletr8 | Edita Producto</title>
 <body class="body-productForm">
-    <%- include("../partial/header1") %>
-    <br>
+    <%- include("../partial/header") %>
       <main class="product-form">
             <h1>Edita producto</h1>
             <section>
-                
-               
                 
                 <form class="new-product" action="/products" method="POST" enctype="multipart/form-data">
                     <input type="text" name="name" id="name" value="<%= editar.name %>">
@@ -26,14 +23,12 @@
                     <div class="center1">
                         <button  class="crear" type="submit">Públicar</button>
                     </div>
+                    <div class="center2">
+                        <button  class="delete" type="delete">Eliminar</button>
+                    </div>
                 </form>
-
-                
 
             </section>          
       </main>
-      <br>
-      <br>
-      <hr>
-      <%- include("../partial/footer1") %>
+      <%- include("../partial/footer") %>
 </body>
