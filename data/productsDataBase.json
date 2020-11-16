@@ -1,267 +1,265 @@
 [
-    {
-        "id": 1,
-        "name": "Canasto S PLUS",
-        "brand": "Segway",
-        "price": 900,
-        "discount": 30,
-        "category": "accesorios",
-        "description": "Made of water-resistant nylon with polyester lining, the 15.6 inch Segway Ninebot Backpack comes with built-in USB port and anti-theft compartment for security.",
-        "image": "acc-100-Loading-basket.jpg"
-    },
-    {
-        "id": 2,
-        "name": "Mochila PJ16BB",
-        "brand": "Segway",
-        "price": 1500,
-        "discount": 5,
-        "category": "accesorios",
-        "description": " Made of water-resistant nylon with polyester lining, the 15.6 inch Segway Ninebot Backpack comes with built-in USB port.",
-        "image": "acc-101-backpack-pj.jpeg"
-    },
-    {
-        "id": 3,
-        "name": "Bateria externa de monopatin ",
-        "brand": "Segway",
-        "price": 2400,
-        "discount": 12,
-        "category": "accesorios",
-        "description": "The Extended Battery is compatible with the Ninebot KickScooter by Segway ES1 & ES2. It is easy to install and nearly doubles the range of both models from 15.5 miles to 28 miles.",
-        "image": "acc-102-External-BATERIA.png"
-    },
-    {
-        "id": 4,
-        "name": "Casco de seguridad Blanco",
-        "description": "Unica fábrica de cascos de Argentina con doble certificación IRAM – AITA 3621/2002 e INTI (CHAS), esto significa que ha obtenido la Certificación de Homologación de Autopartes y Elementos de Seguridad.",
-        "brand": "Segway",
-        "price": 1200,
-        "discount": 10,
-        "image": "acc-103-CASCO-w01.jpg",
-        "category": "accesorios"
-    },
-    {
-        "id": 5,
-        "name": "Soporte de celular",
-        "description": "Funda a prueba de agua. Para manubrios hasta 24mm. de diámetro.Compatible con celulares de hasta 14x7 centimetros.",
-        "brand": "Segway",
-        "price": 1000,
-        "discount": 20,
-        "image": "acc-105-Soporte-celular.jpg",
-        "category": "accesorios"
-    },
-    {
-        "id": 6,
-        "name": "Bolso de Manubrio",
-        "description": "Impermeable. Dos bosillos red en los laterales.Medidas 17 cm x 24 cm x 14 cm (alto, ancho, profundidad).En la tapa superior puede entrar un celular, el espacio es de 20 x 13 cm",
-        "brand": "Segway",
-        "price": 20999,
-        "discount": 10,
-        "image": "acc-104-BOLSO002.jpg",
-        "category": "accesorios"
-    },
-    {
-        "id": 7,
-        "name": "Bicicleta Electrica Azul",
-        "description": "Una bicicleta con suspensión full, con la potencia y tracción necesarias para hacer que cualquier recorrido sea posible, y cualquier situación, emocionante.",
-        "brand": "Mountagne",
-        "price": 100000,
-        "discount": 15,
-        "image": "bic-200-blue-electric-bike-794411_00.jpg",
-        "category": "bicicletas"
-    },
-    {
-        "id": 8,
-        "name": "Bicicleta Electrica Blanca",
-        "description": "Se destaca en cualquier terreno, especialmente en subidas y bajadas empinadas. Desde subidas a curvas pronunciadas, las cubiertas de 27,5 de ancho ofrecen una tracción sobresaliente.",
-        "brand": "Mountagne",
-        "price": 104800,
-        "discount": 20,
-        "image": "bic-201-black-.jpg",
-        "category": "bicicletas"
-    },
-    {
-        "id": 9,
-        "name": "Bicicleta Electrica pegable Blanca",
-        "description": "Se destaca en cualquier terreno, especialmente en subidas y bajadas empinadas. Desde subidas a curvas pronunciadas, las cubiertas de 27,5 de ancho ofrecen una tracción sobresaliente.",
-        "brand": "Mountagne",
-        "price": 84800,
-        "discount": 25,
-        "image": "bic-202-pegable-blanca.jpg",
-        "category": "bicicletas"
-    },
-    {
-        "id": 10,
-        "name": "Monociclo S2",
-        "description": "Potencia y Estabilidad con un Diseño Innovador. El corazón de nuestro Smart Balance late con fuerza gracias a su batería li-ion, que le confiere una autonomía de hasta 20 kilómetros, gracias a una capacidad de carga de 4400mAh.",
-        "brand": "Segway",
-        "price": 11399,
-        "discount": 30,
-        "image": "mc-400-SEGWAY-ONE-S2.jpeg",
-        "category": "monociclos"
-    },
-    {
-        "id": 11,
-        "name": "One Z10",
-        "description": "Potencia y Estabilidad con un Diseño Innovador. El corazón de nuestro Smart Balance late con fuerza gracias a su batería li-ion, que le confiere una autonomía de hasta 20 kilómetros, gracias a una capacidad de carga de 4400mAh.",
-        "brand": "Segway",
-        "price": 22000,
-        "discount": 10,
-        "image": "mc-401-SEGWAY-NINEBOT-ONE-Z10.jpeg",
-        "category": "monociclos"
-    },
-    {
-        "id": 12,
-        "name": "Monociclo Pro Blanco",
-        "description": "Potencia y Estabilidad con un Diseño Innovador. El corazón de nuestro Smart Balance late con fuerza gracias a su batería li-ion, que le confiere una autonomía de hasta 20 kilómetros, gracias a una capacidad de carga de 4400mAh.",
-        "brand": "Segway",
-        "price": 29990,
-        "discount": 12,
-        "image": "mc-402-segway-PRO-WHITE.jpg",
-        "category": "dualciclos"
-    },
-    {
-        "id": 13,
-        "name": "Karting Electrico",
-        "description": "Con el karting eléctrico vas a poder moverte de forma LIMPIA y ECOLÓGICA por toda la ciudad.Con su gran autonomía, suave aceleración y una velocidad máxima de 20 km/h, es ideal para recorrer la ciudad o trabajar sin gastar en combustible.",
-        "brand": "Segway",
-        "price": 62990,
-        "discount": 40,
-        "image": "mc-403-go-KART.jpg",
-        "category": "monociclos"
-    },
-    {
-        "id": 14,
-        "name": "Monopatin electrico Max",
-        "description": "Práctico, rápido y económico.Con todas las ventajas de la micromovilidad, ideal para recorrer distancias cortas en entornos urbanos.De aluminio, plegable y ultraliviano.",
-        "brand": "Ninebot",
-        "price": 34990,
-        "discount": 10,
-        "image": "mp-300-Ninebot-KICKSCOOTER-Max.png",
-        "category": "monopatines"
-    },
-    {
-        "id": 15,
-        "name": "Monopatin Electrico ES2",
-        "description": "Práctico, rápido y económico. Con todas las ventajas de la micromovilidad, ideal para recorrer distancias cortas en entornos urbanos.De aluminio, plegable y ultraliviano.",
-        "brand": "Ninebot",
-        "price": 20999,
-        "discount": 15,
-        "image": "mp-301-Segway-Ninebot-Kickscooter-ES2.png",
-        "category": "monopatines"
-    },
-    {
-        "id": 16,
-        "name": "Monopatin Electrico",
-        "description": "Práctico, rápido y económico. Con todas las ventajas de la micromovilidad, ideal para recorrer distancias cortas en entornos urbanos.De aluminio, plegable y ultraliviano.",
-        "brand": "Segway",
-        "price": 15979,
-        "discount": 12,
-        "image": "mp-302-Ninebot-Segway-KickScooter.jpg",
-        "category": "monopatines"
-    },
-
-    {
-        "id": 17,
-        "name": "Monopatin Electrico air t15",
-        "brand": "Ninebot",
-        "price": 23699,
-        "discount": 5,
-        "description": "Práctico, rápido y económico. Con todas las ventajas de la micromovilidad, ideal para recorrer distancias cortas en entornos urbanos.De aluminio, plegable y ultraliviano.",
-        "image": "mp-303-ninebot-air-t15.png",
-        "category": "monopatines"
-    },
-    {  
-        "id": 18,
-        "name": "Bicicleta Electrica Blanca",
-        "description": "Se destaca en cualquier terreno, especialmente en subidas y bajadas empinadas. Desde subidas a curvas pronunciadas, las cubiertas de 27,5 de ancho ofrecen una tracción sobresaliente.",
-        "brand": "Mountagne",
-        "price": 104800,
-        "discount": 12,
-        "image": "bic-201-black-.jpg",
-        "category": "visitados"
-    },
-    {  
-        "id": 19,
-        "name": "Monociclo S2",
-        "description": "Potencia y Estabilidad con un Diseño Innovador. El corazón de nuestro Smart Balance late con fuerza gracias a su batería li-ion, que le confiere una autonomía de hasta 20 kilómetros, gracias a una capacidad de carga de 4400mAh.",
-        "brand": "Segway",
-        "price": 11399,
-        "discount": 10,
-        "image": "mc-406-MONOCICLO-CICLO.png",
-        "category": "visitados"
-    },
-    {
-        "id": 20,
-        "name": "Monopatin Electrico ES2",
-        "description": "Práctico, rápido y económico. Con todas las ventajas de la micromovilidad, ideal para recorrer distancias cortas en entornos urbanos.De aluminio, plegable y ultraliviano.",
-        "brand": "Ninebot",
-        "price": 20999,
-        "discount": 15,
-        "image": "mp-301-Segway-Ninebot-Kickscooter-ES2.png",
-        "category": "visitados"
-    },
-    {
-        "id": 21,
-        "name": "Monopatin Electrico",
-        "description": "Práctico, rápido y económico. Con todas las ventajas de la micromovilidad, ideal para recorrer distancias cortas en entornos urbanos.De aluminio, plegable y ultraliviano.",
-        "brand": "Segway",
-        "price": 15979,
-        "discount": 12,
-        "image": "mp-302-Ninebot-Segway-KickScooter.jpg",
-        "category": "visitados"
-    },
-    {
-        "id": 22,
-        "name": "Karting Electrico",
-        "description": "Con el karting eléctrico vas a poder moverte de forma LIMPIA y ECOLÓGICA por toda la ciudad.Con su gran autonomía, suave aceleración y una velocidad máxima de 20 km/h, es ideal para recorrer la ciudad o trabajar sin gastar en combustible.",
-        "brand": "Segway",
-        "price": 62990,
-        "discount": 40,
-        "image": "mc-403-go-KART.jpg",
-        "category": "novedades"
-    },
-    
-    {
-        "id": 23,
-        "name": "Bicicleta Electrica Blanca",
-        "description": "Se destaca en cualquier terreno, especialmente en subidas y bajadas empinadas. Desde subidas a curvas pronunciadas, las cubiertas de 27,5 de ancho ofrecen una tracción sobresaliente.",
-        "brand": "Mountagne",
-        "price": 104800,
-        "discount": 20,
-        "image": "bic-201-black-.jpg",
-        "category": "novedades"
-    },
-    { 
-        "id": 24,
-        "name": "Dualciclo Pro Negro",
-        "description": "Potencia y Estabilidad con un Diseño Innovador. El corazón de nuestro Smart Balance late con fuerza gracias a su batería li-ion, que le confiere una autonomía de hasta 20 kilómetros, gracias a una capacidad de carga de 4400mAh.",
-        "brand": "Segway",
-        "price": 29990,
-        "discount": 12,
-        "image": "dc-501-Products-Segway-Ninebot.png",
-        "category": "novedades"
-    },
-    {
-        "id": 25,
-        "name": "Monopatin electrico Max",
-        "description": "Práctico, rápido y económico.Con todas las ventajas de la micromovilidad, ideal para recorrer distancias cortas en entornos urbanos.De aluminio, plegable y ultraliviano.",
-        "brand": "Ninebot",
-        "price": 34990,
-        "discount": 10,
-        "image": "mp-300-Ninebot-KICKSCOOTER-Max.png",
-        "category": "novedades"
-    },
-    {
-        "id": 26,
-        "name": "Monociclo One s2",
-        "description": "Be adventurous and get more out of life. Plug in 30 kilometers of fast-paced fun and reach out to those places you couldn't reach before.",
-        "brand": "Ninebot",
-        "price": 40990,
-        "discount": 21,
-        "image": "mc-405-one-s2-resized.png",
-        "category": "novedades"
-    },
-    { 
+  {
+    "id": 1,
+    "name": "Canasto S PLUS",
+    "brand": "Segway",
+    "price": 900,
+    "discount": 30,
+    "category": "accesorios",
+    "description": "Made of water-resistant nylon with polyester lining, the 15.6 inch Segway Ninebot Backpack comes with built-in USB port and anti-theft compartment for security.",
+    "image": "acc-100-Loading-basket.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Mochila PJ16BB",
+    "brand": "Segway",
+    "price": 1500,
+    "discount": 5,
+    "category": "accesorios",
+    "description": " Made of water-resistant nylon with polyester lining, the 15.6 inch Segway Ninebot Backpack comes with built-in USB port.",
+    "image": "acc-101-backpack-pj.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "Bateria externa de monopatin ",
+    "brand": "Segway",
+    "price": 2400,
+    "discount": 12,
+    "category": "accesorios",
+    "description": "The Extended Battery is compatible with the Ninebot KickScooter by Segway ES1 & ES2. It is easy to install and nearly doubles the range of both models from 15.5 miles to 28 miles.",
+    "image": "acc-102-External-BATERIA.png"
+  },
+  {
+    "id": 4,
+    "name": "Casco de seguridad Blanco",
+    "description": "Unica fábrica de cascos de Argentina con doble certificación IRAM – AITA 3621/2002 e INTI (CHAS), esto significa que ha obtenido la Certificación de Homologación de Autopartes y Elementos de Seguridad.",
+    "brand": "Segway",
+    "price": 1200,
+    "discount": 10,
+    "image": "acc-103-CASCO-w01.jpg",
+    "category": "accesorios"
+  },
+  {
+    "id": 5,
+    "name": "Soporte de celular",
+    "description": "Funda a prueba de agua. Para manubrios hasta 24mm. de diámetro.Compatible con celulares de hasta 14x7 centimetros.",
+    "brand": "Segway",
+    "price": 1000,
+    "discount": 20,
+    "image": "acc-105-Soporte-celular.jpg",
+    "category": "accesorios"
+  },
+  {
+    "id": 6,
+    "name": "Bolso de Manubrio",
+    "description": "Impermeable. Dos bosillos red en los laterales.Medidas 17 cm x 24 cm x 14 cm (alto, ancho, profundidad).En la tapa superior puede entrar un celular, el espacio es de 20 x 13 cm",
+    "brand": "Segway",
+    "price": 20999,
+    "discount": 10,
+    "image": "acc-104-BOLSO002.jpg",
+    "category": "accesorios"
+  },
+  {
+    "id": 7,
+    "name": "Bicicleta Electrica Azul",
+    "description": "Una bicicleta con suspensión full, con la potencia y tracción necesarias para hacer que cualquier recorrido sea posible, y cualquier situación, emocionante.",
+    "brand": "Mountagne",
+    "price": 100000,
+    "discount": 15,
+    "image": "bic-200-blue-electric-bike-794411_00.jpg",
+    "category": "bicicletas"
+  },
+  {
+    "id": 8,
+    "name": "Bicicleta Electrica Blanca",
+    "description": "Se destaca en cualquier terreno, especialmente en subidas y bajadas empinadas. Desde subidas a curvas pronunciadas, las cubiertas de 27,5 de ancho ofrecen una tracción sobresaliente.",
+    "brand": "Mountagne",
+    "price": 104800,
+    "discount": 20,
+    "image": "bic-201-black-.jpg",
+    "category": "bicicletas"
+  },
+  {
+    "id": 9,
+    "name": "Bicicleta Electrica pegable Blanca",
+    "description": "Se destaca en cualquier terreno, especialmente en subidas y bajadas empinadas. Desde subidas a curvas pronunciadas, las cubiertas de 27,5 de ancho ofrecen una tracción sobresaliente.",
+    "brand": "Mountagne",
+    "price": 84800,
+    "discount": 25,
+    "image": "bic-202-pegable-blanca.jpg",
+    "category": "bicicletas"
+  },
+  {
+    "id": 10,
+    "name": "Monociclo S2",
+    "description": "Potencia y Estabilidad con un Diseño Innovador. El corazón de nuestro Smart Balance late con fuerza gracias a su batería li-ion, que le confiere una autonomía de hasta 20 kilómetros, gracias a una capacidad de carga de 4400mAh.",
+    "brand": "Segway",
+    "price": 11399,
+    "discount": 30,
+    "image": "mc-400-SEGWAY-ONE-S2.jpeg",
+    "category": "monociclos"
+  },
+  {
+    "id": 11,
+    "name": "One Z10",
+    "description": "Potencia y Estabilidad con un Diseño Innovador. El corazón de nuestro Smart Balance late con fuerza gracias a su batería li-ion, que le confiere una autonomía de hasta 20 kilómetros, gracias a una capacidad de carga de 4400mAh.",
+    "brand": "Segway",
+    "price": 22000,
+    "discount": 10,
+    "image": "mc-401-SEGWAY-NINEBOT-ONE-Z10.jpeg",
+    "category": "monociclos"
+  },
+  {
+    "id": 12,
+    "name": "Monociclo Pro Blanco",
+    "description": "Potencia y Estabilidad con un Diseño Innovador. El corazón de nuestro Smart Balance late con fuerza gracias a su batería li-ion, que le confiere una autonomía de hasta 20 kilómetros, gracias a una capacidad de carga de 4400mAh.",
+    "brand": "Segway",
+    "price": 29990,
+    "discount": 12,
+    "image": "mc-402-segway-PRO-WHITE.jpg",
+    "category": "dualciclos"
+  },
+  {
+    "id": 13,
+    "name": "Karting Electrico",
+    "description": "Con el karting eléctrico vas a poder moverte de forma LIMPIA y ECOLÓGICA por toda la ciudad.Con su gran autonomía, suave aceleración y una velocidad máxima de 20 km/h, es ideal para recorrer la ciudad o trabajar sin gastar en combustible.",
+    "brand": "Segway",
+    "price": 62990,
+    "discount": 40,
+    "image": "mc-403-go-KART.jpg",
+    "category": "monociclos"
+  },
+  {
+    "id": 14,
+    "name": "Monopatin electrico Max",
+    "description": "Práctico, rápido y económico.Con todas las ventajas de la micromovilidad, ideal para recorrer distancias cortas en entornos urbanos.De aluminio, plegable y ultraliviano.",
+    "brand": "Ninebot",
+    "price": 34990,
+    "discount": 10,
+    "image": "mp-300-Ninebot-KICKSCOOTER-Max.png",
+    "category": "monopatines"
+  },
+  {
+    "id": 15,
+    "name": "Monopatin Electrico ES2",
+    "description": "Práctico, rápido y económico. Con todas las ventajas de la micromovilidad, ideal para recorrer distancias cortas en entornos urbanos.De aluminio, plegable y ultraliviano.",
+    "brand": "Ninebot",
+    "price": 20999,
+    "discount": 15,
+    "image": "mp-301-Segway-Ninebot-Kickscooter-ES2.png",
+    "category": "monopatines"
+  },
+  {
+    "id": 16,
+    "name": "Monopatin Electrico",
+    "description": "Práctico, rápido y económico. Con todas las ventajas de la micromovilidad, ideal para recorrer distancias cortas en entornos urbanos.De aluminio, plegable y ultraliviano.",
+    "brand": "Segway",
+    "price": 15979,
+    "discount": 12,
+    "image": "mp-302-Ninebot-Segway-KickScooter.jpg",
+    "category": "monopatines"
+  },
+  {
+    "id": 17,
+    "name": "Monopatin Electrico air t15",
+    "brand": "Ninebot",
+    "price": 23699,
+    "discount": 5,
+    "description": "Práctico, rápido y económico. Con todas las ventajas de la micromovilidad, ideal para recorrer distancias cortas en entornos urbanos.De aluminio, plegable y ultraliviano.",
+    "image": "mp-303-ninebot-air-t15.png",
+    "category": "monopatines"
+  },
+  {
+    "id": 18,
+    "name": "Bicicleta Electrica Blanca",
+    "description": "Se destaca en cualquier terreno, especialmente en subidas y bajadas empinadas. Desde subidas a curvas pronunciadas, las cubiertas de 27,5 de ancho ofrecen una tracción sobresaliente.",
+    "brand": "Mountagne",
+    "price": 104800,
+    "discount": 12,
+    "image": "bic-201-black-.jpg",
+    "category": "visitados"
+  },
+  {
+    "id": 19,
+    "name": "Monociclo S2",
+    "description": "Potencia y Estabilidad con un Diseño Innovador. El corazón de nuestro Smart Balance late con fuerza gracias a su batería li-ion, que le confiere una autonomía de hasta 20 kilómetros, gracias a una capacidad de carga de 4400mAh.",
+    "brand": "Segway",
+    "price": 11399,
+    "discount": 10,
+    "image": "mc-406-MONOCICLO-CICLO.png",
+    "category": "visitados"
+  },
+  {
+    "id": 20,
+    "name": "Monopatin Electrico ES2",
+    "description": "Práctico, rápido y económico. Con todas las ventajas de la micromovilidad, ideal para recorrer distancias cortas en entornos urbanos.De aluminio, plegable y ultraliviano.",
+    "brand": "Ninebot",
+    "price": 20999,
+    "discount": 15,
+    "image": "mp-301-Segway-Ninebot-Kickscooter-ES2.png",
+    "category": "visitados"
+  },
+  {
+    "id": 21,
+    "name": "Monopatin Electrico",
+    "description": "Práctico, rápido y económico. Con todas las ventajas de la micromovilidad, ideal para recorrer distancias cortas en entornos urbanos.De aluminio, plegable y ultraliviano.",
+    "brand": "Segway",
+    "price": 15979,
+    "discount": 12,
+    "image": "mp-302-Ninebot-Segway-KickScooter.jpg",
+    "category": "visitados"
+  },
+  {
+    "id": 22,
+    "name": "Karting Electrico",
+    "description": "Con el karting eléctrico vas a poder moverte de forma LIMPIA y ECOLÓGICA por toda la ciudad.Con su gran autonomía, suave aceleración y una velocidad máxima de 20 km/h, es ideal para recorrer la ciudad o trabajar sin gastar en combustible.",
+    "brand": "Segway",
+    "price": 62990,
+    "discount": 40,
+    "image": "mc-403-go-KART.jpg",
+    "category": "novedades"
+  },
+  {
+    "id": 23,
+    "name": "Bicicleta Electrica Blanca",
+    "description": "Se destaca en cualquier terreno, especialmente en subidas y bajadas empinadas. Desde subidas a curvas pronunciadas, las cubiertas de 27,5 de ancho ofrecen una tracción sobresaliente.",
+    "brand": "Mountagne",
+    "price": 104800,
+    "discount": 20,
+    "image": "bic-201-black-.jpg",
+    "category": "novedades"
+  },
+  {
+    "id": 24,
+    "name": "Dualciclo Pro Negro",
+    "description": "Potencia y Estabilidad con un Diseño Innovador. El corazón de nuestro Smart Balance late con fuerza gracias a su batería li-ion, que le confiere una autonomía de hasta 20 kilómetros, gracias a una capacidad de carga de 4400mAh.",
+    "brand": "Segway",
+    "price": 29990,
+    "discount": 12,
+    "image": "dc-501-Products-Segway-Ninebot.png",
+    "category": "novedades"
+  },
+  {
+    "id": 25,
+    "name": "Monopatin electrico Max",
+    "description": "Práctico, rápido y económico.Con todas las ventajas de la micromovilidad, ideal para recorrer distancias cortas en entornos urbanos.De aluminio, plegable y ultraliviano.",
+    "brand": "Ninebot",
+    "price": 34990,
+    "discount": 10,
+    "image": "mp-300-Ninebot-KICKSCOOTER-Max.png",
+    "category": "novedades"
+  },
+  {
+    "id": 26,
+    "name": "Monociclo One s2",
+    "description": "Be adventurous and get more out of life. Plug in 30 kilometers of fast-paced fun and reach out to those places you couldn't reach before.",
+    "brand": "Ninebot",
+    "price": 40990,
+    "discount": 21,
+    "image": "mc-405-one-s2-resized.png",
+    "category": "novedades"
+  },
+  {
     "id": 27,
     "name": "Dualciclo Pro Negro",
     "description": "Potencia y Estabilidad con un Diseño Innovador. El corazón de nuestro Smart Balance late con fuerza gracias a su batería li-ion, que le confiere una autonomía de hasta 20 kilómetros, gracias a una capacidad de carga de 4400mAh.",
@@ -270,8 +268,8 @@
     "discount": 12,
     "image": "dc-501-Products-Segway-Ninebot.png",
     "category": "dualciclos"
-},
-{ 
+  },
+  {
     "id": 28,
     "name": "Dual Scooter",
     "description": "El Balance Scooter también conocido como Hoverboards se convertirá en la forma más económica, ecológica y divertida de moverte. Gracias al gran avance tecnológico podrás deleitarte de un magnifico paseo, desplazándote de una forma diferente, usando tan solo el equilibrio de tu cuerpo para moverte.",
@@ -280,5 +278,5 @@
     "discount": 10,
     "image": "dc-500-dual-scooter-ES6 .jpg",
     "category": "dualciclos"
-}
+  }
 ]

@@ -19,23 +19,18 @@ let productsController= require("../controllers/productsController");
 router.get('/', productsController.products)
 router.get('/category/:category', productsController.category)
 
-
 /*** CREATE ONE PRODUCT ***/ 
-router.get('/createProduct', productsController.create)
+router.get('/create', productsController.create)
 router.post('/', upload.any(), productsController.store)
 
-
-/*** GET ALL ACCESORIES ***/ 
-
-
 /*** GO TO CART ***/ 
-router.get('/productCart', productsController.cart)
+router.get('/cart', productsController.cart)
 
 /*** GET ONE PRODUCT ***/ 
 router.get('/:id', productsController.detail)
 
 /*** EDIT ONE PRODUCT ***/ 
-router.get('/:id/editProduct', productsController.edit)
+router.get('/:id/edit', productsController.edit)
 router.put('/:id', productsController.update)
 
 /*** DELETE ONE PRODUCT ***/ 

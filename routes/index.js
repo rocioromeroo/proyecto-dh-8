@@ -8,7 +8,5 @@ router.get('/', indexController.index)
 /* GET Search page. */
 router.get('/search', indexController.search)
 
-/* GET My Account page. */
-router.get('/myAccount', indexController.myAccount)
 
 module.exports = router;
