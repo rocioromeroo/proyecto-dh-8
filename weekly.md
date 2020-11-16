@@ -1,4 +1,3 @@
-
 Weekly: Sprint-3
 
 Participantes - Proyecto - Electr8
@@ -23,21 +22,21 @@ Que se hizo ayer: Se charlo sobre el sprint-3, se repaso las tareas y se armo el
 Se encontro algun impedimento: El head presenta cambios en el diseño al agregarlo
 Que se hace hoy: Se realiza la ruta hacia productDetails, se verifica el acceso a la pagina
 
-------------------------------------------------------------
+---
 
 Weekly: Sprint-4
 
 Creacion branch sprint 4
 
 Romero Rocio
-Que se hizo ayer: 
-Se encontro algun impedimento: 
+Que se hizo ayer:
+Se encontro algun impedimento:
 Que se hace hoy:
 
 Fernandez Juan
-Que se hizo ayer: 
-Se encontro algun impedimento: 
-Que se hace hoy:
+Que se hizo ayer: Actualice el carrito, fondo blanco y links de accesorios.
+Se encontro algun impedimento: que los accesorios sean dinámicos.
+Que se hace hoy: Revisar la página junto al equipo y comprobar que todos los links funcionen.
 
 Nusfaumer Leonel
 Que se hizo ayer: Creamos el Sprint-4. Recibimos el feedback del sprint-3. Revisamos rutas.
