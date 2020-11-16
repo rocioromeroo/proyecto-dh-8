@@ -152,12 +152,19 @@ const productsController = {
   },
 
   cart: function (req, res) {
-    let carrito = productsList.filter(function (valor) {
-      if (valor.id == req.params.id) {
+
+    let items = productsList.filter(function (valor) {
+      if (valor.category == "visitados") {
         return valor
       }
     })
-    res.render('./product/productCart', { carrito: carrito, styleOn: "productCart" })
+    let esteDato = productsList.filter(function (esteDato) {
+      if (esteDato.category == "accesorios") {
+        return esteDato
+      }
+    })
+
+    res.render("./product/productCart", { items: items, esteAccesorio: esteDato, styleOn: "productCart" })
   }
 }
 

@@ -18,11 +18,11 @@ body {
 }
 a {
   text-decoration: none;
-  color: #555;
+  color: black;
 }
 
 p {
-  color: #555;
+  color: black;
 }
 
 .row {
@@ -59,7 +59,7 @@ p {
   margin: 0 auto 80px;
   position: relative;
   line-height: 60px;
-  color: #555;
+  color: black;
 }
 
 .title::after {
@@ -75,7 +75,7 @@ p {
 }
 
 h4 {
-  color: #555;
+  color: black;
   font-weight: normal;
 }
 
@@ -166,11 +166,12 @@ td img {
 }
 
 .tb-total {
-  background-color: #dedede;
+  background-color: white;
 }
 
 .btn-finalizar {
   border-style: none;
+  background-color: #d1d1d1;
 }
 
 .btn-finalizar-2 {
@@ -217,12 +218,11 @@ th:last-child {
   width: 100%;
   margin: 0px auto;
   text-transform: uppercase;
-  padding: 20px 20px;
+  padding: 5px 30px 5px 30px;
   color: white;
   font-size: 0.8em;
   border: 1px solid var(--font-color);
-  border-radius: 30px;
-  margin-top: 20px;
+  border-radius: 13px;
 }
 
 .finalizar-compra:hover {
@@ -253,10 +253,11 @@ th:last-child {
 }
 
 .table-cart {
-  background-color: #dedede;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  border-bottom-left-radius: 15px;
+  background-color: white;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+  border-bottom-left-radius: 13px;
+  /*box-shadow: -10px 0px 10px 5px #888888;*/
 }
 
 .ver a {
@@ -289,6 +290,15 @@ th:last-child {
 @media (max-width: 555px) {
   .cart-info p {
     display: none;
+  }
+}
+
+@media (max-width: 454px) {
+  .table-cart {
+    background-color: white;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    border-bottom-left-radius: 0px;
   }
 }
 
@@ -331,13 +341,10 @@ th:last-child {
   flex-wrap: wrap;
 
   border-radius: 13px;
-  box-shadow: 0 0 10px 5px #dedede80;
+  box-shadow: 0 0 10px 5px #dedede 80;
   margin-bottom: 20px;
   background-color: var(--articles-bg);
   padding: 5px;
-}
-.p-ac-img {
-  width: 50%;
 }
 .ac-contain img {
   width: 100%;
@@ -356,11 +363,11 @@ p.precio {
 }
 
 .tr-table {
-  border-top-left-radius: 15px;
+  border-top-left-radius: 13px;
 }
 
 .tr-table-2 {
-  border-top-right-radius: 15px;
+  border-top-right-radius: 13px;
 }
 
 .add-car {
@@ -394,7 +401,7 @@ p.precio {
   flex-wrap: wrap;
 
   border-radius: 13px;
-  box-shadow: 0 0 10px 5px #dedede80;
+  box-shadow: 0 0 10px 5px #dedede 80;
   margin-bottom: 20px;
   background-color: var(--articles-bg);
   padding: 5px;
@@ -402,6 +409,11 @@ p.precio {
 
 .titulo-acc {
   color: #219653;
+}
+
+.h2-accesorios {
+  color: var(--font-color);
+  text-transform: uppercase;
 }
 
 .p-ac-img {
