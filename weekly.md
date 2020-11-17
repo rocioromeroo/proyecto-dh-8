@@ -29,9 +29,9 @@ Weekly: Sprint-4
 Creacion branch sprint 4
 
 Romero Rocio
-Que se hizo ayer:
-Se encontro algun impedimento:
-Que se hace hoy:
+Que se hizo ayer: Modificaciones formularios    
+Se encontro algun impedimento: Boton de carga de nuevo producto
+Que se hace hoy: Revisar la página junto al equipo y comprobar que todos los links funcionen.
 
 Fernandez Juan
 Que se hizo ayer: Actualice el carrito, fondo blanco y links de accesorios.
