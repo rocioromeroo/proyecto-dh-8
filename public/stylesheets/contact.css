@@ -17,7 +17,8 @@
 .m-botto-5 {margin-bottom: 5%;}
 .b-tran {border: transparent;}
 .b-botto {border-bottom: 1px solid var(--font-color)}
-.border {border: 1px solid var(--font-color);}
+.b-botto1 {border-bottom: 1px solid gray}
+.border {border: 1px solid gray;}
 .b-radi-13 {border-radius: 13px;}
 .d-flex {display: flex;}
 .j-cont-c {justify-content: center;}
@@ -28,7 +29,9 @@
 .colo {color: var(--font-color);}
 .bg-c {background-color: #f4f4f4;}
 .t-tran {text-transform: uppercase;}
-
+.b-sty {border-style: outset};
+.b-color {border-color: #f4f4f4};
+.b-wid {border-width: 1px;}
 
 /* Inicio del Cuerpo Principal */
 
