@@ -3,6 +3,7 @@
   --articles-bg: white;
   --font-color: #219653;
   --bg-font-green-hover: #18683b;
+  --font-color-rgba: rgba(33, 150, 84, 0.856);
   --bg-font-grey-hover: #5a6268;
 }
 
@@ -16,8 +17,8 @@ ul {
   padding: 0;
 }
 #top-header {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
   color: white;
   text-align: right;
   font-size: 15px;
@@ -29,7 +30,7 @@ ul {
   margin-bottom: 5px;
 }
 .search-input {
-    display: none;
+  display: none;
 }
 #navegacion {
   width: 100%;
@@ -64,14 +65,14 @@ ul {
   display: none;
 }
 .logo {
-    width: 50%;
+  width: 50%;
   display: flex;
   justify-content: center;
   height: max-content;
 }
-.logo img{
-    width: 100%;
-    max-width: 200px;
+.logo img {
+  width: 100%;
+  max-width: 200px;
 }
 
 .hamburguesa {
@@ -97,7 +98,6 @@ ul {
   display: flex;
   padding: 5px;
   justify-content: center;
-  
 }
 .enlaces {
   display: flex;
@@ -133,9 +133,9 @@ ul {
   overflow: hidden;
 }
 
-a.hover-icon:hover{
+a.hover-icon:hover {
   font-size: 22px;
-  color:white;
+  color: white;
 }
 
 /* //// BUSCADOR STYLE /// */
@@ -147,25 +147,24 @@ a.hover-icon:hover{
 #searchEngine form {
   display: flex;
 }
-#searchEngine form button{
-    background-color: white;
-    border: none;
-    color: var(--font-color);
-    border-radius: 13px;
+#searchEngine form button {
+  background-color: white;
+  border: none;
+  color: var(--font-color);
+  border-radius: 13px;
 }
-#searchEngine form input[type="text"]{
-    width: 100%;
-    font-family: inherit;
-    background-color: white;
-    border: none;
-    padding: 2px;
-    font-size: 1em;
-    border-radius: 13px;
+#searchEngine form input[type="text"] {
+  width: 100%;
+  font-family: inherit;
+  background-color: white;
+  border: none;
+  padding: 2px;
+  font-size: 1em;
+  border-radius: 13px;
 }
-#searchEngine form input:focus{
-    outline: none ;
+#searchEngine form input:focus {
+  outline: none;
 }
-
 
 /*                 FOOTER  ///////*/
 
@@ -251,29 +250,31 @@ a.hover-icon:hover{
   .nav-bar {
     display: none;
   }
-  .a-icenter{
-      align-items: center;
+  .a-icenter {
+    align-items: center;
   }
-  #top-header{
-      justify-content: space-between;
+  #top-header {
+    justify-content: space-between;
   }
   .search-input {
     display: flex;
     width: 25%;
-}
-#searchEngine .search-form{
+  }
+  #searchEngine .search-form {
     padding: 2px;
     background-color: white;
     border-radius: 13px;
-}
+  }
 
-#searchEngine form button i{
+  #searchEngine form button i {
     padding: 5px;
     padding-right: 10px;
     font-size: 22px;
-}
+  }
 
   #navegacion .nav-bar-desktop {
+    display: flex;
+    justify-content: space-between;
     font-family: "Comfortaa", cursive, "Arial";
     color: var(--font-color);
     width: 100%;
@@ -285,20 +286,25 @@ a.hover-icon:hover{
   }
 
   .logo-desktop {
-    margin-right: 30%;
+    display: flex;
   }
 
   .enlaces-desktop a {
+    padding-bottom: 10px;
     text-decoration: none;
     color: var(--font-color);
+  }
+  .enlaces-desktop a:hover {
+    border-bottom: 2px solid var(--font-color-rgba);
   }
 
   .enlaces-desktop {
     display: flex;
-    flex-grow: 1;
+    width: 50%;
     align-self: center;
-    justify-content: space-between;
-    padding-right: 15px;
+    justify-content: space-around;
+    position: relative;
+    left: 10%;
   }
 
   .nav-bar-desktop {
@@ -314,6 +320,33 @@ a.hover-icon:hover{
     display: flex;
     justify-content: space-around;
   }
+  .hover-none {display: none;}
+
+  a.h-log:hover .hover-login {
+    display: flex;
+    position: absolute;
+    top: 85px;
+    right: 60px;
+    font-size: 0.8em;
+    text-align: center;
+  }
+ 
+  a.h-reg:hover .hover-register {
+    display: flex;
+    position: absolute;
+    top: 85px;
+    right: 40px;
+    font-size: 0.8em;
+    text-align: center;
+  }
+  a.h-cart:hover .hover-carrito {
+    display: flex;
+    position: absolute;
+    top: 85px;
+    right: 40px;
+    font-size: 0.8em;
+    text-align: center;
+  }
 
   #icons-desktop {
     width: 10%;
@@ -328,12 +361,9 @@ a.hover-icon:hover{
     box-sizing: content-box;
     color: #219653;
     border-radius: 13px;
-
   }
 
-
-
- /*         FOOTER DESKTOP  */
+  /*         FOOTER DESKTOP  */
   .foot-logo {
     display: none;
   }
