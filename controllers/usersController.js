@@ -1,6 +1,8 @@
 var path = require('path');
 var fs = require('fs');
-
+const {validationResult } = require("express-validator")
+const bcryptjs = require("bcryptjs")
+var modelsUsers = require("../models/user")
 module.exports = {
 
       register: function(req, res){
@@ -36,22 +38,26 @@ module.exports = {
       },
 
       userStore: function(req, res){
-            let pathFile = path.join('data','prueba.json')
+            let errors = validationResult(req)
 
-            let nuevoProduct = fs.readFileSync(pathFile, { encoding: 'utf-8' })
-
-            nuevoProduct = JSON.parse(nuevoProduct)
-
-            nuevoProduct.push({
-            ...req.body,
-            id: nuevoProduct[nuevoProduct.length - 1].id + 1,
-      })
-
-    nuevoProduct = JSON.stringify(nuevoProduct)
-
-    fs.writeFileSync(pathFile, nuevoProduct)
-
-    res.send('Producto creado')
+            if(errors.isEmpty()) {
+                  modelsUsers.create({
+                        name: req.body.name,
+                        surname:req.body.surname,
+                        email :req.body.email,
+                        password: bcryptjs.hashSync(req.body.password),
+                        images:req.files[0].filename
+                  }) 
+            //      res.render('users/users', {name: req.body.name})
+            res.render("usuario creado")
+            }
+            else{
+            //      return res.render('users/register', {
+            //             errors: errors.mapped(),
+            //             data : req.body,
+            //       })
+            return res.send("error")
+            }       
       }
 
       
