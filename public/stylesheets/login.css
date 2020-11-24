@@ -134,6 +134,21 @@
     margin-inline-end: 0px;    
 }
 
+.input-form {
+    display: flex;
+    width: 100%;
+    margin-bottom: 5%;
+    padding: 1%;
+    border-bottom: 1px solid gray;
+}
+
+.input-form-a {
+    display: flex;
+    width: 100%;
+    margin-bottom: 1%;
+    padding: 1%;
+}
+
 .recordar {
     display: block;
     margin-block-start: 0;
@@ -191,7 +206,7 @@
 
 .recordar input{
     display: inline-block;
-    width: 8px;
+    border-radius: 13px;
 }   
 
 .olvidar{

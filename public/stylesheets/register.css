@@ -48,6 +48,25 @@
     color: #5a6268;
 }
 
+.input-form {
+    display: flex;
+    width: 100%;
+    margin-bottom: 5%;
+    padding: 1%;
+    border-bottom: 1px solid gray;
+}
+
+.input-form-a {
+    display: flex;
+    width: 100%;
+    margin-bottom: 1%;
+    padding: 1%;
+}
+
+.text-red {
+    color: red;
+}
+
 .crear{
     appearance: button;
     -webkit-writing-mode: horizontal-tb !important;
