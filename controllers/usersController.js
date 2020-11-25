@@ -13,6 +13,10 @@ module.exports = {
             res.render("./user/login",{styleOn: "login"} )
       },        
 
+      myAccount:function(req, res){
+            res.render("./user/myAccount",{styleOn: "style"} )
+      },
+
       contact:function(req, res){
             res.render("./user/contact", {styleOn: "contact"})
       },

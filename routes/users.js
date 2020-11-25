@@ -33,5 +33,7 @@ router.get('/login', usersController.login)
 router.get('/contact', usersController.contact)
 router.post('/contact', usersController.comment)
 
+router.get('/myAccount', usersController.myAccount)
+
 
 module.exports = router; 
