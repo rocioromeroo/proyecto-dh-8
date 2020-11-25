@@ -63,9 +63,7 @@
     padding: 1%;
 }
 
-.text-red {
-    color: red;
-}
+
 
 .crear{
     appearance: button;
@@ -215,6 +213,9 @@
     padding: 10%;
 }
 
+.text-red{
+    color: red;
+}
 
 @media (max-width:1024px){
 
