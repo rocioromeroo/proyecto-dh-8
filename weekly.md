@@ -47,3 +47,27 @@ Dominguez Gaston
 Que se hizo ayer: Se actualizo el CSS de productDetiials, se aplica la funcion para convertir los precios en miles y decimales.
 Se encontro algun impedimento: Se encontro el problema con una etiqueta a que proviene de la vista index que pisa los demas estilos.
 Que se hace hoy: Se avanza con la correcion de rutas en el controller y se agregara mas informacion de forma dinamica.
+
+---
+
+Weekly: Sprint-5
+
+Romero Rocio
+Que se hizo ayer:   
+Se encontro algun impedimento: 
+Que se hace hoy: 
+
+Fernandez Juan
+Que se hizo ayer: A
+Se encontro algun impedimento: 
+Que se hace hoy: 
+
+Nusfaumer Leonel
+Que se hizo ayer: 
+Se encontro algun impedimento: 
+Que se hace hoy: 
+
+Dominguez Gaston
+Que se hizo ayer: Se comienza con la configuracion del session y cookie y la funcion de recordame.
+Se encontro algun impedimento: Se encuentran problemas a la hora de poner en funcionamiento el recordame.
+Que se hace hoy: Se podra operativo session y cookie, luego se testeara el funcionamiento.
