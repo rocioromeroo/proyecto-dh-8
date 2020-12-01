@@ -16,7 +16,10 @@ router.post('/register', userValidator, usersController.userStore)
 
 /*        GET/POST       Login  */
 router.get('/login', usersController.login)
+router.post('/login', usersController.processlogin)
 
+/*        POST       Login  */
+router.post("/logout", usersController.logout);
 
 router.get('/contact', usersController.contact)
 router.post('/contact', usersController.comment)

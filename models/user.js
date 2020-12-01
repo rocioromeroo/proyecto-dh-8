@@ -3,11 +3,15 @@ const file = path.resolve('data','usersDataBase.json')
 const fs = require('fs')
 let users = require(file)
 
+
+
 // CREAR usuario == REGISTER
 function create(user) {
       user.id = users.length + 1
       users.push(user)
+      
       fs.writeFileSync(file, JSON.stringify(users))
+      console.log(users);
 }
 
 /// BUSCAR por ID
