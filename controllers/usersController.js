@@ -6,7 +6,7 @@ var modelsUsers = require("../models/user")
 module.exports = {
 
       register: function(req, res){
-        res.render('user/register',{styleOn: "register"})
+        res.render('user/register',{styleOn: "register", errors:{}})
       },
 
       login:function(req, res){
@@ -49,14 +49,11 @@ module.exports = {
             res.render("user/myAccount", {styleOn:"style"})
             }
             else{
-            //      return res.render('users/register', {
-            //             errors: errors.mapped(),
-            //             data : req.body,
-            //       })
-            return res.send("error")
-            }       
-      }
-
-      
-  }
-  
+                 return res.render('user/register', {
+                        errors: errors.mapped(),
+                        styleOn:"register"
+                  })
+           
+             }
+     }
+}

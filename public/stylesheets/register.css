@@ -9,7 +9,7 @@
 .body-register{
     background-color: var(--body-background);
 }
-
+.text-red{color: red; font-size: 0.6em;}
 .olvidar a {
     text-decoration: none;
     color: #219653;

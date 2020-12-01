@@ -9,13 +9,19 @@
         <section>   
             <form class="registro" action="/users/register" method="POST">
                 <div class="email">
-                    <input type="email" name="email" id="email" placeholder="Email">    
+                    <input type="email" name="email" id="email" placeholder="Email">                   
                 </div>
                 <hr>
                 <div>
-                    <input type="password" name="password" id="password" placeholder="Contraseña">
+                    <input type="password" name="password" id="password" placeholder="Contraseña">   
                 </div>
                 <hr>
+                <% if(errors.email != undefined) {   %>
+                    <p class="text-red"><%= errors.email.msg %></p>
+                    <% } %>
+                <% if(errors.password != undefined) {   %>     
+                <p class="text-red"><%= errors.password.msg %></p>
+                        <% } %>
                 <div class="center1">
                     <button  class="crear" type="submit">Crear Cuenta</button>
                 </div>
