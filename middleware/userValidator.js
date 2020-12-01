@@ -1,17 +1,15 @@
-const modelsUsers = require("../models/user")
+let modelsUsers = require("../models/user")
 const {check, body} = require('express-validator')
-const fs = require('fs')
+
 
 
 module.exports = [
-      check('name').isLength({min:1}).withMessage('Campo incompleto'),
-
-      check('surname').isLength({min:1}).withMessage('Campo incompleto'),
 
       check('email')
       .isEmail().withMessage('No es un email valido'),
 
       check('password')
+<<<<<<< HEAD
       .isLength({min:8}).withMessage('Su clave debe tener almenos 8 caracteres'),
       check('password')
       .isAlphanumeric().withMessage('Su clave debe contener numeros y letras'),
@@ -29,3 +27,8 @@ module.exports = [
       })
 
 ]
+=======
+      .isLength({min:2}).withMessage('Su clave debe tener almenos 8 caracteres'),
+     
+]
+>>>>>>> 22134f189646480c499a98a5bc620bd76cfed318

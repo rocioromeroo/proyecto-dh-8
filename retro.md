@@ -11,8 +11,3 @@ Retroespectiva - Sprint-2
 Retroespectiva - Sprint-3
 
     La complejidad del trabajo y el código va aumentando y requiere mas concentración. También presenta nuevos desafíos y problemas que necesitan de un trabajo en conjunto más detallado y linea a línea. Encontramos un aspecto positivo, ya que pudimos enfrentar este sprint 3 con mucha coordinación y comunicación resolviendo reunión a reunión los problemas que aparecieron.
-
-Retroespectiva - Sprint-4
-
-    Recibimos varios puntos a mejorar en nuestra devolucion del sprint-4 el cual vemos que cometimos algunos errores, tambien detectamos que los mismos no fueron observados a la hora del testeo, por lo cual nos planteamos mejorar las etapas dentro del Trello y produnfizar aun mas en ellos, luego de que todo este funcionando. Los ABM de productos los realizamos y testeamos pero nos falto corregir los desvios como por ejemplo apuntar al json correspondiente.
-    Las reuniones se van tornando mas largar ya que va aumentando la complejidad del codigo y es mas dificil encontrar rapidamente los errores, estamos separando las tareas para poder optimizzar los tiempos de entrega.

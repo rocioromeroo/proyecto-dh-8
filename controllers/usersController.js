@@ -6,19 +6,15 @@ var modelsUsers = require("../models/user")
 module.exports = {
 
       register: function(req, res){
-        res.render("./user/register",{styleOn: "register"})
+        res.render('user/register',{styleOn: "register"})
       },
 
       login:function(req, res){
-            res.render("./user/login",{styleOn: "login"} )
+            res.render("user/login",{styleOn: "login"} )
       },        
 
-      myAccount:function(req, res){
-            res.render("./user/myAccount",{styleOn: "style"} )
-      },
-
       contact:function(req, res){
-            res.render("./user/contact", {styleOn: "contact"})
+            res.render("user/contact", {styleOn: "contact"})
       },
 
       comment:function(req, res){
@@ -43,23 +39,21 @@ module.exports = {
 
       userStore: function(req, res){
             let errors = validationResult(req)
-            
+
             if(errors.isEmpty()) {
-                  modelsUsers.create({
-                        name: req.body.name,
-                        surname:req.body.surname,
+                  modelsUsers.create({    
                         email :req.body.email,
                         password: bcryptjs.hashSync(req.body.password),
-                        images:req.files[0].filename
                   }) 
             //      res.render('users/users', {name: req.body.name})
-                  res.render("usuario creado")
-
-            } else {
-                  
-                  res.render("./user/register", { errors: errors.mapped(), data: req.body })
-                  
-            // return res.send("error")
+            res.render("user/myAccount", {styleOn:"style"})
+            }
+            else{
+            //      return res.render('users/register', {
+            //             errors: errors.mapped(),
+            //             data : req.body,
+            //       })
+            return res.send("error")
             }       
       }
 

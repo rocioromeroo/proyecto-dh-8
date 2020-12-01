@@ -9,19 +9,17 @@
             <section>
                 
                 <form class="new-product" action="/products" method="POST" enctype="multipart/form-data">
-                    <div>
-                        <input type="text" name="name" id="name" value="<%= editar.name %>">
-                    </div>
-                    <div>
-                        <textarea name="description" id="description" cols="30" rows="5" class="input border area f-size-10"><%= editar.description %></textarea>
-                    </div>    
-                    <div>
-                        <input type="text" name="price" id="price" value="<%= editar.price %>">
-                    </div>
-                    <div>
-                        <label class="titulo">Agregá una imágen</label>
-                        <input id="file" type="file" name="file" id="file" value="<%= editar.image %>">
-                    </div>                
+                    <input type="text" name="name" id="name" value="<%= editar.name %>">
+                    <hr>
+                    <br>    
+                    <textarea name="description" id="description" cols="30" rows="5" class="input border area f-size-10"><%= editar.description %></textarea>
+                    <input type="text" name="price" id="price" value="<%= editar.price %>">
+                    <hr>
+                    <br>
+                    <hr>
+                    <br>
+                    <label class="titulo">Agregá una imágen</label>
+                    <input id="file" type="file" name="file" id="file" value="<%= editar.image %>">
                     <div class="center1">
                         <button  class="crear" type="submit">Públicar</button>
                     </div>
