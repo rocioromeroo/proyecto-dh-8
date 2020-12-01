@@ -8,7 +8,7 @@
             <h1>Ingresá a tu cuenta de Electr8</h1>
             <br>
             <section>
-                <form class="datos" action="datos.html" method="POST">
+                <form class="datos" action="/users" method="POST">
                     <p class="email">
                         <input type="email" name="email" id="email" placeholder="Email">    
                     </p>
@@ -17,23 +17,24 @@
                         <input type="password" name="password" id="password" placeholder="Contraseña">
                     </p>
                     <hr>
-                </form>
-                <p class="recordar">
+                    <p class="recordar">
                     <input type="checkbox" name="usuario" id="usuario" value="yes">
                     <label for="usuario">Recordar Cuenta</label>
-                </p>
+                    </p>
+                    <div class="center">
+                        <button  class="enviar" type="submit" >Ingresar</button>
+                    </div>
+                </form>
             </section>
-                <div class="center">
-                    <button  class="enviar" type="submit" >Ingresar</button>
-                </div>
+                
             <ul class="olvidar">
                 <li><a href="/">Olvidé mi contraseña</a></li>
                 <li><a href="/users/register">Registrarme</a></li>
             </ul>
                 <div class="center1">
-                    <button  class="google" type="submit" >Seguir con Google</button>
+                    <a  class="google" href="google.com" >Seguir con Google</a>
                 </div>
-            </form>
+            
         </div>    
     <%- include("../partial/footer") %>
 </body>

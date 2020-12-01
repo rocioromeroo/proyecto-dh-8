@@ -14,7 +14,7 @@ module.exports = {
             res.render("user/login",{styleOn: "login"} )
       },        
       processlogin:function(req, res){
-            res.render("user/login",{styleOn: "login"} )
+            res.render("user/myAccount",{styleOn: "style"} )
       },   
       logout:function(req, res){
             res.render("user/login",{styleOn: "login"} )
