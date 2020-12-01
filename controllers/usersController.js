@@ -41,15 +41,12 @@ module.exports = {
             let errors = validationResult(req)
 
             if(errors.isEmpty()) {
-                  modelsUsers.create({
-                        name: req.body.name,
-                        surname:req.body.surname,
+                  modelsUsers.create({    
                         email :req.body.email,
                         password: bcryptjs.hashSync(req.body.password),
-                        images:req.files[0].filename
                   }) 
             //      res.render('users/users', {name: req.body.name})
-            res.render("usuario creado")
+            res.render("user/myAccount", {styleOn:"style"})
             }
             else{
             //      return res.render('users/register', {

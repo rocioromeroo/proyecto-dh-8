@@ -16,7 +16,6 @@ function findById(id) {
             return user.id == id
       })
 }
-
 /// BUSCAR por EMAIL
 function findByEmail(email) {
       return users.find(function (user) {
