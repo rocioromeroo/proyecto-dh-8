@@ -7,38 +7,44 @@
     <div class="register">
         <h1>Creá tu cuenta Electr8</h1>
         <section>   
-            <form class="registro" action="/users/register" method="POST" enctype="multipart/form-data" >
-                <div class="input-form">
+            <form class="registro" action="/users/register" method="POST">
+                <!-- <div class="input-form">
                     <input type="text" name="name" id="name" placeholder="Nombre" >
                     
                 </div>
                 <div class="input-form">
                     <input type="text" name="surname" id="surname" placeholder="Apellido">
                     
-                </div>
+                </div> -->
                 <div class="email input-form">
                     <input type="email" name="email" id="email" placeholder="Email">
+                    <% if(typeof errors.email !== 'undefined') { %>
+                        <h2 style="color: red;"><%= errors.email.msg	 %></h2>
+                    <% } %>
                     
                 </div>
                 <div class="input-form">
                     <input type="password" name="password" id="password" placeholder="Contraseña">
-                    
+                    <% if(typeof errors.password !== 'undefined') { %>
+                        <h2 style="color: red;"><%= errors.password.msg	 %></h2>
+                    <% } %>
                 </div>
-                <div class="input-form">
+                <!-- <div class="input-form">
                     <input type="password" name="repeat" id="repeat" placeholder="Confirmar Contraseña">
                     
-                </div>
-                <div class="input-form-a">
+                </div> -->
+                <!-- <div class="input-form-a">
                     <label class="titulo">Agregá una imágen</label>                    
                 </div>
                 <div class="input-form">
                     <input type="file" name="image" >
+                </div> -->
+                <div class="center1">
+                    <button  class="crear" type="submit">Crear Cuenta</button>
                 </div>
             </form>
         </section>
-        <div class="center1">
-            <button  class="crear" type="submit">Crear Cuenta</button>
-        </div>
+        
     </div>    
     <%- include("../partial/footer") %>
 </body>

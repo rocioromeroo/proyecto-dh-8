@@ -24,11 +24,14 @@ router.get('/', function(req, res, next) {
 
 /*        GET/POST       Register   */
 router.get('/register', usersController.register)
-router.post('/register', userValidator, upload.any(), usersController.userStore)
+router.post('/register', userValidator, usersController.userStore)
 
 /*        GET/POST       Login  */
 router.get('/login', usersController.login)
+router.post('/login', usersController.processlogin)
 
+/*        POST       Login  */
+router.post("/logout", usersController.logout);
 
 router.get('/contact', usersController.contact)
 router.post('/contact', usersController.comment)
