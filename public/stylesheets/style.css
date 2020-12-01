@@ -11,3 +11,21 @@
   background-color: white;
   border: 1px solid black;
 }
+<<<<<<< HEAD
+
+a.hover:hover{
+  color: #219653;
+  padding: 2%;
+  border-radius: 13px;
+  font-size: 18px;
+}
+
+.crear a{
+  text-decoration: none;
+}
+
+.crear li{
+  padding: 2%;
+}
+=======
+>>>>>>> 22134f189646480c499a98a5bc620bd76cfed318
