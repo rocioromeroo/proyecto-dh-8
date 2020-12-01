@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // const modelsUsers = require("../models/user")
 // const {check, body} = require('express-validator')
 // const fs = require('fs')
@@ -15,11 +16,20 @@
 //       .isLength({min:8}).withMessage('Su clave debe tener almenos 8 caracteres'),
 //       check('password')
 //       .isAlphanumeric().withMessage('Su clave debe contener numeros y letras'),
+=======
+let modelsUsers = require("../models/user")
+const {check, body} = require('express-validator')
+
+
+
+module.exports = [
+>>>>>>> 22134f189646480c499a98a5bc620bd76cfed318
 
 //       // check('passwordRepeat')
 //       // .isLength({min:8}).withMessage('Campo incompleto')
 //       // .isAlphanumeric().withMessage('Repetir clave'),
 
+<<<<<<< HEAD
 //       body('email').custom(function(value){
 //            let user = modelsUsers.findByEmail(value)
 //            if (user){
@@ -51,3 +61,9 @@ module.exports = [
 
   check('password').isLength({min:4}).withMessage('Su clave debe tener almenos 4 caracteres')
 ];
+=======
+      check('password')
+      .isLength({min:2}).withMessage('Su clave debe tener almenos 8 caracteres'),
+     
+]
+>>>>>>> 22134f189646480c499a98a5bc620bd76cfed318

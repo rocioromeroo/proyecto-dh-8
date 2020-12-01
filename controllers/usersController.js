@@ -6,6 +6,7 @@ var modelsUsers = require("../models/user")
 
 module.exports = {
 
+<<<<<<< HEAD
       
 
       login:function(req, res){
@@ -64,13 +65,18 @@ module.exports = {
             // return res.send("error")
             }       
       },
-
-      myAccount:function(req, res){
-            res.render("./user/myAccount",{styleOn: "style"} )
+=======
+      register: function(req, res){
+        res.render('user/register',{styleOn: "register"})
       },
 
+      login:function(req, res){
+            res.render("user/login",{styleOn: "login"} )
+      },        
+>>>>>>> 22134f189646480c499a98a5bc620bd76cfed318
+
       contact:function(req, res){
-            res.render("./user/contact", {styleOn: "contact"})
+            res.render("user/contact", {styleOn: "contact"})
       },
 
       comment:function(req, res){
@@ -91,6 +97,29 @@ module.exports = {
             fs.writeFileSync(pathFile, nuevoMessage)
             
             res.send('Mensaje Recibido!!')
+<<<<<<< HEAD
+=======
+      },
+
+      userStore: function(req, res){
+            let errors = validationResult(req)
+
+            if(errors.isEmpty()) {
+                  modelsUsers.create({    
+                        email :req.body.email,
+                        password: bcryptjs.hashSync(req.body.password),
+                  }) 
+            //      res.render('users/users', {name: req.body.name})
+            res.render("user/myAccount", {styleOn:"style"})
+            }
+            else{
+            //      return res.render('users/register', {
+            //             errors: errors.mapped(),
+            //             data : req.body,
+            //       })
+            return res.send("error")
+            }       
+>>>>>>> 22134f189646480c499a98a5bc620bd76cfed318
       }
 
       
