@@ -108,6 +108,9 @@
     outline: none;
 }
 
+.text-red{color: red; font-size: 0.6em;
+}
+
 .google:hover{
     background-color: #219653;
     color: white;   

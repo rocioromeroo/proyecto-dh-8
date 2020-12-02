@@ -21,6 +21,15 @@
                     <input type="checkbox" name="usuario" id="usuario" value="yes">
                     <label for="usuario">Recordar Cuenta</label>
                     </p>
+
+                    <% if(typeof errors.email !== 'undefined') { %>
+                        <p class="text-red"><%= errors.email.msg	 %></p>
+                    <% } %>
+    
+                    <% if(typeof errors.password !== 'undefined') { %>
+                        <p class="text-red"><%= errors.password.msg	 %></p>
+                    <% } %>
+                    
                     <div class="center">
                         <button  class="enviar" type="submit" >Ingresar</button>
                     </div>

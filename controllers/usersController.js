@@ -11,11 +11,28 @@ module.exports = {
       },
 
       login:function(req, res){
-            res.render("user/login",{styleOn: "login"} )
-      },        
-      processlogin:function(req, res){
-            res.render("user/myAccount",{styleOn: "style"} )
+            let errors = {}
+            res.render("user/login",{errors, styleOn: "login"} )
       },   
+
+      processlogin:function(req, res){
+            let errors = validationResult(req)
+            let user = modelsUsers.findByEmail(req.body.email)
+
+            if(!user) {
+              return res.render('user/login', {errors: errors.mapped(), styleOn: "login"})
+            } else if (bcryptjs.compareSync(req.body.password, user.password)) {
+                req.session.user = user.email                                       
+               if(req.body.recordame) {
+                 res.cookie('recordame', user.email, {maxAge: 120 * 1000})                                                        
+               }
+              return res.render('user/myAccount', {styleOn: "style"})
+        
+              } else {
+                  return res.render('user/login', {errors: errors.mapped(), styleOn: "login"})
+              }
+          },        
+         
       logout:function(req, res){
             res.render("user/login",{styleOn: "login"} )
       },   
@@ -52,7 +69,7 @@ module.exports = {
                         email :req.body.email,
                         password: bcryptjs.hashSync(req.body.password),
                   }) 
-            //      res.render('users/users', {name: req.body.name})
+
             res.render("user/myAccount", {styleOn:"style"})
             }
             else{

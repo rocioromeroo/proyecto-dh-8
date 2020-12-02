@@ -2,11 +2,8 @@ const { body, check } = require("express-validator");
 let modelsUsers = require("../models/user");
 
 
-
 module.exports = [
   check('email').isEmail().withMessage('El mail debe tener un formato valido'),
-  
-
   body("email").custom(function (value) { 
     
     let user = modelsUsers.findByEmail(value); 
