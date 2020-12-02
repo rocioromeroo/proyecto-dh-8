@@ -11,3 +11,7 @@ Retroespectiva - Sprint-2
 Retroespectiva - Sprint-3
 
     La complejidad del trabajo y el código va aumentando y requiere mas concentración. También presenta nuevos desafíos y problemas que necesitan de un trabajo en conjunto más detallado y linea a línea. Encontramos un aspecto positivo, ya que pudimos enfrentar este sprint 3 con mucha coordinación y comunicación resolviendo reunión a reunión los problemas que aparecieron.
+
+Retroespectiva - Sprint-4
+
+    Mediantes los feedbacks que recibimos de los sprint anteriores vemos que debemos corregir los testeos luego de realizar el codigo y ponerlo en funcionamiento, si bien son algunos temas menores vamos a distribuir mejor las tareas y realzar las purebas que sean necesarias para poder dejar todo funcionando correctamente.
