@@ -9,18 +9,18 @@
             <br>
             <section>
                 <form class="datos" action="/users" method="POST">
-                    <p class="email">
+                    <div class="email">
                         <input type="email" name="email" id="email" placeholder="Email">    
-                    </p>
+                    </div>
                     <hr>
-                    <p class="password">
+                    <div class="password">
                         <input type="password" name="password" id="password" placeholder="Contraseña">
-                    </p>
+                    </div>
                     <hr>
-                    <p class="recordar">
-                    <input type="checkbox" name="usuario" id="usuario" value="yes">
-                    <label for="usuario">Recordar Cuenta</label>
-                    </p>
+                    <div class="recordar">
+                        <input type="checkbox" name="usuario" id="usuario" value="yes">
+                        <label for="usuario">Recordar Cuenta</label>
+                    </div>
 
                     <% if(typeof errors.email !== 'undefined') { %>
                         <p class="text-red"><%= errors.email.msg	 %></p>
@@ -41,7 +41,7 @@
                 <li><a href="/users/register">Registrarme</a></li>
             </ul>
                 <div class="center1">
-                    <a  class="google" href="google.com" >Seguir con Google</a>
+                    <a  class="google" href="google.com">Seguir con Google</a>
                 </div>
             
         </div>    
