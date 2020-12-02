@@ -5,16 +5,83 @@
       <%- include("../partial/header") %> 
 
       <main id="miCuenta">
-              <section class="usuario d-flex width-100">
-                  <article class="crear hei-200x">
+
+            <section id="edit-perfil">
+
+                  <article class="options-perfil">
+                        <div class="avatar">
+                              <img src="" alt="cargar avatar">
+                        </div>
+                        <div class="info-perfil">
+                              <ul>
+                                    <li>Nombre</li>
+                                    <li>Apellido</li>
+                                    <li>Telefono</li>
+                                    <li>Direccion</li>
+                                    <li>Email</li>
+                              </ul>
+
+                        </div>
+                        <div class="b-container">
+                              <a class="buttom-action" href="/users/editPerfil">EDITAR PERFIL</a>
+                        </div>
+                        <div class="b-container">
+                              <a class="buttom-action" href="/users/editPerfil">CREAR PERFIL</a>
+                        </div>
+                  </article>
+            </section>
+
+            <section id="edit-product" class="usuario d-flex width-100">
+
+                  <article class="crear">
+                        <div class="titulo-action">
+                              <h2>Ultimo producto creado</h2>
+                        </div>
+                        <div class="foto-action">
+                              <img src=" "alt="cargar imagen">
+                        </div>
+                        <div class="desc-action">
+                              <h3></h3>
+                              <p></p>
+                        </div>
+                        <div class="b-container">
+                              <a  class="buttom-action" href="/products/create">crear un producto</a>
+                        </div>
 
                   </article>
 
-                  <article class="borrar hei-200x">
-
+                  <article class="borrar">
+                        <div class="titulo-action">
+                              <h2>Ultimo producto borrado</h2>
+                        </div>
+                        <div class="foto-action">
+                              <img src="" alt="cargar imagen">
+                        </div>
+                        <div class="desc-action">
+                              <h3>nombre del producto</h3>
+                              <p>categoria</p>
+                        </div>
+                        <div class="b-container">
+                              <a class="buttom-action" href="">borrar un producto</a>
+                        </div>
                   </article>
 
-                  <article class="modificar hei-200x">
+                  <article class="modificar">
+                        <div class="titulo-action">
+                              <h2>Ultimo producto modificado</h2>
+                        </div>
+                        <div class="foto-action">
+                              <img src="" alt="cargar imagen">
+                        </div>
+                        <div class="desc-action">
+                              <h3>nombre del producto</h3>
+                              <p>categoria</p>
+                        </div>
+                  <div class="b-container">
+                        <a class="buttom-action" href="">modificar un producto</a>
+                  </div>
+                        
+                  
 
                   </article>
             </section>

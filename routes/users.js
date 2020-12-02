@@ -9,6 +9,12 @@ const userLoginValidator = require("../middleware/userLoginValidator")
 router.get('/', function(req, res, next) {
   res.send('respond with a resource');
 });
+/*        GET       MyAccount   */
+router.get('/account', usersController.myAccount)
+
+/*        GET       EDITAR PERFIL   */
+router.get('/editPerfil', usersController.editPerfil)
+
 
 /*        GET/POST       Register   */
 router.get('/register', usersController.register)
@@ -18,9 +24,10 @@ router.post('/register', userValidator, usersController.userStore)
 router.get('/login', usersController.login)
 router.post('/', userLoginValidator, usersController.processlogin)
 
-/*        POST       Login  */
+/*        POST       Logout  */
 router.post("/logout", usersController.logout);
 
+/*        GET/POST       contact  */
 router.get('/contact', usersController.contact)
 router.post('/contact', usersController.comment)
 

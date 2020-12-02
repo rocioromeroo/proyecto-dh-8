@@ -18,6 +18,9 @@
                     <input type="password" name="password" id="password" placeholder="Contraseña">
                     <hr>
                 </div>
+                <div class="display_none">
+                    <input type="text" name="surname" id="surname" placeholder="Apellido">    
+                </div>     
 
                 <% if(typeof errors.email !== 'undefined') { %>
                     <p class="text-red"><%= errors.email.msg	 %></p>
@@ -27,8 +30,8 @@
                     <p class="text-red"><%= errors.password.msg	 %></p>
                 <% } %>
 
-                <div>
-                    <button type="submit">Registrar</button>
+                <div class="center1">
+                    <button  class="crear" type="submit">Crear Cuenta</button>
                 </div>
 
             </form>

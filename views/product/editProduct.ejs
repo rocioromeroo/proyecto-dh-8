@@ -8,7 +8,7 @@
             <h1>Edita producto</h1>
             <section>
                 
-                <form class="new-product" action="/products" method="POST" enctype="multipart/form-data">
+                <form class="new-product" action="/products?_method=PUT" method="POST" enctype="multipart/form-data">
                     <input type="text" name="name" id="name" value="<%= editar.name %>">
                     <hr>
                     <br>    
