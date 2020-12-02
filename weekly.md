@@ -53,9 +53,9 @@ Que se hace hoy: Se avanza con la correcion de rutas en el controller y se agreg
 Weekly: Sprint-5
 
 Romero Rocio
-Que se hizo ayer:     
-Se encontro algun impedimento: 
-Que se hace hoy: 
+Que se hizo ayer: Se configuraron las rutas del login y register.
+Se encontro algun impedimento: Problemas al momento de crear el usuario con el validator.
+Que se hace hoy: Session y cookies.
 
 Fernandez Juan
 Que se hizo ayer: 
