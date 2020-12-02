@@ -139,13 +139,6 @@
     margin-inline-end: 0px;    
 }
 
-.recordar {
-    display: block;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
 
 .body-login{
     background-color: #f4f4f4;
@@ -189,7 +182,6 @@
     font-family: 'Comfortaa', cursive, 'Arial';
     color: var(--font-color);
     font-size: 12px;
-    padding-left: 8%;
     padding-top: 15px;
     padding-bottom: 15px;
 }
