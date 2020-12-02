@@ -30,10 +30,6 @@ const indexController = {
 
   },
 
-  myAccount: function (req, res) {
-    res.render("user/myAccount", { styleOn: "style" })
-  },
-
 }
 
 

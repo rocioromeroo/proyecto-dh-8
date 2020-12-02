@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+        <%- include("../partial/head")  %> 
+        <title>Eletr8 | Registro</title>
+<body class="body-register">
+    <%- include("../partial/header") %>
+    <div class="register">
+        <h1>Edita  tu cuenta Electr8</h1>
+        <section>   
+            <form class="registro" action="users/editPerfil?_method=PUT" method="POST" enctype="multipart/form-data">
+                <div class="padd-10">
+                    <input type="text" name="name" id="name" placeholder="Nombre">    
+                </div>
+                <hr>
+                <div class="padd-10">
+                    <input type="text" name="surname" id="surname" placeholder="Apellido">    
+                </div>      
+                <hr>
+                <div class="nacimiento class="padd-10"">
+                    <label class="nacimiento" for="nacimiento">Fecha de nacimiento:
+                        <input type="date" name="nacimiento" id="nacimiento">      
+                    </label>
+                  </div>
+                <hr>
+                <div class="padd-10">
+                    <input type="number" name="phone" id="phone" placeholder="Teléfono">  
+                </div>   
+                <hr>
+                <div class="padd-10">
+                    <input type="password" name="password" id="password" placeholder="Contraseña">
+                </div>
+                <hr>
+                <div class="padd-10">
+                    <input type="password" name="repeat" id="repeat" placeholder="Confirmar Contraseña">
+                </div>
+                <hr>
+                <div>
+                    <label class="titulo">Agregá una imágen</label>
+                    <input type="file" name="image" >
+                </div>
+                 
+                <div class="center1">
+                  <button  class="crear" type="submit">Terminar edicion</button>
+              </div>
+            </form>
+        </section>
+    </div>    
+    <%- include("../partial/footer") %>
+</body>

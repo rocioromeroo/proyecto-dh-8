@@ -1,10 +1,31 @@
+
 var path = require("path");
 var fs = require("fs");
+const usersList = require('../data/usersDataBase')
 const { validationResult } = require("express-validator");
 const bcryptjs = require("bcryptjs");
 var modelsUsers = require("../models/user");
 
 module.exports = {
+  myAccount: function (req, res) {
+    let dato = usersList.find(function (valor) {
+          if (valor.id == usersList.length) {
+            return valor
+          }
+    })
+    res.render("user/myAccount", { styleOn: "style", dato:dato})
+  },
+  
+editPerfil:function (req, res) {
+        
+    res.render("user/editPerfil", { styleOn: "register"})
+  },
+
+  savePerfil:function (req, res) {
+        
+    res.render("user/editPerfil", { styleOn: "register"})
+  },
+
   login: function (req, res) {
     let errors = {};
     res.render("user/login", { errors, styleOn: "login" });

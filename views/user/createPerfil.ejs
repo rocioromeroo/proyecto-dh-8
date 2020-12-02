@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+        <%- include("../partial/head")  %> 
+        <title>Eletr8 | Perfil</title>
+<body class="body-register">
+    <%- include("../partial/header") %>
+    <div class="register">
+        <h1>Registrar Perfil</h1>
+        <section>   
+            <form class="registro" action="users/editPerfil" method="POST" enctype="multipart/form-data">
+                <div class="padd-10">
+                    <input type="text" name="name" id="name" placeholder="Nombre">    
+                </div>
+                <hr>
+                <div class="padd-10">
+                    <input type="text" name="surname" id="surname" placeholder="Apellido">      
+                <hr>
+                <div class="nacimiento padd-10">
+                    <label class="nacimiento" for="nacimiento">Fecha de nacimiento:
+                        <input type="date" name="nacimiento" id="nacimiento">      
+                    </label>
+                  </div>
+                <hr>
+                <div class="padd-10">
+                    <input type="number" name="phone" id="phone" placeholder="Teléfono">  
+                </div>   
+                <hr>  
+                <div class="center1">
+                  <button  class="crear" type="submit">Terminar edicion</button>
+              </div>
+            </form>
+        </section>
+    </div>    
+    <%- include("../partial/footer") %>
+</body>

@@ -34,6 +34,7 @@ a#home-main:visited{
 .d-flex-wrap{display: flex; flex-wrap: wrap;}
 .pdd-5x{padding: 5px;}
 .underline{text-decoration: underline;}
+.padd-10{padding-bottom: 5px;}
 
 /* /////// MAIN HOME /////// */
 #banner-carousel {
