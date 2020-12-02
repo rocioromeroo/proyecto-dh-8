@@ -14,4 +14,4 @@ Retroespectiva - Sprint-3
 
 Retroespectiva - Sprint-4
 
-    Mediantes los feedbacks que recibimos de los sprint anteriores vemos que debemos corregir los testeos luego de realizar el codigo y ponerlo en funcionamiento, si bien son algunos temas menores vamos a distribuir mejor las tareas y realzar las purebas que sean necesarias para poder dejar todo funcionando correctamente.
+    Mediantes los feedbacks que recibimos de los sprint anteriores vemos que debemos corregir los testeos luego de realizar el codigo y ponerlo en funcionamiento, si bien son algunos temas menores vamos a distribuir mejor las tareas y realzar las pruebas que sean necesarias para poder dejar todo funcionando correctamente.
