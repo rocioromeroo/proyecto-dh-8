@@ -10,6 +10,11 @@
     background-color: var(--body-background);
 }
 .text-red{color: red; font-size: 0.6em;}
+
+.input-form{
+    padding-top:3%
+}
+
 .olvidar a {
     text-decoration: none;
     color: #219653;
