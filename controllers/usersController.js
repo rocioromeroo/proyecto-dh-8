@@ -13,7 +13,14 @@ module.exports = {
             return valor
           }
     })
-    res.render("user/myAccount", { styleOn: "style", dato:dato})
+    let editar = usersList.find(function (buscar) {
+      if (buscar.email == res.locals.user ) {
+        return buscar
+      }
+    })
+    if(editar == undefined)
+      {return res.render("user/login", { errors:{}, styleOn: "login" }) }
+      else{ res.render("user/myAccount", { styleOn: "style", dato:dato, editar:editar})}
   },
   
   editPerfil:function (req, res) {
@@ -23,7 +30,7 @@ module.exports = {
 
   savePerfil:function (req, res) {
         
-    res.render("user/editPerfil", { styleOn: "register"})
+    res.redirect("users/account")
   },
 
   login: function (req, res) {

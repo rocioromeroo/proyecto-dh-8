@@ -358,10 +358,12 @@ a.hover-icon:hover {
     cursor: pointer;
     font: inherit;
     
-
     padding: 3px;
     display: flex;
     justify-content: space-around;
+  }
+  button:focus{
+    outline-color: white;
   }
  button.h-log:hover .hover-logout{
   display: flex;

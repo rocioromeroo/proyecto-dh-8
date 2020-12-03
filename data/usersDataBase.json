@@ -2,10 +2,21 @@
   {
     "email": "displaynone@test.com",
     "password": "$2a$10$w4qglQkVGSq69ZH3PgT.iuKg1Cr3Zm/BL/G4jfGfUmk6xqmkXFx2e",
-    "name": "",
-    "surname": "",
+    "name": "Display",
+    "surname": "None",
     "phone": "",
-    "nacimiento": "",
+    "adresse": "Av siempre viva 1048",
+    "image": "image-1606976162300.jpeg",
     "id": 1
+  },
+  {
+    "email": "chau@test.com",
+    "password": "$2a$10$TwgBG/w58m.IxlpA46ibBOpRrRJh/xhSvc30hPB9le4o2HelAfXrO",
+    "name": "Cosme",
+    "surname": "Fulanito",
+    "phone": "30030030",
+    "adresse": "Avenida 100",
+    "image":"image-1606992068627.jpg",
+    "id": 2
   }
 ]

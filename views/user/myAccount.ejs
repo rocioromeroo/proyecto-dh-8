@@ -10,15 +10,15 @@
 
                   <article class="options-perfil">
                         <div class="avatar">
-                              <img src="" alt="cargar avatar">
+                              <img src="/images/<%= editar.image  %>"" alt="cargar avatar">
                         </div>
                         <div class="info-perfil">
                               <ul>
-                                    <li>Nombre</li>
-                                    <li>Apellido</li>
-                                    <li>Telefono</li>
-                                    <li>Direccion</li>
-                                    <li>Email</li>
+                                    <li>Nombre:  <%= editar.name%></li>
+                                    <li>Apellido:  <%= editar.surname%></li>
+                                    <li>Telefono:  <%= editar.phone%></li>
+                                    <li>Direccion: <%= editar.adresse%></li>
+                                    <li>Email: <%= editar.email%></li>
                               </ul>
 
                         </div>
@@ -29,6 +29,11 @@
             </section>
 
             <section id="edit-product" class="usuario d-flex width-100">
+                  <% if(locals.user) { %>
+                        <div class="d-flex">
+                              <h2>Usuario <%= locals.user%></h2>
+                        </div>
+                  <% }  %>
 
                   <article class="crear">
                         <div class="titulo-action">

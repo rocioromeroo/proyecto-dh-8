@@ -13,15 +13,18 @@ a.buttom-action:visited{color:white}
 #miCuenta{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 40px;
 }
 #edit-perfil{
   display: flex;
   justify-content: center;
   width: 30%;
+  min-width: 400px;
   height: 100%;
+  
 }
 .options-perfil{
   display: flex;
@@ -47,6 +50,10 @@ a.buttom-action:visited{color:white}
   position: relative;
   bottom: 65px;
 }
+.avatar img{
+  object-fit: cover;
+  width: 100%;
+}
 .info-perfil{
   width: 90%;
   height: 60%;
@@ -67,11 +74,10 @@ a.buttom-action:visited{color:white}
 #edit-product{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
   align-content: center;
-  width: 70%;
+  width: 40%;
   height: 800px;
-  display: flex;
   align-items: center;
   justify-content: space-around;
 }

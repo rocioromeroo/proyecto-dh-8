@@ -21,7 +21,7 @@ router.get('/', function(req, res, next) {
   res.send('respond with a resource');
 });
 /*        GET       MyAccount   */
-router.get('/account/', usersController.myAccount)
+router.get('/account', usersController.myAccount)
 
 /*        GET       EDITAR PERFIL   */
 router.get('/editPerfil', usersController.editPerfil)
