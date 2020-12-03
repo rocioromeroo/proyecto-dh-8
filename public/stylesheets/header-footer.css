@@ -311,6 +311,34 @@ a.hover-icon:hover {
     display: flex;
     flex-wrap: wrap;
   }
+  #icons-desktop {
+    width: 10%;
+    height: 35px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border: solid 1px #219653;
+    background-color: white;
+    box-sizing: content-box;
+    color: #219653;
+    border-radius: 13px;
+  }
+  #icons-desktop-out {
+    width: 10%;
+    height: 35px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border: solid 1px #219653;
+    background-color: white;
+    box-sizing: content-box;
+    color: #219653;
+    border-radius: 13px;
+  }
 
   #icons-desktop a {
     text-decoration: none;
@@ -318,8 +346,32 @@ a.hover-icon:hover {
     padding: 3px;
     width: 33%;
     display: flex;
+    justify-content: center;
+  }
+  #icons-desktop form button{
+    text-decoration: none;
+    color: var(--font-color);
+    border-color: var(--font-color);
+    border-image: none;
+    border-style: none;
+    background-color: white;
+    cursor: pointer;
+    font: inherit;
+    
+
+    padding: 3px;
+    display: flex;
     justify-content: space-around;
   }
+ button.h-log:hover .hover-logout{
+  display: flex;
+  position: absolute;
+  top: 85px;
+  right: 60px;
+  font-size: 0.8em;
+  text-align: center;
+  font: inherit;
+ }
   .hover-none {display: none;}
 
   a.h-log:hover .hover-login {
@@ -346,21 +398,6 @@ a.hover-icon:hover {
     right: 40px;
     font-size: 0.8em;
     text-align: center;
-  }
-
-  #icons-desktop {
-    width: 10%;
-    height: 35px;
-    display: flex;
-    align-self: center;
-    justify-content: space-around;
-    align-content: center;
-    align-items: center;
-    border: solid 1px #219653;
-    background-color: white;
-    box-sizing: content-box;
-    color: #219653;
-    border-radius: 13px;
   }
 
   /*         FOOTER DESKTOP  */

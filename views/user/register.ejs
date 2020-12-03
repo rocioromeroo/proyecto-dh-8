@@ -8,19 +8,26 @@
         <h1>Creá tu cuenta Electr8</h1>
         <section>   
             <form class="registro" action="/users/register" method="POST">
-
                 <div class="email input-form">
                     <input type="email" name="email" id="email" placeholder="Email">
-                    <hr>
-                    
                 </div>
+                <hr>
                 <div class="input-form">
                     <input type="password" name="password" id="password" placeholder="Contraseña">
-                    <hr>
                 </div>
+                <hr>
+                <div class="display_none">
+                    <input type="text" name="name" id="surname" placeholder="Apellido">    
+                </div>  
                 <div class="display_none">
                     <input type="text" name="surname" id="surname" placeholder="Apellido">    
                 </div>     
+                <div class="display_none">
+                        <input type="date" name="nacimiento" id="nacimiento">      
+                </div>
+                <div class="display_none">
+                    <input type="number" name="phone" id="phone" placeholder="Teléfono">  
+                </div>  
 
                 <% if(typeof errors.email !== 'undefined') { %>
                     <p class="text-red"><%= errors.email.msg	 %></p>
@@ -32,8 +39,6 @@
 
                 <div class="center1">
                     <button  class="crear" type="submit">Crear Cuenta</button>
-                <div class="center1">   
-                    <button class="crear" type="submit">Registrar</button>
                 </div>
 
             </form>

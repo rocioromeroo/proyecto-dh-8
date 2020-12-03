@@ -1,22 +1,22 @@
-
 var path = require("path");
 var fs = require("fs");
 const usersList = require('../data/usersDataBase')
+const productsList = require('../data/productsDataBase');
 const { validationResult } = require("express-validator");
 const bcryptjs = require("bcryptjs");
 var modelsUsers = require("../models/user");
 
 module.exports = {
   myAccount: function (req, res) {
-    let dato = usersList.find(function (valor) {
-          if (valor.id == usersList.length) {
+    let dato = productsList.find(function (valor) {
+          if (valor.id == productsList.length) {
             return valor
           }
     })
     res.render("user/myAccount", { styleOn: "style", dato:dato})
   },
   
-editPerfil:function (req, res) {
+  editPerfil:function (req, res) {
         
     res.render("user/editPerfil", { styleOn: "register"})
   },
@@ -45,7 +45,7 @@ editPerfil:function (req, res) {
       if (req.body.recordame) {
         res.cookie("recordame", user.email, { maxAge: 120 * 1000 });
       }
-      return res.render("user/myAccount", { styleOn: "style" });
+       res.redirect("users/account");
     } else {
       return res.render("user/login", {
         errors: errors.mapped(),
@@ -57,7 +57,7 @@ editPerfil:function (req, res) {
   logout: function (req, res) {
     req.session.destroy();
     res.cookie("recordame", null, { maxAge: 0 });
-    return res.render("user/login", {errors:{}, styleOn: "login" });
+    return res.redirect("login");
   },
 
   register: function (req, res) {
@@ -71,9 +71,13 @@ editPerfil:function (req, res) {
       modelsUsers.create({
         email: req.body.email,
         password: bcryptjs.hashSync(req.body.password),
+        name:req.body.name,
+        surname:req.body.surname,
+        phone:req.body.phone,
+        nacimiento:req.body.nacimiento,
       });
 
-      res.render("user/myAccount", { styleOn: "style" });
+      res.redirect("account");
     } else {
       return res.render("user/register", {
         errors: errors.mapped(),
@@ -88,20 +92,14 @@ editPerfil:function (req, res) {
 
   comment: function (req, res) {
     let pathFile = path.join("data", "comment.json");
-
     let nuevoMessage = fs.readFileSync(pathFile, { encoding: "utf-8" });
-
     nuevoMessage = JSON.parse(nuevoMessage);
-
     nuevoMessage.push({
       ...req.body,
       id: nuevoMessage[nuevoMessage.length - 1].id + 1,
     });
-
     nuevoMessage = JSON.stringify(nuevoMessage);
-
     fs.writeFileSync(pathFile, nuevoMessage);
-
     res.send("Mensaje Recibido!!");
   },
 };

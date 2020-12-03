@@ -1,1 +1,11 @@
-[{"email":"test@test.com","password":"$2a$10$WCAghpi.wsoz630xGOjW0uo9V2YTs8IwvvDPG11N381SCC6/Y1um2","id":1},{"email":"chau@gmail.com","password":"$2a$10$HeIF4UrR5fc1lWwcW7/flOctxNL96MMJDVykK5OAVWZf5WVMUHbXW","id":2},{"email":"testvacio@test.com","password":"$2a$10$5HHBEAibbCM0a6FfDeFDAe6D0dL2trp.jYbKswQF6JMddmxvHltwW","surname":"","id":3},{"email":"testvacio3000@test.com","password":"$2a$10$yD6RgLbGJGd2B1KcZfXpgeroteEdKUxUv4zoEu7C8gtTrTIGnU9Vi","surname":"","id":4},{"email":"test1@test.com","password":"$2a$10$70McNClQi8AKikrXO9BF4u4tQttYYtXfuPRLRoNnTFid9P2ldtbfO","id":5},{"email":"1234@gmail.com","password":"$2a$10$lbiWqPOxFbxYXbQ82VNRC.klszrI1plcrj/6JkkWgWgQZrAc0c7aq","id":6}]
+[
+  {
+    "email": "displaynone@test.com",
+    "password": "$2a$10$w4qglQkVGSq69ZH3PgT.iuKg1Cr3Zm/BL/G4jfGfUmk6xqmkXFx2e",
+    "name": "",
+    "surname": "",
+    "phone": "",
+    "nacimiento": "",
+    "id": 1
+  }
+]

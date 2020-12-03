@@ -35,19 +35,20 @@
                               <h2>Ultimo producto creado</h2>
                         </div>
                         <div class="foto-action">
-                              <img src=" "alt="cargar imagen">
+                              <img src="/images/<%= dato.category  %>/<%= dato.image  %>"alt="cargar imagen">
                         </div>
                         <div class="desc-action">
-                              <h3></h3>
-                              <p></p>
+                              <p>Nombre:</p>
+                              <h3><%= dato.name   %></h3>
+                              <p>Categoria:</p>
+                              <H2><%= dato.category   %></H2>
                         </div>
                         <div class="b-container">
                               <a  class="buttom-action" href="/products/create">crear un producto</a>
                         </div>
-
                   </article>
 
-                  <article class="borrar">
+                  <!-- <article class="borrar">
                         <div class="titulo-action">
                               <h2>Ultimo producto borrado</h2>
                         </div>
@@ -77,7 +78,7 @@
                   <div class="b-container">
                         <a class="buttom-action" href="">modificar un producto</a>
                   </div>
-                  </article>
+                  </article> -->
             </section>
       </main>
 

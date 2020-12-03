@@ -95,7 +95,7 @@ const productsController = {
 
     fs.writeFileSync(pathFile, nuevoProduct)
 
-    res.send('Producto creado')
+    res.redirect('/products')
   },
 
   update: (req, res) => {

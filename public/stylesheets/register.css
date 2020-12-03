@@ -10,7 +10,7 @@
     background-color: var(--body-background);
 }
 .text-red{color: red; font-size: 0.6em;}
-
+.display_none{display: none;}
 .input-form{
     padding-top:3%
 }
