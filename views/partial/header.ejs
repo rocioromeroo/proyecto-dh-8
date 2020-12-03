@@ -17,7 +17,7 @@
                     </div>
                         
                     <div class="nav-container">
-                        <div id="icons"></ul>
+                        <div id="icons">
                             <a class="hover-icon" href="/users/login"><i class="fas fa-sign-in-alt"></i></a>
                             <a class="hover-icon" href="/users/register"><i class="fas fa-user-plus"></i></a>
                             <a class="hover-icon" href="/products/cart"><i class="fas fa-shopping-cart" ></i></a>
@@ -47,7 +47,19 @@
                     <li><a href="/products/category/accesorios">ACCESORIOS</a></li>   
                     <li><a href="/users/contact">CONTACTO</a></li>    
                 </ul>
-
+                <% if(locals.user) { %>
+                <div id="icons-desktop">
+                    <form action="/users/logout" method="POST">
+                        <button class="hover-icon h-log" type="submit"><i class="fas fa-sign-in-alt"></i>
+                            <p class="hover-login hover-none">Logout</p>
+                        </button>
+                    </form>
+                    
+                    <a class="hover-icon h-cart" href="/products/cart"><i class="fas fa-shopping-cart"></i>
+                        <p class="hover-carrito hover-none">Ver carrito</p>
+                    </a>
+                </div>
+                <% } else { %>	
                 <div id="icons-desktop">
                     <a class="hover-icon h-log" href="/users/login"><i class="fas fa-sign-in-alt"></i>
                         <p class="hover-login hover-none">Login</p>
@@ -59,5 +71,6 @@
                         <p class="hover-carrito hover-none">Ver carrito</p>
                     </a>
                 </div>
+                <% } %>
             </div> 
         </header>

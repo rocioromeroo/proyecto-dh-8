@@ -57,7 +57,7 @@ editPerfil:function (req, res) {
   logout: function (req, res) {
     req.session.destroy();
     res.cookie("recordame", null, { maxAge: 0 });
-    return res.render("user/login", { styleOn: "login" });
+    return res.render("user/login", {errors:{}, styleOn: "login" });
   },
 
   register: function (req, res) {
