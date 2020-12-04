@@ -24,7 +24,7 @@ module.exports = {
   },
   
   editPerfil:function (req, res) {
-        
+    
     res.render("user/editPerfil", { styleOn: "register"})
   },
 
