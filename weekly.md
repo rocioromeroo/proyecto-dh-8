@@ -57,15 +57,14 @@ Que se hizo ayer: Se configuraron las rutas del login y register.
 Se encontro algun impedimento: Problemas al momento de crear el usuario con el validator.
 Que se hace hoy: Session y cookies.
 
-Fernandez Juan
-Que se hizo ayer:
-Se encontro algun impedimento:
-Que se hace hoy:
+Que se hizo ayer: Probamos la pagina y los ultimos detalles.
+Se encontro algun impedimento: session.
+Que se hace hoy: Completar weekly y enviar.
 
 Nusfaumer Leonel
-Que se hizo ayer:
-Se encontro algun impedimento:
-Que se hace hoy:
+Que se hizo ayer: Se creo la vista, ruta, y controler de MyAccount. Se intento armar los modelos para que se muestren todos los datos del usuario. Cambio dde iconos.
+Se encontro algun impedimento: Estamos trabajando sobre las mismas lineas y eso hace que los merge armen confucion.
+Que se hace hoy:Se arman los metodos para que solo usuarios registrados ingresen al perfil y carrito.
 
 Dominguez Gaston
 Que se hizo ayer: Se realizo la configuracion de diferentes rutas como login y register.
