@@ -29,14 +29,14 @@ Weekly: Sprint-4
 Creacion branch sprint 4
 
 Romero Rocio
-Que se hizo ayer: Modificaciones formularios    
+Que se hizo ayer: Modificaciones formularios  
 Se encontro algun impedimento: Boton de carga de nuevo producto
 Que se hace hoy: Revisar la página junto al equipo y comprobar que todos los links funcionen.
 
 Fernandez Juan
-Que se hizo ayer: Actualice el carrito, fondo blanco y links de accesorios.
-Se encontro algun impedimento: que los accesorios sean dinámicos.
-Que se hace hoy: Revisar la página junto al equipo y comprobar que todos los links funcionen.
+Que se hizo ayer: Probamos la pagina y los ultimos detalles.
+Se encontro algun impedimento: session.
+Que se hace hoy: Completar weekly y enviar.
 
 Nusfaumer Leonel
 Que se hizo ayer: Creamos el Sprint-4. Recibimos el feedback del sprint-3. Revisamos rutas.
@@ -58,14 +58,14 @@ Se encontro algun impedimento: Problemas al momento de crear el usuario con el v
 Que se hace hoy: Session y cookies.
 
 Fernandez Juan
-Que se hizo ayer: 
-Se encontro algun impedimento: 
-Que se hace hoy: 
+Que se hizo ayer:
+Se encontro algun impedimento:
+Que se hace hoy:
 
 Nusfaumer Leonel
-Que se hizo ayer: 
-Se encontro algun impedimento: 
-Que se hace hoy: 
+Que se hizo ayer:
+Se encontro algun impedimento:
+Que se hace hoy:
 
 Dominguez Gaston
 Que se hizo ayer: Se realizo la configuracion de diferentes rutas como login y register.
