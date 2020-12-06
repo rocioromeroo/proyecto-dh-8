@@ -70,7 +70,64 @@ const productsController = {
     })
   },
 
+  edit: function (req, res, next) {
 
+    let editar = productsList.find(function (buscar) {
+      if (buscar.id == req.params.id) {
+        return buscar
+      }
+    })
+    
+
+    res.render("./product/editProduct", { editar: editar, styleOn: "create-editProduct" })
+  },
+
+  update: (req, res) => {
+
+
+    let pathFile = path.join('data','prueba.json')
+
+		let actualProduct = fs.readFileSync(pathFile, { encoding: 'utf-8' })
+
+		actualProduct = JSON.parse(actualProduct)
+		
+		actualProduct = actualProduct.map(function(buscar) {
+			// console.log(buscar);
+			
+			if(buscar.id == req.params.id) {
+        buscar = {...req.body}
+        image  = req.files[0].filename
+				return buscar
+			}
+		})
+		
+		
+		actualProduct = JSON.stringify(actualProduct)
+	
+		fs.writeFileSync(pathFile, actualProduct)
+		
+
+		res.send('Producto Actualizado!!')
+
+
+  },
+
+  destroy: (req, res) => {
+    let pathFile = path.join('data', 'productsDatabase.json')
+    let actualProduct = fs.readFileSync(pathFile, { encoding: 'utf-8' })
+    actualProduct = JSON.parse(actualProduct)
+
+    actualProduct = actualProduct.filter(function (buscar) {
+      if (buscar.id != req.params.id) {
+        return buscar
+      }
+    })
+
+    actualProduct = JSON.stringify(actualProduct)
+
+    fs.writeFileSync(pathFile, actualProduct)
+    res.send('Producto Borrado!!')
+  },
 
   create: function (req, res, next) {
 
@@ -79,7 +136,7 @@ const productsController = {
 
   store: function (req, res, next) {
 
-    let pathFile = path.join('data', 'prueba.json')
+    let pathFile = path.join('data', 'productsDatabase.json')
 
     let nuevoProduct = fs.readFileSync(pathFile, { encoding: 'utf-8' })
 
@@ -96,59 +153,6 @@ const productsController = {
     fs.writeFileSync(pathFile, nuevoProduct)
 
     res.redirect('/products')
-  },
-
-  update: (req, res) => {
-    let pathFile = path.join('data', 'prueba.json')
-    let actualProduct = fs.readFileSync(pathFile, { encoding: 'utf-8' })
-    actualProduct = JSON.parse(actualProduct)
-
-
-    actualProduct = actualProduct.map(function (buscar) {
-      if (buscar.id == req.params.id) {
-        buscar.name = req.body.name,
-          buscar.price = req.body.price,
-          buscar.discount = req.body.discount,
-          buscar.category = req.body.category,
-          buscar.description = req.body.description
-        return buscar
-      }
-    })
-
-    actualProduct = JSON.stringify(actualProduct)
-
-    fs.writeFileSync(pathFile, actualProduct)
-
-    res.send('Producto Actualizado!!')
-  },
-
-  destroy: (req, res) => {
-    let pathFile = path.join('data', 'prueba.json')
-    let actualProduct = fs.readFileSync(pathFile, { encoding: 'utf-8' })
-    actualProduct = JSON.parse(actualProduct)
-
-    actualProduct = actualProduct.filter(function (buscar) {
-      if (buscar.id != req.params.id) {
-        return buscar
-      }
-    })
-
-    actualProduct = JSON.stringify(actualProduct)
-
-    fs.writeFileSync(pathFile, actualProduct)
-    res.send('Producto Borrado!!')
-  },
-
-
-  edit: function (req, res, next) {
-
-    let editar = productsList.find(function (buscar) {
-      if (buscar.id == req.params.id) {
-        return buscar
-      }
-    })
-
-    res.render("./product/editProduct", { editar: editar, styleOn: "create-editProduct" })
   },
 
   cart: function (req, res) {
