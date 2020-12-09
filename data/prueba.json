@@ -1,10 +1,1 @@
-[{
-    "id": 11,
-    "name": "One Z10",
-    "description": "Potencia y Estabilidad con un Diseño Innovador. El corazón de nuestro Smart Balance late con fuerza gracias a su batería li-ion, que le confiere una autonomía de hasta 20 kilómetros, gracias a una capacidad de carga de 4400mAh.",
-    "brand": "Segway",
-    "price": 22000,
-    "discount": 10,
-    "image": "mc-401-SEGWAY-NINEBOT-ONE-Z10.jpeg",
-    "category": "monociclos"
-  }]
+[{"name":"One Z10","description":"Potencia y Estabilidad con un Diseño Innovador. El corazón de nuestro Smart Balance late con fuerza gracias a su batería li-ion, que le confiere una autonomía de hasta 20 kilómetros, gracias a una capacidad de carga de 4400mAh.","brand":"Segway","price":"22100","discount":"10","category":"monociclos","id":"11","image":""}]
