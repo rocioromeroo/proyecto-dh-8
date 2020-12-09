@@ -31,7 +31,7 @@ router.get('/:id', productsController.detail)
 
 /*** EDIT ONE PRODUCT ***/ 
 router.get('/:id/edit', productsController.edit)
-router.put('/:id', productsController.update)
+router.put('/:id', upload.any(), productsController.update)
 
 /*** DELETE ONE PRODUCT ***/ 
 router.delete('/:id', productsController.destroy)

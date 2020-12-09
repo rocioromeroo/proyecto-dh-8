@@ -103,14 +103,15 @@ const productsController = {
 		actualProduct = JSON.parse(actualProduct)
 		
 		actualProduct = actualProduct.map(function(buscar) {
-			// console.log(buscar);
-			console.log(req.files);
+			
 			if(buscar.id == req.params.id) {
-        buscar = {...req.body}
-        image  = req.files[0].filename
-        console.log(image);
+        buscar = {
+          ...req.body,
+        image: req.files[0].filename,
+        }
+        buscar.id = req.params.id
 				return buscar
-			}
+      }
 		})
 		
 		
@@ -119,7 +120,7 @@ const productsController = {
 		fs.writeFileSync(pathFile, actualProduct)
 		
 
-		res.send('Producto Actualizado!!')
+		res.redirect('/products')
 
 
   },

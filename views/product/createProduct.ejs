@@ -9,14 +9,17 @@
             <h1>Pública un nuevo producto</h1>
             <section>   
                 <form class="new-product" action="/products" method="POST" enctype="multipart/form-data">
-                    <input type="text" name="name" id="name" placeholder="Nombre Producto">
+                    <label for="name">Nombre Producto</label>
+                    <input type="text" name="name" id="name">
                     <hr>
-                    <br>    
-                    <textarea name="description" id="description" cols="30" rows="5" placeholder="Descripción del producto" class="input border area f-size-10"></textarea>   
-                    <input type="text" name="price" id="price" placeholder="$ Precio">
+                    <br>
+                    <label for="description">Descripcion</label>    
+                    <textarea name="description" id="description" cols="30" rows="5" class="input border area f-size-10"></textarea>
+                    <label for="price">Precio</label>
+                    <input type="text" name="price" id="price">
                     <hr>
+                    <label for="category">Categoria:</label>
                     <div>
-                        <label for="category">Categoria:</label>
                         <select name="category" id="categoria">Categoria
                         <option value="">Seleccionar...</option>
                         <option value="monopatines">Monopatines</option>
