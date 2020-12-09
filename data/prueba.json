@@ -1,1 +1,10 @@
-[{"id":1,"name":"CANASTO SEGWAY NINEBOT S PLUS","price":900,"discount":50,"category":"accesorios","description":"Made of water-resistant nylon with polyester lining, the 15.6 inch Segway Ninebot Backpack comes with built-in USB port and anti-theft compartment for security.","image":"acc-100-Loading-basket.jpg"},{"name":"bicicleta","description":"alguno","price":"3300","stock":"12","id":2},{"name":"test","description":"hola","price":"100","stock":"1","id":3},{"name":"test","description":"hola","price":"100","stock":"1","id":4},{"name":"test","description":"hola","price":"100","stock":"1","id":5},{"name":"test","description":"hola","price":"100","stock":"1","id":6},{"name":"test","description":"hola","price":"100","stock":"1","id":7,"image":"image-1604955916088.jpg"},{"name":"test","description":"hola","price":"100","stock":"1","id":8,"image":"image-1604956023666.jpg"},{"name":"guitarra","description":"la mejor","price":"3000","category":"bicicletas","id":9,"image":"image-1605568440770.jpeg"},{"name":"","description":"","price":"","category":"","id":10,"image":"image-1606976162300.jpeg"},{"name":"","description":"","price":"","category":"","id":11,"image":"image-1606992068627.jpg"}]
+[{
+    "id": 11,
+    "name": "One Z10",
+    "description": "Potencia y Estabilidad con un Diseño Innovador. El corazón de nuestro Smart Balance late con fuerza gracias a su batería li-ion, que le confiere una autonomía de hasta 20 kilómetros, gracias a una capacidad de carga de 4400mAh.",
+    "brand": "Segway",
+    "price": 22000,
+    "discount": 10,
+    "image": "mc-401-SEGWAY-NINEBOT-ONE-Z10.jpeg",
+    "category": "monociclos"
+  }]

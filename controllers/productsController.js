@@ -5,6 +5,7 @@ const guaranteeList = require('../data/guaranteeDataBase');
 const featuresList = require('../data/featuresDataBase');
 const { PreconditionFailed } = require('http-errors');
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+const usersList = require('../data/usersDataBase')
 
 
 const productsController = {
@@ -77,9 +78,19 @@ const productsController = {
         return buscar
       }
     })
-    
 
-    res.render("./product/editProduct", { editar: editar, styleOn: "create-editProduct" })
+    let userFind = usersList.find(function (buscar) {
+      if (buscar.email == res.locals.user ) {
+        return buscar
+      }
+    })
+
+    if(userFind == undefined) {
+        return res.render("user/login", { errors:{}, styleOn: "login" })
+      }
+    else{
+      res.render("./product/editProduct", { editar: editar, styleOn: "create-editProduct" })
+    }
   },
 
   update: (req, res) => {
@@ -93,10 +104,11 @@ const productsController = {
 		
 		actualProduct = actualProduct.map(function(buscar) {
 			// console.log(buscar);
-			
+			console.log(req.files);
 			if(buscar.id == req.params.id) {
         buscar = {...req.body}
         image  = req.files[0].filename
+        console.log(image);
 				return buscar
 			}
 		})
@@ -130,8 +142,18 @@ const productsController = {
   },
 
   create: function (req, res, next) {
+    let userFind = usersList.find(function (buscar) {
+      if (buscar.email == res.locals.user ) {
+        return buscar
+      }
+    })
 
-    res.render("product/createProduct", { styleOn: "create-editProduct" })
+    if(userFind == undefined) {
+        return res.render("user/login", { errors:{}, styleOn: "login" })
+      }
+    else{
+      res.render("product/createProduct", { styleOn: "create-editProduct" })
+  }
   },
 
   store: function (req, res, next) {
@@ -168,7 +190,18 @@ const productsController = {
       }
     })
 
-    res.render("./product/productCart", { items: items, esteAccesorio: esteDato, styleOn: "productCart" })
+    let userFind = usersList.find(function (buscar) {
+      if (buscar.email == res.locals.user ) {
+        return buscar
+      }
+    })
+
+    if(userFind == undefined) {
+        return res.render("user/login", { errors:{}, styleOn: "login" })
+      }
+    else{
+      res.render("./product/productCart", { items: items, esteAccesorio: esteDato, styleOn: "productCart" }) 
+    }
   }
 }
 
