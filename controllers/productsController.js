@@ -106,7 +106,7 @@ const productsController = {
           ...req.body,
         };
         buscar.id = req.params.id;
-        console.log(req.files);
+        
         if (req.files.length == []) {
           buscar.image = "";
         } else {
@@ -165,8 +165,13 @@ const productsController = {
     nuevoProduct.push({
       ...req.body,
       id: nuevoProduct[nuevoProduct.length - 1].id + 1,
-      image: req.files[0].filename,
     });
+    if (req.files.length == []) {
+      nuevoProduct.image = "";
+    } else {
+      nuevoProduct.image = req.files[0].filename;
+    }
+
 
     nuevoProduct = JSON.stringify(nuevoProduct);
 
