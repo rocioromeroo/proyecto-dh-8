@@ -70,3 +70,24 @@ Dominguez Gaston
 Que se hizo ayer: Se realizo la configuracion de diferentes rutas como login y register.
 Se encontro algun impedimento: Se encontro un problema en el boton de recordame cuando el usuarios inicia sesion.
 Que se hace hoy: Se terminara la configuracion de session y cookies.
+
+Weekly: Sprint-6
+
+Romero Rocio
+Que se hizo ayer:
+Se encontro algun impedimento:
+Que se hace hoy:
+
+Que se hizo ayer:
+Se encontro algun impedimento:
+Que se hace hoy:
+
+Nusfaumer Leonel
+Que se hizo ayer:
+Se encontro algun impedimento:
+Que se hace hoy:
+
+Dominguez Gaston
+Que se hizo ayer:
+Se encontro algun impedimento:
+Que se hace hoy:
