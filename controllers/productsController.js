@@ -6,6 +6,7 @@ const featuresList = require("../data/featuresDataBase");
 const { PreconditionFailed } = require("http-errors");
 const toThousand = (n) => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 const usersList = require("../data/usersDataBase");
+const db = require('../database/models');
 
 const productsController = {
   products: function (req, res) {
@@ -25,13 +26,22 @@ const productsController = {
 
     res.render("./product/product", { items: items, styleOn: "product" });
   },
-
   category: function (req, res) {
+    db.Product.findAll()
+      .then((resultado) => {
+        res.render('./product/category', { items: resultado, styleOn: "accessories"})
+      })
+      .catch(function(error){
+        console.log(error);
+      })   
+    },
+
+  /* category: function (req, res) {
     let items = productsList.filter(function (valor) {
       return valor.category == req.params.category;
     });
     res.render("./product/category", { items: items, styleOn: "accessories" });
-  },
+  } */
 
   detail: function (req, res) {
     let detalle = productsList.filter(function (valor) {
