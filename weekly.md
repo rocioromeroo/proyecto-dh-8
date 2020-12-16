@@ -89,6 +89,6 @@ Se encontro algun impedimento:
 Que se hace hoy:
 
 Dominguez Gaston
-Que se hizo ayer:
-Se encontro algun impedimento:
-Que se hace hoy:
+Que se hizo ayer: Se instalo sequelize, se configuro sequilize, se envia modelo para correjir al profesor
+Se encontro algun impedimento: Sequelize no quedo del todo instalado correctamente
+Que se hace hoy: Se comeinza a crear el modelo de productos y usuarios con el CRUD

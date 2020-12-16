@@ -16,4 +16,6 @@ Retroespectiva - Sprint-4
 
     Mediantes los feedbacks que recibimos de los sprint anteriores vemos que debemos corregir los testeos luego de realizar el codigo y ponerlo en funcionamiento, si bien son algunos temas menores vamos a distribuir mejor las tareas y realzar las pruebas que sean necesarias para poder dejar todo funcionando correctamente.
 
-    Retroespectiva - Sprint-5
+Retroespectiva - Sprint-5
+
+    Se avanza en la implemenzacion de valicaciones mediantes middlewares, vemos que se complejiza el cogido pero se van mejorando la seguridad de la pagina y la funcionalidad de la misma, aun nos falta mejorar la division de tareas y probar mejor los desarrollos en testing.
