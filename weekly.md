@@ -78,9 +78,10 @@ Que se hizo ayer:
 Se encontro algun impedimento:
 Que se hace hoy:
 
-Que se hizo ayer:
-Se encontro algun impedimento:
-Que se hace hoy:
+Juan Fernandez
+Que se hizo ayer: esperar correccion del diagrama.
+Se encontro algun impedimento:conectar con la base de datos
+Que se hace hoy: solucionamos el problema y volvimos a configurar sequelize.
 
 Nusfaumer Leonel
 Que se hizo ayer:
