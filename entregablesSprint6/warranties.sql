@@ -1,0 +1,10 @@
+insert into warranties (id, duration, country_origin, oficial_coverage, created_at, updated_at, deleted_at) values (1, 3, 'Chile', 1, '2020-08-09 10:41:40', '2020-09-29 12:27:53', '2020-03-02 13:18:53');
+insert into warranties (id, duration, country_origin, oficial_coverage, created_at, updated_at, deleted_at) values (2, 3, 'Sweden', 1, '2020-01-27 02:11:45', '2020-02-18 16:03:15', '2020-04-08 08:36:12');
+insert into warranties (id, duration, country_origin, oficial_coverage, created_at, updated_at, deleted_at) values (3, 1, 'Canada', 0, '2020-10-09 11:23:13', '2020-01-01 06:25:40', '2020-10-12 12:38:38');
+insert into warranties (id, duration, country_origin, oficial_coverage, created_at, updated_at, deleted_at) values (4, 2, 'Brazil', 0, '2020-10-25 06:18:23', '2020-10-08 16:56:53', '2020-04-30 01:48:37');
+insert into warranties (id, duration, country_origin, oficial_coverage, created_at, updated_at, deleted_at) values (5, 2, 'Philippines', 1, '2020-05-06 22:41:13', '2020-10-11 01:13:50', '2020-03-26 00:19:49');
+insert into warranties (id, duration, country_origin, oficial_coverage, created_at, updated_at, deleted_at) values (6, 2, 'Indonesia', 1, '2020-01-09 11:32:00', '2020-09-24 00:40:52', '2020-09-28 02:04:40');
+insert into warranties (id, duration, country_origin, oficial_coverage, created_at, updated_at, deleted_at) values (7, 1, 'Jamaica', 0, '2020-11-14 15:09:42', '2020-12-04 04:48:17', '2020-04-02 13:43:25');
+insert into warranties (id, duration, country_origin, oficial_coverage, created_at, updated_at, deleted_at) values (8, 1, 'Greece', 0, '2020-08-30 05:08:29', '2020-02-26 02:26:52', '2020-09-27 07:08:14');
+insert into warranties (id, duration, country_origin, oficial_coverage, created_at, updated_at, deleted_at) values (9, 1, 'Argentina', 0, '2020-05-15 06:41:15', '2020-12-12 12:32:01', '2020-05-14 02:24:27');
+insert into warranties (id, duration, country_origin, oficial_coverage, created_at, updated_at, deleted_at) values (10, 1, 'Russia', 1, '2020-07-06 23:34:56', '2020-09-28 18:17:49', '2020-09-19 13:41:30');

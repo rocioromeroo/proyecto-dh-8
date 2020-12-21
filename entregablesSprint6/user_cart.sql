@@ -1,0 +1,10 @@
+insert into user_cart (id, quantity, unit_price, created_at, updated_at, deleted_at) values (1, 78, 10191.44, '2020-03-30 19:38:47', '2020-11-18 02:27:42', '2020-02-11 21:04:38');
+insert into user_cart (id, quantity, unit_price, created_at, updated_at, deleted_at) values (2, 43, 89342.77, '2020-03-22 17:24:30', '2020-11-29 05:25:22', '2020-05-22 22:27:25');
+insert into user_cart (id, quantity, unit_price, created_at, updated_at, deleted_at) values (3, 68, 58006.83, '2020-06-04 19:09:44', '2020-06-17 22:52:01', '2020-05-23 05:48:40');
+insert into user_cart (id, quantity, unit_price, created_at, updated_at, deleted_at) values (4, 61, 4182.6, '2020-09-01 19:31:25', '2020-07-08 02:13:04', '2020-06-01 18:27:37');
+insert into user_cart (id, quantity, unit_price, created_at, updated_at, deleted_at) values (5, 85, 15687.97, '2020-08-16 12:38:01', '2020-03-19 21:21:29', '2020-06-29 16:31:34');
+insert into user_cart (id, quantity, unit_price, created_at, updated_at, deleted_at) values (6, 45, 46821.62, '2020-05-06 02:50:10', '2020-02-02 04:23:04', '2020-03-28 06:10:10');
+insert into user_cart (id, quantity, unit_price, created_at, updated_at, deleted_at) values (7, 32, 85462.48, '2020-02-06 15:55:32', '2020-08-29 01:35:36', '2020-07-02 09:02:38');
+insert into user_cart (id, quantity, unit_price, created_at, updated_at, deleted_at) values (8, 13, 4800.53, '2020-11-18 20:17:17', '2020-05-14 21:37:20', '2020-12-09 16:09:22');
+insert into user_cart (id, quantity, unit_price, created_at, updated_at, deleted_at) values (9, 74, 19705.45, '2020-09-30 23:00:57', '2020-10-08 06:38:26', '2020-02-18 06:26:22');
+insert into user_cart (id, quantity, unit_price, created_at, updated_at, deleted_at) values (10, 77, 77560.93, '2020-07-29 20:28:44', '2020-11-28 23:13:35', '2020-03-17 01:57:16');
