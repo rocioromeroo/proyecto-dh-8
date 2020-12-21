@@ -1,0 +1,10 @@
+insert into MOCK_DATA (id, username, email, password, first_name, last_name, address, profile) values (1, 'aalkin0', 'aalkin0@toplist.cz', 'hCAKgaPd711', 'Allsun', 'Alkin', '7077 Golf View Road', 'standard');
+insert into MOCK_DATA (id, username, email, password, first_name, last_name, address, profile) values (2, 'fthumnel1', 'fthumnel1@ehow.com', '8fzQihDMF', 'Fanni', 'Thumnel', '94576 Del Mar Parkway', 'standard');
+insert into MOCK_DATA (id, username, email, password, first_name, last_name, address, profile) values (3, 'wprestidge2', 'wprestidge2@so-net.ne.jp', '7bsEyl1y0', 'Winthrop', 'Prestidge', '0 Cottonwood Avenue', 'standard');
+insert into MOCK_DATA (id, username, email, password, first_name, last_name, address, profile) values (4, 'fglasard3', 'fglasard3@homestead.com', 'JCNMj7xcqd8', 'Frederique', 'Glasard', '124 Maple Wood Trail', 'standard');
+insert into MOCK_DATA (id, username, email, password, first_name, last_name, address, profile) values (5, 'cgudyer4', 'cgudyer4@hubpages.com', 'kHt7GzdXd', 'Courtnay', 'Gudyer', '934 American Ash Court', 'standard');
+insert into MOCK_DATA (id, username, email, password, first_name, last_name, address, profile) values (6, 'pbushnell5', 'pbushnell5@delicious.com', 'bHdbmR1Lhp', 'Payton', 'Bushnell', '60672 Memorial Crossing', 'standard');
+insert into MOCK_DATA (id, username, email, password, first_name, last_name, address, profile) values (7, 'ccharpling6', 'ccharpling6@stumbleupon.com', 'KPmYh4oL', 'Cora', 'Charpling', '2486 Utah Place', 'standard');
+insert into MOCK_DATA (id, username, email, password, first_name, last_name, address, profile) values (8, 'bbeaconsall7', 'bbeaconsall7@360.cn', 'TQEwmq7BwYh', 'Bridgette', 'Beaconsall', '0099 Oxford Trail', 'standard');
+insert into MOCK_DATA (id, username, email, password, first_name, last_name, address, profile) values (9, 'hpalphramand8', 'hpalphramand8@nba.com', 'GSViV2GE', 'Harry', 'Palphramand', '859 Hauk Court', 'standard');
+insert into MOCK_DATA (id, username, email, password, first_name, last_name, address, profile) values (10, 'tdahmel9', 'tdahmel9@mashable.com', 'wrCwOkyCcD7T', 'Tamar', 'Dahmel', '882 Merrick Park', 'standard');

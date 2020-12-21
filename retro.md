@@ -18,4 +18,4 @@ Retroespectiva - Sprint-4
 
 Retroespectiva - Sprint-5
 
-    Se avanza en la implemenzacion de valicaciones mediantes middlewares, vemos que se complejiza el cogido pero se van mejorando la seguridad de la pagina y la funcionalidad de la misma, aun nos falta mejorar la division de tareas y probar mejor los desarrollos en testing.
+    Se avanza en la implemenzacion de validaciones mediantes middlewares, vemos que se complejiza el cogido pero se van mejorando la seguridad de la pagina y la funcionalidad de la misma, aun nos falta mejorar la division de tareas y probar mejor los desarrollos en testing.
