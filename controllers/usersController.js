@@ -89,13 +89,13 @@ module.exports = {
     let errors = validationResult(req);
 
     if (errors.isEmpty()) {
-      modelsUsers.create({
+      db.User.create({
         email: req.body.email,
         password: bcryptjs.hashSync(req.body.password),
-        name:req.body.name,
-        surname:req.body.surname,
-        phone:req.body.phone,
-        nacimiento:req.body.nacimiento,
+        first_name:req.body.first_name,
+        last_name:req.body.last_name,
+        address:req.body.address,
+        profile: 'standard'
       });
 
       res.redirect("account");

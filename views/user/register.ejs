@@ -17,17 +17,15 @@
                 </div>
                 <hr>
                 <div class="display_none">
-                    <input type="text" name="name" id="surname" placeholder="Apellido">    
+                    <input type="text" name="first_name" id="first_name" placeholder="Nombre">    
                 </div>  
                 <div class="display_none">
-                    <input type="text" name="surname" id="surname" placeholder="Apellido">    
+                    <input type="text" name="last_name" id="last_name" placeholder="Apellido">    
                 </div>     
                 <div class="display_none">
-                        <input type="date" name="nacimiento" id="nacimiento">      
+                        <input type="text" name="address" id="address" placeholder="Direccion">      
                 </div>
-                <div class="display_none">
-                    <input type="number" name="phone" id="phone" placeholder="Teléfono">  
-                </div>  
+                 
 
                 <% if(typeof errors.email !== 'undefined') { %>
                     <p class="text-red"><%= errors.email.msg	 %></p>
