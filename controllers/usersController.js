@@ -47,13 +47,18 @@ module.exports = {
       }
     })
     .then((resultado) => {
+      console.log(resultado.password);
+      
       if (!resultado) {
         return res.render("user/login", {
           errors: errors.mapped(),
           styleOn: "login",
         });
+        
       } else if (bcryptjs.compareSync(req.body.password, resultado.password)) {
+        console.log(resultado);
         req.session.user = resultado.email;
+        
         if (req.body.recordame) {
           res.cookie("recordame", resultado.email, { maxAge: 120 * 1000 });
         }
