@@ -5,6 +5,7 @@ const productsList = require('../data/productsDataBase');
 const { validationResult } = require("express-validator");
 const bcryptjs = require("bcryptjs");
 var modelsUsers = require("../models/user");
+const db = require('../database/models');
 
 module.exports = {
   myAccount: function (req, res) {
@@ -40,25 +41,33 @@ module.exports = {
 
   processlogin: function (req, res) {
     let errors = validationResult(req);
-    let user = modelsUsers.findByEmail(req.body.email);
-
-    if (!user) {
-      return res.render("user/login", {
-        errors: errors.mapped(),
-        styleOn: "login",
-      });
-    } else if (bcryptjs.compareSync(req.body.password, user.password)) {
-      req.session.user = user.email;
-      if (req.body.recordame) {
-        res.cookie("recordame", user.email, { maxAge: 120 * 1000 });
+    db.User.findOne({
+      where: {
+        email: req.body.email
       }
-       res.redirect("users/account");
-    } else {
-      return res.render("user/login", {
-        errors: errors.mapped(),
-        styleOn: "login",
-      });
-    }
+    })
+    .then((resultado) => {
+      if (!resultado) {
+        return res.render("user/login", {
+          errors: errors.mapped(),
+          styleOn: "login",
+        });
+      } else if (bcryptjs.compareSync(req.body.password, resultado.password)) {
+        req.session.user = resultado.email;
+        if (req.body.recordame) {
+          res.cookie("recordame", resultado.email, { maxAge: 120 * 1000 });
+        }
+        res.redirect("users/account");
+      } else {
+        return res.render("user/login", {
+          errors: errors.mapped(),
+          styleOn: "login",
+        });
+      }
+    })
+    .catch((error) => {
+      console.log(error);
+    })
   },
 
   logout: function (req, res) {
