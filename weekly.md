@@ -79,9 +79,9 @@ Se encontro algun impedimento:
 Que se hace hoy:
 
 Juan Fernandez
-Que se hizo ayer: esperar correccion del diagrama.
-Se encontro algun impedimento:conectar con la base de datos
-Que se hace hoy: solucionamos el problema y volvimos a configurar sequelize.
+Que se hizo ayer:
+Se encontro algun impedimento: no funcionaba el register
+Que se hace hoy: Arreglamos el register y cambiamos detalles sobre la base de datos.
 
 Nusfaumer Leonel
 Que se hizo ayer:
