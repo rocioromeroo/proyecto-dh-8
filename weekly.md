@@ -84,9 +84,9 @@ Se encontro algun impedimento: no funcionaba el register
 Que se hace hoy: Arreglamos el register y cambiamos detalles sobre la base de datos.
 
 Nusfaumer Leonel
-Que se hizo ayer:
-Se encontro algun impedimento:
-Que se hace hoy:
+Que se hizo ayer: Armamos las tablas en https://mockaroo.com/, y luego las exportamos a workbench. 
+Se encontro algun impedimento: Nos costaba insertar las claves foraneas, pero se termino de resolver.
+Que se hace hoy: Se sigue con el armado de models.
 
 Dominguez Gaston
 Que se hizo ayer: Se instalo sequelize, se configuro sequilize, se envia modelo para correjir al profesor
