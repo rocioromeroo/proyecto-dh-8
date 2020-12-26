@@ -51,19 +51,19 @@ module.exports = (sequelize, datatypes) => {
         timestamps: false
     }
      let Product = sequelize.define(alias, cols, config);
-    /* Pelicula.associate = function(models) {     
-        Pelicula.belongsTo(models.Genero, {
-            as: "genero",                   
-            foreignKey: "genre_id"  
+     Product.associate = function(models) {     
+        Product.belongsTo(models.Cart, {
+            as: "cart",                   
+            foreignKey: "carts_id"  
+        }),
+        Product.hasOne(models.Warranty, {
+            as: "warranty",                   
+            foreignKey: "warranties_id"  
+        }),
+        Product.hasMany(models.Category, {
+            as: "category",                   
+            foreignKey: "categories_id"  
         })
-        Pelicula.belongsToMany(models.Actor, {
-            as: "actores",                  
-            through: "actor_movie",
-            foreignKey: "movie_id",
-            otherkey: "actor_id",
-            timestamps: false,
-            onDelete: 'CASCADE'
-        })  
-    };  */
+    };  
     return Product;
 };
