@@ -7,32 +7,36 @@
     <div class="register">
         <h1>Edita  tu cuenta Electr8</h1>
         <section>   
-            <form class="registro" action="/users/editPerfil?_method=PUT" method="POST" enctype="multipart/form-data">
+            <form class="registro" action="/users/<%= editar.id %>/editPerfil?_method=PUT" method="POST" enctype="multipart/form-data">
                 <div class="padd-10">
-                    <input type="text" name="name" id="name" placeholder="Nombre">    
+                    <input type="text" name="username" id="username" placeholder="Nombre de Usuario" value="<%= editar.username %>">    
                 </div>
                 <hr>
                 <div class="padd-10">
-                    <input type="text" name="surname" id="surname" placeholder="Apellido">    
+                    <input type="text" name="first_name" id="first_name" placeholder="Nombre" value="<%= editar.first_name %>">    
+                </div>
+                <hr>
+                <div class="padd-10">
+                    <input type="text" name="last_name" id="last_name" placeholder="Apellido" value="<%= editar.last_name %>">    
                 </div>      
                 <hr>
-                <div class="nacimiento class="padd-10"">
+                <!-- <div class="nacimiento class="padd-10"">
                     <label class="nacimiento" for="nacimiento">Fecha de nacimiento:
                         <input type="date" name="nacimiento" id="nacimiento">    
                         
                     </label>
                   </div>
-                <hr>
+                <hr> -->
                 <div class="padd-10">
-                    <input type="text" name="adresse" id="adresse" placeholder="Direccion">  
+                    <input type="text" name="address" id="address" placeholder="Direccion" value="<%= editar.address %>">  
                 </div>   
                 <hr>
-                <div class="padd-10">
+                <!-- <div class="padd-10">
                     <input type="number" name="phone" id="phone" placeholder="Teléfono">  
                 </div>   
-                <hr>
+                <hr> -->
                 <div class="padd-10">
-                    <input type="password" name="password" id="password" placeholder="Contraseña">
+                    <input type="password" name="password" id="password" placeholder="Contraseña" >
                 </div>
                 <hr>
                 <div class="padd-10">

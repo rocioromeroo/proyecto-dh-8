@@ -23,6 +23,7 @@ module.exports = {
     
     .then((resultado) => {
       if(resultado) {
+        
         res.render("user/myAccount", { styleOn: "style", dato: dato, editar: resultado})
       } else {
         return res.render("user/login", { errors:{}, styleOn: "login" })
@@ -45,13 +46,30 @@ module.exports = {
   },
   
   editPerfil:function (req, res) {
-    
-    res.render("user/editPerfil", { styleOn: "register"})
+    db.User.findByPk(req.params.id)
+    .then((resultado) => {
+      if(resultado) {
+        res.render("user/editPerfil", { styleOn: "register", editar: resultado})
+      }
+    }) 
   },
 
   savePerfil:function (req, res) {
-        
-    res.redirect("users/account")
+    db.User.update({
+      username: req.body.username,
+      first_name: req.body.first_name,
+      last_name: req.body.last_name,
+      address: req.body.address
+    }, {     
+        where: {
+          id: req.params.id
+        }
+      })
+    .catch(function(error){
+      console.log(error);
+    })      
+    
+    res.redirect("/users/account")
   },
 
   login: function (req, res) {
@@ -61,13 +79,14 @@ module.exports = {
 
   processlogin: function (req, res) {
     let errors = validationResult(req);
+    console.log(errors);
     db.User.findOne({
       where: {
         email: req.body.email
       }
     })
     .then((resultado) => {
-      console.log(resultado.password);
+      
       
       if (!resultado) {
         return res.render("user/login", {
@@ -76,7 +95,7 @@ module.exports = {
         });
         
       } else if (bcryptjs.compareSync(req.body.password, resultado.password)) {
-        console.log(resultado);
+        
         req.session.user = resultado.email;
         
         if (req.body.recordame) {
@@ -107,7 +126,7 @@ module.exports = {
 
   userStore: function (req, res) {
     let errors = validationResult(req);
-    console.log(errors);
+    
     if (errors.isEmpty()) {
       db.User.create({
         email: req.body.email,

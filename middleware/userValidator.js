@@ -18,18 +18,14 @@ module.exports = [
     })
   }),
        
-    
-
-  // body("email").custom(function (value) { 
-    
-  //   let user = modelsUsers.findByEmail(value); 
-       
+  // body("email").custom(function (value) {  
+  //   let user = modelsUsers.findByEmail(value);      
   //   if (user) {
   //     throw new Error("Este email ya se encuentra registrado");
   //   }
   //   return true;
   // }),
 
-  check('password').isLength({min:4}).withMessage('Su clave debe tener almenos 4 caracteres')
+  check('password').isLength({min:4}).withMessage('Su clave debe tener al menos 4 caracteres')
 ];
 
