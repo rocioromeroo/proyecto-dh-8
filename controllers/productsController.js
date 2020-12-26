@@ -152,17 +152,32 @@ const productsController = {
   },
 
   create: function (req, res, next) {
-    let userFind = usersList.find(function (buscar) {
-      if (buscar.email == res.locals.user) {
-        return buscar;
-      }
-    });
 
-    if (userFind == undefined) {
-      return res.render("user/login", { errors: {}, styleOn: "login" });
-    } else {
-      res.render("product/createProduct", { styleOn: "create-editProduct" });
-    }
+    return db.User.findOne({
+      where: {
+        email: res.locals.user
+      }
+    })
+    
+    .then((resultado) => {
+      if(resultado) {
+        res.render("product/createProduct", { styleOn: "create-editProduct" });
+      } else {
+        return res.render("user/login", { errors:{}, styleOn: "login" })
+      }
+    })
+
+    // let userFind = usersList.find(function (buscar) {
+    //   if (buscar.email == res.locals.user) {
+    //     return buscar;
+    //   }
+    // });
+
+    // if (userFind == undefined) {
+    //   return res.render("user/login", { errors: {}, styleOn: "login" });
+    // } else {
+    //   res.render("product/createProduct", { styleOn: "create-editProduct" });
+    // }
   },
 
   store: function (req, res, next) {

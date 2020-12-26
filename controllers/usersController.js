@@ -10,18 +10,38 @@ const db = require('../database/models');
 module.exports = {
   myAccount: function (req, res) {
     let dato = productsList.find(function (valor) {
-          if (valor.id == productsList.length) {
-            return valor
-          }
-    })
-    let editar = usersList.find(function (buscar) {
-      if (buscar.email == res.locals.user ) {
-        return buscar
+      if (valor.id == productsList.length) {
+        return valor
+      }
+    })    
+    
+    return db.User.findOne({
+      where: {
+        email: res.locals.user
       }
     })
-    if(editar == undefined)
-      {return res.render("user/login", { errors:{}, styleOn: "login" }) }
-      else{ res.render("user/myAccount", { styleOn: "style", dato:dato, editar:editar})}
+    
+    .then((resultado) => {
+      if(resultado) {
+        res.render("user/myAccount", { styleOn: "style", dato: dato, editar: resultado})
+      } else {
+        return res.render("user/login", { errors:{}, styleOn: "login" })
+      }
+    })
+
+    // let dato = productsList.find(function (valor) {
+    //   if (valor.id == productsList.length) {
+    //     return valor
+    //   }
+    // })
+    // let editar = usersList.find(function (buscar) {
+    //   if (buscar.email == res.locals.user ) {
+    //     return buscar
+    //   }
+    // })
+    // if(editar == undefined)
+    //   {return res.render("user/login", { errors:{}, styleOn: "login" }) }
+    //   else{ res.render("user/myAccount", { styleOn: "style", dato:dato, editar:editar})}
   },
   
   editPerfil:function (req, res) {
@@ -87,7 +107,7 @@ module.exports = {
 
   userStore: function (req, res) {
     let errors = validationResult(req);
-
+    console.log(errors);
     if (errors.isEmpty()) {
       db.User.create({
         email: req.body.email,
@@ -101,6 +121,7 @@ module.exports = {
       res.redirect("account");
     } else {
       return res.render("user/register", {
+        
         errors: errors.mapped(),
         styleOn: "register",
       });
