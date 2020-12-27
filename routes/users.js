@@ -23,9 +23,7 @@ router.get('/', function(req, res, next) {
 /*        GET       MyAccount   */
 router.get('/account', usersController.myAccount)
 
-/*        GET       EDITAR PERFIL   */
-router.get('/editPerfil', usersController.editPerfil)
-router.put('/editPerfil',upload.any(), usersController.savePerfil)
+
 
 
 /*        GET/POST       Register   */
@@ -43,6 +41,9 @@ router.post("/logout", usersController.logout);
 router.get('/contact', usersController.contact)
 router.post('/contact', usersController.comment)
 
+/*        GET       EDITAR PERFIL   */
+router.get('/:id/editPerfil', usersController.editPerfil)
+router.put('/:id/editPerfil',upload.any(), usersController.savePerfil)
 
 module.exports = router; 
 

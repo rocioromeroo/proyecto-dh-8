@@ -14,16 +14,16 @@
                         </div>
                         <div class="info-perfil">
                               <ul>
-                                    <li>Nombre:  <%= editar.name%></li>
-                                    <li>Apellido:  <%= editar.surname%></li>
-                                    <li>Telefono:  <%= editar.phone%></li>
-                                    <li>Direccion: <%= editar.adresse%></li>
+                                    <li>Nombre:  <%= editar.first_name%></li>
+                                    <li>Apellido:  <%= editar.last_name%></li>
+                                    <!-- <li>Telefono:  <%= editar.phone%></li> -->
+                                    <li>Direccion: <%= editar.address%></li>
                                     <li>Email: <%= editar.email%></li>
                               </ul>
 
                         </div>
                         <div class="b-container">
-                              <a class="buttom-action" href="/users/editPerfil">EDITAR PERFIL</a>
+                              <a class="buttom-action" href="/users/<%= editar.id%>/editPerfil">EDITAR PERFIL</a>
                         </div>
                   </article>
             </section>
