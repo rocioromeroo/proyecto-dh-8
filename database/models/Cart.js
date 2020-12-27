@@ -15,15 +15,15 @@ module.exports = (sequelize, datatypes) => {
         timestamps: false
     }
      let Cart = sequelize.define(alias, cols, config);
-     Cart.associate = function(models) {     
-        Cart.belongsTo(models.User, {
-            as: "user",                   
-            foreignKey: "users_id"  
-        }),
-        Cart.hasMany(models.Product, {
-            as: "product",                   
-            foreignKey: "products_id"  
-        })  
-    };  
+    //  Cart.associate = function(models) {     
+    //     Cart.belongsTo(models.User, {
+    //         as: "user",                   
+    //         foreignKey: "users_id"  
+    //     }),
+    //     Cart.hasMany(models.Product, {
+    //         as: "product",                   
+    //         foreignKey: "products_id"  
+    //     })  
+    // };  
     return Cart;
 };
