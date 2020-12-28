@@ -51,19 +51,19 @@ module.exports = (sequelize, datatypes) => {
         timestamps: false
     }
      let Product = sequelize.define(alias, cols, config);
-     Product.associate = function(models) {     
-        Product.belongsTo(models.Cart, {
-            as: "cart",                   
-            foreignKey: "carts_id"  
-        }),
-        Product.hasOne(models.Warranty, {
-            as: "warranty",                   
-            foreignKey: "warranties_id"  
-        }),
-        Product.hasMany(models.Category, {
-            as: "category",                   
-            foreignKey: "categories_id"  
-        })
-    };  
+    //  Product.associate = function(models) {     
+    //     Product.belongsTo(models.Cart, {
+    //         as: "cart",                   
+    //         foreignKey: "carts_id"  
+    //     }),
+    //     Product.hasOne(models.Warranty, {
+    //         as: "warranty",                   
+    //         foreignKey: "warranties_id"  
+    //     }),
+    //     Product.hasMany(models.Category, {
+    //         as: "category",                   
+    //         foreignKey: "categories_id"  
+    //     })
+    // };  
     return Product;
 };

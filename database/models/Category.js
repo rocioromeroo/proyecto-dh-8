@@ -15,11 +15,11 @@ module.exports = (sequelize, datatypes) => {
           timestamps: false
       }
        let Category = sequelize.define(alias, cols, config);
-       Category.associate = function(models) {     
-          Category.belongsTo(models.Product, {
-              as: "product",                   
-              foreignKey: "products_id"  
-          }) 
-      };  
+    //    Category.associate = function(models) {     
+    //       Category.belongsTo(models.Product, {
+    //           as: "product",                   
+    //           foreignKey: "product_id"  
+    //       }) 
+    //   };  
       return Category;
   };
