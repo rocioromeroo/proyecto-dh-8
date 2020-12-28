@@ -6,6 +6,7 @@ insert into categories (id, name, created_at, updated_at, deleted_at) values (1,
 insert into categories (id, name, created_at, updated_at, deleted_at) values (2, 'monopatines', '2020-04-21 11:27:20', '2020-04-14 18:56:49', '2020-09-15 20:30:34');
 insert into categories (id, name, created_at, updated_at, deleted_at) values (3, 'monociclos', '2020-01-09 23:30:49', '2019-12-21 00:17:02', '2020-01-09 20:56:18');
 insert into categories (id, name, created_at, updated_at, deleted_at) values (4, 'bicicletas', '2020-09-24 07:52:35', '2020-05-24 19:31:16', '2020-02-08 05:41:10');
+insert into categories (id, name, created_at, updated_at, deleted_at) values (5, 'accesorios', '2020-09-24 07:52:35', '2020-05-24 19:31:16', '2020-02-08 05:41:10');
 
 -- -----------------------------------------------------
 -- Table `electro8DB`.`warranties`

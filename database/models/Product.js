@@ -51,7 +51,12 @@ module.exports = (sequelize, datatypes) => {
         timestamps: false
     }
      let Product = sequelize.define(alias, cols, config);
-    //  Product.associate = function(models) {     
+     Product.associate = function(models) {   
+        Product.belongsTo(models.Category, {
+            as: "category",                   
+            foreignKey: "categories_id"  
+        }) 
+        
     //     Product.belongsTo(models.Cart, {
     //         as: "cart",                   
     //         foreignKey: "carts_id"  
@@ -59,11 +64,11 @@ module.exports = (sequelize, datatypes) => {
     //     Product.hasOne(models.Warranty, {
     //         as: "warranty",                   
     //         foreignKey: "warranties_id"  
-    //     }),
-    //     Product.hasMany(models.Category, {
-    //         as: "category",                   
-    //         foreignKey: "categories_id"  
-    //     })
-    // };  
+    //     }), 
+        // Product.hasMany(models.Category, {
+        //     as: "categories",                   
+        //     foreignKey: "categories_id"  
+        // })
+    };  
     return Product;
 };

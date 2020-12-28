@@ -10,24 +10,33 @@ const db = require('../database/models');
 
 const productsController = {
   products: function (req, res) {
-    let objet1 = productsList.filter(function (element) {
-      return element.category == "bicicletas";
-    });
-    let objet2 = productsList.filter(function (element) {
-      return element.category == "monociclos";
-    });
-    let objet3 = productsList.filter(function (element) {
-      return element.category == "dualciclos";
-    });
-    let objet4 = productsList.filter(function (element) {
-      return element.category == "monopatines";
-    });
-    let items = [objet1[1], objet2[2], objet3[1], objet4[0]];
 
-    res.render("./product/product", { items: items, styleOn: "product" });
+    return db.Product.findAll()
+    .then((resultado) => {
+      res.render("./product/product", { items: resultado, styleOn: "product" });
+    })
+    .catch(function(error){
+      console.log(error);
+    })   
+    // let objet1 = productsList.filter(function (element) {
+    //   return element.category == "bicicletas";
+    // });
+    // let objet2 = productsList.filter(function (element) {
+    //   return element.category == "monociclos";
+    // });
+    // let objet3 = productsList.filter(function (element) {
+    //   return element.category == "dualciclos";
+    // });
+    // let objet4 = productsList.filter(function (element) {
+    //   return element.category == "monopatines";
+    // });
+    // let items = [objet1[1], objet2[2], objet3[1], objet4[0]];
+
+    // res.render("./product/product", { items: items, styleOn: "product" });
   },
+  
   category: function (req, res) {
-    db.Product.findAll()
+    db.Product.findAll({})
       .then((resultado) => {
         res.render('./product/category', { items: resultado, styleOn: "accessories"})
       })
