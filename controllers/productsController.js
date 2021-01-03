@@ -7,13 +7,19 @@ const { PreconditionFailed } = require("http-errors");
 const toThousand = (n) => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 const usersList = require("../data/usersDataBase");
 const db = require('../database/models');
+const { Op } = require('sequelize')
 
 const productsController = {
   products: function (req, res) {
 
     return db.Product.findAll({
+      where: {
+        categories_id: {
+          [Op.notLike]: 5
+        }
+      },
       group: 'categories_id',
-      limit: 4
+      
     })
     .then((resultado) => {
       
@@ -40,8 +46,18 @@ const productsController = {
   },
   
   category: function (req, res) {
-    db.Product.findAll({})
+    
+    console.log(req.params);
+    db.Product.findAll({
+      
+      where: {
+        categories_id: {
+          [Op.like]: req.params.id
+        }
+      }
+    })
       .then((resultado) => {
+        console.log(resultado);
         res.render('./product/category', { items: resultado, styleOn: "accessories"})
       })
       .catch(function(error){
