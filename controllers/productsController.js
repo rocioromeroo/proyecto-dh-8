@@ -11,8 +11,12 @@ const db = require('../database/models');
 const productsController = {
   products: function (req, res) {
 
-    return db.Product.findAll()
+    return db.Product.findAll({
+      group: 'categories_id',
+      limit: 4
+    })
     .then((resultado) => {
+      
       res.render("./product/product", { items: resultado, styleOn: "product" });
     })
     .catch(function(error){

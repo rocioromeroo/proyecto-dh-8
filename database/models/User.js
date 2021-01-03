@@ -33,11 +33,11 @@ module.exports = (sequelize, datatypes) => {
           timestamps: false
       }
        let User = sequelize.define(alias, cols, config);
-      //  User.associate = function(models) {     
-      //     User.hasOne(models.Cart, {
-      //         as: "cart",                   
-      //         foreignKey: "carts_id"  
-      //     })  
-      // };  
+       User.associate = function(models) {     
+          User.hasOne(models.Cart, {
+              as: "cart",                   
+              foreignKey: "carts_id"  
+          })  
+      };  
       return User;
   };
