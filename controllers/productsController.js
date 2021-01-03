@@ -117,58 +117,93 @@ const productsController = {
     // });
   },
 
-  edit: function (req, res, next) {
-    let editar = productsList.find(function (buscar) {
-      if (buscar.id == req.params.id) {
-        return buscar;
+  edit: function (req, res) {
+    let editar = db.Product.findByPk(req.params.id)
+    let userFind = db.User.findOne({
+      where: {
+        email: res.locals.user
       }
-    });
-
-    let userFind = usersList.find(function (buscar) {
-      if (buscar.email == res.locals.user) {
-        return buscar;
+    })
+    promises.All([editar, userFind])
+    .then(function([editar, userFind]) {
+      if (userFind == undefined) {
+        return res.render("user/login", { errors: {}, styleOn: "login" });
+      } else {
+        res.render("./product/editProduct", {
+          editar: editar,
+          styleOn: "create-editProduct",
+        });
       }
-    });
+    })
+    // let editar = productsList.find(function (buscar) {
+    //   if (buscar.id == req.params.id) {
+    //     return buscar;
+    //   }
+    // });
 
-    if (userFind == undefined) {
-      return res.render("user/login", { errors: {}, styleOn: "login" });
-    } else {
-      res.render("./product/editProduct", {
-        editar: editar,
-        styleOn: "create-editProduct",
-      });
-    }
+    // let userFind = usersList.find(function (buscar) {
+    //   if (buscar.email == res.locals.user) {
+    //     return buscar;
+    //   }
+    // });
+
+    
   },
 
   update: (req, res) => {
-    let pathFile = path.join("data", "productsDatabase.json");
-
-    let actualProduct = fs.readFileSync(pathFile, { encoding: "utf-8" });
-
-    actualProduct = JSON.parse(actualProduct);
-
-    actualProduct = actualProduct.map(function (buscar) {
-      if (buscar.id == req.params.id) {
-        buscar = {
-          ...req.body,
-        };
-        buscar.id = req.params.id;
-        
-        if (req.files.length == []) {
-          buscar.image = "";
-        } else {
-          buscar.image = req.files[0].filename;
-        }
-
-        return buscar;
+    db.Pelicula.update({
+      name: req.body.name,
+      price: req.body.price,
+      description: req.body.description,
+      discount: req.body.discount,
+      stock: req.body.stock,
+      speed: req.body.speed,
+      battery: req.body.battery,
+      wheel: req.body.wheel,
+      light: req.body.light,
+      folding: req.body.folding,
+      brake: req.body.brake,
+      color: req.body.color,
+      weight: req.body.weight
+    }, {     
+      where: {
+        id: req.params.id
       }
-    });
+    })
+    .then((resultado) => {
+      res.redirect("/products");
+    })
+    .catch(function(error){
+      console.log(error);
+    })  
+    // let pathFile = path.join("data", "productsDatabase.json");
 
-    actualProduct = JSON.stringify(actualProduct);
+    // let actualProduct = fs.readFileSync(pathFile, { encoding: "utf-8" });
 
-    fs.writeFileSync(pathFile, actualProduct);
+    // actualProduct = JSON.parse(actualProduct);
 
-    res.redirect("/products");
+    // actualProduct = actualProduct.map(function (buscar) {
+    //   if (buscar.id == req.params.id) {
+    //     buscar = {
+    //       ...req.body,
+    //     };
+    //     buscar.id = req.params.id;
+        
+    //     if (req.files.length == []) {
+    //       buscar.image = "";
+    //     } else {
+    //       buscar.image = req.files[0].filename;
+    //     }
+
+    //     return buscar;
+    //   }
+    // });
+
+    // actualProduct = JSON.stringify(actualProduct);
+
+    // fs.writeFileSync(pathFile, actualProduct);
+
+    // res.redirect("/products");
   },
 
   destroy: (req, res) => {
