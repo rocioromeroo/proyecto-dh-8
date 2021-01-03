@@ -47,12 +47,12 @@ const productsController = {
   
   category: function (req, res) {
     
-    console.log(req.params);
+    console.log(req.params.category);
     db.Product.findAll({
       
       where: {
         categories_id: {
-          [Op.like]: req.params.id
+          [Op.eq]: req.params.category
         }
       }
     })
