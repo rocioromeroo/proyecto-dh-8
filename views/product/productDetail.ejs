@@ -9,7 +9,7 @@
 
     <main id="principal1" class="d-flex fd-colu">
 
-        <% for(let valor of detalle) { %>
+        
 
         <section id="productos">
             <div class="b-radius-0-0-13-13 centrado">
@@ -78,48 +78,48 @@
                     <div class="d-flex-c">
                             <h3 class="b-top1 b-botto1 p-10-20 m-20-0">Caracteristicas</h3>
 
-                            <%for (spec of caracteristicas) { %>
+                            
 
                             <div class="div2-a d-none m-0-20">
                                 <table class="w-100">
                                     <th class="th-1">
                                         <tr class="bg-c">
                                             <td>Velocidad</td>
-                                            <td> <%= spec.Velocity %> km/h</td>
+                                            <td> <%= valor.Velocity %> km/h</td>
                                         </tr>
                                         <tr>
                                             <td>Duración de batería</td>
-                                            <td> <%= spec.Battery %> km</td>
+                                            <td> <%= valor.Battery %> km</td>
                                         </tr>
                                         <tr class="bg-c">
                                             <td>Ruedas</td>
-                                            <td> <%= spec.Wheels %> ”</td>
+                                            <td> <%= valor.Wheels %> ”</td>
                                         </tr>
                                         <tr>
                                             <td>Luz</td>
-                                            <td> <%= spec.Lights %></td>
+                                            <td> <%= valor.Lights %></td>
                                         </tr>
                                         <tr class="bg-c">
                                             <td>Plegable</td>
-                                            <td> <%= spec.Folding %></td>
+                                            <td> <%= valor.Folding %></td>
                                         </tr>
                                         <tr>
                                             <td>Frenos</td>
-                                            <td> <%= spec.Brakes %></td>
+                                            <td> <%= valor.Brakes %></td>
                                         </tr>
                                         <tr class="bg-c">
                                             <td>Peso maximo</td>
-                                            <td> <%= spec.Weight %> kg</td>
+                                            <td> <%= valor.Weight %> kg</td>
                                         </tr>
                                         <tr>
                                             <td>Color</td>
-                                            <td> <%= spec.Color %> </td>
+                                            <td> <%= valor.Color %> </td>
                                         </tr>
                                     </th>
                                 </table>
                             </div>
 
-                            <% } %>
+                            
 
                     </div>       
                 </div>
@@ -139,28 +139,28 @@
                     <div class="d-flex-c">
                         <h3 class="b-top1 b-botto1 p-10-20 m-20-0">Garantias</h3>
                         
-                        <%for (dato of warranty) { %>
+                        
 
                         <div class="div4-a d-none m-0-20">
                             <table class="w-100 m-botto-20">
                                 <th class="th-1">
                                     <tr class="bg-c">
                                         <td>Duracion</td>
-                                        <td> <%= dato.duration %> año</td>
+                                        <td> <%= valor.duration %> año</td>
                                     </tr>
                                     <tr>
                                         <td>Origen</td>
-                                        <td><%= dato.origin %></td>
+                                        <td><%= valor.origin %></td>
                                     </tr>
                                     <tr class="bg-c">
                                         <td>Cobertura</td>
-                                        <td><%= dato.coverage %></td>
+                                        <td><%= valor.coverage %></td>
                                     </tr>                                   
                                 </th>
                             </table>
                         </div>
 
-                        <% }%>
+                        
 
                     </div> 
                 </div>
@@ -203,7 +203,7 @@
             </section>
         </div>
 
-        <% } %>
+        
 
         <section id="accesorios">
             <div class="acces_style f-size-70 w-100">
@@ -213,7 +213,7 @@
 
         <section id="relaciones">
             
-            <% for(let valor of detalleAccesorio) { %>    
+                
                 
             <div class="acces">
                 <div >
@@ -232,7 +232,7 @@
                 </div>
             </div>
 
-            <% } %>
+            
 
         </section>
 

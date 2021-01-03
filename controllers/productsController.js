@@ -73,40 +73,48 @@ const productsController = {
   } */
 
   detail: function (req, res) {
-    let detalle = productsList.filter(function (valor) {
-      if (valor.id == req.params.id) {
-        return valor;
-      }
-    });
+    return db.Product.findByPk(req.params.id)
+    .then((resultado) => {
+      console.log(resultado);
+      res.render("./product/productDetail", {valor: resultado, convertir: toThousand, styleOn: "productDetail",})
+    })
+    .catch((error) => {
+      console.log(error);
+    })
+    // let detalle = productsList.filter(function (valor) {
+    //   if (valor.id == req.params.id) {
+    //     return valor;
+    //   }
+    // });
 
-    let verificar = productsList.filter(function (dato) {
-      if (dato.category == "accesorios") {
-        return dato;
-      }
-    });
+    // let verificar = productsList.filter(function (dato) {
+    //   if (dato.category == "accesorios") {
+    //     return dato;
+    //   }
+    // });
 
-    let detalleAccesorio = verificar.slice(3, 6);
+    // let detalleAccesorio = verificar.slice(3, 6);
 
-    let warranty = guaranteeList.filter(function (valor) {
-      if (valor.id == req.params.id) {
-        return valor;
-      }
-    });
+    // let warranty = guaranteeList.filter(function (valor) {
+    //   if (valor.id == req.params.id) {
+    //     return valor;
+    //   }
+    // });
 
-    let caracteristicas = featuresList.filter(function (valor) {
-      if (valor.id == req.params.id) {
-        return valor;
-      }
-    });
+    // let caracteristicas = featuresList.filter(function (valor) {
+    //   if (valor.id == req.params.id) {
+    //     return valor;
+    //   }
+    // });
 
-    res.render("./product/productDetail", {
-      detalle: detalle,
-      detalleAccesorio: detalleAccesorio,
-      warranty: warranty,
-      caracteristicas: caracteristicas,
-      convertir: toThousand,
-      styleOn: "productDetail",
-    });
+    // res.render("./product/productDetail", {
+    //   detalle: resultado,
+    //   detalleAccesorio: detalleAccesorio,
+    //   warranty: warranty,
+    //   caracteristicas: caracteristicas,
+    //   convertir: toThousand,
+    //   styleOn: "productDetail",
+    // });
   },
 
   edit: function (req, res, next) {
