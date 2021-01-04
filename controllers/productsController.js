@@ -11,7 +11,6 @@ const { Op } = require('sequelize')
 
 const productsController = {
   products: function (req, res) {
-
     return db.Product.findAll({
       include: ['category'],
       where: {
@@ -20,11 +19,8 @@ const productsController = {
         }
       },
       group: 'categories_id',
-      
     })
-    .then((resultado) => {
-      console.log(resultado);
-      
+    .then((resultado) => {      
       res.render("./product/product", { items: resultado, styleOn: "product" });
     })
     .catch(function(error){
@@ -46,10 +42,8 @@ const productsController = {
 
     // res.render("./product/product", { items: items, styleOn: "product" });
   },
-  
+
   category: function (req, res) {
-    
-    console.log(req.params.category);
     db.Product.findAll({
       include: [
         {association: 'category',
@@ -61,25 +55,22 @@ const productsController = {
       ]
     })
       .then((resultado) => {
-        console.log(resultado);
         res.render('./product/category', { items: resultado, styleOn: "accessories"})
       })
       .catch(function(error){
         console.log(error);
-      })   
-    },
-
-  /* category: function (req, res) {
+      })  
+      /* category: function (req, res) {
     let items = productsList.filter(function (valor) {
       return valor.category == req.params.category;
     });
     res.render("./product/category", { items: items, styleOn: "accessories" });
-  } */
+  } */ 
+    },
 
   detail: function (req, res) {
     return db.Product.findByPk(req.params.id)
     .then((resultado) => {
-      console.log(resultado);
       res.render("./product/productDetail", {valor: resultado, convertir: toThousand, styleOn: "productDetail",})
     })
     .catch((error) => {
@@ -128,7 +119,7 @@ const productsController = {
         email: res.locals.user
       }
     })
-    promises.All([editar, userFind])
+    Promise.all([editar, userFind])
     .then(function([editar, userFind]) {
       if (userFind == undefined) {
         return res.render("user/login", { errors: {}, styleOn: "login" });
@@ -150,12 +141,10 @@ const productsController = {
     //     return buscar;
     //   }
     // });
-
-    
   },
 
   update: (req, res) => {
-    db.Pelicula.update({
+    db.Product.update({
       name: req.body.name,
       price: req.body.price,
       description: req.body.description,
@@ -211,30 +200,39 @@ const productsController = {
   },
 
   destroy: (req, res) => {
-    let pathFile = path.join("data", "productsDatabase.json");
-    let actualProduct = fs.readFileSync(pathFile, { encoding: "utf-8" });
-    actualProduct = JSON.parse(actualProduct);
+    db.Product.destroy({
+    where: {
+      id: req.params.id
+    }
+  })
+  .then((resultado) => {
+    res.redirect("/products");
+  })
+  .catch(function(error){
+    console.log(error);
+  })
+    // let pathFile = path.join("data", "productsDatabase.json");
+    // let actualProduct = fs.readFileSync(pathFile, { encoding: "utf-8" });
+    // actualProduct = JSON.parse(actualProduct);
 
-    actualProduct = actualProduct.filter(function (buscar) {
-      if (buscar.id != req.params.id) {
-        return buscar;
-      }
-    });
+    // actualProduct = actualProduct.filter(function (buscar) {
+    //   if (buscar.id != req.params.id) {
+    //     return buscar;
+    //   }
+    // });
 
-    actualProduct = JSON.stringify(actualProduct);
+    // actualProduct = JSON.stringify(actualProduct);
 
-    fs.writeFileSync(pathFile, actualProduct);
-    res.send("Producto Borrado!!");
+    // fs.writeFileSync(pathFile, actualProduct);
+    // res.send("Producto Borrado!!");
   },
 
-  create: function (req, res, next) {
-
+  create: function (req, res) {
     return db.User.findOne({
       where: {
         email: res.locals.user
       }
     })
-    
     .then((resultado) => {
       if(resultado) {
         res.render("product/createProduct", { styleOn: "create-editProduct" });
@@ -242,7 +240,9 @@ const productsController = {
         return res.render("user/login", { errors:{}, styleOn: "login" })
       }
     })
-
+    .catch(function(error){
+      console.log(error);
+    })
     // let userFind = usersList.find(function (buscar) {
     //   if (buscar.email == res.locals.user) {
     //     return buscar;
@@ -257,58 +257,120 @@ const productsController = {
   },
 
   store: function (req, res, next) {
-    let pathFile = path.join("data", "productsDatabase.json");
+    db.Pelicula.create({
+      name: req.body.name,
+      price: req.body.price,
+      description: req.body.description,
+      discount: req.body.discount,
+      stock: req.body.stock,
+      speed: req.body.speed,
+      battery: req.body.battery,
+      wheel: req.body.wheel,
+      light: req.body.light,
+      folding: req.body.folding,
+      brake: req.body.brake,
+      color: req.body.color,
+      weight: req.body.weight
+    })
+    .then((resultado)=> {
+      res.redirect("/products");
+    })
+    .catch(function(error){
+      console.log(error);
+    }) 
+    // let pathFile = path.join("data", "productsDatabase.json");
 
-    let nuevoProduct = fs.readFileSync(pathFile, { encoding: "utf-8" });
+    // let nuevoProduct = fs.readFileSync(pathFile, { encoding: "utf-8" });
 
-    nuevoProduct = JSON.parse(nuevoProduct);
+    // nuevoProduct = JSON.parse(nuevoProduct);
 
-    nuevoProduct.push({
-      ...req.body,
-      id: nuevoProduct[nuevoProduct.length - 1].id + 1,
-    });
-    if (req.files.length == []) {
-      nuevoProduct.image = "";
-    } else {
-      nuevoProduct.image = req.files[0].filename;
-    }
+    // nuevoProduct.push({
+    //   ...req.body,
+    //   id: nuevoProduct[nuevoProduct.length - 1].id + 1,
+    // });
+    // if (req.files.length == []) {
+    //   nuevoProduct.image = "";
+    // } else {
+    //   nuevoProduct.image = req.files[0].filename;
+    // }
 
 
-    nuevoProduct = JSON.stringify(nuevoProduct);
+    // nuevoProduct = JSON.stringify(nuevoProduct);
 
-    fs.writeFileSync(pathFile, nuevoProduct);
+    // fs.writeFileSync(pathFile, nuevoProduct);
 
-    res.redirect("/products");
+    // res.redirect("/products");
   },
 
-  cart: function (req, res) {
-    let items = productsList.filter(function (valor) {
-      if (valor.category == "visitados") {
-        return valor;
+  cart: function (req, res, next) {
+    let items = db.Product.findAll({
+      include: [
+        {association: 'category',
+      where:{
+        name: {
+          [Op.eq]: 'visitados'
+        }
+      }}
+      ]
+    })
+    
+    let esteDato = db.Product.findAll({
+      include: [
+        {association: 'category',
+      where:{
+        name: {
+          [Op.eq]: 'accesorios'
+        }
+      }}
+      ]
+    })
+    console.log(req.locals);
+    let userFind = db.User.findOne({
+      where: {
+        email: res.session.user
       }
-    });
-    let esteDato = productsList.filter(function (esteDato) {
-      if (esteDato.category == "accesorios") {
-        return esteDato;
+    })
+    Promise.all([items, esteDato, userFind])
+    .then(function([items, esteDato, userFind]) {
+      
+      if (userFind == undefined) {
+        return res.render("user/login", { errors: {}, styleOn: "login" });
+      } else {
+        res.render("./product/productCart", {
+          items: items,
+          esteAccesorio: esteDato,
+          styleOn: "create-editProduct",
+        });
       }
-    });
+    })
+    // let items = productsList.filter(function (valor) {
+    //   if (valor.category == "visitados") {
+    //     return valor;
+    //   }
+    // });
+    // let esteDato = productsList.filter(function (esteDato) {
+    //   if (esteDato.category == "accesorios") {
+    //     return esteDato;
+    //   }
+    // });
 
-    let userFind = usersList.find(function (buscar) {
-      if (buscar.email == res.locals.user) {
-        return buscar;
-      }
-    });
+    // let userFind = usersList.find(function (buscar) {
+    //   if (buscar.email == res.locals.user) {
+    //     return buscar;
+    //   }
+    // });
 
-    if (userFind == undefined) {
-      return res.render("user/login", { errors: {}, styleOn: "login" });
-    } else {
-      res.render("./product/productCart", {
-        items: items,
-        esteAccesorio: esteDato,
-        styleOn: "productCart",
-      });
-    }
-  },
+    // if (userFind == undefined) {
+    //   return res.render("user/login", { errors: {}, styleOn: "login" });
+    // } else {
+    //   res.render("./product/productCart", {
+    //     items: items,
+    //     esteAccesorio: esteDato,
+    //     styleOn: "productCart",
+    //   });
+    // }
+  }
+
 };
 
 module.exports = productsController;
