@@ -13,16 +13,16 @@ const productsController = {
   products: function (req, res) {
 
     return db.Product.findAll({
+      include:["category"],
       where: {
         categories_id: {
           [Op.notLike]: 5
         }
       },
       group: 'categories_id',
-      
     })
     .then((resultado) => {
-      
+      console.log(resultado)
       res.render("./product/product", { items: resultado, styleOn: "product" });
     })
     .catch(function(error){
@@ -47,14 +47,14 @@ const productsController = {
   
   category: function (req, res) {
     
-    console.log(req.params.category);
+    console.log(req.params);
     db.Product.findAll({
-      
-      where: {
-        categories_id: {
-          [Op.eq]: req.params.category
-        }
-      }
+      include:["category"],
+      // where: {
+      //   category: {
+      //     [Op.like]: req.params.category
+      //   }
+      // }
     })
       .then((resultado) => {
         console.log(resultado);

@@ -7,13 +7,13 @@
                   <article class="container">
                         
                         <div class="img-contain">
-                              <img src="/images/<%= dato.categories_id  %>/<%= dato.image  %>" alt="" width="100%">
+                              <img src="/images/<%= dato.name %>/<%= dato.image  %>" alt="" width="100%">
                         </div>
                         <div class="contain-titles">
                               <h2><%= dato.name   %></h2>
                               <p><%= dato.description   %></p>
                               <div>
-                                    <a class="a-h2-nov" href="/products/category/<%= dato.categories_id  %>">Ver e-<%= dato.category  %></a>
+                                    <a class="a-h2-nov" href="/products/category/<%= dato.category.name  %>">Ver e-<%= dato.category.name  %></a>
                               </div>   
                         </div>
                   </article>

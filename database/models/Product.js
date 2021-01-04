@@ -44,6 +44,9 @@ module.exports = (sequelize, datatypes) => {
         },
         weight: {
             type: datatypes.INTEGER
+        },
+        image: {
+            type: datatypes.STRING
         }
     }
     let config = {
