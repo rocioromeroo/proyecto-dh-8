@@ -116,7 +116,9 @@ const productsController = {
     let editar = db.Product.findByPk(req.params.id)
     let userFind = db.User.findOne({
       where: {
-        email: res.locals.user
+        email: {
+          [Op.eq]: req.session.user
+        }
       }
     })
     Promise.all([editar, userFind])
@@ -160,7 +162,9 @@ const productsController = {
       weight: req.body.weight
     }, {     
       where: {
-        id: req.params.id
+        id: {
+          [Op.eq]: req.params.id
+        }
       }
     })
     .then((resultado) => {
@@ -202,7 +206,9 @@ const productsController = {
   destroy: (req, res) => {
     db.Product.destroy({
     where: {
-      id: req.params.id
+      id: {
+        [Op.eq]: req.params.id
+      }
     }
   })
   .then((resultado) => {
@@ -230,7 +236,9 @@ const productsController = {
   create: function (req, res) {
     return db.User.findOne({
       where: {
-        email: res.locals.user
+        email: {
+          [Op.eq]: req.session.user
+        }
       }
     })
     .then((resultado) => {
@@ -302,7 +310,14 @@ const productsController = {
     // res.redirect("/products");
   },
 
-  cart: function (req, res, next) {
+  cart: function (req, res) {
+    let userFind = db.User.findOne({
+      where: {
+        email: {
+          [Op.eq]: req.session.user
+        }
+      }
+    });
     let items = db.Product.findAll({
       include: [
         {association: 'category',
@@ -312,8 +327,7 @@ const productsController = {
         }
       }}
       ]
-    })
-    
+    });
     let esteDato = db.Product.findAll({
       include: [
         {association: 'category',
@@ -323,16 +337,9 @@ const productsController = {
         }
       }}
       ]
-    })
-    console.log(req.session);
-    let userFind = db.User.findOne({
-      where: {
-        email: req.session.user
-      }
-    })
-    Promise.all([items, esteDato, userFind])
-    .then(function([items, esteDato, userFind]) {
-      
+    });
+    Promise.all([userFind, items, esteDato])
+    .then(function([userFind, items, esteDato]) {
       if (userFind == undefined) {
         return res.render("user/login", { errors: {}, styleOn: "login" });
       } else {
@@ -342,6 +349,9 @@ const productsController = {
           styleOn: "create-editProduct",
         });
       }
+    })
+    .catch((error) => {
+      console.log(error);
     })
     // let items = productsList.filter(function (valor) {
     //   if (valor.category == "visitados") {

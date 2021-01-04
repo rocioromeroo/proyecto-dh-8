@@ -1,13 +1,16 @@
 const { body, check } = require("express-validator");
 let modelsUsers = require("../models/user");
 const db = require('../database/models');
+const { Op } = require('sequelize')
 
 module.exports = [
   check('email').isEmail().withMessage('El mail debe tener un formato valido'),
   body("email").custom(function (value) { 
     return db.User.findOne({
       where: {
-        email: value
+        email: {
+          [Op.eq]: value
+        }
       }
     })
     .then((resultado) => {
@@ -15,6 +18,9 @@ module.exports = [
         throw new Error("Este email ya se encuentra registrado");
       }
       return true;
+    })
+    .catch((error) => {
+      console.log(error);
     })
   }),
        

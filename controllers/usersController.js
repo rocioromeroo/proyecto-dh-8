@@ -6,6 +6,7 @@ const { validationResult } = require("express-validator");
 const bcryptjs = require("bcryptjs");
 var modelsUsers = require("../models/user");
 const db = require('../database/models');
+const { Op } = require('sequelize')
 
 module.exports = {
   myAccount: function (req, res) {
@@ -17,7 +18,9 @@ module.exports = {
     
     return db.User.findOne({
       where: {
-        email: res.locals.user
+        email: {
+          [Op.eq]: req.session.user
+        }
       }
     })
     
@@ -62,7 +65,9 @@ module.exports = {
       address: req.body.address
     }, {     
         where: {
-          id: req.params.id
+          id: {
+            [Op.eq]: req.params.id
+          }
         }
       })
     .catch(function(error){
@@ -82,7 +87,9 @@ module.exports = {
     console.log(errors);
     db.User.findOne({
       where: {
-        email: req.body.email
+        email: {
+          [Op.eq]: req.body.email
+        }
       }
     })
     .then((resultado) => {
