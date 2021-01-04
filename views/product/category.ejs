@@ -4,7 +4,9 @@
       <%- include("../partial/header") %> 
       <main>
             <section class="d-flex d-a-wrap justify-btw  p-5" >
-            <% for (let dato of items){%>
+
+            <% for (let dato of items) { %>
+
                   <article class="u-items d-flex just-cont-cent" > 
                         <div class="d-flex h-40 just-cont-cent">
                               <img class="img-size" src="/images/<%= dato.category  %>/<%= dato.image  %>" alt="">
@@ -15,13 +17,26 @@
                               <h3 class="text-center">$ <%= dato.price   %></h3>
                               <p class="p-style d-flex text-center"><%= dato.description   %></p>
                               <div class="d-flex text-center w-100 f-d-column d-flex just-cont-cent p-10x">
+
+                                    <% if(locals.user) { %>
+
                                     <a class="ver-mas text-center" href="/products/<%= dato.id %>">Ver mas</a>
                                     <a class="add-car text-center" href="/products/cart">Agregar al carrito</a>
+
+                                    <% } else { %>
+
+                                    <a class="ver-mas text-center" href="/products/<%= dato.id %>">Ver mas</a>
+                                    <a class="add-car text-center" href="/users/login">Agregar al carrito</a>
+
+                                    <% } %>
+
                               </div>        
                         </div>
                         
                   </article>
-                  <%}%>
+
+                  <% } %>
+
             </section>   
       </main>
       <%- include("../partial/footer") %> 

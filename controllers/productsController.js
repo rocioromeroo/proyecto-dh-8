@@ -324,10 +324,10 @@ const productsController = {
       }}
       ]
     })
-    console.log(req.locals);
+    console.log(req.session);
     let userFind = db.User.findOne({
       where: {
-        email: res.session.user
+        email: req.session.user
       }
     })
     Promise.all([items, esteDato, userFind])
