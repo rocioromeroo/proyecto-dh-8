@@ -69,8 +69,14 @@ const productsController = {
     },
 
   detail: function (req, res) {
-    return db.Product.findByPk(req.params.id)
+    return db.Product.findByPk(req.params.id, {
+      include: [
+        {association: 'category'
+    }
+      ]
+    })
     .then((resultado) => {
+      
       res.render("./product/productDetail", {valor: resultado, convertir: toThousand, styleOn: "productDetail",})
     })
     .catch((error) => {
