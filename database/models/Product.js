@@ -9,6 +9,9 @@ module.exports = (sequelize, datatypes) => {
         name: {
             type: datatypes.STRING
         },
+        brand: {
+            type: datatypes.STRING
+        },
         price: {
             type: datatypes.DECIMAL
         },
@@ -64,10 +67,7 @@ module.exports = (sequelize, datatypes) => {
     //         as: "cart",                   
     //         foreignKey: "carts_id"  
     //     }),
-    //     Product.hasOne(models.Warranty, {
-    //         as: "warranty",                   
-    //         foreignKey: "warranties_id"  
-    //     }), 
+    //      
         // Product.hasMany(models.Category, {
         //     as: "categories",                   
         //     foreignKey: "categories_id"  
