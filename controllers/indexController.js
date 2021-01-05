@@ -1,20 +1,46 @@
 const productsList = require('../data/productsDataBase')
+const db = require('../database/models');
+const { Op } = require('sequelize')
 const indexController = {
 
   index: function (req, res) {
-
-    let items = productsList.filter(function (valor) {
-      if (valor.category == "visitados") {
-        return valor
-      }
+    let items = db.Product.findAll({
+      include: [
+        {association: 'category',
+      where:{
+        name: {
+          [Op.eq]: 'visitados'
+        }
+      }}
+      ]
+    });
+    let esteDato = db.Product.findAll({
+      include: [
+        {association: 'category',
+      where:{
+        name: {
+          [Op.eq]: 'accesorios'
+        }
+      }}
+      ]
+    });
+    Promise.all([items, esteDato])
+    .then(function([items, esteDato]) {
+      res.render("index", { items: items, esteAccesorio: esteDato, styleOn: {} })
     })
-    let esteDato = productsList.filter(function (esteDato) {
-      if (esteDato.category == "accesorios") {
-        return esteDato
-      }
-    })
 
-    res.render("index", { items: items, esteAccesorio: esteDato, styleOn: {} })
+    // let items = productsList.filter(function (valor) {
+    //   if (valor.category == "visitados") {
+    //     return valor
+    //   }
+    // })
+    // let esteDato = productsList.filter(function (esteDato) {
+    //   if (esteDato.category == "accesorios") {
+    //     return esteDato
+    //   }
+    // })
+
+    // res.render("index", { items: items, esteAccesorio: esteDato, styleOn: {} })
   },
 
   search: function (req, res) {
