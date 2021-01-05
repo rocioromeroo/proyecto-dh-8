@@ -44,6 +44,7 @@ const productsController = {
   },
 
   category: function (req, res) {
+    console.log("algo")
     db.Product.findAll({
       include: [
         {association: 'category',
@@ -72,7 +73,8 @@ const productsController = {
     return db.Product.findByPk(req.params.id, {
       include: [
         {association: 'category'
-    }
+    },
+   { association:'warranty'}
       ]
     })
     .then((resultado) => {
