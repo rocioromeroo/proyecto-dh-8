@@ -69,21 +69,32 @@ const productsController = {
   } */ 
     },
 
-  detail: function (req, res) {
-    return db.Product.findByPk(req.params.id, {
-      include: [
-        {association: 'category'
-    },
-   { association:'warranty'}
-      ]
-    })
-    .then((resultado) => {
-      
-      res.render("./product/productDetail", {valor: resultado, convertir: toThousand, styleOn: "productDetail",})
-    })
-    .catch((error) => {
-      console.log(error);
-    })
+    detail: function (req, res) {
+      let items = db.Product.findByPk(req.params.id, {
+        include: [
+          {association: 'category'
+      },
+      {association: 'warranty'}
+        ]
+      })
+      let esteDato = db.Product.findAll({
+        include: [
+          {association: 'category',
+        where:{
+          name: {
+            [Op.eq]: 'accesorios'
+          }
+        }}
+        ]
+      });
+      Promise.all([items, esteDato])
+      .then(function([items, esteDato]) {
+        
+        res.render("./product/productDetail", {valor: items, esteDato:esteDato, convertir: toThousand, styleOn: "productDetail",})
+      })
+      .catch((error) => {
+        console.log(error);
+      })
     // let detalle = productsList.filter(function (valor) {
     //   if (valor.id == req.params.id) {
     //     return valor;
@@ -354,7 +365,7 @@ const productsController = {
         res.render("./product/productCart", {
           items: items,
           esteAccesorio: esteDato,
-          styleOn: "create-editProduct",
+          styleOn: "productCart",
         });
       }
     })

@@ -26,7 +26,7 @@ module.exports = {
     
     .then((resultado) => {
       if(resultado) {
-        
+        console.log(resultado)
         res.render("user/myAccount", { styleOn: "style", dato: dato, editar: resultado})
       } else {
         return res.render("user/login", { errors:{}, styleOn: "login" })
