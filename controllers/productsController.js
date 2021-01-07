@@ -285,7 +285,7 @@ const productsController = {
   },
 
   store: function (req, res, next) {
-    db.Pelicula.create({
+    db.Product.create({
       name: req.body.name,
       price: req.body.price,
       description: req.body.description,
