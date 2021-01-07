@@ -15,12 +15,13 @@ const productsController = {
       include: ['category'],
       where: {
         categories_id: {
-          [Op.notLike]: 5
-        }
+          [Op.between]: [1, 4]
+        }        
       },
       group: 'categories_id',
     })
-    .then((resultado) => {      
+    .then((resultado) => {  
+      console.log(resultado);    
       res.render("./product/product", { items: resultado, styleOn: "product" });
     })
     .catch(function(error){
@@ -89,7 +90,7 @@ const productsController = {
       });
       Promise.all([items, esteDato])
       .then(function([items, esteDato]) {
-        
+        console.log(esteDato);
         res.render("./product/productDetail", {valor: items, esteDato:esteDato, convertir: toThousand, styleOn: "productDetail",})
       })
       .catch((error) => {
