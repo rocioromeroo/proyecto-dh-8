@@ -74,9 +74,9 @@ Que se hace hoy: Se terminara la configuracion de session y cookies.
 Weekly: Sprint-6
 
 Romero Rocio
-Que se hizo ayer:
-Se encontro algun impedimento:
-Que se hace hoy:
+Que se hizo ayer: Armardo de tablas.
+Se encontro algun impedimento: No podía crear la estructura de la base de datos.
+Que se hace hoy: Corrección general.
 
 Juan Fernandez
 Que se hizo ayer:
