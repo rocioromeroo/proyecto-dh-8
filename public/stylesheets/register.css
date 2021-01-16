@@ -201,6 +201,11 @@
     padding: 10%;
 }
 
+.obligatorio{
+    text-align: left;
+    font-size: 60%;
+    padding: 2%;
+}
 
 @media (max-width:1024px){
 

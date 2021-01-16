@@ -9,14 +9,14 @@
         <section>   
             <form class="registro" action="/users/register" method="POST">
                 <div class="display_none">
-                    <input type="username" name="username" id="username" placeholder="Email">
+                    <input type="username" name="username" id="username" placeholder="Nombre de Usuario">
                 </div>
                 <div class="email input-form">
-                    <input type="email" name="email" id="email" placeholder="Email">
+                    <input type="email" name="email" id="email" placeholder="Email: *">
                 </div>
                 <hr>
                 <div class="input-form">
-                    <input type="password" name="password" id="password" placeholder="Contraseña">
+                    <input type="password" name="password" id="password" placeholder="Contraseña: *">
                 </div>
                 <hr>
                 <div class="display_none">
@@ -40,6 +40,10 @@
 
                 <div class="center1">
                     <button  class="crear" type="submit">Crear Cuenta</button>
+                </div>
+
+                <div class="obligatorio">
+                    <p>(*) Campos obligatorios.</p>
                 </div>
 
             </form>
