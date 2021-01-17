@@ -10,17 +10,19 @@
             <section>
                 <form class="datos" action="/users" method="POST">
                     <div class="email">
-                        <input type="email" name="email" id="email" placeholder="Email">    
+                        <input type="email" name="email" id="email" placeholder="Email *">    
                     </div>
                     <hr>
                     <div class="password">
-                        <input type="password" name="password" id="password" placeholder="Contraseña">
+                        <input type="password" name="password" id="password" placeholder="Contraseña *">
                     </div>
                     <hr>
                     <div class="recordar">
                         <input type="checkbox" name="recordame" id="recordame" value="yes">
                         <label for="recordame">Recordar Cuenta</label>
+                        <p>(*) Campos obligatorios.</p>
                     </div>
+        
 
                     <% if(typeof errors.email !== 'undefined') { %>
                         <p class="text-red"><%= errors.email.msg	 %></p>
@@ -34,6 +36,7 @@
                         <button  class="enviar" type="submit" >Ingresar</button>
                     </div>
                 </form>
+               
             </section>
                 
             <ul class="olvidar">

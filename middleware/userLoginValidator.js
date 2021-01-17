@@ -3,7 +3,11 @@ let modelsUsers = require("../models/user");
 const db = require('../database/models');
 
 module.exports = [
-  check('email').isEmail().withMessage('El mail debe tener un formato valido'),
+  check('email')
+  .notEmpty()
+  .withMessage("Campo obligatorio")
+  .isEmail()
+  .withMessage('El mail debe tener un formato valido'),
   body("email").custom(function (value) { 
     return db.User.findOne({
       where: {
@@ -18,13 +22,10 @@ module.exports = [
     })
   }),
 
-  // body("email").custom(function (value) { 
-  //   let user = modelsUsers.findByEmail(value);     
-  //   if (!user) {
-  //     throw new Error("Este email no se encuentra registrado");
-  //   }
-  //   return true;
-  // }),
+  check('password')
+  .isLength({min:8})
+  .withMessage('Su clave debe tener al menos 8 caracteres')
+  .notEmpty()
+  .withMessage("Campo obligatorio")
 
-  check('password').isLength({min:4}).withMessage('Su clave debe tener al menos 4 caracteres')
 ];
