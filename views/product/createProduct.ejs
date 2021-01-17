@@ -10,6 +10,9 @@
             <section>   
                 <form class="new-product" action="/products" method="POST" enctype="multipart/form-data">
                     <label for="name">Nombre de Producto</label>
+                    <% if(typeof errors.name !== 'undefined') { %>
+                        <p class="text-red"><%= errors.name.msg	 %></p>
+                    <% } %>
                     <input type="text" name="name" id="name">
                     <hr>
                     <label for="brand">Marca</label>
@@ -20,6 +23,9 @@
                     <hr>
                     <label for="description">Descripcion</label>    
                     <textarea name="description" id="description" cols="30" rows="5" class="input border area f-size-10"></textarea>
+                    <% if(typeof errors.description !== 'undefined') { %>
+                        <p class="text-red"><%= errors.description.msg	 %></p>
+                    <% } %>
                     <hr>
                     <label for="discount">Descuento</label>
                     <input type="text" name="discount" id="discount">
@@ -37,13 +43,31 @@
                     <input type="text" name="wheel" id="wheel">
                     <hr>
                     <label for="ligth">Luces</label>
-                    <input type="text" name="light" id="light">
+                    <div>
+                        <select name="folding" id="folding">
+                            <option value="">Seleccionar...</option>
+                            <option value="luces">Si</option>
+                            <option value="no_luces">No</option>
+                        </select>
+                    </div>  
                     <hr>
                     <label for="folding">Plegable</label>
-                    <input type="text" name="folding" id="folding">
+                    <div>
+                        <select name="folding" id="folding">
+                            <option value="">Seleccionar...</option>
+                            <option value="pegable">Si</option>
+                            <option value="no_pegable">No</option>
+                        </select>  
+                    </div>
                     <hr>
                     <label for="brake">Frenos</label>
-                    <input type="text" name="brake" id="brake">
+                    <div>
+                        <select name="brake" id="brake">
+                        <option value="">Seleccionar...</option>
+                        <option value="monopatines">Electrico</option>
+                        <option value="bicicletas">Mecanico</option>
+                        </select>   
+                    </div>
                     <hr>
                     <label for="color">Color</label>
                     <input type="text" name="color" id="color">
@@ -60,12 +84,15 @@
                         <option value="accesorios">Accesorios</option>
                         <option value="monociclos">Monociclos</option>
                         <option value="dualciclos">Dualciclos</option>
-                    </select>
+                        </select>
                     </div>
                     <hr>
                     <br>
                     <label class="titulo">Agregá una imágen</label>
                     <input type="file" name="image" >
+
+                    
+
                     <div class="center1">
                         <button  class="crear" type="submit">Públicar</button>
                     </div>

@@ -14,6 +14,7 @@ var storage = multer.diskStorage({
 var upload = multer({ storage: storage });
 
 let productsController= require("../controllers/productsController");
+const productValidator = require('../middleware/productValidator');
 
 /*** GET ALL PRODUCTS ***/ 
 router.get('/', productsController.products)
@@ -21,7 +22,7 @@ router.get('/category/:category', productsController.category)
 
 /*** CREATE ONE PRODUCT ***/ 
 router.get('/create', productsController.create)
-router.post('/', upload.any(), productsController.store)
+router.post('/', upload.any(), productValidator, productsController.store)
 
 /*** GO TO CART ***/ 
 router.get('/cart', productsController.cart)

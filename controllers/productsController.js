@@ -8,6 +8,7 @@ const toThousand = (n) => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 const usersList = require("../data/usersDataBase");
 const db = require('../database/models');
 const { Op } = require('sequelize')
+const { validationResult } = require("express-validator");
 
 const productsController = {
   products: function (req, res) {
@@ -263,7 +264,7 @@ const productsController = {
     })
     .then((resultado) => {
       if(resultado) {
-        res.render("product/createProduct", { styleOn: "create-editProduct" });
+        res.render("product/createProduct", { errors:{},styleOn: "create-editProduct" });
       } else {
         return res.render("user/login", { errors:{}, styleOn: "login" })
       }
@@ -285,6 +286,9 @@ const productsController = {
   },
 
   store: function (req, res, next) {
+    let errors = validationResult(req);
+    console.log(errors);
+    if (errors.isEmpty()) {
     db.Product.create({
       name: req.body.name,
       price: req.body.price,
@@ -301,11 +305,18 @@ const productsController = {
       weight: req.body.weight
     })
     .then((resultado)=> {
-      res.redirect("/products");
+      res.redirect("/products" );
     })
     .catch(function(error){
       console.log(error);
-    }) 
+    }) }  else {
+      return res.render("product/createProduct", {
+        errors: errors.mapped(),
+        styleOn: "create-editProduct",
+      })
+    }
+
+
     // let pathFile = path.join("data", "productsDatabase.json");
 
     // let nuevoProduct = fs.readFileSync(pathFile, { encoding: "utf-8" });
