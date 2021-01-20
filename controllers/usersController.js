@@ -26,7 +26,7 @@ module.exports = {
     
     .then((resultado) => {
       if(resultado) {
-        console.log(resultado)
+        
         res.render("user/myAccount", { styleOn: "style", dato: dato, editar: resultado})
       } else {
         return res.render("user/login", { errors:{}, styleOn: "login" })
@@ -49,32 +49,56 @@ module.exports = {
   },
   
   editPerfil:function (req, res) {
-    db.User.findByPk(req.params.id)
+    db.User.findOne({
+      where: {
+        id: req.params.id,
+        email: req.session.user
+      }
+    })
     .then((resultado) => {
       if(resultado) {
-        res.render("user/editPerfil", { styleOn: "register", editar: resultado})
+        res.render("user/editPerfil", { styleOn: "register", editar: resultado, errors:{}})
+      } else {
+        req.session.destroy();
+        res.cookie("recordame", null, { maxAge: 0 });
+        return res.redirect("/users/login");
       }
     }) 
   },
 
   savePerfil:function (req, res) {
-    db.User.update({
-      username: req.body.username,
-      first_name: req.body.first_name,
-      last_name: req.body.last_name,
-      address: req.body.address
-    }, {     
-        where: {
-          id: {
-            [Op.eq]: req.params.id
-          }
-        }
-      })
-    .catch(function(error){
-      console.log(error);
-    })      
+    let errors = validationResult(req);
     
-    res.redirect("/users/account")
+
+    if(errors.isEmpty()) {
+      db.User.update({
+        username: req.body.username,
+        first_name: req.body.first_name,
+        last_name: req.body.last_name,
+        address: req.body.address
+      }, {     
+          where: {
+            id: {
+              [Op.eq]: req.params.id
+            }
+          }
+      })
+      .then((resultado) => {
+          res.redirect("/users/account")
+      })
+      .catch(function(error){
+        console.log(error);
+      })      
+
+    } else {
+      db.User.findByPk(req.params.id)
+    .then((resultado) => {
+      if(resultado) {
+        res.render("user/editPerfil", { styleOn: "register", editar: resultado, errors:errors.mapped()})
+      }
+    }) 
+      
+    }
   },
 
   login: function (req, res) {
@@ -84,7 +108,7 @@ module.exports = {
 
   processlogin: function (req, res) {
     let errors = validationResult(req);
-    console.log(errors);
+    
     db.User.findOne({
       where: {
         email: {
@@ -95,11 +119,8 @@ module.exports = {
     .then((resultado) => {
       
       
-      if (!resultado) {
-        return res.render("user/login", {
-          errors: errors.mapped(),
-          styleOn: "login",
-        });
+      if(!resultado) {
+        return res.render("user/login", {errors: errors.mapped(), styleOn: "login"});
         
       } else if (bcryptjs.compareSync(req.body.password, resultado.password)) {
         
@@ -110,10 +131,7 @@ module.exports = {
         }
         res.redirect("users/account");
       } else {
-        return res.render("user/login", {
-          errors: errors.mapped(),
-          styleOn: "login",
-        });
+        return res.render("user/login", {errors: errors.mapped(), styleOn: "login"});
       }
     })
     .catch((error) => {
@@ -142,15 +160,15 @@ module.exports = {
         last_name:req.body.last_name,
         address:req.body.address,
         profile: 'standard'
-      });
+      })
+      .then((resultado) => {
+        req.session.user = resultado.email;
+        res.redirect("account");
+      })
 
-      res.redirect("account");
+      
     } else {
-      return res.render("user/register", {
-        
-        errors: errors.mapped(),
-        styleOn: "register",
-      });
+      return res.render("user/register", {errors: errors.mapped(), styleOn: "register"});
     }
   },
 

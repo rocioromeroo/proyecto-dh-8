@@ -9,15 +9,18 @@
         <section>   
             <form class="registro" action="/users/<%= editar.id %>/editPerfil?_method=PUT" method="POST" enctype="multipart/form-data">
                 <div class="padd-10">
-                    <input type="text" name="username" id="username" placeholder="Nombre de Usuario" value="<%= editar.username %>">    
+                    <label class="font-s" for="username">Nombre de Usuario: </label>
+                    <input type="text" name="username" id="username" value="<%= editar.username %>">    
                 </div>
                 <hr>
                 <div class="padd-10">
-                    <input type="text" name="first_name" id="first_name" placeholder="Nombre" value="<%= editar.first_name %>">    
+                    <label class="font-s" for="first_name">Nombre: *</label>
+                    <input type="text" name="first_name" id="first_name" value="<%= editar.first_name %>">    
                 </div>
                 <hr>
                 <div class="padd-10">
-                    <input type="text" name="last_name" id="last_name" placeholder="Apellido" value="<%= editar.last_name %>">    
+                    <label class="font-s" for="last_name">Apellido: *</label>
+                    <input type="text" name="last_name" id="last_name" value="<%= editar.last_name %>">    
                 </div>      
                 <hr>
                 <!-- <div class="nacimiento class="padd-10"">
@@ -28,7 +31,8 @@
                   </div>
                 <hr> -->
                 <div class="padd-10">
-                    <input type="text" name="address" id="address" placeholder="Direccion" value="<%= editar.address %>">  
+                    <label class="font-s" for="address">Direccion: </label>
+                    <input type="text" name="address" id="address" value="<%= editar.address %>">  
                 </div>   
                 <hr>
                 <!-- <div class="padd-10">
@@ -36,22 +40,35 @@
                 </div>   
                 <hr> -->
                 <div class="padd-10">
-                    <input type="password" name="password" id="password" placeholder="Contraseña" >
+                    <label class="font-s" for="password">Contraseña: </label>
+                    <input type="password" name="password" id="password" >
                 </div>
                 <hr>
                 <div class="padd-10">
-                    <input type="password" name="repeat" id="repeat" placeholder="Confirmar Contraseña">
+                    <label class="font-s" for="repeat">Confirmar Contraseña: </label>
+                    <input type="password" name="repeat" id="repeat" >
                 </div>
                 <hr>
                 <div>
-                    <label class="titulo">Agregá una imágen</label>
+                    <label class="titulo">Imágen: *</label>
                     <input type="file" name="image" >
                 </div>
-                 
+                
+
+                <% if(typeof errors.first_name !== 'undefined') { %>
+                    <p class="text-red"><%= errors.first_name.msg %></p>
+                <% } %>
+                <% if(typeof errors.last_name !== 'undefined') { %>
+                    <p class="text-red"><%= errors.last_name.msg %></p>
+                <% } %>
                 <div class="center1">
                   <button  class="crear" type="submit">Terminar edicion</button>
               </div>
+              <div class="obligatorio">
+                <p>(*) Campos obligatorios.</p>
+            </div>
             </form>
+            
         </section>
     </div>    
     <%- include("../partial/footer") %>

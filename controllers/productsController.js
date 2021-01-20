@@ -289,31 +289,30 @@ const productsController = {
     let errors = validationResult(req);
     console.log(errors);
     if (errors.isEmpty()) {
-    db.Product.create({
-      name: req.body.name,
-      price: req.body.price,
-      description: req.body.description,
-      discount: req.body.discount,
-      stock: req.body.stock,
-      speed: req.body.speed,
-      battery: req.body.battery,
-      wheel: req.body.wheel,
-      light: req.body.light,
-      folding: req.body.folding,
-      brake: req.body.brake,
-      color: req.body.color,
-      weight: req.body.weight
-    })
-    .then((resultado)=> {
-      res.redirect("/products" );
-    })
-    .catch(function(error){
-      console.log(error);
-    }) }  else {
-      return res.render("product/createProduct", {
-        errors: errors.mapped(),
-        styleOn: "create-editProduct",
+      db.Product.create({
+        name: req.body.name,
+        price: req.body.price,
+        description: req.body.description,
+        discount: req.body.discount,
+        stock: req.body.stock,
+        speed: req.body.speed,
+        battery: req.body.battery,
+        wheel: req.body.wheel,
+        light: req.body.light,
+        folding: req.body.folding,
+        brake: req.body.brake,
+        color: req.body.color,
+        weight: req.body.weight
       })
+      .then((resultado)=> {
+        res.redirect("/products" );
+      })
+      .catch(function(error){
+        console.log(error);
+      }) 
+
+    }  else {
+      return res.render("product/createProduct", { errors: errors.mapped(), styleOn: "create-editProduct" })
     }
 
 

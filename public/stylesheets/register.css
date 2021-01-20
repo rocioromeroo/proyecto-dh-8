@@ -9,7 +9,11 @@
 .body-register{
     background-color: var(--body-background);
 }
-.text-red{color: red; font-size: 0.6em;}
+.text-red{
+    color: red; 
+    font-size: 0.6em;
+    padding-top: 5%;
+}
 .display_none{display: none;}
 .input-form{
     padding-top:3%
@@ -162,7 +166,7 @@
     margin-block-end: 0;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    padding-top: 15px;
+    
 }
 
 .register{
@@ -195,10 +199,13 @@
     padding-right: 15%;
 }
 
+.font-s {
+    font-size: 15px;
+}
 
 .center1{
     text-align: center;
-    padding: 10%;
+    padding: 5%;
 }
 
 .obligatorio{
