@@ -57,6 +57,7 @@ module.exports = {
     })
     .then((resultado) => {
       if(resultado) {
+        
         res.render("user/editPerfil", { styleOn: "register", editar: resultado, errors:{}})
       } else {
         req.session.destroy();
@@ -69,13 +70,15 @@ module.exports = {
   savePerfil:function (req, res) {
     let errors = validationResult(req);
     
-
     if(errors.isEmpty()) {
       db.User.update({
         username: req.body.username,
         first_name: req.body.first_name,
         last_name: req.body.last_name,
-        address: req.body.address
+        address: req.body.address,
+        password: (bcryptjs.hashSync(req.body.password, 10)),
+        image: req.files[0].filename
+        
       }, {     
           where: {
             id: {
@@ -84,7 +87,10 @@ module.exports = {
           }
       })
       .then((resultado) => {
-          res.redirect("/users/account")
+        
+          if(resultado) {
+            res.redirect("/users/account")
+          }
       })
       .catch(function(error){
         console.log(error);
@@ -118,13 +124,13 @@ module.exports = {
     })
     .then((resultado) => {
       
-      
       if(!resultado) {
         return res.render("user/login", {errors: errors.mapped(), styleOn: "login"});
         
       } else if (bcryptjs.compareSync(req.body.password, resultado.password)) {
         
         req.session.user = resultado.email;
+        
         
         if (req.body.recordame) {
           res.cookie("recordame", resultado.email, { maxAge: 120 * 1000 });
@@ -155,11 +161,12 @@ module.exports = {
     if (errors.isEmpty()) {
       db.User.create({
         email: req.body.email,
-        password: bcryptjs.hashSync(req.body.password),
+        password: bcryptjs.hashSync(req.body.password, 10),
         first_name:req.body.first_name,
         last_name:req.body.last_name,
         address:req.body.address,
-        profile: 'standard'
+        profile: 'standard',
+        image: "default-profile.jpg"
       })
       .then((resultado) => {
         req.session.user = resultado.email;

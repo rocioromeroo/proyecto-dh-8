@@ -9,7 +9,7 @@ const myAccountValidator = require('../middleware/myAccountValidator');
 
 var storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, 'public/images')
+    cb(null, 'public/images/users')
   },
   filename: function (req, file, cb) {
     cb(null, file.fieldname + '-' + Date.now()+ path.extname(file.originalname))

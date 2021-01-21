@@ -22,7 +22,9 @@ app.set('view engine', 'ejs');
 app.use(session(
   { secret:'secreto',
   resave:'false',
-  saveUninitialized: true }
+  saveUninitialized: true,
+  cookie: {maxAge: 3600000}
+  }
 ));
 
 app.use(remember);

@@ -26,7 +26,10 @@ module.exports = (sequelize, datatypes) => {
           },
           profile: {
             type: datatypes.STRING
-          }
+          },
+          image: {
+            type: datatypes.STRING
+        }
       }
       let config = {
           tableName: "users",
