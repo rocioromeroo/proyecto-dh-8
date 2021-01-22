@@ -73,7 +73,7 @@ module.exports = {
 
   savePerfil:function (req, res) {
     let errors = validationResult(req);
-
+   
     if(errors.isEmpty()) {
 
       if(req.files.length == []) {
@@ -83,8 +83,8 @@ module.exports = {
           first_name: req.body.first_name,
           last_name: req.body.last_name,
           address: req.body.address,
-          password: (bcryptjs.hashSync(req.body.password, 10)),
-          image: ''
+          password: (bcryptjs.hashSync(req.body.password, 10))
+          
           
         }, {     
             where: {
@@ -95,6 +95,7 @@ module.exports = {
         })
         
         .then((resultado) => {
+          
             if(resultado) {
               res.redirect("/users/account")
             }

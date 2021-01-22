@@ -61,6 +61,9 @@
                 <% if(typeof errors.last_name !== 'undefined') { %>
                     <p class="text-red"><%= errors.last_name.msg %></p>
                 <% } %>
+                <% if(typeof errors.image !== 'undefined') { %>
+                    <p class="text-red"><%= errors.image.msg %></p>
+                <% } %>
                 <div class="center1">
                   <button  class="crear" type="submit">Terminar edicion</button>
               </div>
