@@ -51,11 +51,12 @@ module.exports = {
   editPerfil:function (req, res) {
     db.User.findOne({
       where: {
-        id: req.params.id,
-        email: req.session.user
+        email: req.session.user,
+        id: req.params.id
       }
     })
     .then((resultado) => {
+      
       if(resultado) {
         
         res.render("user/editPerfil", { styleOn: "register", editar: resultado, errors:{}})
@@ -65,36 +66,73 @@ module.exports = {
         return res.redirect("/users/login");
       }
     }) 
+    .catch((error) => {
+      console.log(error);
+    })
   },
 
   savePerfil:function (req, res) {
     let errors = validationResult(req);
-    
+
     if(errors.isEmpty()) {
-      db.User.update({
-        username: req.body.username,
-        first_name: req.body.first_name,
-        last_name: req.body.last_name,
-        address: req.body.address,
-        password: (bcryptjs.hashSync(req.body.password, 10)),
-        image: req.files[0].filename
+
+      if(req.files.length == []) {
         
-      }, {     
-          where: {
-            id: {
-              [Op.eq]: req.params.id
+        db.User.update({
+          username: req.body.username,
+          first_name: req.body.first_name,
+          last_name: req.body.last_name,
+          address: req.body.address,
+          password: (bcryptjs.hashSync(req.body.password, 10)),
+          image: ''
+          
+        }, {     
+            where: {
+              id: {
+                [Op.eq]: req.params.id
+              }
             }
-          }
-      })
-      .then((resultado) => {
+        })
         
-          if(resultado) {
-            res.redirect("/users/account")
-          }
-      })
-      .catch(function(error){
-        console.log(error);
-      })      
+        .then((resultado) => {
+            if(resultado) {
+              res.redirect("/users/account")
+            }
+        })
+        .catch(function(error){
+          console.log(error);
+        })
+
+      } else {
+        
+        db.User.update({
+          username: req.body.username,
+          first_name: req.body.first_name,
+          last_name: req.body.last_name,
+          address: req.body.address,
+          password: (bcryptjs.hashSync(req.body.password, 10)),
+          image: req.files[0].filename
+          
+        }, {     
+            where: {
+              id: {
+                [Op.eq]: req.params.id
+              }
+            }
+        })
+        
+        .then((resultado) => {
+            if(resultado) {
+              res.redirect("/users/account")
+            }
+        })
+        .catch(function(error){
+          console.log(error);
+        })
+
+      }
+
+            
 
     } else {
       db.User.findByPk(req.params.id)
