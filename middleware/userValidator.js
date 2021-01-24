@@ -38,5 +38,23 @@ module.exports = [
     .isLength({min:8})
     .withMessage('Su clave debe tener al menos 8 caracteres')
     .bail()
+    ,
+
+  check('first_name')
+    .notEmpty()
+    .withMessage("Campo obligatorio")
+    .bail()
+    .isLength({min:2})
+    .withMessage('Este campo debe tener al menos 2 caracteres')
+    .bail()
+    ,
+
+  check('last_name')
+    .notEmpty()
+    .withMessage("Campo obligatorio")
+    .bail()
+    .isLength({min:2})
+    .withMessage('Este campo debe tener al menos 2 caracteres')
+    .bail()
 ];
 

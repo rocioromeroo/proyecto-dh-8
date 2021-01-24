@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-        <%- include("../partial/head")  %> 
+        <%- include("../partial/head")  %>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/validator/13.1.17/validator.min.js" integrity="sha512-p1b+doSyVwyKqVTZeU1+XJtjpBSkhllBca2L6QTxPUjZZ0ELeZIHkAeQdtfNulbXxLdCwN4uKYGPpp78xeqwfQ==" crossorigin="anonymous"></script>
+        <script src="/javascripts/registerValidation.js" defer></script> 
         <title>Eletr8 | Registro</title>
 <body class="body-register">
     <%- include("../partial/header") %>
@@ -11,33 +13,44 @@
                 <div class="display_none">
                     <input type="username" name="username" id="username" placeholder="Nombre de Usuario">
                 </div>
-                <div class="email input-form">
+                <div class="input-form">
+                    <% if(typeof errors.first_name !== 'undefined') { %>
+                        <p class="text-red"><%= errors.first_name.msg	 %></p>
+                    <% } %> 
+                    <input type="text" name="first_name" id="first_name" placeholder="Nombre: *">                    
+                </div>  
+                <hr>
+                <div class="input-form">
+                    <% if(typeof errors.last_name !== 'undefined') { %>
+                        <p class="text-red"><%= errors.last_name.msg	 %></p>
+                    <% } %>
+                    <input type="text" name="last_name" id="last_name" placeholder="Apellido: *">    
+                </div>
+                <hr>
+                <div class="input-form">
+                    <% if(typeof errors.email !== 'undefined') { %>
+                        <p class="text-red"><%= errors.email.msg	 %></p>
+                    <% } %>
                     <input type="email" name="email" id="email" placeholder="Email: *">
                 </div>
                 <hr>
                 <div class="input-form">
+                    <% if(typeof errors.password !== 'undefined') { %>
+                        <p class="text-red"><%= errors.password.msg	 %></p>
+                    <% } %>
                     <input type="password" name="password" id="password" placeholder="Contraseña: *">
                 </div>
                 <hr>
-                <div class="display_none">
-                    <input type="text" name="first_name" id="first_name" placeholder="Nombre">    
-                </div>  
-                <div class="display_none">
-                    <input type="text" name="last_name" id="last_name" placeholder="Apellido">    
-                </div>     
+                <div class="input-form">
+                    <% if(typeof errors.password_confirmation !== 'undefined') { %>
+                        <p class="text-red"><%= errors.password_confirmation.msg	 %></p>
+                    <% } %>
+                    <input type="password" name="password_confirmation" id="password_confirmation" placeholder="Confirmar contraseña: *">
+                </div>
+                <hr>
                 <div class="display_none">
                         <input type="text" name="address" id="address" placeholder="Direccion">      
                 </div>
-                 
-
-                <% if(typeof errors.email !== 'undefined') { %>
-                    <p class="text-red"><%= errors.email.msg	 %></p>
-                <% } %>
-
-                <% if(typeof errors.password !== 'undefined') { %>
-                    <p class="text-red"><%= errors.password.msg	 %></p>
-                <% } %>
-
                 <div class="center1">
                     <button  class="crear" type="submit">Crear Cuenta</button>
                 </div>

@@ -14,6 +14,15 @@
     font-size: 0.6em;
     padding-top: 5%;
 }
+
+input.success {
+    color: green;
+}
+
+input.error{
+    color: red;
+}
+
 .display_none{display: none;}
 .input-form{
     padding-top:3%
