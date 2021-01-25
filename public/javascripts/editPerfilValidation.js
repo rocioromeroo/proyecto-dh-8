@@ -1,10 +1,11 @@
-
 let nameInput = document.querySelector ("input[name=first_name] ")
 let surnameInput = document.querySelector ("input[name=last_name] ")
 let passwordInput = document.querySelector ("input[name=password] ")
 let confirmationInput = document.querySelector ("input[name=repeat] ")
 let usernameInput = document.querySelector ("input[name=username] ")
-let addressInput = document.querySelector ("input[name=address] ")
+let imageInput = document.querySelector ("input[name=image] ")
+let mensaje = document.querySelector (".mensaje")
+
 
 nameInput.addEventListener("keyup", function(){
     if (validator.isAlpha(nameInput.value) && validator.isLength(nameInput.value, {min:2, max:30}) || validator.isAlphanumeric(nameInput.value) && validator.isLength(nameInput.value, {min:2, max:30}) ) {
@@ -14,17 +15,6 @@ nameInput.addEventListener("keyup", function(){
     else{
         nameInput.classList.remove("success")
         nameInput.classList.add("error")
-    }
-})
-
-addressInput.addEventListener("keyup", function(){
-    if (validator.isAlpha(addressInput.value) && validator.isLength(addressInput.value, {min:5, max:30}) ) {
-        addressInput.classList.remove("error")
-        addressInput.classList.add("success")
-    }
-    else{
-        addressInput.classList.remove("success")
-        addressInput.classList.add("error")
     }
 })
 
@@ -70,4 +60,34 @@ confirmationInput.addEventListener("keyup", function(){
         confirmationInput.classList.remove("success")
         confirmationInput.classList.add("error")
     }
+})
+    
+    
+
+//imageInput.addEventListener("", function(){
+//    if (/\.(jpg|png|gif)$/i).test(imageInput.value)) {
+//        console.log("success")
+//   }
+//    else{
+//        console.log("error")
+//    }
+    
+// })
+
+function Checkfiles() { 
+    var fup = document.querySelector ("input[name=image] "); 
+    var fileName = fup.value; var ext = fileName.substring(fileName.lastIndexOf('.') + 1); 
+    if(ext == "gif" || ext == "GIF" || ext == "JPEG" || ext == "jpeg" || ext == "jpg" || ext == "JPG" || ext == "PNG" || ext == "png"){
+        mensaje.innerHTML="";
+        return true;
+    } 
+    else{
+        mensaje.innerHTML="Formato inválido";
+        fup.focus();
+        return false;
+    }
+}
+
+imageInput.addEventListener("change", function(){
+    Checkfiles(imageInput)
 })

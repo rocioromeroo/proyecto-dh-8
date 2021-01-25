@@ -26,6 +26,7 @@ module.exports = [
   .isLength({min:8})
   .withMessage('Su clave debe tener al menos 8 caracteres')
   .notEmpty()
-  .withMessage("Campo obligatorio")
+  .withMessage("Campo obligatorio"),
+
 
 ];
