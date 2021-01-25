@@ -77,7 +77,7 @@ input.error{
     -webkit-writing-mode: horizontal-tb !important;
     text-rendering: auto;
     font-size: 15px;
-    width: 100%;
+    width: 60%;
     letter-spacing: normal;
     word-spacing: normal;
     text-transform: none;
@@ -96,6 +96,11 @@ input.error{
     border-style: none;
     border-image: none;
     outline: none;
+    padding-top: 2%;
+}
+
+.imagen{
+    padding-top: 6%;
 }
 
 .enviar{
