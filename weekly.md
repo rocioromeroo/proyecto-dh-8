@@ -97,9 +97,9 @@ Que se hace hoy: Se comeinza a crear el modelo de productos y usuarios con el CR
 Weekly: Sprint-7
 
 Romero Rocio
-Que se hizo ayer:
-Se encontro algun impedimento:
-Que se hace hoy:
+Que se hizo ayer: Se avanzó con la validación del front y del back.
+Se encontro algun impedimento: Al momento de validar la imagen en el front pero se solucionó rápidamente.
+Que se hace hoy: Chequeo de puntos pendientes del sprint-7.
 
 Juan Fernandez
 Que se hizo ayer:
