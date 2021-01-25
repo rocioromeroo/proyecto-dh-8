@@ -1,8 +1,9 @@
-let emailInput = document.getElementById ("email")
-let nameInput = document.getElementById ("first_name")
-let surnameInput = document.getElementById ("last_name")
-let passwordInput = document.getElementById ("password")
-let confirmationInput = document.getElementById ("password_confirmation")
+let emailInput = document.querySelector ("input[name=email] ")
+let nameInput = document.querySelector ("input[name=first_name] ")
+let surnameInput = document.querySelector ("input[name=last_name] ")
+let passwordInput = document.querySelector ("input[name=password] ")
+let confirmationInput = document.querySelector ("input[name=password_confirmation] ")
+console.log(confirmationInput)
 
 emailInput.addEventListener("keyup", function(){
     if (validator.isEmail(emailInput.value)) {
@@ -16,7 +17,7 @@ emailInput.addEventListener("keyup", function(){
 })
 
 nameInput.addEventListener("keyup", function(){
-    if (validator.isAlpha(nameInput.value) && isLength(nameInput.value, {min:2, max:30}) ) {
+    if (validator.isAlpha(nameInput.value) && validator.isLength(nameInput.value, {min:2, max:30}) ) {
         nameInput.classList.remove("error")
         nameInput.classList.add("success")
     }
@@ -27,7 +28,7 @@ nameInput.addEventListener("keyup", function(){
 })
 
 surnameInput.addEventListener("keyup", function(){
-    if (validator.isAlpha(nameInput.value) && isLength(surnameInput.value, {min:2, max:30}) ) {
+    if (validator.isAlpha(nameInput.value) && validator.isLength(surnameInput.value, {min:2, max:30}) ) {
         surnameInput.classList.remove("error")
         surnameInput.classList.add("success")
     }
@@ -38,7 +39,7 @@ surnameInput.addEventListener("keyup", function(){
 })
 
 passwordInput.addEventListener("keyup", function(){
-    if (validator.isLength(passwordInput.value, {min:8, max:20}) && /^[A-Z]+\d{1}[A-Z]+[\$\.\-\#\(\)\=\!\+]+[A-Z]+$/.test (passwordInput.value)) {
+    if (validator.isLength(passwordInput.value, {min:8, max:20}) && /^[a-zA-Z]+\d{1}[a-zA-Z]+[\$\.\-\#\(\)\=\!\+]+[a-zA-Z]+$/.test (passwordInput.value)) {
         passwordInput.classList.remove("error")
         passwordInput.classList.add("success")
     }
@@ -49,7 +50,7 @@ passwordInput.addEventListener("keyup", function(){
 })
 
 confirmationInput.addEventListener("keyup", function(){
-    if (validator.equals(confirmationInput.value, passwordInput)) {
+    if (validator.equals(confirmationInput.value, passwordInput.value)) {
         confirmationInput.classList.remove("error")
         confirmationInput.classList.add("success")
     }
@@ -59,3 +60,4 @@ confirmationInput.addEventListener("keyup", function(){
     }
 })
 
+console.log(validator)

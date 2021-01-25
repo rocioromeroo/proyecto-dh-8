@@ -11,45 +11,45 @@
         <section>   
             <form class="registro" action="/users/register" method="POST">
                 <div class="display_none">
-                    <input type="username" name="username" id="username" placeholder="Nombre de Usuario">
+                    <input class="inputA" type="username" name="username" id="username" placeholder="Nombre de Usuario">
                 </div>
                 <div class="input-form">
                     <% if(typeof errors.first_name !== 'undefined') { %>
                         <p class="text-red"><%= errors.first_name.msg	 %></p>
-                    <% } %> 
-                    <input type="text" name="first_name" id="first_name" placeholder="Nombre: *">                    
-                </div>  
+                    <% } %>
+                    <input class="inputA" type="text" name="first_name" id="first_name" placeholder="Nombre: *">    
+                </div> 
                 <hr>
                 <div class="input-form">
                     <% if(typeof errors.last_name !== 'undefined') { %>
                         <p class="text-red"><%= errors.last_name.msg	 %></p>
                     <% } %>
-                    <input type="text" name="last_name" id="last_name" placeholder="Apellido: *">    
-                </div>
+                    <input class="inputA"type="text" name="last_name" id="last_name" placeholder="Apellido: *">    
+                </div>  
                 <hr>
                 <div class="input-form">
                     <% if(typeof errors.email !== 'undefined') { %>
                         <p class="text-red"><%= errors.email.msg	 %></p>
                     <% } %>
-                    <input type="email" name="email" id="email" placeholder="Email: *">
+                    <input class="inputA" type="email" name="email" id="email" placeholder="Email: *">
                 </div>
                 <hr>
                 <div class="input-form">
                     <% if(typeof errors.password !== 'undefined') { %>
                         <p class="text-red"><%= errors.password.msg	 %></p>
                     <% } %>
-                    <input type="password" name="password" id="password" placeholder="Contraseña: *">
+                    <input class="inputA" type="password" name="password" id="password" placeholder="Contraseña: *">
                 </div>
                 <hr>
                 <div class="input-form">
                     <% if(typeof errors.password_confirmation !== 'undefined') { %>
                         <p class="text-red"><%= errors.password_confirmation.msg	 %></p>
                     <% } %>
-                    <input type="password" name="password_confirmation" id="password_confirmation" placeholder="Confirmar contraseña: *">
-                </div>
+                    <input class="inputA" type="password" name="password_confirmation" id="password_confirmation" placeholder="Confirmar contraseña: *">
+                </div> 
                 <hr>
                 <div class="display_none">
-                        <input type="text" name="address" id="address" placeholder="Direccion">      
+                        <input class="inputA" type="text" name="address" id="address" placeholder="Direccion">      
                 </div>
                 <div class="center1">
                     <button  class="crear" type="submit">Crear Cuenta</button>

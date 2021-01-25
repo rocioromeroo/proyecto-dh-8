@@ -15,7 +15,7 @@
     padding-top: 5%;
 }
 
-input.success {
+input.success{
     color: green;
 }
 
@@ -35,35 +35,6 @@ input.error{
 
 .titulo {
     font-size: 15px;
-}
-
-.nacimiento input{
-    -webkit-writing-mode: horizontal-tb !important;
-    text-rendering: auto;
-    color:#5a6268;
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: none;
-    text-indent:0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: start;
-    appearance: textfield;
-    background-color: white;   
-    -webkit-rtl-ordering: logical;
-    font-family: 'Comfortaa', cursive, 'Arial';
-    cursor: text;
-    margin: 0;
-    padding: 0;
-    border-width: 0;
-    border-style: none;
-    border-image: none;
-}
-
-.nacimiento label{
-    font-family: 'Comfortaa', cursive, 'Arial';
-    font-size: 15px;
-    color: #5a6268;
 }
 
 .crear{
@@ -102,10 +73,9 @@ input.error{
 }
 
 
-.registro input {
+.inputA {
     -webkit-writing-mode: horizontal-tb !important;
     text-rendering: auto;
-    color:#5a6268;
     font-size: 15px;
     width: 100%;
     letter-spacing: normal;
@@ -221,6 +191,7 @@ input.error{
     text-align: left;
     font-size: 60%;
     padding: 2%;
+    padding-bottom: 8%;
 }
 
 @media (max-width:1024px){

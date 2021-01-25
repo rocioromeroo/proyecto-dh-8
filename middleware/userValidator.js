@@ -55,6 +55,7 @@ module.exports = [
     .bail()
     .isLength({min:2})
     .withMessage('Este campo debe tener al menos 2 caracteres')
-    .bail()
+    .bail(),
+    
 ];
 
