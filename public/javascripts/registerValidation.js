@@ -4,58 +4,59 @@ let surnameInput = document.querySelector ("input[name=last_name] ")
 let passwordInput = document.querySelector ("input[name=password] ")
 let confirmationInput = document.querySelector ("input[name=password_confirmation] ")
 
+
+function markValid (el){
+    el.classList.remove("error")
+    el.classList.add("success")
+}
+
+function markInvalid (el){
+    el.classList.remove("success")
+    el.classList.add("error")
+}
+
 emailInput.addEventListener("keyup", function(){
     if (validator.isEmail(emailInput.value)) {
-        emailInput.classList.remove("error")
-        emailInput.classList.add("success")
+        markValid(emailInput)
     }
     else{
-        emailInput.classList.remove("success")
-        emailInput.classList.add("error")
+        markInvalid(emailInput)
     }
 })
 
 nameInput.addEventListener("keyup", function(){
     if (validator.isAlpha(nameInput.value) && validator.isLength(nameInput.value, {min:2, max:30}) ) {
-        nameInput.classList.remove("error")
-        nameInput.classList.add("success")
+        markValid(nameInput)
     }
     else{
-        nameInput.classList.remove("success")
-        nameInput.classList.add("error")
+        markInvalid(nameInput)
     }
 })
 
 surnameInput.addEventListener("keyup", function(){
     if (validator.isAlpha(nameInput.value) && validator.isLength(surnameInput.value, {min:2, max:30}) ) {
-        surnameInput.classList.remove("error")
-        surnameInput.classList.add("success")
+        markValid(surnameInput)
     }
     else{
-        surnameInput.classList.remove("success")
-        surnameInput.classList.add("error")
+        markInvalid(surnameInput)
     }
 })
 
 passwordInput.addEventListener("keyup", function(){
-    if (validator.isLength(passwordInput.value, {min:8, max:20}) && /^[a-zA-Z]+\d{1}[a-zA-Z]+[\$\.\-\#\(\)\=\!\+]+[a-zA-Z]+$/.test (passwordInput.value)) {
-        passwordInput.classList.remove("error")
-        passwordInput.classList.add("success")
+    if (validator.isLength(passwordInput.value, {min:8, max:20}) && /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[¿?¡!@#\$%\^&\*])(?=.{8,})/.test (passwordInput.value)) {
+        markValid(passwordInput)
     }
     else{
-        passwordInput.classList.remove("success")
-        passwordInput.classList.add("error")
+        markInvalid(passwordInput)
     }
 })
 
 confirmationInput.addEventListener("keyup", function(){
     if (validator.equals(confirmationInput.value, passwordInput.value)) {
-        confirmationInput.classList.remove("error")
-        confirmationInput.classList.add("success")
+        markValid(confirmationInput)
     }
     else{
-        confirmationInput.classList.remove("success")
-        confirmationInput.classList.add("error")
+        markInvalid(confirmationInput)
     }
 })
 
