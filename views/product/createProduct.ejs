@@ -87,10 +87,18 @@
                         </select>
                     </div>
                     <label class="titulo">Agregá una imágen</label>
+<<<<<<< HEAD
                     <input class="inputA" type="file" name="image" >
                     <div>
                         <p class="mensaje text-red"></p>
                     </div>
+=======
+                    <input type="file" name="image" >
+
+                    <% if(typeof errors.image !== 'undefined') { %>
+                        <p class="text-red"><%= errors.image.msg%></p>
+                    <% } %>
+>>>>>>> 8dfa610bcbc65ac508798f09a2ce64b245ded655
                     <div class="center1">
                         <button  class="crear" type="submit">Públicar</button>
                     </div>

@@ -287,8 +287,13 @@ const productsController = {
 
   store: function (req, res, next) {
     let errors = validationResult(req);
+
+
+
     console.log(errors);
     if (errors.isEmpty()) {
+
+      if(req.files.length == []) {
       db.Product.create({
         name: req.body.name,
         price: req.body.price,
@@ -311,33 +316,37 @@ const productsController = {
         console.log(error);
       }) 
 
+    }
+
+      else{
+        db.Product.create({
+          name: req.body.name,
+          price: req.body.price,
+          description: req.body.description,
+          discount: req.body.discount,
+          stock: req.body.stock,
+          speed: req.body.speed,
+          battery: req.body.battery,
+          wheel: req.body.wheel,
+          light: req.body.light,
+          folding: req.body.folding,
+          brake: req.body.brake,
+          color: req.body.color,
+          weight: req.body.weight,
+          image: req.body.image,
+        })
+        .then((resultado)=> {
+          res.redirect("/products" );
+        })
+        .catch(function(error){
+          console.log(error);
+        }) 
+
+      }
+
     }  else {
       return res.render("product/createProduct", { errors: errors.mapped(), styleOn: "create-editProduct" })
     }
-
-
-    // let pathFile = path.join("data", "productsDatabase.json");
-
-    // let nuevoProduct = fs.readFileSync(pathFile, { encoding: "utf-8" });
-
-    // nuevoProduct = JSON.parse(nuevoProduct);
-
-    // nuevoProduct.push({
-    //   ...req.body,
-    //   id: nuevoProduct[nuevoProduct.length - 1].id + 1,
-    // });
-    // if (req.files.length == []) {
-    //   nuevoProduct.image = "";
-    // } else {
-    //   nuevoProduct.image = req.files[0].filename;
-    // }
-
-
-    // nuevoProduct = JSON.stringify(nuevoProduct);
-
-    // fs.writeFileSync(pathFile, nuevoProduct);
-
-    // res.redirect("/products");
   },
 
   cart: function (req, res) {
