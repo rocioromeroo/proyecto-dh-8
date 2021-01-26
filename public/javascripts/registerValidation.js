@@ -60,4 +60,3 @@ confirmationInput.addEventListener("keyup", function(){
     }
 })
 
-console.log(validator)

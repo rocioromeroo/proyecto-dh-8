@@ -5,7 +5,7 @@ const db = require('../database/models');
 module.exports = [
   check('email')
   .notEmpty()
-  .withMessage("Campo obligatorio")
+  .withMessage("Email obligatorio")
   .isEmail()
   .withMessage('El mail debe tener un formato valido'),
   body("email").custom(function (value) { 
