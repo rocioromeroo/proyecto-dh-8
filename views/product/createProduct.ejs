@@ -91,8 +91,9 @@
                     <label class="titulo">Agregá una imágen</label>
                     <input type="file" name="image" >
 
-                    
-
+                    <% if(typeof errors.image !== 'undefined') { %>
+                        <p class="text-red"><%= errors.image.msg%></p>
+                    <% } %>
                     <div class="center1">
                         <button  class="crear" type="submit">Públicar</button>
                     </div>
