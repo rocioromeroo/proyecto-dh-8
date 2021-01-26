@@ -1,227 +1,234 @@
-:root{
-    --body-background:#f4f4f4;
-    --articles-bg:white;
-    --font-color:#219653;
-    --bg-font-green-hover:#18683b;
-    --bg-font-grey-hover:#5a6268;
+:root {
+  --body-background: #f4f4f4;
+  --articles-bg: white;
+  --font-color: #219653;
+  --bg-font-green-hover: #18683b;
+  --bg-font-grey-hover: #5a6268;
 }
 
 .olvidar a {
-    text-decoration: none;
-    color: #219653;
+  text-decoration: none;
+  color: #219653;
 }
 
-.olvidar{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    
+.olvidar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .datos input {
-    -webkit-writing-mode: horizontal-tb !important;
-    text-rendering: auto;
-    color:black;
-    font-size: 15px;
-    width: 100%;
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: none;
-    text-indent:0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: start;
-    appearance: textfield;
-    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
-    -webkit-rtl-ordering: logical;
-    font-family: 'Comfortaa', cursive, 'Arial';
-    cursor: text;
-    margin: 0;
-    padding: 0;
-    border-width: 0;
-    border-style: none;
-    border-image: none;
-    outline: none;
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: black;
+  font-size: 15px;
+  width: 100%;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  appearance: textfield;
+  background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+  -webkit-rtl-ordering: logical;
+  font-family: "Comfortaa", cursive, "Arial";
+  cursor: text;
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+  border-style: none;
+  border-image: none;
+  outline: none;
+  text-decoration: none;
 }
 
-.enviar{
-    appearance: button;
-    -webkit-writing-mode: horizontal-tb !important;
-    text-rendering: auto;
-    color: #219653;
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: center;
-    align-items: flex-start;
-    cursor: default;
-    background-color: #f4f4f4;
-    box-sizing: border-box;
-    margin: 0em;
-    font-family: 'Comfortaa', cursive, 'Arial';
-    font-weight: bold;
-    padding: 9px;
-    border-width: 1px;
-    border-style: outset;
-    border-color: #f4f4f4;
-    border-image: none;
-    border-radius: 13px;
-    width: 100px;
-    outline: none;
+.enviar {
+  appearance: button;
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: #219653;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  cursor: default;
+  background-color: #f4f4f4;
+  box-sizing: border-box;
+  margin: 0em;
+  font-family: "Comfortaa", cursive, "Arial";
+  font-weight: bold;
+  padding: 9px;
+  border-width: 1px;
+  border-style: outset;
+  border-color: #f4f4f4;
+  border-image: none;
+  border-radius: 13px;
+  width: 100px;
+  outline: none;
 }
 
-.enviar:hover{
-    background-color: #219653;
-    color: white;
-    border-color: #219653;
+.enviar:hover {
+  background-color: #219653;
+  color: white;
+  border-color: #219653;
 }
 
 .google {
-    appearance: button;
-    -webkit-writing-mode: horizontal-tb !important;
-    text-rendering: auto;
-    color: #219653;
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: center;
-    align-items: center;
-    cursor: default;
-    background-color: #f4f4f4;
-    box-sizing: border-box;
-    margin: 0em;
-    font-family: 'Comfortaa', cursive, 'Arial';
-    font-weight: bold;
-    padding: 10px;
-    border-width: 1px;
-    border-style: outset;
-    border-color: #f4f4f4;
-    border-image: none;
-    border-radius: 13px;
-    width: 200px;
-    outline: none;
-    text-decoration: none;
-    font-size: 13px;
+  appearance: button;
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: #219653;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+  cursor: default;
+  background-color: #f4f4f4;
+  box-sizing: border-box;
+  margin: 0em;
+  font-family: "Comfortaa", cursive, "Arial";
+  font-weight: bold;
+  padding: 10px;
+  border-width: 1px;
+  border-style: outset;
+  border-color: #f4f4f4;
+  border-image: none;
+  border-radius: 13px;
+  width: 200px;
+  outline: none;
+  text-decoration: none;
+  font-size: 13px;
 }
 
-.text-red{color: red; font-size: 0.6em;
+.text-red {
+  color: red;
+  font-size: 0.6em;
 }
 
-.google:hover{
-    background-color: #219653;
-    color: white;   
-    border-color: #219653;
+.google:hover {
+  background-color: #219653;
+  color: white;
+  border-color: #219653;
 }
 
 .datos hr {
-    display: block;
-    unicode-bidi: isolate;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: auto;
-    margin-inline-end: auto;
-    overflow: hidden;
-    border-style: inset;
-    border-width: 1px;
+  display: block;
+  unicode-bidi: isolate;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
 }
 
-.datos p{
-    display: block;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;    
+.datos p {
+  display: block;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
-
-.body-login{
-    background-color: #f4f4f4;
+.body-login {
+  background-color: #f4f4f4;
 }
 
-.login{
-    margin: 5% auto;
-    width: 30%;
+.login {
+  margin: 5% auto;
+  width: 30%;
+  height: 100%;
+  padding: 15px;
+  border: 1px solid var(--bg-font-grey-hover);
+  border-radius: 13px;
+  box-sizing: border-box;
+  background-color: white;
+  align-items: center;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.15);
+}
+
+.body-login h1 {
+  padding-top: 10%;
+  font-family: "Comfortaa", cursive, "Arial";
+  color: var(--font-color);
+  text-align: center;
+  font-size: 28px;
+}
+
+.datos {
+  font-family: "Comfortaa", cursive, "Arial";
+  color: var(--bg-font-grey-hover);
+  text-align: left;
+  font-size: 30px;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.password {
+  padding-top: 15px;
+}
+
+.recordar {
+  font-family: "Comfortaa", cursive, "Arial";
+  color: var(--font-color);
+  font-size: 12px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.recordar input {
+  display: inline-block;
+  width: 8px;
+}
+
+.olvidar {
+  font-family: "Comfortaa", cursive, "Arial";
+  color: var(--font-color);
+  text-align: left;
+  font-size: 12px;
+  padding-left: 8%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.center {
+  text-align: center;
+}
+
+.center1 {
+  text-align: center;
+}
+
+input.success {
+  color: green;
+}
+
+input.error {
+  color: red;
+}
+
+@media (max-width: 1024px) {
+  .login {
+    width: 95%;
     height: 100%;
+    margin: 5% auto;
     padding: 15px;
     border: 1px solid var(--bg-font-grey-hover);
     border-radius: 13px;
     box-sizing: border-box;
     background-color: white;
     align-items: center;
-    box-shadow: 0 5px 5px 0 rgba(0,0,0,.15);
-}
-
-.body-login h1{
-    padding-top: 10%;
-    font-family: 'Comfortaa', cursive, 'Arial';
-    color:var(--font-color);
-    text-align: center;
-    font-size: 28px;
-}
-
-.datos{
-    font-family: 'Comfortaa', cursive, 'Arial';
-    color: var(--bg-font-grey-hover);
-    text-align: left;
-    font-size: 30px;
-    padding-left: 8%;
-    padding-right: 8%;
-}
-
-.password {
-    padding-top: 15px ;
-}
-
-.recordar{
-    font-family: 'Comfortaa', cursive, 'Arial';
-    color: var(--font-color);
-    font-size: 12px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-.recordar input{
-    display: inline-block;
-    width: 8px;
-}   
-
-.olvidar{
-    font-family: 'Comfortaa', cursive, 'Arial';
-    color: var(--font-color);
-    text-align: left;
-    font-size: 12px;
-    padding-left: 8%;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-.center{
-    text-align: center;
-}
-
-.center1{
-    text-align: center ;
-}
-
-@media (max-width:1024px){
-
-    .login{
-        width: 95%;
-        height: 100%;
-        margin: 5% auto;
-        padding: 15px;
-        border: 1px solid var(--bg-font-grey-hover);
-        border-radius: 13px;
-        box-sizing: border-box;
-        background-color: white;
-        align-items: center;
-        box-shadow: 0 5px 5px 0 rgba(0,0,0,.15);   
-    }
-
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.15);
+  }
 }
