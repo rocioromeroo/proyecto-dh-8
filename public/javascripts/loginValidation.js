@@ -22,7 +22,7 @@ emailInput.addEventListener("keyup", function(){
 })
 
 passwordInput.addEventListener("keyup", function(){
-    if (validator.isLength(passwordInput.value, {min:8, max:20}) && /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[¿?¡!@#\$%\^&\*])(?=.{8,})/.test (passwordInput.value)) {
+    if (validator.isLength(passwordInput.value, {min:8, max:20})) {
         markValid(passwordInput)
     }
     else{
