@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <%- include("../partial/head")  %> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/validator/13.1.17/validator.min.js" integrity="sha512-p1b+doSyVwyKqVTZeU1+XJtjpBSkhllBca2L6QTxPUjZZ0ELeZIHkAeQdtfNulbXxLdCwN4uKYGPpp78xeqwfQ==" crossorigin="anonymous"></script>
+        <script src="/javascripts/loginValidation.js" defer></script> 
         <title>Eletr8 | Login</title>
     <body class="body-login">
         <%- include("../partial/header") %>
@@ -9,12 +11,12 @@
             <br>
             <section>
                 <form class="datos" action="/users" method="POST">
-                    <div class="email">
-                        <input type="email" name="email" id="email" placeholder="Email *">    
+                    <div class="input-form">
+                        <input class="inputA" type="email" name="email" id="email" placeholder="Email *">    
                     </div>
                     <hr>
-                    <div class="password">
-                        <input type="password" name="password" id="password" placeholder="Contraseña *">
+                    <div class="input-form">
+                        <input class="inputA" type="password" name="password" id="password" placeholder="Contraseña: *">
                     </div>
                     <hr>
                     <div class="recordar">

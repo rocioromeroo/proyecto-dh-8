@@ -18,12 +18,23 @@
     
 }
 
-.datos input {
+.input-form{
+    padding-top:3%
+}
+
+input.success{
+    color: green;
+}
+
+input.error{
+    color: red;
+}
+
+.inputA {
     -webkit-writing-mode: horizontal-tb !important;
     text-rendering: auto;
-    color:black;
     font-size: 15px;
-    width: 100%;
+    width: 60%;
     letter-spacing: normal;
     word-spacing: normal;
     text-transform: none;
@@ -32,7 +43,7 @@
     display: inline-block;
     text-align: start;
     appearance: textfield;
-    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    background-color: white;
     -webkit-rtl-ordering: logical;
     font-family: 'Comfortaa', cursive, 'Arial';
     cursor: text;
@@ -42,6 +53,7 @@
     border-style: none;
     border-image: none;
     outline: none;
+    padding-top: 2%;
 }
 
 .enviar{
@@ -172,10 +184,6 @@
     font-size: 30px;
     padding-left: 8%;
     padding-right: 8%;
-}
-
-.password {
-    padding-top: 15px ;
 }
 
 .recordar{

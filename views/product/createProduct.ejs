@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
         <%- include("../partial/head")  %> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/validator/13.1.17/validator.min.js" integrity="sha512-p1b+doSyVwyKqVTZeU1+XJtjpBSkhllBca2L6QTxPUjZZ0ELeZIHkAeQdtfNulbXxLdCwN4uKYGPpp78xeqwfQ==" crossorigin="anonymous"></script>
+        <script src="/javascripts/productValidation.js" defer></script> 
         <title>Eletr8 | Modifica Producto</title>
 <body class="body-productForm">
     <%- include("../partial/header") %>
@@ -13,35 +15,36 @@
                     <% if(typeof errors.name !== 'undefined') { %>
                         <p class="text-red"><%= errors.name.msg	 %></p>
                     <% } %>
-                    <input type="text" name="name" id="name">
+                    <input class="inputA" type="text" name="name" id="name">
                     <hr>
                     <label for="brand">Marca</label>
-                    <input type="text" name="brand" id="brand">
+                    <input class="inputA" type="text" name="brand" id="brand">
                     <hr>
                     <label for="price">Precio</label>
-                    <input type="text" name="price" id="price">
-                    <hr>
-                    <label for="description">Descripcion</label>    
-                    <textarea name="description" id="description" cols="30" rows="5" class="input border area f-size-10"></textarea>
+                    <input class="inputA" type="text" name="price" id="price">
+                    <hr><br>
+                    <label class="label-desc" for="description">Descripcion</label>    
+                    <textarea class="text" name="description" id="description" cols="30" rows="5"></textarea>
+                    <p class="caracteres">Máximo 20 caracteres</p>
                     <% if(typeof errors.description !== 'undefined') { %>
                         <p class="text-red"><%= errors.description.msg	 %></p>
                     <% } %>
-                    <hr>
+
                     <label for="discount">Descuento</label>
-                    <input type="text" name="discount" id="discount">
+                    <input class="inputA" type="text" name="discount" id="discount">
                     <hr>
                     <label for="stock">Stock</label>
-                    <input type="text" name="stock" id="stock">
+                    <input class="inputA" type="text" name="stock" id="stock">
                     <hr>
                     <label for="speed">Velocidad</label>
-                    <input type="text" name="speed" id="speed">
+                    <input class="inputA" type="text" name="speed" id="speed">
                     <hr>
                     <label for="battery">Bateria</label>
-                    <input type="text" name="battery" id="battery">
+                    <input class="inputA" type="text" name="battery" id="battery">
                     <hr>
                     <label for="wheel">Ruedas</label>
-                    <input type="text" name="wheel" id="wheel">
-                    <hr>
+                    <input class="inputA" type="text" name="wheel" id="wheel">
+                    <hr><br>
                     <label for="ligth">Luces</label>
                     <div>
                         <select name="folding" id="folding">
@@ -50,7 +53,6 @@
                             <option value="no_luces">No</option>
                         </select>
                     </div>  
-                    <hr>
                     <label for="folding">Plegable</label>
                     <div>
                         <select name="folding" id="folding">
@@ -59,7 +61,6 @@
                             <option value="no_pegable">No</option>
                         </select>  
                     </div>
-                    <hr>
                     <label for="brake">Frenos</label>
                     <div>
                         <select name="brake" id="brake">
@@ -68,13 +69,12 @@
                         <option value="bicicletas">Mecanico</option>
                         </select>   
                     </div>
-                    <hr>
                     <label for="color">Color</label>
-                    <input type="text" name="color" id="color">
+                    <input class="inputA" type="text" name="color" id="color">
                     <hr>
                     <label for="weight">Peso</label>
-                    <input type="text" name="weight" id="weight">
-                    <hr>
+                    <input class="inputA" type="text" name="weight" id="weight">
+                    <hr><br>
                     <label for="category">Categoria:</label>
                     <div>
                         <select name="category" id="categoria">Categoria
@@ -86,13 +86,11 @@
                         <option value="dualciclos">Dualciclos</option>
                         </select>
                     </div>
-                    <hr>
-                    <br>
                     <label class="titulo">Agregá una imágen</label>
-                    <input type="file" name="image" >
-
-                    
-
+                    <input class="inputA" type="file" name="image" >
+                    <div>
+                        <p class="mensaje text-red"></p>
+                    </div>
                     <div class="center1">
                         <button  class="crear" type="submit">Públicar</button>
                     </div>
