@@ -5,7 +5,7 @@ const db = require('../database/models');
 module.exports = [
     check('name')
       .notEmpty()
-      .withMessage("Campo obligatorio")
+      .withMessage("Nombre obligatorio")
       .isLength({min:5})
       .withMessage('El nombre debe tener al menos 5 caracteres'),
 

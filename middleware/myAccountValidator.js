@@ -27,7 +27,7 @@ module.exports = [
         
     body("repeat")
         .notEmpty()
-        .withMessage("Confirma contraseña ")
+        .withMessage("Confirma contraseña")
         .bail()
         .custom((value, { req }) => req.body.password == value)
         .withMessage("Las contraseñas no coinciden"),

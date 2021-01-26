@@ -6,7 +6,7 @@ const { Op } = require('sequelize')
 module.exports = [
   check('email')
     .notEmpty()
-    .withMessage("Campo obligatorio")
+    .withMessage("Email obligatorio")
     .bail()
     .isEmail()
     .withMessage('El mail debe tener un formato valido')
@@ -33,7 +33,7 @@ module.exports = [
 
   check('password')
     .notEmpty()
-    .withMessage("Campo obligatorio")
+    .withMessage("Contraseña obligatoria")
     .bail()
     .isLength({min:8})
     .withMessage('Su clave debe tener al menos 8 caracteres')
