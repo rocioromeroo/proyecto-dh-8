@@ -107,9 +107,9 @@ Se encontro algun impedimento:
 Que se hace hoy:
 
 Nusfaumer Leonel
-Que se hizo ayer:
-Se encontro algun impedimento:
-Que se hace hoy:
+Que se hizo ayer:  Validacion del formulario crear producto
+Se encontro algun impedimento: no se podian poner las extenciones.
+Que se hace hoy: continuar con validaciones.
 
 Dominguez Gaston
 Que se hizo ayer: Nos juntamos con el equipo para poder avanzar en los diferentes puntos del sprint-7.
