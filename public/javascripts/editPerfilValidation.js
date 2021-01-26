@@ -6,26 +6,49 @@ let usernameInput = document.querySelector ("input[name=username] ")
 let imageInput = document.querySelector ("input[name=image] ")
 let mensaje = document.querySelector (".mensaje")
 
+function markValid (el){
+    el.classList.remove("error")
+    el.classList.add("success")
+}
+
+function markInvalid (el){
+    el.classList.remove("success")
+    el.classList.add("error")
+}
 
 nameInput.addEventListener("keyup", function(){
-    if (validator.isAlpha(nameInput.value) && validator.isLength(nameInput.value, {min:2, max:30}) || validator.isAlphanumeric(nameInput.value) && validator.isLength(nameInput.value, {min:2, max:30}) ) {
-        nameInput.classList.remove("error")
-        nameInput.classList.add("success")
+    if (validator.isAlpha(nameInput.value) && validator.isLength(nameInput.value, {min:2, max:30}) ) {
+        markValid(nameInput)
     }
     else{
-        nameInput.classList.remove("success")
-        nameInput.classList.add("error")
+        markInvalid(nameInput)
     }
 })
 
 surnameInput.addEventListener("keyup", function(){
-    if (validator.isAlpha(surnameInput.value) && validator.isLength(surnameInput.value, {min:2, max:30}) ) {
-        surnameInput.classList.remove("error")
-        surnameInput.classList.add("success")
+    if (validator.isAlpha(nameInput.value) && validator.isLength(surnameInput.value, {min:2, max:30}) ) {
+        markValid(surnameInput)
     }
     else{
-        surnameInput.classList.remove("success")
-        surnameInput.classList.add("error")
+        markInvalid(surnameInput)
+    }
+})
+
+passwordInput.addEventListener("keyup", function(){
+    if (validator.isLength(passwordInput.value, {min:8, max:20}) && /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[¿?¡!@#\$%\^&\*])(?=.{8,})/.test (passwordInput.value)) {
+        markValid(passwordInput)
+    }
+    else{
+        markInvalid(passwordInput)
+    }
+})
+
+confirmationInput.addEventListener("keyup", function(){
+    if (validator.equals(confirmationInput.value, passwordInput.value)) {
+        markValid(confirmationInput)
+    }
+    else{
+        markInvalid(confirmationInput)
     }
 })
 
@@ -39,40 +62,6 @@ usernameInput.addEventListener("keyup", function(){
         usernameInput.classList.add("error")
     }
 })
-
-passwordInput.addEventListener("keyup", function(){
-    if (validator.isLength(passwordInput.value, {min:8, max:20}) && /^[a-zA-Z]+\d{1}[a-zA-Z]+[\$\.\-\#\(\)\=\!\+]+[a-zA-Z]+$/.test (passwordInput.value)) {
-        passwordInput.classList.remove("error")
-        passwordInput.classList.add("success")
-    }
-    else{
-        passwordInput.classList.remove("success")
-        passwordInput.classList.add("error")
-    }
-})
-
-confirmationInput.addEventListener("keyup", function(){
-    if (validator.equals(confirmationInput.value, passwordInput.value)) {
-        confirmationInput.classList.remove("error")
-        confirmationInput.classList.add("success")
-    }
-    else{
-        confirmationInput.classList.remove("success")
-        confirmationInput.classList.add("error")
-    }
-})
-    
-    
-
-//imageInput.addEventListener("", function(){
-//    if (/\.(jpg|png|gif)$/i).test(imageInput.value)) {
-//        console.log("success")
-//   }
-//    else{
-//        console.log("error")
-//    }
-    
-// })
 
 function Checkfiles() { 
     var fup = document.querySelector ("input[name=image] "); 
