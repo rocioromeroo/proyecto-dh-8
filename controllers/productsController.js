@@ -12,17 +12,17 @@ const { validationResult } = require("express-validator");
 
 const productsController = {
   products: function (req, res) {
-    return db.Product.findAll({
-      include: ['category'],
+    return db.Category.findAll({
+      include: ['products'],
       where: {
-        categories_id: {
+         id: {
           [Op.between]: [1, 4]
         }        
       },
-      group: 'categories_id',
+      // group: 'categories_id',
     })
     .then((resultado) => {  
-      console.log(resultado);    
+      console.log(JSON.stringify(resultado));    
       res.render("./product/product", { items: resultado, styleOn: "product" });
     })
     .catch(function(error){
