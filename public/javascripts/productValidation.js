@@ -42,7 +42,7 @@ imageInput.addEventListener("change", function(){
 })
 
 descriptionInput.addEventListener ("keyup", function(){
-    if (validator.isLength(descriptionInput.value, {min:1, max:20})){
+    if (validator.isLength(descriptionInput.value, {min:20, max:140})){
         descriptionInput.classList.remove("error-tex")
         descriptionInput.classList.add("success-tex")
     }

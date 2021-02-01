@@ -12,37 +12,22 @@ const { validationResult } = require("express-validator");
 
 const productsController = {
   products: function (req, res) {
-    return db.Category.findAll({
-      include: ['products'],
+    return db.Product.findAll({
+      include: ['category'],
       where: {
-         id: {
+        categories_id: {
           [Op.between]: [1, 4]
         }        
       },
-      // group: 'categories_id',
+      group: 'categories_id',
     })
     .then((resultado) => {  
-      console.log(JSON.stringify(resultado));    
+      console.log(resultado);    
       res.render("./product/product", { items: resultado, styleOn: "product" });
     })
     .catch(function(error){
       console.log(error);
     })   
-    // let objet1 = productsList.filter(function (element) {
-    //   return element.category == "bicicletas";
-    // });
-    // let objet2 = productsList.filter(function (element) {
-    //   return element.category == "monociclos";
-    // });
-    // let objet3 = productsList.filter(function (element) {
-    //   return element.category == "dualciclos";
-    // });
-    // let objet4 = productsList.filter(function (element) {
-    //   return element.category == "monopatines";
-    // });
-    // let items = [objet1[1], objet2[2], objet3[1], objet4[0]];
-
-    // res.render("./product/product", { items: items, styleOn: "product" });
   },
 
   category: function (req, res) {
@@ -288,11 +273,16 @@ const productsController = {
   store: function (req, res, next) {
     let errors = validationResult(req);
 
-
-
     console.log(errors);
     if (errors.isEmpty()) {
-
+      // var numbers = {...req.body}
+      // console.log(numbers)
+      // numbers.filter(function (buscar) {
+      //     if (buscar == "si") {
+      //       return 1;
+      //     }
+      //     else{return 0}
+      //   });
       if(req.files.length == []) {
       db.Product.create({
         name: req.body.name,
@@ -307,7 +297,8 @@ const productsController = {
         folding: req.body.folding,
         brake: req.body.brake,
         color: req.body.color,
-        weight: req.body.weight
+        weight: req.body.weight,
+        
       })
       .then((resultado)=> {
         res.redirect("/products" );
