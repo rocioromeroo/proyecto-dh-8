@@ -50,24 +50,31 @@ module.exports = (sequelize, datatypes) => {
         },
         image: {
             type: datatypes.STRING
+        },
+        createdAt: {
+            field: 'created_at',
+            type: datatypes.DATE
+        },
+        updatedAt: {
+            field: 'updated_at',
+            type: datatypes.DATE
         }
-
-
     }
     let config = {
         tableName: "products",
-        timestamps: false
+        timestamps: true
+
     }
      let Product = sequelize.define(alias, cols, config);
      Product.associate = function(models) {   
         Product.belongsTo(models.Category, {
             as: "category",                   
             foreignKey: "categories_id"  
+        }),
+        Product.belongsTo(models.Warranty, {
+            as: "warranty",                   
+            foreignKey: "warranties_id"  
         })
-        // Product.belongsTo(models.Warranty, {
-        //     as: "warranty",                   
-        //     foreignKey: "warranties_id"  
-        // })
 
         
     //     Product.belongsTo(models.Cart, {

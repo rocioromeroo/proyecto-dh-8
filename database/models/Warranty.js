@@ -21,11 +21,11 @@ module.exports = (sequelize, datatypes) => {
         timestamps: false
     }
      let Warranty = sequelize.define(alias, cols, config);
-    //  Warranty.associate = function(models) {     
-    //     Warranty.hasMany(models.Product, {
-    //         as: "product",                   
-    //         foreignKey: "warranties_id"  
-    //     })
-    // };  
+     Warranty.associate = function(models) {     
+        Warranty.hasMany(models.Product, {
+            as: "products",                   
+            foreignKey: "warranties_id"  
+        })
+    };  
     return Warranty;
 };

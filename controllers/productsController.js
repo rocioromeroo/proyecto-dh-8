@@ -240,16 +240,20 @@ const productsController = {
   },
 
   create: function (req, res) {
-    return db.User.findOne({
+    let findUser =  db.User.findOne({
       where: {
         email: {
           [Op.eq]: req.session.user
         }
       }
     })
-    .then((resultado) => {
-      if(resultado) {
-        res.render("product/createProduct", { errors:{},styleOn: "create-editProduct" });
+
+    let findWarraty = db.Warranty.findAll({})
+    
+    Promise.all([findUser, findWarraty])
+    .then(function([fuser, fwarranty]) {
+      if(fuser) {
+        res.render("product/createProduct", {warranties:fwarranty, errors:{},styleOn: "create-editProduct" });
       } else {
         return res.render("user/login", { errors:{}, styleOn: "login" })
       }
@@ -298,6 +302,8 @@ const productsController = {
         brake: req.body.brake,
         color: req.body.color,
         weight: req.body.weight,
+        categories_id: req.body.category,
+        warranties_id: req.body.warranty
         
       })
       .then((resultado)=> {
@@ -324,7 +330,9 @@ const productsController = {
           brake: req.body.brake,
           color: req.body.color,
           weight: req.body.weight,
+          warranties_id: req.body.warranty,
           image: req.body.image,
+
         })
         .then((resultado)=> {
           res.redirect("/products" );
