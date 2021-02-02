@@ -330,6 +330,7 @@ const productsController = {
           brake: req.body.brake,
           color: req.body.color,
           weight: req.body.weight,
+          categories_id: req.body.category,
           warranties_id: req.body.warranty,
           image: req.body.image,
 
