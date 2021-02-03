@@ -23,3 +23,7 @@ Retroespectiva - Sprint-5
 Retroespectiva - Sprint-6
 
     Se avanzo en la creacion del modelo de base de datos del sitio, hubo muchas idas y vueltas para que representara el proceso de navegacion y compra de un usuario, aun quedan detalle por solucionar como el carrito de compras pero se pudo avanzar en los pilares de la pagina para que un usuario pueda registrar y loguearse en la misma, el conocimiento de las herramienta se fue obteniendo de a poco y esto hizo que llevase tiempo la creacion de la estructura y en llenado de datos de la misma, se pudo cumplir con todos los puntos del sprint pero llegamos demasiado justos con los tiempos.
+
+Retroespectiva - Sprint-7
+
+

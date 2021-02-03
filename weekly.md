@@ -115,3 +115,25 @@ Dominguez Gaston
 Que se hizo ayer: Nos juntamos con el equipo para poder avanzar en los diferentes puntos del sprint-7.
 Se encontro algun impedimento: Vemos que nos falta validaciones en el backend aun.
 Que se hace hoy: Se comenzara a pulir las validaciones de backend par luego continuar con el frontend.
+
+Weekly: Sprint-8
+
+Romero Rocio
+Que se hizo ayer:
+Se encontro algun impedimento:
+Que se hace hoy:
+
+Juan Fernandez
+Que se hizo ayer:
+Se encontro algun impedimento:
+Que se hace hoy:
+
+Nusfaumer Leonel
+ue se hizo ayer:
+Se encontro algun impedimento:
+Que se hace hoy:
+
+Dominguez Gaston
+Que se hizo ayer:
+Se encontro algun impedimento:
+Que se hace hoy:
