@@ -10,6 +10,7 @@ var remember = require('./middleware/rememberMiddleware')
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const productsRouter = require('./routes/products');
+const usersApiRouter = require('./routes/api/users');
 
 
 var app = express();
@@ -46,7 +47,7 @@ app.use(methodOverride("_method"));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/products', productsRouter);
-
+app.use('/api', usersApiRouter);
 
 
 // catch 404 and forward to error handler
