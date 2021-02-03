@@ -247,13 +247,14 @@ const productsController = {
         }
       }
     })
-
+    let fcategory = db.Category.findAll({})
     let findWarraty = db.Warranty.findAll({})
     
-    Promise.all([findUser, findWarraty])
-    .then(function([fuser, fwarranty]) {
+    Promise.all([findUser, fcategory, findWarraty])
+    .then(function([fuser, fcategory, fwarranty]) {
+      console.log(fcategory);
       if(fuser) {
-        res.render("product/createProduct", {warranties:fwarranty, errors:{},styleOn: "create-editProduct" });
+        res.render("product/createProduct", {categories: fcategory, warranties:fwarranty, errors:{},styleOn: "create-editProduct" });
       } else {
         return res.render("user/login", { errors:{}, styleOn: "login" })
       }

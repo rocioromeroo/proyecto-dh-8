@@ -88,14 +88,10 @@
                     <label for="category">Categoria:</label>
                     <div>
                         <select name="category" id="category">Categoria
-                        <option value="">Seleccionar...</option>
-                        <option value="2">Monopatines</option>
-                        <option value="4">Bicicletas</option>
-                        <option value="5">Accesorios</option>
-                        <option value="3">Monociclos</option>
-                        <option value="1">Dualciclos</option>
-                        <option value="6">Novedades</option>
-                        <option value="7">Visitados</option>
+                            <option value="">Seleccionar...</option>
+                            <% for (let dato1 of categories) { %>
+                                <option value="<%= dato1.id %>"><%= dato1.name %></option>
+                            <% } %>
                         </select>
                     </div>
                     <br>
@@ -104,7 +100,7 @@
                         <select name="warranty" id="warranty">Garantia
                             <option value="">Seleccionar...</option>
                             <% for (let dato of warranties) { %>
-                            <option value="<%= dato.id %>">Pais: <%= dato.country_origin%> Años: <%= dato.duration%> Cobertura: <%= dato.oficial_coverage%></option>
+                                <option value="<%= dato.id %>">Pais: <%= dato.country_origin%> Años: <%= dato.duration%> Cobertura: <%= dato.oficial_coverage%></option>
                             <% } %>
                         </select>
                     </div>
