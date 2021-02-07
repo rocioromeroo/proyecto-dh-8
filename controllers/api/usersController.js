@@ -30,4 +30,30 @@ module.exports = {
       res.json(respuesta);
     });
   },
-};
+  detail: function (req, res) {
+    db.User.findByPk(req.params.id, {
+      attributes: {
+        exclude: [
+          "username",
+          "password",
+          "last_name",
+          "address",
+          "profile",
+          "image",
+        ],
+      },
+    })
+    .then(function(usuario) {
+
+      let respuesta = {
+
+        meta: {
+        status: 200,
+        url: "/api/users/:id",
+      },
+      data: usuario,
+    }
+      res.json(respuesta)
+    })
+},
+}
