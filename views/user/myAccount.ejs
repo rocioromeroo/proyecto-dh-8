@@ -29,11 +29,11 @@
             </section>
 
             <section id="edit-product" class="usuario d-flex width-100">
-                  <% if(locals.user) { %>
+                  <% if(locals.user && locals.profile == 'admin') { %>
                         <div class="d-flex">
                               <h2>Usuario <%= locals.user%></h2>
                         </div>
-                  <% }  %>
+                  
 
                   <article class="crear">
                         <div class="titulo-action">
@@ -52,6 +52,8 @@
                               <a  class="buttom-action" href="/products/create">crear un producto</a>
                         </div>
                   </article>
+
+                  <% }  %>
 
                   <!-- <article class="borrar">
                         <div class="titulo-action">
