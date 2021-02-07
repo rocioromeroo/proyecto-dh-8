@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 const db = require('../../database/models');
 const { Op } = require('sequelize')
-
-
 
 module.exports = {
 
@@ -29,15 +26,9 @@ module.exports = {
 			}
 			res.json(respuesta)
 		})
-    }
- 
-}
-=======
-const db = require("../../database/models");
-const { Op } = require("sequelize");
+    },
 
-module.exports = {
-  detail: function (req, res) {
+    detail: function (req, res) {
         db.Product.findByPk(req.params.id)
         .then(function(product){
            product = {
@@ -53,5 +44,7 @@ module.exports = {
            res.json(product)
         })
 }
+ 
 }
->>>>>>> 2f50cdb7e03eaa15512a70c36d9fb893cae131ce
+
+
