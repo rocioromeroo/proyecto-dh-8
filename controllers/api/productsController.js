@@ -29,20 +29,21 @@ module.exports = {
     },
 
     detail: function (req, res) {
-        db.Product.findByPk(req.params.id)
-        .then(function(product){
-           product = {
-            include: [{ association: "category" }, { association: "warranty" }],
-            meta: {
-              status: 200,
-              total: product.length,
-              url: "/api/products/:id",
-              image: product.image
-            },
-            data: product,
-          };
-           res.json(product)
-        })
+      db.Product.findByPk(
+        req.params.id,{ include: [{ association: "category" }, { association: "warranty" }],}
+      )
+      .then(function(product){
+         product = {
+          meta: {
+            status: 200,
+            total: product.length,
+            url: "/api/products/:id",
+            image: product.image
+          },
+          data: product,
+        };
+         res.json(product)
+      })
 }
  
 }
