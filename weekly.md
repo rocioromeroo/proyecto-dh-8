@@ -119,9 +119,9 @@ Que se hace hoy: Se comenzara a pulir las validaciones de backend par luego cont
 Weekly: Sprint-8
 
 Romero Rocio
-Que se hizo ayer:
-Se encontro algun impedimento:
-Que se hace hoy:
+Que se hizo ayer: Se implementó la api de usuarios.
+Se encontro algun impedimento: Hubo inconvenientes con la exclusión de caracteristicas pero se solucionó.
+Que se hace hoy: Se implementa la api de productos.
 
 Juan Fernandez
 Que se hizo ayer:
