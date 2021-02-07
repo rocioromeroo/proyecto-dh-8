@@ -47,7 +47,7 @@
                 </div>
             </div>
 
-            <% if(locals.user) { %>
+            <% if(locals.user && locals.profile == 'admin') { %>
 
             <div class="d-flex carr f-size-10 t-tran-u tran-035">
                 <a class="link-d w-100" href="/products/cart">Agregar al Carrito</a>
@@ -55,6 +55,12 @@
             <div class="d-flex carr f-size-10 t-tran-u tran-035">
                 <a class="link-d w-100" href="/products/<%= valor.id %>/edit">Editar</a>
             </div>
+            <% } else if(locals.user) { %>
+
+                <div class="d-flex carr f-size-10 t-tran-u tran-035">
+                    <a class="link-d w-100" href="/products/cart">Agregar al Carrito</a>
+                </div>
+
             <% } else { %>
 
                 <div class="d-flex carr f-size-10 t-tran-u tran-035">
@@ -62,6 +68,7 @@
                 </div>
 
             <% } %>
+
         </section>
 
         <div id="agrupe" class="d-flex">

@@ -155,6 +155,7 @@ module.exports = {
           bcryptjs.compareSync(req.body.password, resultado.password)
         ) {
           req.session.user = resultado.email;
+          req.session.profile = resultado.profile
 
           if (req.body.recordame) {
             res.cookie("recordame", resultado.email, { maxAge: 120 * 1000 });
@@ -186,18 +187,57 @@ module.exports = {
     let errors = validationResult(req);
 
     if (errors.isEmpty()) {
-      db.User.create({
-        email: req.body.email,
-        password: bcryptjs.hashSync(req.body.password, 10),
-        first_name: req.body.first_name,
-        last_name: req.body.last_name,
-        address: req.body.address,
-        profile: "standard",
-        image: "default-profile.jpg",
-      }).then((resultado) => {
-        req.session.user = resultado.email;
-        res.redirect("account");
-      });
+
+      db.User.findOne({
+        where: {
+          profile: 'admin'
+        }
+      })
+
+      .then((result) => {
+
+        if(!result) {
+
+          db.User.create({
+            email: req.body.email,
+            password: bcryptjs.hashSync(req.body.password, 10),
+            first_name: req.body.first_name,
+            last_name: req.body.last_name,
+            address: req.body.address,
+            profile: "admin",
+            image: "default-profile.jpg",
+          })
+          .then((resultado) => {
+            req.session.user = resultado.email;
+            res.redirect("account");
+          })
+          .catch((error) => {
+            console.log(error);
+          })
+        } else {
+
+          db.User.create({
+            email: req.body.email,
+            password: bcryptjs.hashSync(req.body.password, 10),
+            first_name: req.body.first_name,
+            last_name: req.body.last_name,
+            address: req.body.address,
+            profile: "standard",
+            image: "default-profile.jpg",
+          })
+          .then((resultado) => {
+            req.session.user = resultado.email;
+            res.redirect("account");
+          })
+          .catch((error) => {
+            console.log(error);
+          })
+
+        }
+
+      })
+
+      
     } else {
       return res.render("user/register", {
         errors: errors.mapped(),
