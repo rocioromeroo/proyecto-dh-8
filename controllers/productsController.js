@@ -55,10 +55,8 @@ const productsController = {
       include: [{ association: "category" }, { association: "warranty" }],
     });
     let esteDato = db.Product.findAll({
-      include: [
-        {
-          association: "category",
-          where: {
+      include: [{association: "category",
+      where: {
             name: {
               [Op.eq]: "accesorios",
             },
