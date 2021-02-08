@@ -166,13 +166,16 @@ td {
 
 .d-flex i {justify-content: flex-end;}
 
-.d-flex-c:hover .div1-a p {display: block;}
+.active {display: block;}
+.desactive {display: none;}
+
+/* .d-flex-c:hover .div1-a p {display: block;}
 
 .d-flex-c:hover .div2-a {display: block;}
 
 .d-flex-c:hover .div3-a p {display: block;}
 
-.d-flex-c:hover .div4-a {display: block;}
+.d-flex-c:hover .div4-a {display: block;} */
 
 .acces_style {
     background-color: black;
@@ -268,7 +271,7 @@ td {
         margin-bottom: 10px;
     }
 
-    .div1-a p {display: block;}
+    /* .div1-a p {display: block;} */
     /* .div2-a p {display: block;}
     .div3-a p {display: block;}
     .div4-a p {display: block;} */
