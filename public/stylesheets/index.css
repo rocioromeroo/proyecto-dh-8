@@ -24,6 +24,7 @@ a#home-main:visited{
        --border-color-grey: #dcdcdc;
 
 }
+
 .bg-white{  background-color: white; }
 .br-gray{ border: 1px solid var(--border-color-grey);}
 .d-flex{ display: flex}
@@ -44,11 +45,14 @@ a#home-main:visited{
       background: linear-gradient( var(--font-color)20%,rgba(37, 117, 64, 0.6),var(--body-background));
       z-index: 99;
 }
-#banner-carousel img{
+#banner-carousel .image{
       width: 80%;
       height: 100%;
       clip-path: polygon(0 0, 69% 0, 100% 100%, 0% 100%);
 }
+.image {display:none}
+.visible{display: block;}
+.hidden {display:none;}
 
 .pad-section{
       padding: 5%;

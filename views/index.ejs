@@ -2,9 +2,12 @@
       <%- include("./partial/head")  %> 
 <body>
       <%- include("./partial/header") %> 
+      <script src="/javascripts/banner.js" defer></script>
 
-      <section id="banner-carousel">
-            <img src="/images/imagen-salon.jpeg" alt="">
+      <section id="banner-carousel" class="banner">
+            <img class="image img_1 hidden" src="/images/imagen-salon.jpeg" alt="">
+            <img class="image img_2 hidden" src="/images/image-1611619478113.jpeg" alt="">
+            <img class="image img_3 hidden" src="/images/imagen-salon.jpeg" alt="">
       </section>
 
       <main id="home-main">
@@ -121,5 +124,7 @@
       </main>
 
       <%- include("./partial/footer") %> 
+      
 </body>
+
 </html>

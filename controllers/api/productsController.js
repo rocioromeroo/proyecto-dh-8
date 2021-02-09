@@ -1,5 +1,6 @@
 const db = require('../../database/models');
-const { Op } = require('sequelize')
+const { Op } = require('sequelize');
+const { category } = require('../productsController');
 
 module.exports = {
 
@@ -32,13 +33,16 @@ module.exports = {
       db.Product.findByPk(
         req.params.id,{ include: [{ association: "category" }, { association: "warranty" }],}
       )
-      .then(function(product){
+      .then((product) => {
+        //  {
+        //   product.setDataValue("endpoint", "/products/images/bicicletas/" + product.image);
+        // }
+
          product = {
           meta: {
             status: 200,
             total: product.length,
             url: "/api/products/:id",
-            image: product.image
           },
           data: product,
         };
