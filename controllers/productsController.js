@@ -286,6 +286,10 @@ const productsController = {
         console.log(error);
       });
   },
+  add: function(req, res){
+       
+    res.send(req.body)
+  }
 };
 
 module.exports = productsController;

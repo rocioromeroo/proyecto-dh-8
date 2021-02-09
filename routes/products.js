@@ -26,6 +26,7 @@ router.post('/', upload.any(), productValidator, productsController.store)
 
 /*** GO TO CART ***/ 
 router.get('/cart', productsController.cart)
+router.post('/cart', productsController.add)
 
 /*** GET ONE PRODUCT ***/ 
 router.get('/:id', productsController.detail)
