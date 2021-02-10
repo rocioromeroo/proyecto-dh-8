@@ -1,5 +1,5 @@
 module.exports = (sequelize, datatypes) => {
-    let alias = "User_Cart"
+    let alias = "Cart_Product"
     let cols = {
         id: {
             type: datatypes.INTEGER,
@@ -11,18 +11,17 @@ module.exports = (sequelize, datatypes) => {
         },
         unit_price: {
             type: datatypes.DECIMAL
+        },
+        subtotal: {
+            type: datatypes.DECIMAL
         }
     }
     let config = {
-        tableName: "user_cart",
+        tableName: "cart_product",
         timestamps: false
     }
-     let User_Cart = sequelize.define(alias, cols, config);
-     User_Cart.associate = function(models) {     
-        User_Cart.belongsTo(models.Cart, {
-            as: "user_cart",                   
-            foreignKey: "user_cart_id"  
-        })  
-    };  
-    return User_Cart;
+    let Cart_Product = sequelize.define(alias, cols, config);
+     
+  
+    return Cart_Product;
 };

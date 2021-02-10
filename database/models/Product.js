@@ -75,17 +75,16 @@ module.exports = (sequelize, datatypes) => {
             as: "warranty",                   
             foreignKey: "warranties_id"  
         })
+        Product.belongsToMany(models.Cart, {
+            as: "products",					
+            through: "cart_product",
+            foreignKey: "product_id",
+            otherkey: "cart_id",
+            timestamps: false
+        })
 
         
-    //     Product.belongsTo(models.Cart, {
-    //         as: "cart",                   
-    //         foreignKey: "carts_id"  
-    //     }),
-    //      
-        // Product.hasMany(models.Category, {
-        //     as: "categories",                   
-        //     foreignKey: "categories_id"  
-        // })
+    
     };  
     return Product;
 };
