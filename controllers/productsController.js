@@ -287,8 +287,52 @@ const productsController = {
       });
   },
   add: function(req, res){
+    if(req.session.cartId) {
+      db.Cart.findOne({
+        where: {
+          id: req.session.cartId
+        }
+      })
+      .then((result) => {
+
+        res.send(req.body)
+        
+      })
+      .catch((error) => {
+        console.log(error);
+      })
+    } else {
+
+      db.Cart.create({     
+        // quantity: req.body.quantity,
+        // unit_price: req.body.unit_price,
+        // subtotal: 1000,
+        // carts_id:
+  
+        total_price: 1000,
+        users_id: req.session.userId,
+  
+  
+        
+      })
+      .then((result) => {
+        req.session.cartId = result.id
+        if(result) {
+          console.log(result);
+          res.send(req.body)
+        } else {
+          res.send('No se pudo crear el carrito')
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      })
+
+    }
+
+    
        
-    res.send(req.body)
+    
   }
 };
 

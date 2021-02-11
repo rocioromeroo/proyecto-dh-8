@@ -155,7 +155,8 @@ module.exports = {
           bcryptjs.compareSync(req.body.password, resultado.password)
         ) {
           req.session.user = resultado.email;
-          req.session.profile = resultado.profile
+          req.session.userId = resultado.id;
+          req.session.profile = resultado.profile;
 
           if (req.body.recordame) {
             res.cookie("recordame", resultado.email, { maxAge: 120 * 1000 });

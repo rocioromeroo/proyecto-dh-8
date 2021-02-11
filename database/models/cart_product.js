@@ -14,11 +14,19 @@ module.exports = (sequelize, datatypes) => {
         },
         subtotal: {
             type: datatypes.DECIMAL
+        },
+        createdAt: {
+            field: 'created_at',
+            type: datatypes.DATE
+        },
+        updatedAt: {
+            field: 'updated_at',
+            type: datatypes.DATE
         }
     }
     let config = {
         tableName: "cart_product",
-        timestamps: false
+        timestamps: true
     }
     let Cart_Product = sequelize.define(alias, cols, config);
      

@@ -8,11 +8,19 @@ module.exports = (sequelize, datatypes) => {
         },
         total_price: {
             type: datatypes.INTEGER
+        },
+        createdAt: {
+            field: 'created_at',
+            type: datatypes.DATE
+        },
+        updatedAt: {
+            field: 'updated_at',
+            type: datatypes.DATE
         }
     }
     let config = {
         tableName: "carts",
-        timestamps: false
+        timestamps: true
     }
      let Cart = sequelize.define(alias, cols, config);
      Cart.associate = function(models) {     
