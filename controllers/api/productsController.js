@@ -34,19 +34,19 @@ module.exports = {
         req.params.id,{ include: [{ association: "category" }, { association: "warranty" }],}
       )
       .then((product) => {
-        //  {
-        //   product.setDataValue("endpoint", "/products/images/bicicletas/" + product.image);
-        // }
 
-         product = {
+         let dato = product.toJSON()
+         resultado = {
           meta: {
             status: 200,
             total: product.length,
-            url: "/api/products/:id",
+            url: "/api/products/" + dato.id ,
           },
-          data: product,
+          data: {
+            ...dato, 
+            endpoint: "/images/" + dato.category.name + "/" + product.image},
         };
-         res.json(product)
+         res.json(resultado)
       })
 }
  
