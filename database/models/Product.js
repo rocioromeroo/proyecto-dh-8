@@ -79,7 +79,7 @@ module.exports = (sequelize, datatypes) => {
             as: "products",					
             through: "cart_product",
             foreignKey: "products_id",
-            otherkey: "carts_id",
+            otherKey: "carts_id",
             timestamps: false
         })
 
