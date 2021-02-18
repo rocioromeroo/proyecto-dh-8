@@ -279,6 +279,7 @@ const productsController = {
             items: items,
             esteAccesorio: esteDato,
             styleOn: "productCart",
+            esteDato:{}
           });
         }
       })
@@ -294,13 +295,14 @@ const productsController = {
         }
       })
       .then((result) => {
-
+               
         res.send(req.body)
         
       })
       .catch((error) => {
         console.log(error);
       })
+
     } else {
 
       db.Cart.create({     
@@ -311,8 +313,6 @@ const productsController = {
   
         total_price: 1000,
         users_id: req.session.userId,
-  
-  
         
       })
       .then((result) => {
@@ -329,10 +329,6 @@ const productsController = {
       })
 
     }
-
-    
-       
-    
   }
 };
 

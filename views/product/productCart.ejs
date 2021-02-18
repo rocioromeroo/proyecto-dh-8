@@ -11,24 +11,30 @@
                         <th>Cantidad</th>
                         <th class="tr-table-2">Subtotal</th>
                     </tr>
-                    <tr>
-                    <td>
-    
-                        <div class="cart-info">
-                            <img src="/images/monopatines/mp-300-Ninebot-KICKSCOOTER-Max.png">
-                            <div>
-                                <p class="parrafo">NINEBOT KICKSCOOTER</p>
-                                <small>$20.000</small>
-                                <br>
-                                <a href="">Remover</a>
-                            </div>
-                        </div>
-    
-                    </td>
-                    <td><input type="number" value="1"></td>
-                    <td>$20.000</td>
-                </tr>
-                <tr>
+                  
+
+                        <tr>
+                            <td>
+                                <div class="cart-info">
+                                    <img src="/images/<%= esteDato.category.name %>/<%= esteDato.image %>">
+                                    <div>
+                                        <p class="parrafo"><%= esteDato.name%> </p>
+                                        <small><%= esteDato.price%></small>
+                                        <br>
+                                        <form action="/product/cart" method="DELETE">
+                                            <button href="">Remover</button>
+                                        </form>
+                                        
+                                    </div>
+                                </div>
+            
+                            </td>
+                            <td><input type="number" value="1"></td>
+                            <td>$20.000</td>
+                        </tr>
+                   
+                    
+                <!-- <tr>
                     <td class="td-div">
     
                         <div class="cart-info">
@@ -61,7 +67,7 @@
                     </td>
                     <td class="ult-td"><input type="number" value="1"></td>
                     <td class="ult-td">$25.000</td>
-                </tr>
+                </tr> -->
                 </table>
     
                 <div class="total-price">
