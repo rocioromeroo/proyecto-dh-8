@@ -89,9 +89,13 @@
                     <div>
                         <select name="category" id="category">Categoria
                             <option value="">Seleccionar...</option>
-                            <% for (let dato1 of categories) { %>
-                                <option value="<%= dato1.id %>"><%= dato1.name %></option>
-                            <% } %>
+                            <option value="1">DualCiclos</option>
+                            <option value="2">Monopatines</option>
+                            <option value="3">Monociclos</option>
+                            <option value="4">Bicicletas</option>
+                            <option value="5">Accesorios</option>
+                            <option value="6">Novedades</option>
+                            <option value="7">Visitados</option>
                         </select>
                     </div>
                     <br>
@@ -99,9 +103,16 @@
                     <div>
                         <select name="warranty" id="warranty">Garantia
                             <option value="">Seleccionar...</option>
-                            <% for (let dato of warranties) { %>
-                                <option value="<%= dato.id %>">Pais: <%= dato.country_origin%> Años: <%= dato.duration%> Cobertura: <%= dato.oficial_coverage%></option>
-                            <% } %>
+                            <option value="1">Pais:Chile Años:3 Cobertura:Si </option>
+                            <option value="2">Pais:Sweden Años:3 Cobertura:Si </option>
+                            <option value="3">Pais:Canada Años:1 Cobertura:No </option>
+                            <option value="4">Pais:Brazil Años:2 Cobertura:No </option>
+                            <option value="5">Pais:Philippines Años:2 Cobertura:Si </option>
+                            <option value="6">Pais:Indonesia Años:2 Cobertura:Si </option>
+                            <option value="7">Pais:Jamaica Años:1 Cobertura:No </option>
+                            <option value="8">Pais:Greece Años:1 Cobertura:No </option>
+                            <option value="9">Pais:Argentina Años:1 Cobertura:No </option>
+                            <option value="10">Pais:Russia Años:1 Cobertura:Si </option>  
                         </select>
                     </div>
                     <br>

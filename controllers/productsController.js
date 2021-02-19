@@ -177,7 +177,7 @@ const productsController = {
       });
   },
 
-  store: function (req, res, next) {
+  store: function (req, res) {
     let errors = validationResult(req);
     if (errors.isEmpty()) {
       if (req.files.length == []) {
