@@ -70,7 +70,6 @@ module.exports = {
             first_name: req.body.first_name,
             last_name: req.body.last_name,
             address: req.body.address,
-            password: bcryptjs.hashSync(req.body.password, 10),
           },
           {
             where: {
@@ -82,6 +81,7 @@ module.exports = {
         )
 
           .then((resultado) => {
+            console.log(resultado)
             if (resultado) {
               res.redirect("/users/account");
             }
@@ -96,7 +96,6 @@ module.exports = {
             first_name: req.body.first_name,
             last_name: req.body.last_name,
             address: req.body.address,
-            password: bcryptjs.hashSync(req.body.password, 10),
             image: req.files[0].filename,
           },
           {
@@ -121,6 +120,69 @@ module.exports = {
       db.User.findByPk(req.params.id).then((resultado) => {
         if (resultado) {
           res.render("user/editPerfil", {
+            styleOn: "register",
+            editar: resultado,
+            errors: errors.mapped(),
+          });
+        }
+      });
+    }
+  },
+  editPassword: function (req, res) {
+    db.User.findOne({
+      where: {
+        email: req.session.user,
+        id: req.params.id,
+      },
+    })
+      .then((resultado) => {
+        if (resultado) {
+          res.render("user/editPassword", {
+            styleOn: "register",
+            editar: resultado,
+            errors: {},
+          });
+        } else {
+          req.session.destroy();
+          res.cookie("recordame", null, { maxAge: 0 });
+          return res.redirect("/users/login");
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  },
+  savePassword: function (req, res ) {
+    console.log(req.body)
+    let errors = validationResult(req);
+    console.log(errors)
+    if (errors.isEmpty()) {
+        db.User.update(
+          {
+            where: {
+              id: {
+                [Op.eq]: req.params.id,
+              },
+            },
+            
+          },
+          {
+            password: bcryptjs.hashSync(req.body.password, 10),
+          },
+        )
+          .then((resultado) => {
+            if (resultado) {
+              res.redirect("/users/account");
+            }
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+      
+    } else {
+      db.User.findByPk(req.params.id).then((resultado) => {
+        if (resultado) {
+          res.render("user/editPassword", {
             styleOn: "register",
             editar: resultado,
             errors: errors.mapped(),

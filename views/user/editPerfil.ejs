@@ -30,16 +30,6 @@
                     <input class="inputA" type="text" name="address" id="address" value="<%= editar.address %>">  
                 </div>   
                 <hr>
-                <div class="padd-10">
-                    <label class="font-s" for="password">Contraseña: * </label>
-                    <input class="inputA" type="password" name="password" id="password" >
-                </div>
-                <hr>
-                <div class="padd-10">
-                    <label class="font-s" for="repeat">Confirmar Contraseña: *</label>
-                    <input class="inputA" type="password" name="repeat" id="repeat" >
-                </div>
-                <hr>
                 <div>
                     <label class="titulo">Imágen: *</label>
                     <input class="inputA imagen" type="file" name="image" >
@@ -54,12 +44,6 @@
                 <% } %>
                 <% if(typeof errors.last_name !== 'undefined') { %>
                     <p class="text-red"><%= errors.last_name.msg %></p>
-                <% } %>
-                <% if(typeof errors.password !== 'undefined') { %>
-                    <p class="text-red"><%= errors.password.msg %></p>
-                <% } %>
-                <% if(typeof errors.repeat !== 'undefined') { %>
-                    <p class="text-red"><%= errors.repeat.msg %></p>
                 <% } %>
                 <% if(typeof errors.image !== 'undefined') { %>
                     <p class="text-red"><%= errors.image.msg %></p>

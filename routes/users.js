@@ -6,6 +6,7 @@ const userValidator = require("../middleware/userValidator")
 const userLoginValidator = require("../middleware/userLoginValidator")
 var multer  = require('multer');
 const myAccountValidator = require('../middleware/myAccountValidator');
+const passwordValidator = require('../middleware/passwordValidator');
 
 var storage = multer.diskStorage({
   destination: function (req, file, cb) {
@@ -45,6 +46,9 @@ router.post('/contact', usersController.comment)
 /*        GET       EDITAR PERFIL   */
 router.get('/:id/editPerfil', usersController.editPerfil)
 router.put('/:id/editPerfil',upload.any(), myAccountValidator, usersController.savePerfil)
+
+router.get('/:id/editPassword', usersController.editPassword)
+router.put('/:id/editPassword',passwordValidator, usersController.savePassword)
 
 module.exports = router; 
 

@@ -15,18 +15,6 @@ module.exports = [
     .isLength({ min: 2 })
     .withMessage("Su Apellido debe tener al menos 2 caracteres")
     .bail(),
-  check("password")
-    .notEmpty()
-    .withMessage("Contraseña obligatoria")
-    .isLength({ min: 8 })
-    .withMessage("Su Password debe tener al menos 8 caracteres"),
-
-  body("repeat")
-    .notEmpty()
-    .withMessage("Confirma contraseña ")
-    .bail()
-    .custom((value, { req }) => req.body.password == value)
-    .withMessage("Las contraseñas no coinciden"),
 
   body("image").custom((value, { req }) => {
     if (req.files.length == []) {
