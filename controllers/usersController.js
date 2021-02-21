@@ -154,10 +154,15 @@ module.exports = {
   },
   savePassword: function (req, res ) {
     console.log(req.body)
+    console.log(req.params);
     let errors = validationResult(req);
     console.log(errors)
     if (errors.isEmpty()) {
         db.User.update(
+          
+          {
+            password: bcryptjs.hashSync(req.body.password, 10),
+          },
           {
             where: {
               id: {
@@ -165,10 +170,7 @@ module.exports = {
               },
             },
             
-          },
-          {
-            password: bcryptjs.hashSync(req.body.password, 10),
-          },
+          }
         )
           .then((resultado) => {
             if (resultado) {
