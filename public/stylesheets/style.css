@@ -14,7 +14,7 @@ a.buttom-action:visited{color:white}
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 40px;
 }
@@ -75,7 +75,7 @@ a.buttom-action:visited{color:white}
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  align-content: center;
+  align-content: flex-start; 
   width: 40%;
   height: 800px;
   align-items: center;
