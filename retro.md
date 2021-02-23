@@ -26,4 +26,6 @@ Retroespectiva - Sprint-6
 
 Retroespectiva - Sprint-7
 
+    Las validaciones tanto de frontend como backend nos pusieron a prueba pero logramos poder crear mas codigo para poder realizar las comprobaciones necesarias, si bien los testeos se hicieron bastante largo por algunas fallas, creemos que hemos podido cunmplir con los objetivos planteados por sprint.
+
 

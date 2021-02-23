@@ -134,6 +134,6 @@ Se encontro algun impedimento:
 Que se hace hoy:
 
 Dominguez Gaston
-Que se hizo ayer:
-Se encontro algun impedimento:
-Que se hace hoy:
+Que se hizo ayer: Se modifico la vista de creacion de producto ya que la misma presentaba errores
+Se encontro algun impedimento: No por el momento
+Que se hace hoy: Se continua con react
