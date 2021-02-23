@@ -51,12 +51,6 @@ passwordInput.addEventListener("keyup", function(){
     }
 })
 
-confirmationInput.addEventListener("keyup", function(){
-    if (validator.equals(confirmationInput.value, passwordInput.value)) {
-        markValid(confirmationInput)
-    }
-    else{
-        markInvalid(confirmationInput)
-    }
-})
+
+
 

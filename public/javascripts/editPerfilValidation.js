@@ -34,23 +34,6 @@ surnameInput.addEventListener("keyup", function(){
     }
 })
 
-passwordInput.addEventListener("keyup", function(){
-    if (validator.isLength(passwordInput.value, {min:8, max:20}) && /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[¿?¡!@#\$%\^&\*])(?=.{8,})/.test (passwordInput.value)) {
-        markValid(passwordInput)
-    }
-    else{
-        markInvalid(passwordInput)
-    }
-})
-
-confirmationInput.addEventListener("keyup", function(){
-    if (validator.equals(confirmationInput.value, passwordInput.value)) {
-        markValid(confirmationInput)
-    }
-    else{
-        markInvalid(confirmationInput)
-    }
-})
 
 usernameInput.addEventListener("keyup", function(){
     if (validator.isAlpha(usernameInput.value) && validator.isLength(usernameInput.value, {min:2, max:30}) || validator.isAlphanumeric(usernameInput.value) && validator.isLength(usernameInput.value, {min:2, max:30}) ) {
