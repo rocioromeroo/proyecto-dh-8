@@ -5,49 +5,46 @@
 <body class="body-productForm">
     <%- include("../partial/header") %>
       <main class="product-form">
-            <h1>Edita producto</h1>
+            <h1>Editar producto</h1>
             <section>                
                 <form class="new-product" action="/products/<%= editar.id %>/?_method=PUT" method="POST" enctype="multipart/form-data">
                     <div>
                         <label for="name">Nombre</label>
-                        <input type="text" name="name" id="name" value="<%= editar.name %>">
+                        <input class="inputA" type="text" name="name" id="name" value="<%= editar.name %>">
                         <hr>
                     </div>
+                    <br>
                     <div>
                         <label for="description">Descripcion</label>
-                        <textarea name="description" id="description" cols="30" rows="5" class="input border area f-size-10"><%= editar.description %></textarea>
+                    </div>
+                    <div>
+                        <textarea name="description" id="description" cols="75" rows="5" class="input border area f-size-10"><%= editar.description %></textarea>
                     </div>
                     <div>
                         <label for="brand">Marca</label>
-                        <input type="text" name="brand" id="brand" value="<%= editar.brand %>">
+                        <input class="inputA" type="text" name="brand" id="brand" value="<%= editar.brand %>">
                         <hr>
                     </div>
                     <div>
                         <label for="price">Precio</label>
-                        <input type="text" name="price" id="price" value="<%= editar.price %>">
+                        <input class="inputA" type="text" name="price" id="price" value="<%= editar.price %>">
                         <hr>
                     </div>
                     <div>
                         <label for="discount">Descuento</label>
-                        <input type="text" name="discount" id="discount" value="<%= editar.discount %>">
+                        <input class="inputA" type="text" name="discount" id="discount" value="<%= editar.discount %>">
                         <hr>
                     </div>
-                    <div>
-                        <div>
-                            <label for="image">Imagen Actual</label>
-
-                        </div>
-                        <div>
-                            <img style="width: 50%;" src="/images/<%= editar.category %>/<%= editar.image %>" alt="">
-                        </div>
+                    <div>                      
+                        <img style="width: 50%;" src="/images/<%= editar.category %>/<%= editar.image %>" alt="">
                     </div>
                     <div>
                         <label class="titulo" for="file">Agregá una imágen</label>
-                        <input type="file" name="file" id="file">
+                        <input class="inputA" type="file" name="file" id="file">
                     </div> 
                     <div>
                         <label for="category">Categoria</label>
-                        <input type="text" name="category" id="category" value="<%= editar.category%>">
+                        <input class="inputA" type="text" name="category" id="category" value="<%= editar.category%>">
                         <hr>
                     </div>                   
                     <div class="center1">

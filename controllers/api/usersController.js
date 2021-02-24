@@ -6,12 +6,8 @@ module.exports = {
     db.User.findAll({
       attributes: {
         exclude: [
-          "username",
           "password",
-          "last_name",
-          "address",
           "profile",
-          "image",
         ],
       },
     }).then((resultado) => {
@@ -34,24 +30,23 @@ module.exports = {
     db.User.findByPk(req.params.id, {
       attributes: {
         exclude: [
-          "username",
           "password",
-          "last_name",
-          "address",
           "profile",
-          "image",
         ],
       },
     })
-    .then(function(usuario) {
+    .then((usuario) => {
 
-      let respuesta = {
-
+      let dato = usuario.toJSON()
+      respuesta = {
         meta: {
         status: 200,
-        url: "/api/users/:id",
+        url: "/api/users/" + dato.id,
       },
-      data: usuario,
+      data: {
+        ...dato,
+        endpoint: "/images/users/" + dato.image
+      }
     }
       res.json(respuesta)
     })
